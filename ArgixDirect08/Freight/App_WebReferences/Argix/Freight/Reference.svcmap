@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="79c37821-2962-48f7-a4d2-2a79a8279b31" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:45413/Argix08.FreightServices/Freight.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Freight.xsd" MetadataType="Schema" ID="fff3dbf6-55e7-4509-b902-79486981a35f" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?xsd=xsd1" />
+    <MetadataFile FileName="Freight1.xsd" MetadataType="Schema" ID="3bcdd0d4-3807-4996-930b-48ca66848299" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?xsd=xsd2" />
+    <MetadataFile FileName="Freight2.xsd" MetadataType="Schema" ID="8a4ad659-1ccd-46c3-a486-dab909030411" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?xsd=xsd0" />
+    <MetadataFile FileName="Freight3.xsd" MetadataType="Schema" ID="1e1a01ae-c9d3-405e-99bb-707697bc8787" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?xsd=xsd3" />
+    <MetadataFile FileName="FreightService.wsdl" MetadataType="Wsdl" ID="51c41688-c846-473f-a4e3-1554b435ad7b" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?wsdl" />
+    <MetadataFile FileName="Freight4.xsd" MetadataType="Schema" ID="40b669e4-ff8f-4b48-a8d7-8a52cb8cc449" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?xsd=xsd5" />
+    <MetadataFile FileName="Freight.disco" MetadataType="Disco" ID="cbe69938-a820-4ad0-90b0-ad5fd3767ed1" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?disco" />
+    <MetadataFile FileName="Freight5.xsd" MetadataType="Schema" ID="5f1c1255-2ff7-4589-a6d7-27e1d0cb06c2" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?xsd=xsd4" />
+    <MetadataFile FileName="Freight.wsdl" MetadataType="Wsdl" ID="9e787a30-40c6-44c2-a968-afe7a72087bf" SourceId="1" SourceUrl="http://localhost:45413/Argix08.FreightServices/Freight.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

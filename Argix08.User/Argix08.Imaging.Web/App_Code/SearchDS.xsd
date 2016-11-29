@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SearchDS" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="SearchDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SearchTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ScopeName" type="xs:string" default="All Sites" />
+              <xs:element name="DocumentClass" type="xs:string" />
+				<xs:element name="PropertyName" type="xs:string" />
+				<xs:element name="PropertyValue" type="xs:string" />
+				<xs:element name="Operand1" type="xs:string" minOccurs="0" />
+				<xs:element name="PropertyName1" type="xs:string" minOccurs="0" />
+				<xs:element name="PropertyValue1" type="xs:string" minOccurs="0" />
+				<xs:element name="Operand2" type="xs:string" minOccurs="0" />
+				<xs:element name="PropertyName2" type="xs:string" minOccurs="0" />
+				<xs:element name="PropertyValue2" type="xs:string" minOccurs="0" />
+				<xs:element name="Operand3" type="xs:string" minOccurs="0" />
+				<xs:element name="PropertyName3" type="xs:string" minOccurs="0" />
+				<xs:element name="PropertyValue3" type="xs:string" minOccurs="0" />
+				<xs:element name="MaxResults" type="xs:int" default="250" />
+			</xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

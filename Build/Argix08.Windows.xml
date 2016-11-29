@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Argix08.Windows</name>
+    </assembly>
+    <members>
+        <member name="F:Argix.Windows.dlgInputBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Argix.Windows.dlgInputBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Argix.Windows.dlgLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Argix.Windows.AppServices.SetForegroundWindow(System.IntPtr)">
+            <summary>
+            Call this Win32 function to bring an existing window to foreground.
+            </summary>
+            <param name="handle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Argix.Windows.AppServices.ShowWindow(System.IntPtr,System.Int32)">
+            <summary>
+            Call ShowWindow to show existing Application if it's minimized.
+            </summary>
+            <param name="handle"></param>
+            <param name="nCmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Argix.Windows.AppServices.RunningInstance">
+            <summary>
+            Returns running instance of the existing app. Process object will be null
+            if it's not running.
+            </summary>
+            <returns>Process</returns>
+        </member>
+        <member name="M:Argix.Windows.AppServices.RunningInstance(System.String)">
+            <summary>
+            This method will check for existing app based on the main window title because process runs 
+            under IEExe.exe process when run using URL. Without this it will not let you run second instance
+            of any application running using url.
+            </summary>
+            <param name="mainWindowTitle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Argix.Windows.ArgixStatusBar.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Argix.Windows.dlgAbout.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Argix.Windows.dlgSplash.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

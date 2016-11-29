@@ -1,0 +1,35 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="DefaultMaster" ClassName="DefaultMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Argix Direct Fast Tracking</title>
+</head>
+<body>
+<div class="container">
+    <div id="bannerContainer"><img src="App_Themes/ArgixDirect/Images/Argix-Client_banner.jpg" alt="Argix Direct, Inc." /></div>
+    <div class="content"> 
+        <form id="frmDefault" runat="server">
+            <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+                <tr style="height:25px; margin-top:15px; margin-right:15px;">
+                    <td align="left" style="margin-top:15px; margin-left:15px;">
+                        <asp:LinkButton ID="btnGoSummary" SkinID="linkBtn" OnClick="GoSummary" runat="server" >Return to summary</asp:LinkButton>
+                        &nbsp;<asp:ImageButton ID="btnImgGoSummary" runat="server" OnClick="GoSummaryImg"  ImageUrl="~/App_Themes/ArgixDirect/Images/btn_arrow_red_right.gif" ImageAlign="AbsBottom" /> 
+                    </td>
+                    <td align="right" style="margin-top:15px; margin-right:15px;">
+                        <asp:LinkButton ID="btnTrackNew" runat="server" SkinID="linkBtn" OnClick="TrackNew" >Track new shipment</asp:LinkButton>
+                        &nbsp;<asp:ImageButton ID="btnImgTrackNew" runat="server" OnClick="TrackNewImg"  ImageUrl="~/App_Themes/ArgixDirect/Images/btn_arrow_red_right.gif" ImageAlign="AbsBottom" /> 
+                    </td>
+                </tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+                <tr><td colspan="2"><asp:contentplaceholder id="cpBody" runat="server"></asp:contentplaceholder></td></tr>
+                <tr><td colspan="2">&nbsp;</td></tr>
+            </table>
+            <div id="labelContainer" >
+                <asp:Label ID="lblDetailFootnote" runat="server" Width="396px" Text="Tracking data provided by Argix Direct as of  " SkinID="lblText" ></asp:Label>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

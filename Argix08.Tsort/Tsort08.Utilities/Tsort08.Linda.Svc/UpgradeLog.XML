@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Tsort08.LindaSvc">
+</Property><Property Name="Solution File" Value="C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Tsort08.LindaSvc.sln">
+</Property><Property Name="Date" Value="Tuesday, July 06, 2010">
+</Property><Property Name="Time" Value="12:05:00 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="Tsort08.LindaSvc.csproj" Description="Project file successfully backed up as C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Backup\Tsort08.LindaSvc.csproj">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="assemblyinfo.cs" Description="File successfully backed up as C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Backup\assemblyinfo.cs">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="filelog.cs" Description="File successfully backed up as C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Backup\filelog.cs">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="filesvc.cs" Description="File successfully backed up as C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Backup\filesvc.cs">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="main.cs" Description="File successfully backed up as C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Backup\main.cs">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="app.config" Description="File successfully backed up as C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="app.ico" Description="File successfully backed up as C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Backup\app.ico">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="main.resx" Description="File successfully backed up as C:\Data\Projects\Argix08\Tsort08\Tsort08.Utilities\Tsort08.LindaSvc\Backup\main.resx">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="Tsort08.LindaSvc.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Tsort08.LindaSvc" Source="Tsort08.LindaSvc.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Tsort08.LindaSvc" Source="Tsort08.LindaSvc.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

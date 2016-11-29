@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ClientDS" targetNamespace="http://www.tempuri.org/ClientDS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://www.tempuri.org/ClientDS.xsd" xmlns:mstns="http://www.tempuri.org/ClientDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="ClientDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ClientTable">
+          <xs:complexType>
+            <xs:sequence>
+				<xs:element name="ClientNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="DivisionNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="ClientName" type="xs:string" minOccurs="0" />
+				<xs:element name="TerminalCode" type="xs:string" minOccurs="0" />
+				<xs:element name="TerminalName" type="xs:string" minOccurs="0" />
+				<xs:element name="ARNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="Status" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,53 @@
+				--------------------------------------------------------
+                    		RSReports Application Readme File
+		                       			January, 2012
+				--------------------------------------------------------
+                         (c) Copyright Argix Direct, 2012
+
+This document provides late-breaking or other information that supplements the RSReports documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+NOTES
+   GENERAL
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+
+NOTES
+==============
+GENERAL
+The RSReports Application (RSReports.exe) is a Windows based application used for Roadshow 
+reporting and analysis.
+
+
+OPERATION
+Normal:
+The RSReports Application (RSReports.exe) operates by launching from a web server deployment 
+url (i.e. http://localhost/Argix08/Apps/Terminals/RSReports/RSReports.application). After a brief splash screen, 
+a sizeable window appears and displays a grid containing RSReports. Additional operating steps can be found in the on-line 
+documentation provided by the Help/Contents menu item.
+
+
+VERSION HISTORY
+v3.5.0, 06/09/11 ---------------------------------------------------------------------------
+Requirements/features
+- Initial release.
+Design
+- New.
+
+v3.5.1, 01/10/12 ---------------------------------------------------------------------------
+Requirements/features
+- Modified to pull Pickups from the Orders table on demand (currently using a SQL Server job).
+Design
+- None.

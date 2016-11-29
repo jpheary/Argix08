@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Argix.Customers.IssueMgtService" CodeBehind="~/App_Code/IssueMgtService.cs" %>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3bc1b7c2-14c2-4ef3-adcf-7426a601e2e1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8000/Tsort08.ScaleService/Service" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="6eec43e8-16ea-442f-8e5a-2e6fc798ffd7" SourceId="1" SourceUrl="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd4" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="b956fb71-74e7-4f59-8551-e19e4280963b" SourceId="1" SourceUrl="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd1" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="bd655420-13d4-4858-9c53-e4a32302752c" SourceId="1" SourceUrl="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd2" />
+    <MetadataFile FileName="Service3.xsd" MetadataType="Schema" ID="2820f71a-dc78-4297-8c63-5e4c6034d98b" SourceId="1" SourceUrl="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd0" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="8b1ae825-09eb-4f43-a49b-320ab57291fb" SourceId="1" SourceUrl="http://localhost:8000/Tsort08.ScaleService/Service?disco" />
+    <MetadataFile FileName="Service4.xsd" MetadataType="Schema" ID="7bbc13a2-20f8-4775-86be-39edfeebcbed" SourceId="1" SourceUrl="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd3" />
+    <MetadataFile FileName="AutoScale.wsdl" MetadataType="Wsdl" ID="79e20aab-3169-43fb-8db2-15a9218af2df" SourceId="1" SourceUrl="http://localhost:8000/Tsort08.ScaleService/Service?wsdl" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="1f435ac7-6a06-416c-aa07-04d56bfcfd4b" SourceId="1" SourceUrl="http://localhost:8000/Tsort08.ScaleService/Service?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EventsDS" targetNamespace="http://tempuri.org/EventsDS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/EventsDS.xsd" xmlns:mstns="http://tempuri.org/EventsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="EventTable">
+		<xs:complexType>
+			<xs:sequence>
+                <xs:element name="EventID" type="xs:int" />
+                <xs:element name="Route_Set_Index" type="xs:int" />
+                <xs:element name="Routing_Date" type="xs:dateTime" />
+                <xs:element name="Routing_Class" type="xs:string" />
+                <xs:element name="Routing_Set" type="xs:string" />
+                <xs:element name="Routing_Event" type="xs:string" />
+                <xs:element name="Notified" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

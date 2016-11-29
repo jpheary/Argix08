@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsort08.StatisticalSampling.Win", "Tsort08.StatisticalSampling.Win.csproj", "{A8F43A0A-E4C7-46BF-B054-7D748FFF4EC2}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = Tsort08.StatisticalSampling.Win.csproj
+		SccProjectName0 = \u0022$/Argix08/Argix08.Tsort/Tsort08.User/Tsort08.StatisticalSampling.Win\u0022,\u0020QPGBAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8F43A0A-E4C7-46BF-B054-7D748FFF4EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F43A0A-E4C7-46BF-B054-7D748FFF4EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F43A0A-E4C7-46BF-B054-7D748FFF4EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F43A0A-E4C7-46BF-B054-7D748FFF4EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

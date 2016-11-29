@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TripSummary" targetNamespace="http://tempuri.org/TripSummary.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TripSummary.xsd" xmlns:mstns="http://tempuri.org/TripSummary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TripSummary" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="trip">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="tripNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="cartonCount" type="xs:int" minOccurs="0" />
+							<xs:element name="carrier" type="xs:string" minOccurs="0" />
+							<xs:element name="trailer" type="xs:string" minOccurs="0" />
+							<xs:element name="trailerArrival" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="firstScanTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="osdCreated" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="TripSummaryKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:trip" />
+			<xs:field xpath="mstns:tripNumber" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

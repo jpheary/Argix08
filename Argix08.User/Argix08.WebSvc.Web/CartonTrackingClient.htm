@@ -1,0 +1,128 @@
+<html>
+    <head>
+    	<title>Carton Web Service</title>
+	    <link rel="alternate" type="text/xml" href="/tracking/carton.asmx?disco" />
+	    <meta name="UserName" content="BOWKER" />
+        <meta name="Password" content="BokerWebS2010" />
+    	<style type="text/css">
+            BODY { color: #000000; background-color: white; font-family: Verdana; margin-left: 0px; margin-top: 0px; }
+            #content { margin-left: 30px; font-size: .70em; padding-bottom: 2em; }
+            A:link { color: #336699; font-weight: bold; text-decoration: underline; }
+            A:visited { color: #6699cc; font-weight: bold; text-decoration: underline; }
+            A:active { color: #336699; font-weight: bold; text-decoration: underline; }
+            A:hover { color: cc3300; font-weight: bold; text-decoration: underline; }
+            P { color: #000000; margin-top: 0px; margin-bottom: 12px; font-family: Verdana; }
+            pre { background-color: #e5e5cc; padding: 5px; font-family: Courier New; font-size: x-small; margin-top: -5px; border: 1px #f0f0e0 solid; }
+            td { color: #000000; font-family: Verdana; font-size: .7em; }
+            h2 { font-size: 1.5em; font-weight: bold; margin-top: 25px; margin-bottom: 10px; border-top: 1px solid #003366; margin-left: -15px; color: #003366; }
+            h3 { font-size: 1.1em; color: #000000; margin-left: -15px; margin-top: 10px; margin-bottom: 10px; }
+            ul { margin-top: 10px; margin-left: 20px; }
+            ol { margin-top: 10px; margin-left: 20px; }
+            li { margin-top: 10px; color: #000000; }
+            font.value { color: darkblue; font: bold; }
+            font.key { color: darkgreen; font: bold; }
+            font.error { color: darkred; font: bold; }
+            .heading1 { color: #ffffff; font-family: Tahoma; font-size: 26px; font-weight: normal; background-color: #003366; margin-top: 0px; margin-bottom: 0px; margin-left: -30px; padding-top: 10px; padding-bottom: 3px; padding-left: 15px; width: 105%; }
+            .button { background-color: #dcdcdc; font-family: Verdana; font-size: 1em; border-top: #cccccc 1px solid; border-bottom: #666666 1px solid; border-left: #cccccc 1px solid; border-right: #666666 1px solid; }
+            .frmheader { color: #000000; background: #dcdcdc; font-family: Verdana; font-size: .7em; font-weight: normal; border-bottom: 1px solid #dcdcdc; padding-top: 2px; padding-bottom: 2px; }
+            .frmtext { font-family: Verdana; font-size: .7em; margin-top: 8px; margin-bottom: 0px; margin-left: 32px; }
+            .frmInput { font-family: Verdana; font-size: 1em; }
+            .intro { margin-left: -15px; }
+    	</style>
+    </head>
+    <body>
+        <div id="content">
+            <p class="heading1">Carton</p><br />
+            <h2>TrackCarton</h2>
+            <p></p>
+            <h3>GET Test</h3>
+            To test the operation using the HTTP GET protocol, click the link below.
+          	<br /><br />
+		    <table cellspacing="0" cellpadding="4" frame="box" bordercolor="#dcdcdc" rules="none" style="border-collapse: collapse;">
+                <tr><td class="frmheader">&nbsp;</td><td class="frmheader">&nbsp;</td></tr>
+                <tr>
+                    <td class="frmtext" >cartonNumber: <a href="http://www.argixdirect.com/FastTracking/FastTracker.asmx/TrackCarton?cartonNumber=11111111111111111111" target="_blank">11111111111111111111</a></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+            </table>
+		    <br /><br /><br />
+            <h3>POST Test</h3>
+            To test the operation using the HTTP POST protocol, click the 'Invoke' button.
+            <form id="frmPost" name="frmPost">                      
+          	    <table cellspacing="0" cellpadding="4" frame="box" bordercolor="#dcdcdc" rules="none" style="border-collapse: collapse;">
+              	    <tr><td class="frmheader">Parameter</td><td class="frmheader">Value</td></tr>
+                    <tr>
+                        <td class="frmtext">cartonNumber:</td>
+                        <td><input class="frmInput" type="text" size="50" name="cartonNumber" value="11111111111111111111" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td align="right"><input type="submit" value="Invoke" class="button" onclick="postWebService('http://www.argixdirect.com/FastTracking/FastTracker.asmx')" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <script type="text/javascript">
+            function postWebService(url) {
+                //Calls web service with url and callback function. Callback will
+                //be executed when XMLHttpRequest object returns from web service call.
+                var xmlHttp = null;
+                if(window.XMLHttpRequest) 
+                    xmlHttp = new XMLHttpRequest();
+                else if(window.ActiveXObject) 
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                if(xmlHttp) {
+                    //Execute synchronous call to web service
+                    //NOTE: asynchronous never returns a readystate > 1 with POST
+                    xmlHttp.onreadystatechange = function() { stateChange(xmlHttp); };
+                    xmlHttp.open("POST", url, false);
+                    xmlHttp.setRequestHeader("Content-type", "application/soap+xml; charset=utf-8");
+                    xmlHttp.setRequestHeader("connection", "close");
+
+                    var envelope = "<?xml version='1.0' encoding='utf-8'?><soap12:Envelope xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap12='http://www.w3.org/2003/05/soap-envelope'>";
+                    envelope += "<soap12:Header><SoapCredential xmlns='http://www.argixdirect.com/Tracking/'><UserName>username</UserName><Password>password</Password></SoapCredential></soap12:Header>";
+                    envelope += "<soap12:Body><TrackCarton xmlns='http://www.argixdirect.com/Tracking/'><cartonNumber>" + document.frmPost.cartonNumber.value + "</cartonNumber></TrackCarton></soap12:Body>";
+                    envelope += "</soap12:Envelope>";
+                    xmlHttp.setRequestHeader("Content-length", envelope.length);
+                    //alert(envelope);
+                    xmlHttp.send(envelope);
+                }
+                else {
+                    alert("Unable to create XMLHttpRequest object.");
+                }
+            }
+
+            function stateChange(xmlHttp) {
+                //Updates readystate by callback
+                if(xmlHttp.readyState == 4) {
+                    var text = "";
+                    if(xmlHttp.status == 200) {
+                        //select node containing data
+                        var xmlDoc=null, nd=null;
+                        if(xmlHttp.responseXML.length > 0) 
+                            xmlDoc = xmlHttp.responseXML;
+                        else {
+                            xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+                            xmlDoc.loadXML(xmlHttp.responseText);
+                        }
+                        nd = xmlDoc.getElementsByTagName("TrackCartonResult");
+                        if(nd && nd.length > 0) {
+                            //IE use .text, others .textContent
+                            text = !nd[0].text ? nd[0].textContent : nd[0].text;
+                            if(text != "") 
+                                alert(text);
+                            else 
+                                alert("Web service call failed: " + text);
+                        }
+                        else 
+                            alert("Null result.");
+                    }
+                    else 
+                        alert("Bad status code= " + xmlHttp.status);
+                }
+            }
+        </script>
+    </body>
+</html>

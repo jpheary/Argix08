@@ -1,0 +1,27 @@
+<asp:Button runat="server" />
+<asp:Calendar runat="server" BorderWidth="1px" Style="position: relative" CellPadding="1" DayNameFormat="FirstLetter" NextMonthText="&gt;" PrevMonthText="&lt;" ShowGridLines="True"></asp:Calendar>
+<asp:CheckBox runat="server" />
+<asp:CheckBoxList runat="server" ForeColor="buttontext" />
+<asp:DropDownList runat="server" />
+<asp:GridView runat="server" Font-Size="11px" BorderStyle="Inset" BorderWidth="1px" CellPadding="2" CellSpacing="0" GridLines="Both" BackColor="White" >
+    <HeaderStyle BorderStyle="None" BorderWidth="0px" BorderColor="Window" BackColor="#d4d0c8" ForeColor="#000000" Wrap="True" />
+    <FooterStyle BackColor="#ffffff" ForeColor="#000000" Wrap="false" />
+    <RowStyle BorderStyle="None" BorderWidth="0px" />
+    <SelectedRowStyle BorderStyle="None" BorderWidth="0px" BackColor="#0a246a" ForeColor="#ffffff" />
+    <EmptyDataRowStyle BackColor="#ffffff" ForeColor="#000000" Wrap="false"  />
+</asp:GridView>
+<asp:HyperLink runat="server" />
+<asp:Label runat="server" />
+<asp:LinkButton runat="server" />
+<asp:LoginName runat="server" ForeColor="#000000" Font-Bold="True" />
+<asp:LoginStatus runat="server" Font-Underline="true" ForeColor="#ee2a24" Font-Bold="True" />
+<asp:Panel runat="server" Font-Size="1.0em" Wrap="False" Width="100%" BorderStyle="Solid" BorderWidth="0px" BorderColor="#000000" />
+<asp:RadioButtonList runat="server" />
+<asp:TextBox runat="server" BackColor="white" />
+
+<asp:CustomValidator runat="server" Font-Size="12px" Font-Bold="True" ForeColor="#ee2a24" />
+<asp:CompareValidator runat="server" Display="None" />
+<asp:RangeValidator runat="server" Display="None" />
+<asp:RegularExpressionValidator runat="server" Display="None" />
+<asp:RequiredFieldValidator runat="server" Display="None" />
+<asp:ValidationSummary runat="server" Font-Size="12px" Font-Bold="True" ForeColor="#ee2a24" DisplayMode="BulletList" ShowSummary="false" ShowMessageBox="true" />

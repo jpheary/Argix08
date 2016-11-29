@@ -1,0 +1,48 @@
+<asp:Button Runat="server" Font-Size="1.0em" />
+<asp:Calendar runat="server" Font-Size="1.0em" BorderWidth="1px" Style="position: relative" CellPadding="1" DayNameFormat="FirstLetter" NextMonthText="&gt;" PrevMonthText="&lt;" ShowGridLines="True"></asp:Calendar>
+<asp:CheckBox runat="server" Font-Size="1.0em" ForeColor="buttontext" />
+<asp:CheckBoxList runat="server" Font-Size="1.0em" ForeColor="buttontext" />
+<asp:CustomValidator Runat="server" Font-Bold="true" ForeColor="#CC3333" BackColor="#ffe0f3" />
+<asp:DropDownList Runat="server" Font-Size="1.0em" />
+<asp:GridView Runat="server" Font-Size="0.9em" BorderStyle="Inset" BorderWidth="1px" CellPadding="2" CellSpacing="0" GridLines="Both" BackColor="White" >
+    <EditRowStyle />
+    <EmptyDataRowStyle BackColor="White" ForeColor="Black" Wrap="false"  />
+    <FooterStyle BackColor="White" ForeColor="Black" Wrap="false" />
+    <HeaderStyle BorderStyle="None" BorderWidth="0px" BorderColor="Window" BackColor="Control" ForeColor="ControlText" Wrap="True" />
+    <PagerStyle BackColor="Control" ForeColor="ControlText" HorizontalAlign="Left" />
+    <RowStyle BorderStyle="None" BorderWidth="0px" />
+    <SelectedRowStyle BorderStyle="None" BorderWidth="0px" BackColor="Highlight" ForeColor="HighlightText" />
+</asp:GridView>
+<asp:HyperLink Runat="server" />
+<asp:Label Runat="server" Font-Size="1.0em" />
+<asp:LinkButton Runat="server" />
+<asp:LoginName runat="server" Font-Size="1.0em" ForeColor="black" Font-Bold="True" />
+<asp:LoginStatus runat="server" Font-Size="1.0em" Font-Underline="true" ForeColor="#e7000d" Font-Bold="True" />
+<asp:Panel runat="server" Font-Size="1.0em" Wrap="False" Width="100%" BorderStyle="Solid" BorderWidth="0px" BorderColor="#e7000d" />
+<asp:PasswordRecovery runat="server" BorderStyle="None" BorderWidth="0px" Font-Size="1.0em">
+    <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+    <SuccessTextStyle Font-Bold="True" ForeColor="#5D7B9D" />
+    <TextBoxStyle Width="192px" />
+    <TitleTextStyle />
+    <SubmitButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Outset" BorderWidth="1px" Height="24px" Width="72px" />
+    <LabelStyle HorizontalAlign="Right" VerticalAlign="Middle" />
+</asp:PasswordRecovery>
+<asp:RadioButtonList Runat="server" Font-Size="1.0em" />
+<asp:RegularExpressionValidator Runat="server" Font-Size="0.9em" forecolor="#e7000d" />
+<asp:RequiredFieldValidator Runat="server" Font-Size="0.9em" forecolor="#e7000d" />
+<asp:TextBox Runat="server" Font-Size="1.0em" BackColor="white" />
+<asp:TreeView runat="server" NodeIndent="6" ExpandDepth="1" ShowLines="True" BackColor="Window">
+    <ParentNodeStyle Font-Bold="true" />
+    <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+    <SelectedNodeStyle BackColor="#B5B5B5" Font-Underline="False" HorizontalPadding="0px" VerticalPadding="0px" />
+    <NodeStyle Font-Names="Tahoma" ForeColor="Black" Font-Bold="true" HorizontalPadding="2px" NodeSpacing="0px" VerticalPadding="2px" />
+</asp:TreeView>
+<asp:ValidationSummary Runat="server" Font-Bold="true" ForeColor="#CC3333" />
+
+<asp:HyperLink Runat="server" Font-Size="1.0em" Font-Bold="true" skinid="hlnkNav"  />
+<asp:Label Runat="server" Font-Size="1.0em" Font-Bold="true" ForeColor="white" skinid="lblTitleText" />
+<asp:Label Runat="server" Font-Size="1.0em" Font-Bold="true" ForeColor="Black" SkinID="lblNav" />
+<asp:Label Runat="server" Font-Size="1.0em" Font-Bold="true" ForeColor="Black" skinid="lblNote" />
+<asp:Label Runat="server" Font-Size="1.0em" Font-Style="italic" ForeColor="#CC3333" skinid="lblCopyright" />
+<asp:Label Runat="server" Font-Size="1.0em" ForeColor="#e7000d" Font-Bold="true" Font-Underline="true" skinid="lblClaimsField" />
+<asp:LinkButton Runat="server" Font-Size="1.0em" Font-Bold="true" SkinID="lnkNav" />

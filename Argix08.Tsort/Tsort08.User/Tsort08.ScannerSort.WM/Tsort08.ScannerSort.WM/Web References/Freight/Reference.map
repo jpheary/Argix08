@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://rgxvmweb/SortServices/ScannerService.asmx?disco" filename="ScannerService.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rgxvmweb/SortServices/ScannerService.asmx?schema=ScannedItemDS" filename="ScannedItemDS.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://rgxvmweb/SortServices/ScannerService.asmx?wsdl" filename="ScannerService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rgxvmweb/SortServices/ScannerService.asmx?schema=ScannerAssignmentDS" filename="ScannerAssignmentDS.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

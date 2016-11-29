@@ -1,0 +1,210 @@
+              --------------------------------------------------------
+						Ship Schedule Application Readme File
+		                       		December, 2014
+              --------------------------------------------------------
+                         (c) Copyright Argix Logistics, 2005-2014
+
+This document provides late-breaking or other information that supplements the Ship Schedule documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+Ship Schedule is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\ShipSchedule on a web server like RGXDEVDB using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+		Argix08.AppLogging.dll
+		Argix08.Configuration.dll
+		Argix08.Data.dll
+		Argix08.Export.dll
+		Argix08.ShipSchedule.Lib.dll
+		Argix08.Windows.dll
+		ExportDS.xsd
+		Infragistics2.Shared.v10.1.dll
+		Infragistics2.Win.UltraWinGrid.v10.1.dll
+		Infragistics2.Win.v10.1.dll
+		Microsoft.ReportingServices.Interfaces.dll
+		ShipSchedule.exe
+		ShipSchedule.exe.config
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION	
+Open the local sort database (i.e. TSORTLOCAL on RGXDEVDB), goto the Configuration table, and add/edit the 
+values below:
+	Application     PCName          Key                       Value                     Security 
+	--------------- --------------- ------------------------- ------------------------- -------- 
+	Ship Schedule   jheary          Role                      LineHaulAdministrator     1        
+	Ship Schedule   tpjheary        Role                      LineHaulCoordinator       1        
+
+
+NOTES
+==============
+GENERAL
+The Ship Schedule Application (ShipSchedule.exe) is a Windows based application used to manage
+outbound ship schedules. The application provides the following services:
+LineHaulOperator
+- view any ship schedule
+- update Tractor#, Freight Assigned, Trailer Complete, Paper Complete, and Trailer Dispatch, Driver
+- print and export any ship schedule
+LineHaulCoordinator
+- all features of LineHaulOperator
+- update Close Time/Day, Trailer, Carrier, Depart Time/Day, Notes, Arrival Date/Time, OFD Date
+LineHaulAdministrator
+- all features of LineHaulCoordinator
+- create new ship schedules
+- add new loads (from templates) and cancel existing loads on ship schedules
+- send ship schedules reports to agents and carriers
+
+OPERATION
+Normal:
+The Ship Schedule Application (ShipSchedule.exe) operates by launching from a web server deployment url 
+(i.e. http://rgxdevdb/ShipSchedule/ShipSchedule.application). After a brief splash screen, a sizeable window appears and 
+displays a split window. The taskbar displays the operating terminal and connection status. 
+Additional operating steps can be found in the on-line documentation provided by the Help/Contents menu item.
+
+Diagnostics Mode:
+CTL ENTER at the Splash screen displays a dialog that examines configuration and database requirements.
+
+
+VERSION HISTORY
+v2.5.1, 12/07/06 ---------------------------------------------------------------------------
+Requirements/features
+- Initial release.
+Design/deployment
+- Initial release.
+
+v2.5.2, 12/19/06 ---------------------------------------------------------------------------
+Requirements/features
+- Freight Assigned field (Yes/No) can be changed only when configuraion parameter 
+  CanEditFreightAssigned = true; it is changed via Zone Closing application otherwise.
+- Trailer Complete field (Yes/No) can be changed only when Freight Assigned = Yes.
+Design/deployment
+- added CanEditFreightAssigned (true/false) configuration parameter in app.config.
+
+v2.6.0, 05/31/07 ---------------------------------------------------------------------------
+Requirements/features
+- None
+Design/deployment
+- removed ShowAllTerminals configuration (app.config) entry- not used
+- removed LocalTerminalID; added IsShipperSchedule configuration (app.config) entries- terminal lists provided by stored 
+  procedure as follows: IsShipperSchedule=false: use uspShipScdeTerminalGetList; IsShipperSchedule=true: use uspShipSchdShipperGetList.
+- upgraded to Infragistics NetAdvantage 2006 third party control suite (required: Infragistics.Win.v6.3.dll, Infragistics.Shared.v6.3.dll, Infragistics.Win.UltraWinGrid.v6.3.dll)
+
+v2.7.0, 08/28/07 ---------------------------------------------------------------------------
+Requirements/features
+- None
+Design/deployment
+- upgraded to latest Tsort libraries.
+- revised design per latest standards and practices (details in the code comments).
+- added improved support for email subscriptions.
+
+v2.7.1, 02/05/08 ---------------------------------------------------------------------------
+Requirements/features
+- added support for Driver field within a Trip.
+Design/deployment
+- none.
+ 
+ v2.7.2, 02/19/08 ---------------------------------------------------------------------------
+Requirements/features
+- changed Driver field access from LineHaulCoordinator to LineHaulOperator.
+Design/deployment
+- none.
+
+ v2.7.3, 05/15/08 ---------------------------------------------------------------------------
+Requirements/features
+- modified to bypass validation rules when cancelling a load.
+- ship schedules shown for last 30 (configurable) days.
+Design/deployment
+- corrected issue with scrollbars not appearing in the schedule navigation pane.
+- removed members feature (Tools\Members...) that showed online users.
+- trace diagnostices removed and now available from Tsort.AppLogging component.
+- added configuration parameter ScheduleDaysBack.
+
+v2.8.0, 03/05/09 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Application ported to .NET Framework 2.0 using Visual Studio 2005.
+
+v2.8.1, 03/19/09 ---------------------------------------------------------------------------
+Requirements/features
+- Added schedule filtering that hides open schedules dated beyond ScheduldaysForward (default=5).
+Design/deployment
+- Moved configuration parameters BusinessDaysBack, ScheduleDaysBack from app.config to database Configuration table..
+- Added new configuration parameter ScheduldaysForward to database.
+
+v2.8.2, 07/20/09 ---------------------------------------------------------------------------
+Requirements/features
+- ?
+Design/deployment
+- ?
+
+v2.8.3, 07/29/09 ---------------------------------------------------------------------------
+Requirements/features
+- Email option to only email selected loads.
+Design/deployment
+- Updated subscription dialog for selection change.
+
+v2.8.4, 08/25/09 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Revised subscription code to ignore cancelled loads.
+
+v3.0.0, 09/16/09 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Application ported to .NET Framework 3.5 using Visual Studio 2008.
+
+v3.5.0, 03/18/11, 08/11/11, 09/26/11, 10/11/11, 10/24/11, 11/28/11 -------------------------
+Requirements/features
+- None.
+Design/deployment
+- Upgraded to Infragistics NetAdvantage 2010 third party control suite (required: Infragistics2.Win.v10.1.dll, Infragistics2.Shared.v10.1.dll, Infragistics2.Win.UltraWinGrid.v10.1.dll)
+- Minor design changes.
+- Rebuild for change in config database connection (JARGXTS to JARGXVMTS)
+- Rebuild for change in config database connection (LLRGXAD2 to LLRGXAD1)
+- Rebuild for change in config database connection (MMRGXAD2 to MMRGXAD1)
+- Rebuild for change in config database connection (ATRGXAD2 to ATRGXAD1)
+- Rebuild for change in config database connection (CHRGXAD2 to chrgxvmsql)
+
+v3.5.1, 01/05/12, 06/26/12, 08/03/12 -------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- changed reporting server from rgxsqlrpts05 to rgxvmsqlrpt08.
+- rebuild for new config database connections (AGNFIRGXTS, AGSFSRGXTS)
+
+v3.5.2, 04/01/14, 06/11/14, 11/05/14, 12/02/14 ---------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- 
+- rebuild for change in config database connection (ATRGXAD1 to ATRGXVMSQL)
+- rebuild for change in config database connection (CHRGXAD1 to CHRGXVMSQL)
+- rebuild for change in config database connection (llrgxad1 to llrgxvmsql)

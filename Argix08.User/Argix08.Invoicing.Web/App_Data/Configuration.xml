@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<client number="048" name="Amscan">
+		<invoices types="*" C="http://tpjheary/Argix08/Apps/Finance/ClientInvoice/Argix.AmscanInvoice.xltx" V="http://tpjheary/Argix08/Apps/Finance/Invoicing/Argix.VendorInvoice.xltx" />
+	</client>
+	<client number="032" name="Pollock">
+		<invoices types="*" C="http://rgxsqlrpts05/Reports/Pages/Report.aspx?ItemPath=%2fFinance%2fPOLLOCK+Paper+Invoice" V="http://tpjheary/Argix08/Apps/Finance/Invoicing/Argix.VendorInvoice.xltx" />
+	</client>
+	<client number="066" name="Vitamin Shoppe">
+		<invoices types="C,V" C="http://tpjheary/Argix08/Apps/Finance/ClientInvoice/Argix.MailExpressInvoice.xltx" V="http://tpjheary/Argix08/Apps/Finance/Invoicing/Argix.VendorInvoice.xltx" />
+	</client>
+</configuration>

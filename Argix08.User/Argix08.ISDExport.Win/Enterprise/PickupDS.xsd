@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PickupDS" targetNamespace="http://tempuri.org/PickupDS.xsd" xmlns:mstns="http://tempuri.org/PickupDS.xsd" xmlns="http://tempuri.org/PickupDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PickupDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PickupDS" msprop:Generator_DataSetName="PickupDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PickupTable" msprop:Generator_UserTableName="PickupTable" msprop:Generator_RowDeletedName="PickupTableRowDeleted" msprop:Generator_RowChangedName="PickupTableRowChanged" msprop:Generator_RowClassName="PickupTableRow" msprop:Generator_RowChangingName="PickupTableRowChanging" msprop:Generator_RowEvArgName="PickupTableRowChangeEvent" msprop:Generator_RowEvHandlerName="PickupTableRowChangeEventHandler" msprop:Generator_TableClassName="PickupTableDataTable" msprop:Generator_TableVarName="tablePickupTable" msprop:Generator_RowDeletingName="PickupTableRowDeleting" msprop:Generator_TablePropName="PickupTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientNumber" msprop:Generator_UserColumnName="ClientNumber" msprop:Generator_ColumnVarNameInTable="columnClientNumber" msprop:Generator_ColumnPropNameInRow="ClientNumber" msprop:Generator_ColumnPropNameInTable="ClientNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DivisionNumber" msprop:Generator_UserColumnName="DivisionNumber" msprop:Generator_ColumnVarNameInTable="columnDivisionNumber" msprop:Generator_ColumnPropNameInRow="DivisionNumber" msprop:Generator_ColumnPropNameInTable="DivisionNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" msprop:Generator_UserColumnName="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperNumber" msprop:Generator_UserColumnName="ShipperNumber" msprop:Generator_ColumnVarNameInTable="columnShipperNumber" msprop:Generator_ColumnPropNameInRow="ShipperNumber" msprop:Generator_ColumnPropNameInTable="ShipperNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperName" msprop:Generator_UserColumnName="ShipperName" msprop:Generator_ColumnVarNameInTable="columnShipperName" msprop:Generator_ColumnPropNameInRow="ShipperName" msprop:Generator_ColumnPropNameInTable="ShipperNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PickUpDate" msprop:Generator_UserColumnName="PickUpDate" msprop:Generator_ColumnVarNameInTable="columnPickUpDate" msprop:Generator_ColumnPropNameInRow="PickUpDate" msprop:Generator_ColumnPropNameInTable="PickUpDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PickupNumber" msprop:Generator_UserColumnName="PickupNumber" msprop:Generator_ColumnVarNameInTable="columnPickupNumber" msprop:Generator_ColumnPropNameInRow="PickupNumber" msprop:Generator_ColumnPropNameInTable="PickupNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FreightType" msprop:Generator_UserColumnName="FreightType" msprop:Generator_ColumnVarNameInTable="columnFreightType" msprop:Generator_ColumnPropNameInRow="FreightType" msprop:Generator_ColumnPropNameInTable="FreightTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDSNumber" msprop:Generator_UserColumnName="TDSNumber" msprop:Generator_ColumnVarNameInTable="columnTDSNumber" msprop:Generator_ColumnPropNameInRow="TDSNumber" msprop:Generator_ColumnPropNameInTable="TDSNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="VendorKey" msprop:Generator_UserColumnName="VendorKey" msprop:Generator_ColumnVarNameInTable="columnVendorKey" msprop:Generator_ColumnPropNameInRow="VendorKey" msprop:Generator_ColumnPropNameInTable="VendorKeyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TrailerNumber" msprop:Generator_UserColumnName="TrailerNumber" msprop:Generator_ColumnPropNameInRow="TrailerNumber" msprop:Generator_ColumnVarNameInTable="columnTrailerNumber" msprop:Generator_ColumnPropNameInTable="TrailerNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SealNumber" msprop:Generator_UserColumnName="SealNumber" msprop:Generator_ColumnPropNameInRow="SealNumber" msprop:Generator_ColumnVarNameInTable="columnSealNumber" msprop:Generator_ColumnPropNameInTable="SealNumberColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

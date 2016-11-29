@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="IndirectTripDS" targetNamespace="http://tempuri.org/IndirectTripDS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/IndirectTripDS.xsd" xmlns:mstns="http://tempuri.org/IndirectTripDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="IndirectTripDS" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="IndirectTripTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="BolNumber" type="xs:string" minOccurs="0" />
+                            <xs:element name="CartonCount" type="xs:int" minOccurs="0" />
+                            <xs:element name="Carrier" type="xs:string" minOccurs="0" />
+                            <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                            <xs:element name="Started" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="Stopped" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="Exported" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="Inported" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="Scanned" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="OSDSend" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="Received" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="CartonsExported" type="xs:int" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

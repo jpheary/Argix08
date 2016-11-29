@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix.Freight" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix.Freight" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix.Freight/Imports">
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?xsd=xsd0" namespace="http://Argix.Freight" />
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Argix.Freight" />
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?xsd=xsd2" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICameraService_ViewImages_InputMessage">
+    <wsdl:part name="parameters" element="tns:ViewImages" />
+  </wsdl:message>
+  <wsdl:message name="ICameraService_ViewImages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ViewImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICameraService_ViewImages_CameraFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Argix.Freight" name="detail" element="q1:CameraFault" />
+  </wsdl:message>
+  <wsdl:message name="ICameraService_SaveImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImage" />
+  </wsdl:message>
+  <wsdl:message name="ICameraService_SaveImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICameraService_SaveImage_CameraFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Argix.Freight" name="detail" element="q2:CameraFault" />
+  </wsdl:message>
+  <wsdl:message name="ICameraService_ReadImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadImage" />
+  </wsdl:message>
+  <wsdl:message name="ICameraService_ReadImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICameraService_ReadImage_CameraFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Argix.Freight" name="detail" element="q3:CameraFault" />
+  </wsdl:message>
+  <wsdl:portType name="ICameraService">
+    <wsdl:operation name="ViewImages">
+      <wsdl:input wsaw:Action="http://Argix.Freight/ICameraService/ViewImages" message="tns:ICameraService_ViewImages_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Freight/ICameraService/ViewImagesResponse" message="tns:ICameraService_ViewImages_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Freight.CameraFault" name="CameraFaultFault" message="tns:ICameraService_ViewImages_CameraFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <wsdl:input wsaw:Action="http://Argix.Freight/ICameraService/SaveImage" message="tns:ICameraService_SaveImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Freight/ICameraService/SaveImageResponse" message="tns:ICameraService_SaveImage_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Freight.CameraFault" name="CameraFaultFault" message="tns:ICameraService_SaveImage_CameraFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReadImage">
+      <wsdl:input wsaw:Action="http://Argix.Freight/ICameraService/ReadImage" message="tns:ICameraService_ReadImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Freight/ICameraService/ReadImageResponse" message="tns:ICameraService_ReadImage_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Freight.CameraFault" name="CameraFaultFault" message="tns:ICameraService_ReadImage_CameraFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

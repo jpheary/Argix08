@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ScanAuditDS"
+                  targetNamespace="http://tempuri.org/ScanAuditDS.xsd"
+                  elementFormDefault="qualified"
+                  attributeFormDefault="qualified"
+                  xmlns="http://tempuri.org/ScanAuditDS.xsd"
+                  xmlns:mstns="http://tempuri.org/ScanAuditDS.xsd"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+                  xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="ScanAuditDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="ScanAuditTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="RecordID" type="xs:int" minOccurs="0" />
+                            <xs:element name="RtDate" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="Driver" type="xs:string" minOccurs="0" />
+                            <xs:element name="RtName" type="xs:string" minOccurs="0" />
+                            <xs:element name="RtSeq" type="xs:int" minOccurs="0" />
+                            <xs:element name="CustAcct" type="xs:string" minOccurs="0" />
+                            <xs:element name="CustName" type="xs:string" minOccurs="0" />
+                            <xs:element name="MallBldg" type="xs:string" minOccurs="0" />
+                            <xs:element name="OrdOpen" type="xs:short" minOccurs="0" />
+                            <xs:element name="OrdClose" type="xs:short" minOccurs="0" />
+                            <xs:element name="WaitMin" type="xs:short" minOccurs="0" />
+                            <xs:element name="PlnArr" type="xs:short" minOccurs="0" />
+                            <xs:element name="PlnDep" type="xs:short" minOccurs="0" />
+                            <xs:element name="Arrive" type="xs:string" minOccurs="0" />
+                            <xs:element name="Bell" type="xs:string" minOccurs="0" />
+                            <xs:element name="DelStart" type="xs:string" minOccurs="0" />
+                            <xs:element name="DelEnd" type="xs:string" minOccurs="0" />
+                            <xs:element name="Depart" type="xs:string" minOccurs="0" />
+                            <xs:element name="TimeEntryBy" type="xs:string" minOccurs="0" />
+                            <xs:element name="OrderID" type="xs:string" minOccurs="0" />
+                            <xs:element name="Pieces" type="xs:float" minOccurs="0" />
+                            <xs:element name="CmdtyCls" type="xs:string" minOccurs="0" />
+                            <xs:element name="CmdtyDesc" type="xs:string" minOccurs="0" />
+                            <xs:element name="OrdTyp" type="xs:string" minOccurs="0" />
+                            <xs:element name="CtnsScanned" type="xs:int" minOccurs="0" />
+                            <xs:element name="ScanUser" type="xs:string" minOccurs="0" />
+                            <xs:element name="Payee" type="xs:string" minOccurs="0" />
+                            <xs:element name="Trip" type="xs:short" minOccurs="0" />
+                            <xs:element name="TripStop" type="xs:short" minOccurs="0" />
+                            <xs:element name="RtCls" type="xs:string" minOccurs="0" />
+                            <xs:element name="RtSet" type="xs:string" minOccurs="0" />
+                            <xs:element name="OnTimeIssue" type="xs:string" minOccurs="0" />
+                            <xs:element name="ScanIssue" type="xs:string" minOccurs="0" />
+                            <xs:element name="AdditComments" type="xs:string" minOccurs="0" />
+                            <xs:element name="EntryBy" type="xs:string" minOccurs="0" />
+                            <xs:element name="Updated" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="CRGStatus" type="xs:string" minOccurs="0" />
+                            <xs:element name="CRGResolution" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

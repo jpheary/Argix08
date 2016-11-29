@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="700b516d-1a36-4f40-a912-96aa04c3b82f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ArrayList" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Argix08/Argix08.GlobalServices/ShipScheduleService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ShipScheduleService9.xsd" MetadataType="Schema" ID="54e024b6-9fe0-4421-91b5-f78e5e35e799" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd4" />
+    <MetadataFile FileName="ShipScheduleService91.xsd" MetadataType="Schema" ID="eae49362-8928-4587-83e9-3c62b6308c3e" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ShipScheduleService2.wsdl" MetadataType="Wsdl" ID="1cc69489-209b-4ac6-941f-8ab5e603aba8" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?wsdl" />
+    <MetadataFile FileName="ShipScheduleService92.xsd" MetadataType="Schema" ID="68e36690-a94b-4f21-944f-478c9034f170" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd6" />
+    <MetadataFile FileName="ShipScheduleService21.wsdl" MetadataType="Wsdl" ID="6b457ebe-8d23-4ba4-8e44-b6622a6eb8f7" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ShipScheduleService93.xsd" MetadataType="Schema" ID="4784e3ca-f666-4875-9bfb-bed64cc04f6e" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd5" />
+    <MetadataFile FileName="ShipScheduleService94.xsd" MetadataType="Schema" ID="84eca679-8ae7-4f5a-9d9e-505c8b3a5224" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ShipScheduleService95.xsd" MetadataType="Schema" ID="93935d35-591b-4070-8411-ee1179725aa1" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd8" />
+    <MetadataFile FileName="ShipScheduleService96.xsd" MetadataType="Schema" ID="89ee2d6f-e084-40c5-be4c-c5e657e94ac8" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd7" />
+    <MetadataFile FileName="ShipScheduleService97.xsd" MetadataType="Schema" ID="16275a76-3e99-43d9-8d2f-0a75050908d8" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ShipScheduleService1.disco" MetadataType="Disco" ID="298ee2ff-3bab-432a-8b09-befb916764fe" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?disco" />
+    <MetadataFile FileName="ShipScheduleService98.xsd" MetadataType="Schema" ID="b8ec3d64-dc70-492b-b194-9170e067652a" SourceId="1" SourceUrl="http://tpjheary7.argix.com/Argix08/Argix08.GlobalServices/ShipScheduleService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

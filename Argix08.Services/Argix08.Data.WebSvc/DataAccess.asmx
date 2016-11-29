@@ -1,0 +1,1 @@
+<%@ WebService Language="C#" CodeBehind="DataAccess.asmx.cs" Class="Argix.Data.DataAccess" %>

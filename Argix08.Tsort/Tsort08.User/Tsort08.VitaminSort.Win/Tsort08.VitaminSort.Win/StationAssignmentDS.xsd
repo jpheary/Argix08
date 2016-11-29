@@ -1,0 +1,52 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="StationAssignmentDS" targetNamespace="http://www.tempuri.org/StationAssignmentDS.xsd"
+	xmlns:mstns="http://www.tempuri.org/StationAssignmentDS.xsd" xmlns="http://www.tempuri.org/StationAssignmentDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="StationAssignmentDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AssignmentsTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StationNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="WorkStationID" type="xs:string" minOccurs="0" />
+							<xs:element name="SortTypeID" type="xs:int" minOccurs="0" />
+							<xs:element name="FreightID" type="xs:string" minOccurs="0" />
+							<xs:element name="SortType" type="xs:string" minOccurs="0" />
+							<xs:element name="FreightType" type="xs:string" minOccurs="0" />
+							<xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+							<xs:element name="TDSNumber" type="xs:int" minOccurs="0" />
+							<xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="VendorKey" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientDivision" type="xs:string" minOccurs="0" />
+							<xs:element name="PickupDate" type="xs:string" minOccurs="0" />
+							<xs:element name="PickupNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="Client" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientAddressLine1" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientAddressLine2" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientAddressCity" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientAddressState" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientAddressZip" type="xs:string" minOccurs="0" />
+							<xs:element name="CubeRatio" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ShipperNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="Shipper" type="xs:string" minOccurs="0" />
+							<xs:element name="ShipperAddressLine1" type="xs:string" minOccurs="0" />
+							<xs:element name="ShipperAddressLine2" type="xs:string" minOccurs="0" />
+							<xs:element name="ShipperAddressCity" type="xs:string" minOccurs="0" />
+							<xs:element name="ShipperAddressZip" type="xs:string" minOccurs="0" />
+							<xs:element name="ShipperAddressState" type="xs:string" minOccurs="0" />
+							<xs:element name="ShipperUserData" type="xs:string" minOccurs="0" />
+							<xs:element name="LabelID" type="xs:int" minOccurs="0" />
+							<xs:element name="ExcLocation" type="xs:int" minOccurs="0" />
+							<xs:element name="Input1Length" type="xs:int" default="10" minOccurs="0" />
+							<xs:element name="Input2Length" type="xs:int" default="10" minOccurs="0" />
+							<xs:element name="Input3Length" type="xs:int" default="0" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

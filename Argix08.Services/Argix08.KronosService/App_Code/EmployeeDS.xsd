@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="EmployeeDS" targetNamespace="http://tempuri.org/EmployeeDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/EmployeeDS.xsd" xmlns:mstns="http://tempuri.org/EmployeeDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="EmployeeDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="EmployeeTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="IDNumber" type="xs:int" />
+							<xs:element name="LastName" type="xs:string" minOccurs="0" />
+							<xs:element name="FirstName" type="xs:string" minOccurs="0" />
+							<xs:element name="Middle" type="xs:string" minOccurs="0" />
+							<xs:element name="Suffix" type="xs:string" minOccurs="0" />
+							<xs:element name="Organization" type="xs:string" minOccurs="0" />
+							<xs:element name="Department" type="xs:string" minOccurs="0" />
+							<xs:element name="Faccode" type="xs:int" minOccurs="0" />
+							<xs:element name="Location" type="xs:string" minOccurs="0" />
+							<xs:element name="SubLocation" type="xs:string" minOccurs="0" />
+							<xs:element name="EmployeeID" type="xs:string" minOccurs="0" />
+							<xs:element name="BadgeNumber" type="xs:int" minOccurs="0" />
+							<xs:element name="Photo" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="Signature" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="Status" type="xs:string" minOccurs="0" />
+							<xs:element name="StatusDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="IssueDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ExpirationDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DOB" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HireDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HasPhoto" type="xs:boolean" minOccurs="0" />
+							<xs:element name="HasSignature" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

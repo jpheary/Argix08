@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DeliveryDS" targetNamespace="http://tempuri.org/DeliveryDS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/DeliveryDS.xsd" xmlns:mstns="http://tempuri.org/DeliveryDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DeliveryDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="DeliveryTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CBOL" type="xs:string" minOccurs="0" />
+							<xs:element name="CPROID" type="xs:long" minOccurs="0" />
+							<xs:element name="CPRONumber" type="xs:string" minOccurs="0" />
+							<xs:element name="StoreNumber" type="xs:int" minOccurs="0" />
+							<xs:element name="OFD1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="OFD2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PodDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PodTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ShouldBeDeliveredOn" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="WindowStartTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="WindowEndTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CartonsSorted" type="xs:int" minOccurs="0" />
+							<xs:element name="Weight" type="xs:int" minOccurs="0" />
+							<xs:element name="TLS" type="xs:string" minOccurs="0" />
+							<xs:element name="PODCartonsMatch" type="xs:int" minOccurs="0" />
+							<xs:element name="PODCartonsShort" type="xs:int" minOccurs="0" />
+							<xs:element name="PODCartonsOver" type="xs:int" minOccurs="0" />
+							<xs:element name="PODCartonsMisroute" type="xs:int" minOccurs="0" />
+							<xs:element name="PODCartonsDamaged" type="xs:int" minOccurs="0" />
+							<xs:element name="PODCartonsScanned" type="xs:int" minOccurs="0" />
+							<xs:element name="PODCartonsManual" type="xs:int" minOccurs="0" />
+							<xs:element name="OSDCartonsMatch" type="xs:int" minOccurs="0" />
+							<xs:element name="OSDCartonsShort" type="xs:int" minOccurs="0" />
+							<xs:element name="OSDCartonsOver" type="xs:int" minOccurs="0" />
+							<xs:element name="OSDCartonsMisroute" type="xs:int" minOccurs="0" />
+							<xs:element name="OSDCartonsDamaged" type="xs:int" minOccurs="0" />
+							<xs:element name="OSDCartonsScanned" type="xs:int" minOccurs="0" />
+							<xs:element name="OSDCartonsManual" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

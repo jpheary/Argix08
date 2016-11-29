@@ -1,0 +1,145 @@
+body {
+    font-family:  "Arial, Verdana, Sans-Serif";  
+    font-size: 11px;
+    color: #000;
+}
+td {
+    font-family: Arial;
+    font-size: 11px;
+    color: #000;
+}
+
+.container {
+	width: 900px;
+	height:900px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#EEDBDF;		
+} 
+#bannerContainer {
+	float:none;
+	width:900px;
+	height:75px;
+	background-color:#000000;
+	margin-bottom:10px;
+}
+.content {
+	float:left;
+	width:800px;
+	padding-left: 24px;
+}
+
+#navContainerR  {
+	float:right;
+	width:160px;
+	height:25px;
+	margin-top:15px;
+	margin-right: 15px;
+}
+#navContainerL  {
+	float:left;
+	width:160px;
+	height:25px;
+	margin-top:15px;
+	margin-left:15px;
+}
+
+#detailHeadContainer  {
+	float:left;
+	width:785px;
+	height:84px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	padding-left:5px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#B5AAA8;
+	background-color:white;
+}
+.detailGridContainer  {
+	float:left;
+	width:785px;
+	padding-left:5px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#B5AAA8;
+	margin-bottom: 10px;
+	background-color:#EEE;		
+}
+.detailShipmentContainer  {
+	float:left;
+	width:790px;
+ 	border-style:solid;		
+	border-width:2px;			    
+	border-color:#B5AAA8;	
+}
+.detailShipmentTable {
+    width: 790px;
+	background-color:White;
+}
+	
+#labelContainer {
+	float:left;
+	clear:both;
+	width:400px;
+	height:25px;
+	margin-top:15px;
+}
+
+td.detailCell {
+	padding-left:5px; 
+	background-color:White;
+}
+
+td.detailHeader 
+{
+	font-weight:bold;
+	width: 210px;
+	padding-left:5px; 
+}
+	
+Table.default
+{
+	background-color:White;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #B5AAA8;
+    padding-left:10px;
+}
+
+td.headerBlock {
+    height:25px;
+    font-size: 18px;
+    background-color:#eeeeee;
+}
+
+tr.rowHeader {
+    background-color:#999999;
+}
+
+.label {
+    height: 25px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+    padding-left: 0px; 
+}
+
+.lineBreak {
+  white-space:pre;
+}
+
+.spacer {
+    background-image: url(Images/spacer.gif);
+}
+.tableHeader {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e7000d;
+}
+.normalText {
+   font-family:  "Arial, Verdana, Sans-Serif";  
+   font-size:12px;
+   font-style:normal;
+   
+}

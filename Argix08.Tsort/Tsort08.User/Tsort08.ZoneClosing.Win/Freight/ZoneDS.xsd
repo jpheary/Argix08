@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ZoneDS" targetNamespace="http://tempuri.org/ZoneDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ZoneDS.xsd" xmlns:mstns="http://tempuri.org/ZoneDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ZoneDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ZoneTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Zone" type="xs:string" />
+							<xs:element name="TL_x0023_" type="xs:string" minOccurs="0" />
+							<xs:element name="TLDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CloseNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="NewLane" type="xs:string" minOccurs="0" />
+							<xs:element name="Lane" type="xs:string" minOccurs="0" />
+							<xs:element name="NewSmallSortLane" type="xs:string" minOccurs="0" />
+							<xs:element name="SmallSortLane" type="xs:string" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="Type" type="xs:string" minOccurs="0" />
+							<xs:element name="TypeID" type="xs:string" minOccurs="0" />
+							<xs:element name="Status" type="xs:string" minOccurs="0" />
+							<xs:element name="RollbackTL_x0023_" type="xs:string" minOccurs="0" />
+							<xs:element name="IsExclusive" type="xs:int" minOccurs="0" />
+							<xs:element name="CAN_BE_CLOSED" type="xs:string" minOccurs="0" />
+							<xs:element name="AssignedToShipScde" type="xs:string" minOccurs="0" />
+							<xs:element name="AgentTerminalID" type="xs:long" minOccurs="0" />
+							<xs:element name="ClientNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="ClientName" type="xs:string" minOccurs="0" />						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

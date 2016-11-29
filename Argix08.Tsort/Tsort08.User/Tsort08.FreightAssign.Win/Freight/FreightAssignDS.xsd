@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FreightAssignDS" targetNamespace="http://tempuri.org/FreightAssignDS.xsd" xmlns:mstns="http://tempuri.org/FreightAssignDS.xsd" xmlns="http://tempuri.org/FreightAssignDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="FreightAssignDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" >
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StationFreightAssignmentTable" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkStationID" type="xs:string" />
+              <xs:element name="StationNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="FreightID" type="xs:string" />
+              <xs:element name="FreightType" type="xs:string" minOccurs="0" />
+              <xs:element name="SortTypeID" type="xs:int" />
+              <xs:element name="SortType" type="xs:string" minOccurs="0" />
+              <xs:element name="TDSNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Client" type="xs:string" minOccurs="0" />
+              <xs:element name="Shipper" type="xs:string" minOccurs="0" />
+              <xs:element name="Pickup" type="xs:string" minOccurs="0" />
+              <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+              <xs:element name="Result" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FreightAssignmentHistoryTable" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TDSNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="Client" type="xs:string" minOccurs="0" />
+              <xs:element name="StationNumbers" type="xs:string" minOccurs="0" />
+              <xs:element name="Time" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Lead" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

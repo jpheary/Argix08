@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tsort.PandA</name>
+    </assembly>
+    <members>
+        <member name="M:Tsort.PandA.frmPanda.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaPacketEventHandler">
+            <summary>Defines an event type that returns a Tsort.PandA.PandaPacket with data about a PandA request packet.</summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaPacketEventArgs">
+            <summary>Provides data for events of type Tsort.PandA.PandaPacketEventHandler.</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacketEventArgs.#ctor(Tsort.PandA.PandaPacket)">
+            <summary></summary>
+            <param name="packet"></param>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacketEventArgs.Packet">
+            <summary></summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaLabelDataEventHandler">
+            <summary>Defines an event type that returns a Tsort.PandA.PandaDS.CartonTableRow with data about a PandA label data request.</summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaLabelDataEventArgs">
+            <summary>Provides data for events of type Tsort.PandA.PandaLabelDataEventHandler.</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaLabelDataEventArgs.#ctor(Tsort.PandA.PandaDS.CartonTableRow)">
+            <summary></summary>
+            <param name="carton"></param>
+        </member>
+        <member name="P:Tsort.PandA.PandaLabelDataEventArgs.Carton">
+            <summary></summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaVerifyLabelEventHandler">
+            <summary>Defines an event type that returns data about a PandA verify label request.</summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaVerifyLabelEventArgs">
+            <summary>Provides data for events of type Tsort.PandA.PandaVerifyLabelEventHandler.</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaVerifyLabelEventArgs.#ctor(System.String,System.String,System.Exception)">
+            <summary></summary>
+            <param name="cartonID"></param>
+            <param name="verifyFlag"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="P:Tsort.PandA.PandaVerifyLabelEventArgs.CartonID">
+            <summary></summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaVerifyLabelEventArgs.VerifyFlag">
+            <summary></summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaVerifyLabelEventArgs.Exception">
+            <summary></summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaPacket">
+            <summary>Defines a communications packet containing a message that conforms to the PandA Message Protocol.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaPacket.SOH">
+            <summary>ASCII SOH constant = 0x01.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaPacket.STX">
+            <summary>ASCII STX  constant = 0x02.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaPacket.ETX">
+            <summary>ASCII ETX  constant = 0x03.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaPacket.EOT">
+            <summary>ASCII EOT  constant = 0x04.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaPacket.SUB">
+            <summary>ASCII SUB  constant = 0x1a.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaPacket.ValidateMessageLength">
+            <summary>Flag to validate packet message length.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaPacket.CartonIDLength">
+            <summary>Expected length of the left justified, blank padded carton identifier field.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaPacket.LabelDataLength">
+            <summary>Maximum length of the left justified, blank padded label data field.</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacket.Encode(System.String,System.Int32,System.Int32,System.Int32,System.String,System.Int32)">
+            <summary>Creates a PandaPacket request with encoded PandA Message information.</summary>
+            <param name="clientID">A unique identifier for the socket client; not required.</param>
+            <param name="messageCode">Identifies the PandA request/response message type.</param>
+            <param name="flag">Message status (0=message OK; 1=message error).</param>
+            <param name="iterator">Count of records in the body (always 1).</param>
+            <param name="messageBody">Message data.</param>
+            <param name="messageNumber">Unique message identifier from 0001 - 9999.</param>
+            <returns>An instance of Tsort.PandA.PandaPacket.</returns>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacket.Encode(System.String,System.Int32,System.Int32,System.Int32,System.String,System.Int32,Tsort.PandA.PandaPacket)">
+            <summary>Creates a PandaPacket response to the specified PandaPacket request.</summary>
+            <param name="clientID">A unique identifier for the socket client; not required.</param>
+            <param name="messageCode">Identifies the PandA request/response message type.</param>
+            <param name="flag">Message status (0=message OK; 1=message error).</param>
+            <param name="iterator">Count of records in the body (always 1).</param>
+            <param name="messageBody">Message data.</param>
+            <param name="messageNumber">Unique message identifier from 0001 - 9999.</param>
+            <param name="request">A reference to the original Tsort.PandA.PandaPacket request.</param>
+            <returns>An instance of Tsort.PandA.PandaPacket.</returns>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacket.Decode(System.String,System.Byte[])">
+            <summary>Decodes a PandA Message packet into a PandaPacket object.</summary>
+            <param name="clientID">A unique identifier for the socket client; not required.</param>
+            <param name="message">A byte array containing a message that adheres to the PandA Message Protocol.</param>
+            <returns>An instance of Tsort.PandA.PandaPacket.</returns>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacket.Split(System.Byte[])">
+            <summary>Split multiple messages into seperate array elements.</summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacket.#ctor">
+            <summary>Creates a new instance of the Tsort.PandA.PandaPacket class with default data values.</summary>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacket.#ctor(Tsort.PandA.PandaDS.PacketTableRow)">
+            <summary>Creates a new instance of the Tsort.PandA.PandaPacket class.</summary>
+            <param name="packet">PandA Messsage data for encoding.</param>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacket.Finalize">
+            <summary>Destructor</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaPacket.ToDataSet">
+            <summary>Returns this object as a PandaDS dataset.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.Bytes">
+            <summary>Gets the PandA Message as a byte array.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.Message">
+            <summary>Gets the PandA Message as a string.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.Received">
+            <summary>Gets the  packet creation date/time.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.MessageLength">
+            <summary>Gets the  message length, including the start (STX) and end (ETX) characters, in bytes</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.MessageCode">
+            <summary>Gets a code describing the type of service (i.e. get label data) requested or responded to.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.MessageNumber">
+            <summary>Gets a unique identifier (i.e. 0001 - 9999) for the message.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.OriginalMessageCode">
+            <summary>Gets the message code from the originating message request.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.MessageFlags">
+            <summary>Gets the message status (0=message OK; 1=message error).</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.RecordIterator">
+            <summary>Gets the count of records in the body (always 1).</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.MessageBody">
+            <summary>Gets the message body.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.Valid">
+            <summary>Gets the state of the PandA message (true- no exceptions; false- exception ocurred).</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.Exception">
+            <summary>Gets the exception for an invalid message.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.ProcessingTime">
+            <summary>Gets the time (sec) for processing this message.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.ClientID">
+            <summary>Gets the unique identifier for the owner of this object (not required).</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaPacket.Response">
+            <summary>Gets and sets a response to associate with this as a request (not required).</summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaService">
+            <summary>The PandaService is responsible for processing PandA client requests for label data and label verification.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.REQUEST_LABELDATA">
+            <summary>PandA protocol message code for a label data request = 1.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.REQUEST_VERIFYLABEL">
+            <summary>PandA protocol message code for a verify label request = 2.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.REQUEST_HEARTBEAT">
+            <summary>PandA protocol message code for a heartbeat request = 3.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.REQUEST_RESEND">
+            <summary>PandA protocol message code for a resend message request = 999.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.RESPONSE_LABELDATA">
+            <summary>PandA protocol message code for a label data response = 101.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.RESPONSE_VERIFYLABEL">
+            <summary>PandA protocol message code for a verify label response = 102.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.RESPONSE_HEARTBEAT">
+            <summary>PandA protocol message code for a heartbeat response = 103.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.RESPONSE_INVALIDCODE">
+            <summary>PandA protocol message code for an invalid [request] code response = 999.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.RESPONSE_MSGERROR">
+            <summary>PandA protocol message code for an [request] error response = 999.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_NONE">
+            <summary>andA protocol carton status code for an unprocessed carton = 0.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_CARTON_OK">
+            <summary>PandA protocol carton status code for a carton that processed without error = 1.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_SCANERROR_NODATA">
+            <summary>PandA protocol carton status code for a carton with no data from the scanner (label fields blank) = 2.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_SCANERROR_NOREAD">
+            <summary>PandA protocol carton status code for a carton with a no read (??? in place of label) = 3.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_SCANERROR_CONFLICT">
+            <summary>PandA protocol carton status code for a carton with a label conflict (### in place of label) = 4.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_SCANERROR_LABELFAILED">
+            <summary>PandA protocol carton status code for a carton with an undetermined label (failed label data processing) = 5.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_SCANERROR_WEIGHTBAD">
+            <summary>PandA protocol carton status code for a carton with a bad weight = 8.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_CARTON_VERIFYONLY">
+            <summary>PandA protocol carton status code for a carton that should ignore label printing = 6.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_CARTON_IGNORE">
+            <summary>PandA protocol carton status code for a carton that should ignore label printing and label verification = 7.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.STATUS_ERROR_UNKNOWN">
+            <summary>PandA protocol carton status code for a carton with a generic error = 9.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.VERIFY_PASS">
+            <summary>PandA carton verify code for a carton that passed label verification = '1'.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.VERIFY_FAIL">
+            <summary>PandA carton verify code for a carton that failed label verification = '2'.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.VERIFY_NOREAD">
+            <summary>PandA carton verify code for a carton that had a no read at label verification = '3'.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.VERIFY_YES">
+            <summary>PandA carton verify flag for a carton that completed processing = 'Y'.</summary>
+        </member>
+        <member name="F:Tsort.PandA.PandaService.VERIFY_NO">
+            <summary>PandA carton verify flag for a carton that failed processing = 'N'.</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.#ctor">
+            <summary>Creates a new instance of the Tsort.PandA.PandaService class with database connection from app.config and no user unterface.</summary>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.#ctor(System.Boolean)">
+            <summary>Creates a new instance of the Tsort.PandA.PandaService class with database connection from app.config and no user unterface.</summary>
+            <param name="enableUI">Set to true to have a task tray icon displayed that provides access to the Panda Service user interface.</param>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.#ctor(System.String)">
+            <summary>Creates a new instance of the Tsort.PandA.PandaService class with no user unterface.</summary>
+            <param name="databaseConnection">An ADO.Net database connection string.</param>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.#ctor(System.String,System.Boolean)">
+            <summary>Creates a new instance of the Tsort.PandA.PandaService class.</summary>
+            <param name="databaseConnection">An ADO.Net database connection string.</param>
+            <param name="enableUI">Set to true to have a task tray icon displayed that provides access to the Panda Service user interface.</param>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.Finalize">
+            <summary>Destructor</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.Dispose">
+            <summary></summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.RefreshSortService">
+            <summary>Forces the Sort Service to update it's freight sorting assignments. The Sort Service configures itself from database on the first refresh.</summary>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.ProcessPandARequest(System.String,Tsort.PandA.PandaPacket)">
+            <summary>Processes </summary>
+            <param name="clientID">A unique identifier for the requestor (can be an empty string).</param>
+            <param name="request">A Tsort.PandA.PandaPacket request.</param>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+            <returns>An instance of Tsort.PandA.PandaPacket containing the response.</returns>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.ProcessLabelDataRequest(System.String[],System.Decimal)">
+            <summary>Process a label data request for a scanned carton.</summary>
+            <param name="inputs">Carton barcode data.</param>
+            <param name="weight">Carton weight.</param>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+            <returns>An instance of Tsort.PandA.PandaDS containing the label data response (in the Tsort.PandA.PandaDS.PandaTable).</returns>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.ProcessVerifyLabelRequest(System.String,System.String)">
+            <summary>Process a verify label request for a carton.</summary>
+            <param name="cartonID">The carton's 24 position unique [Argix] identifier.</param>
+            <param name="verifyCode">A verify code for the carton (Use PandaService verify constants: PandaService.VERIFY_PASS, PandaService.VERIFY_FAIL, PandaService.VERIFY_NOREAD).</param>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+            <returns>Returns a verify flag for the carton (PandaService.VERIFY_YES, PandaService.VERIFY_NO).</returns>
+        </member>
+        <member name="M:Tsort.PandA.PandaService.ProcessVerifyLabelRequest(System.String,System.String[],System.String)">
+            <summary>Process a verify label request for a carton.</summary>
+            <param name="cartonID">The carton's 24 position unique [Argix] identifier.</param>
+            <param name="inputs">A array of barcode scans including the Argix outbound label barcode.</param>
+            <param name="verifyCode">A verify code for the carton (Use PandaService verify constants: PandaService.VERIFY_PASS, PandaService.VERIFY_FAIL, PandaService.VERIFY_NOREAD).</param>
+            <exceptions cref="T:System.ApplicationException">Thrown for unexpected errors.</exceptions>
+            <returns>Returns a verify flag for the carton (PandaService.VERIFY_YES, PandaService.VERIFY_NO).</returns>
+        </member>
+        <member name="E:Tsort.PandA.PandaService.PandaRequestComplete">
+            <summary>Occurs when a PandA packet request is completed.</summary>
+        </member>
+        <member name="E:Tsort.PandA.PandaService.PandaResendComplete">
+            <summary>Occurs when a PandA packet request is resent.</summary>
+        </member>
+        <member name="E:Tsort.PandA.PandaService.HeartbeatRequestComplete">
+            <summary>Occurs when a PandA packet heartbeat request is completed. </summary>
+        </member>
+        <member name="E:Tsort.PandA.PandaService.LabelDataRequest">
+            <summary>Occurs when a label data request is started.</summary>
+        </member>
+        <member name="E:Tsort.PandA.PandaService.LabelDataRequestComplete">
+            <summary>Occurs when a label data request is completed.</summary>
+        </member>
+        <member name="E:Tsort.PandA.PandaService.VerifyLabelRequestComplete">
+            <summary>Occurs when a verify label request is completed.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaService.SortOperator">
+            <summary>Gets the underlying Tsort.Sort.StationOperator object.</summary>
+        </member>
+        <member name="T:Tsort.PandA.PandaUI">
+            <summary>User interface control for the PandA Library.</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaUI.#ctor">
+            <summary>Creates a new instance of the Tsort.PandA.PandaUI control.</summary>
+        </member>
+        <member name="M:Tsort.PandA.PandaUI.Dispose(System.Boolean)">
+            <summary></summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Tsort.PandA.PandaUI.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaUI.PandaSvc">
+            <summary>Gets and sets the PandA service that this interface interacts with.</summary>
+        </member>
+        <member name="P:Tsort.PandA.PandaUI.MessagesOn">
+            <summary>Show\hide the packet messages tab.</summary>
+            <remarks>
+            The packet messages tab shows message packets when clients communicate using Tsort.PandA.PandaPacket messages.
+            </remarks>
+        </member>
+        <member name="P:Tsort.PandA.PandaUI.CartonsOn">
+            <summary>Show\hide the cartons tab.</summary>
+            <remarks>
+            The cartons tab shows carton label data and verify label request results.
+            </remarks>
+        </member>
+        <member name="P:Tsort.PandA.PandaUI.TraceOn">
+            <summary>Turn Trace on\off.</summary>
+            <remarks>
+            To turn on:  set to LogLevel.Debug or greater; this will make the Trace tab visible.
+            To turn-off: set to LogLevel.None; this will hide the Trace tab.
+            </remarks>
+        </member>
+    </members>
+</doc>

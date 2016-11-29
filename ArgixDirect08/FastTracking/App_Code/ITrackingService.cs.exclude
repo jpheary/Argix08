@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Argix {
+    // 
+    public interface ITrackingService {
+        //        
+        TrackingDS TrackCartons(string[] itemNumbers,string companyID);
+    }
+}

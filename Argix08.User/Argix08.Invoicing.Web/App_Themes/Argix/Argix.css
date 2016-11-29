@@ -1,0 +1,22 @@
+﻿body
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 0.7em;
+	color: Black;
+	background-color: ButtonFace;
+}
+.PageTitle
+{
+	font-size:1.75em;
+	font-style: italic;
+	color: #CC3333;
+}
+.GridTitle
+{
+	font-size: 1.1em;
+	font-weight: bold;
+	vertical-align: middle;
+	color: White;
+	background-color: Blue;
+	text-align: left;
+}

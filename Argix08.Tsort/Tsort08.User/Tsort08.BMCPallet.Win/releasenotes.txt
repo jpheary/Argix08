@@ -1,0 +1,108 @@
+              --------------------------------------------------------
+                    BMCPallet Application Readme File
+		                       	  January, 2009
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2009-2009
+
+This document provides late-breaking or other information that supplements the BMCPallet documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+BMCPallet is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\BMCPallet on a web server like RGXDEVDB using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+		Argix.AppLogging.dll
+		Argix.Data.dll
+		Argix.Configuration.dll
+		Argix.Windows.dll
+		Microsoft.ApplicationBlocks.Data.dll
+		BMCPallet.exe
+		BMCPallet.exe.config
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the application configuration file (i.e. BMCPallet.exe.config), go to the <configuration> section, 
+and add/edit the values below:
+<configuration>
+	<!-- Test configuration -->
+	<configSections>
+		<sectionGroup name="menu">
+			<section name="help" type="System.Configuration.NameValueSectionHandler" />
+		</sectionGroup>
+	</configSections>
+	<menu>
+		<help>
+			<add key="Help Contents" value="" />
+			<add key="Release Notes..." value="http://RGXDEVDB/BMCPallet/releasenotes.txt" />
+			<add key="Issue Log..." value="http://rgxshpnt/Tsort%20Applications/Lists/Issue%20Log/AllItems.aspx" />
+		</help>
+	</menu>
+	<appSettings>
+		<!-- Client configuration -->
+		<add key="EventLogMachineName" value="RGXDEVDB" />
+		
+		<!-- Argix.Data configuration -->
+		<add key="SQLConnection" value="data source=RGXDEVDB;initial catalog=TSORTLOCAL;persist security info=True;user id=**;password=*******;packet size=4096" />
+	</appSettings>
+</configuration>
+
+	
+Open the local sort database (i.e. TSORTLOCAL on RGXDEVDB), goto the Configuration table, and add/edit the 
+values below:
+	Application     PCName          Key                       Value                     Security 
+	--------------- --------------- ------------------------- ------------------------- -------- 
+	BMCPallet   Default         MISPassword               ********                  1        
+	BMCPallet   Default         ReadOnly                  False                     1        
+	BMCPallet   Default         TraceLevel                3                         1        
+
+
+
+NOTES
+==============
+GENERAL
+The BMCPallet Application (BMCPallet.exe) is a Windows based application used to 
+
+OPERATION
+Normal:
+The BMCPallet Application (BMCPallet.exe) operates by launching from a web server deployment url 
+(i.e. http://rgxdevdb/BMCPallet/BMCPallet.exe). After a brief splash screen, a sizeable window appears and 
+displays a split window. The taskbar displays the operating terminal and connection status. 
+Additional operating steps can be found in the on-line documentation provided by the Help/Contents menu item.
+
+Diagnostics Mode:
+CTL ENTER at the Splash screen displays a dialog that examines configuration and database requirements.
+
+
+VERSION HISTORY
+v2.8.0, 01/23/09 ---------------------------------------------------------------------------
+Requirements/features
+- Initial release.
+Design/deployment
+- Initial release.
+

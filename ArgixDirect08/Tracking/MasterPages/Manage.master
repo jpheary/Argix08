@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" AutoEventWireup="false" CodeFile="Manage.master.cs" Inherits="MasterPages_Manage" %>
+<%@ MasterType VirtualPath="~/MasterPages/Default.master" %>
+
+<asp:Content ID="cHead" ContentPlaceHolderID="cpHead" Runat="Server">
+</asp:Content>
+<asp:Content ID="cBody" ContentPlaceHolderID="cpBody" Runat="Server">
+    <asp:Table id="tblPage" runat="server" Width="100%" Height="100%" HorizontalAlign="Center" BorderStyle="None" BorderWidth="0px" GridLines="None" CellPadding="0" CellSpacing="0" >
+        <asp:TableRow Height="3px" Font-Size="1px"><asp:TableCell Width="600px">&nbsp;</asp:TableCell><asp:TableCell Font-Size="1px" Width="1px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell Width="3px">&nbsp;</asp:TableCell><asp:TableCell Font-Size="1px" Width="1px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="1px" Font-Size="1px"><asp:TableCell Width="600px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell Font-Size="1px" Width="1px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell Width="3px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell Font-Size="1px" Width="1px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell BackColor="LightGray">&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell VerticalAlign="Top">
+                <asp:Table id="tblForm" runat="server" Width="100%" Height="100%" BorderStyle="None" BorderWidth="0px" CellPadding="0" CellSpacing="0" >
+                    <asp:TableRow Height="32px">
+                        <asp:TableCell VerticalAlign="Top">
+                            <asp:contentplaceholder id="cpTitle" runat="server"></asp:contentplaceholder>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow Height="3px"><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:contentplaceholder id="cpForm" runat="server"></asp:contentplaceholder>
+                        </asp:TableCell>
+                    </asp:TableRow>
+               </asp:Table>
+            </asp:TableCell>
+            <asp:TableCell Font-Size="1px" BackColor="LightGray">&nbsp;</asp:TableCell>
+            <asp:TableCell>&nbsp;</asp:TableCell>
+            <asp:TableCell Font-Size="1px" BackColor="LightGray">&nbsp;</asp:TableCell>
+            <asp:TableCell VerticalAlign="Top">
+               <asp:Table id="tblPanels" runat="server" Width="100%" Height="100%" BorderStyle="None" BorderWidth="0px" CellPadding="6" CellSpacing="3" >
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:contentplaceholder id="cpInfo" runat="server"></asp:contentplaceholder>
+                        </asp:TableCell>
+                    </asp:TableRow>
+               </asp:Table>
+            </asp:TableCell>
+        </asp:TableRow>
+    </asp:Table>
+</asp:Content>
+

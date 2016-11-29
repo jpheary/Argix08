@@ -1,0 +1,755 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tsort08.Devices</name>
+    </assembly>
+    <members>
+        <member name="T:Tsort.Devices.dlgPortSetup">
+            <summary>Lets users select serial printer port settings.</summary>
+        </member>
+        <member name="F:Tsort.Devices.dlgPortSetup.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Tsort.Devices.dlgPortSetup.#ctor">
+            <summary>Initializes a new instance of the Tsort.Devices.dlgPortSetup class.</summary>
+        </member>
+        <member name="M:Tsort.Devices.dlgPortSetup.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Tsort.Devices.dlgPortSetup.PortSettings">
+            <summary>Gets or sets the port settings the dialog box modifies.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.ILabelPrinter">
+            <summary>Interface definition for Tsort printers.</summary>
+        </member>
+        <member name="T:Tsort.Devices.IDevice">
+            <summary>Specifies the base interface for printer and scale devices.</summary>
+        </member>
+        <member name="M:Tsort.Devices.IDevice.TurnOn">
+            <summary>Turns the device on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.IDevice.TurnOff">
+            <summary>Turns the device off.</summary>
+        </member>
+        <member name="P:Tsort.Devices.IDevice.DefaultSettings">
+            <summary>Gets a PortSettings structure initialized with the default port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.IDevice.Settings">
+            <summary>Gets or sets the the current port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.IDevice.On">
+            <summary>Gets a value indicating if the device is on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ILabelPrinter.Print(System.String)">
+            <summary>Print the specified label format using SerialPort.Write(string).</summary>
+            <param name="labelFormat">A string containing label zpl.</param>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ILabelPrinter.Type">
+            <summary>Gets the type of printer.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ILabelPrinter.CDHolding">
+            <summary></summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ILabelPrinter.CtsHolding">
+            <summary></summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ILabelPrinter.DsrHolding">
+            <summary></summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ILabelPrinter.DtrEnable">
+            <summary></summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ILabelPrinter.RtsEnable">
+            <summary></summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ILabelPrinter.PrinterTurnedOn">
+            <summary>Event notification for printer turned on.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ILabelPrinter.PrinterTurnedOff">
+            <summary>Event notification for printer turned off.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ILabelPrinter.PrinterSettingsChanged">
+            <summary>Event notification for printer settings changed.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ILabelPrinter.PrinterEventChanged">
+            <summary>Event notification for printer pin and error events.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.Zebra.#ctor(System.String)">
+            <summary>Constructor.</summary>
+            <param name="portName"></param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.Zebra.#ctor(System.String,System.Int32,System.Int32,System.IO.Ports.Parity,System.IO.Ports.StopBits)">
+            <summary>Constructor.</summary>
+            <param name="portName"></param>
+            <param name="baudRate"></param>
+            <param name="dataBits"></param>
+            <param name="parity"></param>
+            <param name="stopBits"></param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.Zebra.Finalize">
+            <summary>Destructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.Zebra.WriteCommand(System.String)">
+            <summary></summary>
+            <param name="sCmd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tsort.Devices.Printers.Zebra.TurnOn">
+            <summary>Turns the printer on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.Zebra.TurnOff">
+            <summary>Turns the printer off.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.Zebra.Print(System.String)">
+            <summary>Print the specified label format using SerialPort.Write(string).</summary>
+            <param name="labelFormat">A string containing label zpl.</param>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.PrinterTurnedOn">
+            <summary>Event notification for printer turned on.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.PrinterTurnedOff">
+            <summary>Event notification for printer turned off.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.PrinterSettingsChanged">
+            <summary>Event notification for printer settings changed.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.PrinterEventChanged">
+            <summary>Event notification for printer pin and error events.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.ReceivedDataEvent">
+            <summary></summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.SentDataEvent">
+            <summary></summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.HostInfoChanged">
+            <summary></summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.HostMemoryStatusChanged">
+            <summary></summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.Zebra.HostStatusChanged">
+            <summary></summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.Zebra.DefaultSettings">
+            <summary>Returns a PortSettings structure with the default COM port settings.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.Zebra.Settings">
+            <summary>Gets or sets the the current port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.Zebra.On">
+            <summary>Gets a value indicating if the printer is on.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.Zebra.Type">
+            <summary>Gets the type of printer.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.SerialPrinter">
+            <summary>Implementation of ILabelPrinter to print to the device attached to the serial port.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.SerialPrinter.#ctor(System.String)">
+            <summary>Constructor.</summary>
+            <param name="portName">Name of serial port.</param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.SerialPrinter.#ctor(System.String,System.Int32,System.Int32,System.IO.Ports.Parity,System.IO.Ports.StopBits)">
+            <summary>Constructor.</summary>
+            <param name="portName">Name of serial port.</param>
+            <param name="baudRate">Initial communications baud rate.</param>
+            <param name="dataBits">Initial communications data bits.</param>
+            <param name="parity">Initial communications parity.</param>
+            <param name="stopBits">Initial communications stop bits.</param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.SerialPrinter.Finalize">
+            <summary>Destructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.SerialPrinter.TurnOn">
+            <summary>Turns the printer on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.SerialPrinter.TurnOff">
+            <summary>Turns the printer off.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.SerialPrinter.Print(System.String)">
+            <summary>Print the specified label format using SerialPort.Write(string).</summary>
+            <param name="labelFormat">A string containing label zpl.</param>
+        </member>
+        <member name="E:Tsort.Devices.Printers.SerialPrinter.PrinterTurnedOn">
+            <summary>Event notification for printer turned on.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.SerialPrinter.PrinterTurnedOff">
+            <summary>Event notification for printer turned off.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.SerialPrinter.PrinterSettingsChanged">
+            <summary>Event notification for printer settings changed.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.SerialPrinter.PrinterEventChanged">
+            <summary>Event notification for printer pin and error events.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.SerialPrinter.DefaultSettings">
+            <summary>Returns a PortSettings structure with the default COM port settings.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.SerialPrinter.Settings">
+            <summary>Gets or sets the the current port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.SerialPrinter.On">
+            <summary>Gets a value indicating if the printer is on.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.SerialPrinter.Type">
+            <summary>Gets the type of printer.</summary>
+        </member>
+        <member name="T:Tsort.Devices.DeviceFactory">
+            <summary>Provides printer and scale services.</summary>
+        </member>
+        <member name="M:Tsort.Devices.DeviceFactory.#cctor">
+            <summary>Class constructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.DeviceFactory.PrinterTypeExists(System.String)">
+            <summary>Determines if a printer type is supported.</summary>
+        </member>
+        <member name="M:Tsort.Devices.DeviceFactory.CreatePrinter(System.String,System.String)">
+            <summary>Creates a new instance of a printer for the specified printer type.</summary>
+        </member>
+        <member name="M:Tsort.Devices.DeviceFactory.ScaleTypeExists(System.String)">
+            <summary>Determines if a scale type is supported.</summary>
+        </member>
+        <member name="M:Tsort.Devices.DeviceFactory.CreateScale(System.String,System.String)">
+            <summary>Creates a new instance of a scale for the specified scale type.</summary>
+        </member>
+        <member name="P:Tsort.Devices.DeviceFactory.PrinterTypes">
+            <summary>Returns supported printer types.</summary>
+        </member>
+        <member name="P:Tsort.Devices.DeviceFactory.ScaleTypes">
+            <summary>Returns supported scale types.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterDataHandler">
+            <summary>Represents the method that will handle a printer data event.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterEventHandler">
+            <summary>Represents the method that will handle a printer pin change or error event.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterInfoHandler">
+            <summary>Represents the method that will handle a printer information data event.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterMemoryStatusHandler">
+            <summary>Represents the method that will handle a printer memory status data event.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterStatusHandler">
+            <summary>Represents the method that will handle a printer status data event.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterDataArgs">
+            <summary>Provides data for the printer send\receive data events.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterEventArgs">
+            <summary>Provides data for the printer [serial port] pin\error events.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterInfoArgs">
+            <summary>Provides data for the Zebra printer information event.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.PrinterInfoArgs.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterInfoArgs.Model">
+            <summary>Zebra printer model.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterInfoArgs.Version">
+            <summary>Zebra printer version.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterInfoArgs.Resolution">
+            <summary>Zebra printer resolution.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterInfoArgs.Memory">
+            <summary>Zebra printer memory.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterInfoArgs.X">
+            <summary>Spare.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterMemoryStatusArgs">
+            <summary>Provides data for the Zebra printer memory status event.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.PrinterMemoryStatusArgs.#ctor(System.String,System.String,System.String)">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterMemoryStatusArgs.RAMTotal">
+            <summary>Zebra printer total RAM.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterMemoryStatusArgs.RAMMax">
+            <summary>Zebra printer maximum RAM.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterMemoryStatusArgs.RAMAvailable">
+            <summary>Zebra printer available RAM.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.PrinterStatusArgs">
+            <summary>Provides data for the printer status event.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.PrinterStatusArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.CommSettings">
+            <summary>Zebra printer comm settings.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.PaperOut">
+            <summary>Zebra printer paper out flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.Pause">
+            <summary>Zebra printer pause status.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.LabelLength">
+            <summary>Zebra printer label length.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.FormatsInReceiveBuffer">
+            <summary>Zebra printer formats in the receive buffer.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.BufferFull">
+            <summary>Zebra printer buffer full flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.DiagnosticsMode">
+            <summary>Zebra printer daignostic mode flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.PartialFormat">
+            <summary>Zebra printer partial format flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.Unused1">
+            <summary>Zebra printer spare.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.CorruptRAM">
+            <summary>Zebra printer corrupt RAM flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.UnderTemp">
+            <summary>Zebra printer under temperature flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.OverTemp">
+            <summary>Zebra printer over temperature flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.FunctionSettings">
+            <summary>Zebra printer function settings.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.Unused2">
+            <summary>Zebra printer spare.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.HeadUp">
+            <summary>Zebra printer head up flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.RibbonOut">
+            <summary>Zebra printer ribbon out flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.ThermalTransMode">
+            <summary>Zebra printer thermal transfer mode status.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.PrintMode">
+            <summary>Zebra printer print mode.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.PrintWidthMode">
+            <summary>Zebra printer print mode width.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.LabelWaiting">
+            <summary>Zebra printer label waiting flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.LabelsRemainingInBatch">
+            <summary>Zebra printer count of labels remaining in batch.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.FormatWhilePrinting">
+            <summary>Zebra printer format while printing flag.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.GraphicImagesInMemory">
+            <summary>Zebra printer count of graphics in memory.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.Password">
+            <summary>Zebra printer password.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.PrinterStatusArgs.StaticRAM">
+            <summary>Zebra printer static RAM.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.LabelPrinters">
+            <summary>Control for label printers selection and manipulation.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.LabelPrinters.#ctor">
+            <summary></summary>
+        </member>
+        <member name="F:Tsort.Devices.Printers.LabelPrinters.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.LabelPrinters.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.LabelPrinters.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.ConsolePrinter">
+            <summary>Implementation of ILabelPrinter where printing is directed to the console.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ConsolePrinter.#ctor">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ConsolePrinter.TurnOn">
+            <summary>Turns the printer on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ConsolePrinter.TurnOff">
+            <summary>Turns the printer off.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ConsolePrinter.Print(System.String)">
+            <summary>Sends labelFormat to the console.</summary>
+            <param name="labelFormat">A string containing label data.</param>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ConsolePrinter.PrinterTurnedOn">
+            <summary>Event notification for printer turned on.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ConsolePrinter.PrinterTurnedOff">
+            <summary>Event notification for printer turned off.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ConsolePrinter.PrinterSettingsChanged">
+            <summary>Event notification for printer settings changed.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ConsolePrinter.PrinterEventChanged">
+            <summary>Event notification for printer pin and error events.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ConsolePrinter.DefaultSettings">
+            <summary>Gets a PortSettings structure initialized with the default port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ConsolePrinter.Settings">
+            <summary>Gets or sets the the current port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ConsolePrinter.On">
+            <summary>Gets a value indicating if the printer is on.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ConsolePrinter.Type">
+            <summary>Gets the type of printer.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.ZebraPRP">
+            <summary></summary>
+        </member>
+        <member name="T:Tsort.Devices.Scales.IScale">
+            <summary>Interface definition for Tsort scales.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.IScale.GetWeight(System.String)">
+            <summary>Gets a key-based weight (if applicable), or returns the current weight.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.IScale.Zero">
+            <summary>Zeros the scale.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.IScale.Type">
+            <summary>Gets the type of scale.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.IScale.Weight">
+            <summary>Gets or sets the current weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.IScale.IsStable">
+            <summary>Gets a value indicating if the scale is stable.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Scales.IScale.ScaleWeightReading">
+            <summary>Event that returns the current scale weight.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Scales.ScaleError">
+            <summary>Scale errors enumeration.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Scales.ScaleEventHandler">
+            <summary>Delegate for scale events containing ScaleEventArgs.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Scales.ScaleEventArgs">
+            <summary>Scale data for scale events.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Printers.ZebraWin">
+            <summary>Provides printing services through a Windows driver to a Zebra 170XiIII+ label printer.</summary>
+        </member>
+        <member name="F:Tsort.Devices.Printers.ZebraWin.FONT_NAME">
+            <summary></summary>
+        </member>
+        <member name="F:Tsort.Devices.Printers.ZebraWin.FONT_SIZE">
+            <summary></summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.#ctor">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.#ctor(System.String)">
+            <summary>Constructor.</summary>
+            <param name="printerName"></param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.#ctor(System.String,System.String,System.Single)">
+            <summary>Constructor.</summary>
+            <param name="printerName"></param>
+            <param name="fontName"></param>
+            <param name="fontSize"></param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.#ctor(System.String,System.Drawing.Font)">
+            <summary>Constructor.</summary>
+            <param name="printerName"></param>
+            <param name="font"></param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.Finalize">
+            <summary>Destructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.PageSetup">
+            <summary>Invokes the setup dialog.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.Print(System.String,System.String,System.Boolean)">
+            <summary>Prints the specified document.</summary>
+            <param name="documentName">Document name for print que.</param>
+            <param name="document">The document to print.</param>
+            <param name="showDialog">True to show print dialog before printing.</param>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.TurnOn">
+            <summary>Does nothing for this object.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.TurnOff">
+            <summary>Does nothing for this object.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Printers.ZebraWin.Print(System.String)">
+            <summary>Sends labelFormat to the console.</summary>
+            <param name="labelFormat">A string containing label data.</param>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ZebraWin.PrinterTurnedOn">
+            <summary>Event notification for printer turned on.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ZebraWin.PrinterTurnedOff">
+            <summary>Event notification for printer turned off.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ZebraWin.PrinterSettingsChanged">
+            <summary>Event notification for printer settings changed.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Printers.ZebraWin.PrinterEventChanged">
+            <summary>Event notification for printer pin and error events.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ZebraWin.Doc">
+            <summary>Returns the underlying PrintDocument object.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ZebraWin.evPageSettings">
+            <summary>Returns the underlting PageSettings object.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ZebraWin.DefaultSettings">
+            <summary>Returns a new PortSettings instance.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ZebraWin.Settings">
+            <summary>Returns a new PortSettings instance; invokes printer Page Setup dialog on set.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ZebraWin.On">
+            <summary>Always on; always returns true.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Printers.ZebraWin.Type">
+            <summary>Gets the type of printer.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Scales.ConstantScale">
+            <summary>Implementation of IScale where weight is a constant.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ConstantScale.#ctor">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ConstantScale.TurnOn">
+            <summary>Turns the scale on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ConstantScale.TurnOff">
+            <summary>Turns the scale off.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ConstantScale.GetWeight(System.String)">
+            <summary>Gets a key-based weight (if applicable), or returns the current weight.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ConstantScale.Zero">
+            <summary>Zeros the scale.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Scales.ConstantScale.ScaleWeightReading">
+            <summary>Event that returns the current scale weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ConstantScale.DefaultSettings">
+            <summary>Gets a PortSettings structure initialized with the default port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ConstantScale.Settings">
+            <summary>Gets or sets the the current port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ConstantScale.On">
+            <summary>Gets a value indicating if the scale is on.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ConstantScale.Type">
+            <summary>Gets the type of scale.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ConstantScale.Weight">
+            <summary>Gets or sets the current weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ConstantScale.IsStable">
+            <summary>Gets a value indicating if the scale is stable.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Scales.AutoScale">
+            <summary>Implementation of IScale to read weight from the device attached to the serial port.</summary>
+        </member>
+        <member name="F:Tsort.Devices.Scales.AutoScale.WEIGHT_STRING">
+            <summary>Read weight command string.</summary>
+        </member>
+        <member name="F:Tsort.Devices.Scales.AutoScale.WEIGHT_RESET">
+            <summary>Reset scale command string.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.AutoScale.#ctor(System.String)">
+            <summary>Constructor.</summary>
+            <param name="portName"></param>
+        </member>
+        <member name="M:Tsort.Devices.Scales.AutoScale.#ctor(System.String,System.Int32,System.IO.Ports.Parity)">
+            <summary>Constructor.</summary>
+            <param name="portName">Serial port name.</param>
+            <param name="baudRate">Serial port baud rate.</param>
+            <param name="parity">Serial port parity.</param>
+        </member>
+        <member name="M:Tsort.Devices.Scales.AutoScale.TurnOn">
+            <summary>Turns the scale on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.AutoScale.TurnOff">
+            <summary>Turns the scale off.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.AutoScale.GetWeight(System.String)">
+            <summary>Gets a key-based weight (if applicable), or returns the current weight.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.AutoScale.Zero">
+            <summary>Zeros the scale.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Scales.AutoScale.ScaleWeightReading">
+            <summary>Event that returns the current scale weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.AutoScale.DefaultSettings">
+            <summary>Gets a PortSettings structure initialized with the default port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.AutoScale.Settings">
+            <summary>Gets or sets the the current port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.AutoScale.On">
+            <summary>Gets a value indicating if the scale is on.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.AutoScale.Type">
+            <summary>Gets the type of scale.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.AutoScale.Weight">
+            <summary>Gets or sets the current weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.AutoScale.IsStable">
+            <summary>Gets a value indicating if the scale is stable.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Scales.TableScale">
+            <summary>Implementation of IScale where weight is determined by lookup in a remote table.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.TableScale.#ctor">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.TableScale.TurnOn">
+            <summary>Turns the scale on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.TableScale.TurnOff">
+            <summary>Turns the scale off.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.TableScale.GetWeight(System.String)">
+            <summary>Gets a key-based weight (if applicable), or returns the current weight.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.TableScale.Zero">
+            <summary>Zeros the scale.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Scales.TableScale.ScaleWeightReading">
+            <summary>Event that returns the current scale weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.TableScale.DefaultSettings">
+            <summary>Gets a PortSettings structure initialized with the default port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.TableScale.Settings">
+            <summary>Gets or sets the the current port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.TableScale.On">
+            <summary>Gets a value indicating if the scale is on.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.TableScale.Type">
+            <summary>Gets the type of scale.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.TableScale.Weight">
+            <summary>Gets or sets the current weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.TableScale.IsStable">
+            <summary>Gets a value indicating if the scale is stable.</summary>
+        </member>
+        <member name="T:Tsort.Devices.Scales.ManualScale">
+            <summary>Implementation of IScale where weight is either constant or manually entered by the user.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ManualScale.#ctor">
+            <summary>Constructor.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ManualScale.TurnOn">
+            <summary>Turns the scale on.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ManualScale.TurnOff">
+            <summary>Turns the scale off.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ManualScale.GetWeight(System.String)">
+            <summary>Gets a key-based weight (if applicable), or returns the current weight.</summary>
+        </member>
+        <member name="M:Tsort.Devices.Scales.ManualScale.Zero">
+            <summary>Zeros the scale.</summary>
+        </member>
+        <member name="E:Tsort.Devices.Scales.ManualScale.ScaleWeightReading">
+            <summary>Event that returns the current scale weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ManualScale.DefaultSettings">
+            <summary>Gets a PortSettings structure initialized with the default port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ManualScale.Settings">
+            <summary>Gets or sets the the current port settings (if applicable).</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ManualScale.On">
+            <summary>Gets a value indicating if the scale is on.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ManualScale.Type">
+            <summary>Gets the type of scale.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ManualScale.Weight">
+            <summary>Gets or sets the current weight.</summary>
+        </member>
+        <member name="P:Tsort.Devices.Scales.ManualScale.IsStable">
+            <summary>Gets a value indicating if the scale is stable.</summary>
+        </member>
+        <member name="T:Tsort.Devices.PortSettings">
+            <summary>Specifies information about how a serial port is configured, including port name, baud rate, data bits, parity, stop bits, and handshake.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.DEFAULT_BAUD">
+            <summary>Default baud rate value.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.DEFAULT_DATABITS">
+            <summary>Default data bits value.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.DEFAULT_PARITY">
+            <summary>Default parity value.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.DEFAULT_STOPBITS">
+            <summary>Default stop bits value.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.DEFAULT_HANDSHAKE">
+            <summary>Default handshake value.</summary>
+        </member>
+        <member name="M:Tsort.Devices.PortSettings.#ctor(System.String,System.Int32,System.Int32,System.IO.Ports.Parity,System.IO.Ports.StopBits,System.IO.Ports.Handshake)">
+            <summary>Initializes a new instance of Tsort.Devices.PortSettings.</summary>
+            <param name="portName">The initial port name.</param>
+            <param name="baudRate">The initial baud rate.</param>
+            <param name="dataBits">The initial data bits.</param>
+            <param name="parity">The initial parity.</param>
+            <param name="stopBits">The initial stop bits.</param>
+            <param name="handshake">The initial handshake.</param>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.PortName">
+            <summary>Serial port name.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.BaudRate">
+            <summary>Serial port baud rate.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.Handshake">
+            <summary>Serial port handshake.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.DataBits">
+            <summary>Serial port data bits.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.StopBits">
+            <summary>Serial port stop bits.</summary>
+        </member>
+        <member name="F:Tsort.Devices.PortSettings.Parity">
+            <summary>Serial port parity.</summary>
+        </member>
+    </members>
+</doc>

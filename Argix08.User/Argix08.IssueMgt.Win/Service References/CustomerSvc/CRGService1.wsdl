@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix.CustomerSvc" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix.CustomerSvc" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix.CustomerSvc/Imports">
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd0" namespace="http://Argix.CustomerSvc" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd2" namespace="http://tempuri.org/IssueTypeDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd4" namespace="http://tempuri.org/ActionTypeDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd5" namespace="http://tempuri.org/IssueDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Argix.CustomerSvc" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICRGService_GetIssueCategorys_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueCategorys" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueCategorys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueCategorysResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueTypes" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueType" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetActionTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionTypes" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetActionTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetActionType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionType" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetActionType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssues" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssue" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueActions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueActions" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueActions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueActionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetActions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActions" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetActions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueAttachments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueAttachments" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetIssueAttachments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueAttachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetAttachments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachments" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetAttachments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetAttachment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachment" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_GetAttachment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_CreateIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssue" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_CreateIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_CreateIssueAction_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueAction" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_CreateIssueAction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_CreateIssueAttachment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueAttachment" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_CreateIssueAttachment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_UpdateIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIssue" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_UpdateIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_SearchIssues_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssues" />
+  </wsdl:message>
+  <wsdl:message name="ICRGService_SearchIssues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssuesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICRGService">
+    <wsdl:operation name="GetIssueCategorys">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueCategorys" message="tns:ICRGService_GetIssueCategorys_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueCategorysResponse" message="tns:ICRGService_GetIssueCategorys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueTypes">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueTypes" message="tns:ICRGService_GetIssueTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueTypesResponse" message="tns:ICRGService_GetIssueTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueType">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueType" message="tns:ICRGService_GetIssueType_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueTypeResponse" message="tns:ICRGService_GetIssueType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActionTypes">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetActionTypes" message="tns:ICRGService_GetActionTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetActionTypesResponse" message="tns:ICRGService_GetActionTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActionType">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetActionType" message="tns:ICRGService_GetActionType_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetActionTypeResponse" message="tns:ICRGService_GetActionType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssues">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssues" message="tns:ICRGService_GetIssues_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssuesResponse" message="tns:ICRGService_GetIssues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssue">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssue" message="tns:ICRGService_GetIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueResponse" message="tns:ICRGService_GetIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueActions">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueActions" message="tns:ICRGService_GetIssueActions_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueActionsResponse" message="tns:ICRGService_GetIssueActions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActions">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetActions" message="tns:ICRGService_GetActions_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetActionsResponse" message="tns:ICRGService_GetActions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueAttachments">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueAttachments" message="tns:ICRGService_GetIssueAttachments_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetIssueAttachmentsResponse" message="tns:ICRGService_GetIssueAttachments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachments">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetAttachments" message="tns:ICRGService_GetAttachments_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetAttachmentsResponse" message="tns:ICRGService_GetAttachments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachment">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetAttachment" message="tns:ICRGService_GetAttachment_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/GetAttachmentResponse" message="tns:ICRGService_GetAttachment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIssue">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/CreateIssue" message="tns:ICRGService_CreateIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/CreateIssueResponse" message="tns:ICRGService_CreateIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIssueAction">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/CreateIssueAction" message="tns:ICRGService_CreateIssueAction_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/CreateIssueActionResponse" message="tns:ICRGService_CreateIssueAction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIssueAttachment">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/CreateIssueAttachment" message="tns:ICRGService_CreateIssueAttachment_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/CreateIssueAttachmentResponse" message="tns:ICRGService_CreateIssueAttachment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIssue">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/UpdateIssue" message="tns:ICRGService_UpdateIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/UpdateIssueResponse" message="tns:ICRGService_UpdateIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchIssues">
+      <wsdl:input wsaw:Action="http://Argix.CustomerSvc/ICRGService/SearchIssues" message="tns:ICRGService_SearchIssues_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.CustomerSvc/ICRGService/SearchIssuesResponse" message="tns:ICRGService_SearchIssues_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

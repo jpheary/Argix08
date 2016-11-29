@@ -1,0 +1,132 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Map.aspx.cs" Inherits="BingMaps" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Store Locator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.3&mkt=en-us"></script>   
+    <script type="text/javascript">
+        function pageLoad() { }
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <asp:ScriptManager ID="smPage" runat="server" />
+    <div>
+        <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+            <tr style="font-size:1px"><td width="192px">&nbsp;</td><td>&nbsp;</td></tr>
+            <tr style="height:24px"><td colspan="2">Search...</td></tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td><div id='myMap' style="position:absolute; width:768px; height:576px;"></div></td>
+            </tr>
+        </table>        
+    </div>
+    </form>
+    <script type="text/javascript">
+        var map = new VEMap('myMap');
+        //map.SetCredentials("Your Bing Maps Key");
+        map.LoadMap();
+
+        var points = GetStoreAddresses();
+        for(var i=0; i<points.length; i++) {
+            map.Find(null, points[i], null, null, 0, 10, false, false, false, true, ProcessStore);
+        }
+        function ProcessStore(layer, results, places, hasmore) {
+          //Create a custom pin
+            if(places != null && places[0].LatLong != 'Unavailable') {
+                var spec = new VECustomIconSpecification();
+                spec.CustomHTML = "<div style='font-size:8px;border:solid 1px Black;background-color:red;width:12px;'>" + "BN" + "<div>";
+                var pin = new VEShape(VEShapeType.Pushpin, places[0].LatLong);
+                pin.SetCustomIcon(spec);
+                map.AddShape(pin);
+            }
+        }
+        function GetStoreAddresses() {
+            var points = new Array(
+            "2100 91ST STREET NORTH BERGEN NJ 07047", 
+            "112 EISENHOWER PARKWAY LIVINGSTON NJ 07039", 
+            "100 MENLO PARK EDISON NJ 08837", 
+            "RTE 17 & MIDLAND AVE PARAMUS NJ 07652", 
+            "WOODBRIDGE MALL WOODBRIDGE NJ 07095", 
+            "MONMOUTH MALL EATONTOWN NJ 07724", 
+            "CLEMENTS BRIDGE ROAD DEPTFORD NJ 08096", 
+            "2100 91ST STREET NORTH BERGEN NJ 07047", 
+            "1201 HOOPER AVENUE TOMS RIVER NJ 08753", 
+            "150 QUAKERBRIDGE MALL LAWRENCEVILLE NJ 08648", 
+            "2419 ECHELON MALL VOORHEES NJ 08043", 
+            "RTE 66 & 35 OCEAN NJ 07712", 
+            "946 CHERRY HILL MALL CHERRY HILL NJ 08002", 
+            "ROUTE 38 & LENOLA ROAD MOORESTOWN NJ 08057", 
+            "PLAZA CAROLINA STATION CAROLINA PR NJ 90630", 
+            "CARR NUM 2 MAYAGUEZ, PUERTO RICO NJ 07047", 
+            "8 NORTH PARK PLACE MORRISTOWN NJ 07960", 
+            "1202 WILLOWBROOK MALL WAYNE NJ 07470", 
+            "145 WEST MAIN STREET SOMERVILLE NJ 08876", 
+            "2151 LEMOINE AVENUE FORT LEE NJ 07024", 
+            "20 E RIDGEWOOD AVENUE RIDGEWOOD NJ 07450", 
+            "ROUTES 4 & 17 PARAMUS NJ 07652", 
+            "WOODBRIDGE CENTER DRIVE WOODBRIDGE NJ 07095", 
+            "ROUTE 17 & MIDLAND AVENUE PARAMUS NJ 07652", 
+            "ROUTE 24 & JFK PKWAY SHORT HILLS NJ 07078", 
+            "755 N.J STATE HWY 18 E. BRUNSWICK NJ 08816", 
+            "100 BLACK HORSE PIKE MAYS LANDING NJ 08330", 
+            "30 MALL DRIVE WEST JERSEY CITY NJ 07310", 
+            "ESSEX GREEN SHOPPING CENTER WEST ORANGE NJ 07052", 
+            "PATERSON-HAMBURG TURNPIKE WAYNE NJ 07470", 
+            "ROUTE 4 PARAMUS NJ 07652", 
+            "182 NASSAU STREET PRINCETON NJ 08540", 
+            "251 HIGHWAY 18 E. BRUNSWICK NJ 08816", 
+            "8 N. PARK PLACE MORRISTOWN NJ 07960", 
+            "THE GROVE AT SHREWSBURY SHREWSBURY NJ 07702", 
+            "2641 WILLOWBROOK MALL WAYNE NJ 07470", 
+            "ROUTE 46 & ROUTE 23 WAYNE NJ 07470", 
+            "FREEHOLD RACEWAY MALL FREEHOLD NJ 07728", 
+            "MENLO PARK MALL EDISON NJ 08837", 
+            "326 WOODBRIDGE CENTER DR. WOODBRIDGE NJ 07095");
+            return points;
+        }
+        function callWebService(url) {
+            //Calls web service with url and callback function. Callback will
+            //be executed when XMLHttpRequest object returns from web service call.
+            var xmlDoc = new XMLHttpRequest();
+            if(xmlDoc) {
+                //Execute synchronous call to web service
+                //asynchronous never returns a readystate > 1 with POST
+                xmlDoc.onreadystatechange = function() { stateChange(xmlDoc); };
+                xmlDoc.open("GET", url, true);
+                //params = "name=" + document.infoForm.name.value + "&email=" + document.infoForm.email.value + "&phone=" + document.infoForm.phone.value + "&company=" + document.infoForm.company.value + "&address=" + document.infoForm.address.value + "&state=" + document.infoForm.state.value + "&options=" + document.infoForm.options.value;
+                //xmlDoc.setRequestHeader("Content-length", params.length);
+                xmlDoc.send(null);
+            }
+            else {
+                alert("Unable to create XMLHttpRequest object.");
+            }
+        }
+
+        function stateChange(xmlDoc) {
+            //Updates readystate by callback
+            if(xmlDoc.readyState == 4) {
+                var text = "";
+                if(xmlDoc.status == 200) {
+                    //select node containing data
+                    var nd = xmlDoc.responseXML.getElementsByTagName("mail");
+                    if(nd && nd.length == 1) {
+                        //IE use .text, others .textContent
+                        text = !nd[0].text ? nd[0].textContent : nd[0].text;
+                        if(text != "") 
+                            alert(text);
+                        else 
+                            alert("Web service call failed: " + text);
+                   }
+                }
+                else 
+                    alert("Bad response: status code=" + xmlDoc.status);
+            }
+        }
+    </script>
+</body>
+</html>

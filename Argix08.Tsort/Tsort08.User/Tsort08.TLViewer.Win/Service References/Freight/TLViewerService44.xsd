@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Argix.Freight" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Argix.Freight" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TLs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TL" nillable="true" type="tns:TL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TLs" nillable="true" type="tns:TLs" />
+  <xs:complexType name="TL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AgentNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cartons" type="xs:int" />
+      <xs:element minOccurs="0" name="ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CloseNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cube" type="xs:int" />
+      <xs:element minOccurs="0" name="CubePercent" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Lane" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pallets" type="xs:int" />
+      <xs:element minOccurs="0" name="ShipToLocationID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShipToLocationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SmallLane" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TLNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TerminalID" type="xs:int" />
+      <xs:element minOccurs="0" name="Weight" type="xs:int" />
+      <xs:element minOccurs="0" name="WeightPercent" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Zone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL" nillable="true" type="tns:TL" />
+</xs:schema>

@@ -1,0 +1,197 @@
+<%@ WebService Language="C#" Class="ImageService" %>
+
+using System;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Configuration;
+using System.Collections;
+using System.Diagnostics;
+using System.Net;
+using System.Text;
+using System.Web;
+using System.Web.Configuration;
+using System.Web.Hosting;
+using System.Web.Security;
+using System.Web.Services;
+using System.Web.Services.Protocols;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
+
+/// <summary>
+/// Provides access to Argix Direct, Inc. image documents.
+/// </summary>
+[WebService(Namespace="https://www.argixdirect.com/Tracking/")]
+[WebServiceBinding(ConformsTo=WsiProfiles.BasicProfile1_1)]
+public class ImageService : System.Web.Services.WebService {
+    //Members
+    
+    //Interface
+    [WebMethod(BufferResponse=false)]
+    public void GetSharePointImage(string docClass,string propertyName,string searchText) {
+        //Return an image from SharePoint in the web reponse
+        Stream stream=null;
+        try {
+            //Search for image
+            DataSet ds = SearchSharePointImageStore(docClass,propertyName,searchText);
+            if(ds.Tables[0].Rows.Count > 0) {
+                //Get image url
+                string url = ds.Tables[0].Rows[0]["DAV%3ahref"].ToString();
+                
+                //Pull the image from a remote client and load into an image object
+                WebClient wc = new WebClient();
+                wc.Credentials = (ICredentials)Application["Credentials"];
+                stream = wc.OpenRead(url);
+                Bitmap image = new Bitmap(stream);
+
+                //Render as jpeg to browser
+                HttpResponse response = this.Context.Response;
+                response.ContentType = "image/jpeg";
+                response.BufferOutput = true;
+                response.Clear();
+                image.Save(response.OutputStream,ImageFormat.Jpeg);
+            }
+        }
+        catch(Exception ex) { this.Context.Response.AppendToLog(ex.ToString()); }
+        finally { if(stream != null) stream.Close(); }
+    }
+
+    [WebMethod(BufferResponse = false)]
+    public byte[] GetSharePointImageStream(string docClass,string propertyName,string searchText) {
+        //Return an image from SharePoint as a byte[]
+        byte[] bytes=null;
+        try {
+            //Search for image
+            DataSet ds = SearchSharePointImageStore(docClass,propertyName,searchText);
+            if(ds.Tables[0].Rows.Count > 0) {
+                //Get image url
+                string url = ds.Tables[0].Rows[0]["DAV%3ahref"].ToString();
+
+                //Pull the image from a remote client and load into an image object
+                WebClient wc = new WebClient();
+                wc.Credentials = (ICredentials)Application["Credentials"];
+                bytes = wc.DownloadData(url);
+            }
+        }
+        catch(Exception ex) { this.Context.Response.AppendToLog(ex.ToString()); }
+        return bytes;
+    }
+
+    [WebMethod(BufferResponse=false)]
+    public DataSet SearchSharePointImageStore(string docClass,string propertyName,string searchText) {
+        //docClass: propertyName
+        //TBill: TBBarCode, TL, CL, DIV, Store, BatchDate
+        //TDS:   TDSNum, BatchDate
+        //ISA:   BillRef, TL, BatchDate
+        //BOL:   BOLNum, BatchDate
+        DataSet ds=null;
+        try {
+            string SQL = getQuery().Replace("selectStmnt",getSelectClause(docClass)).Replace("whereClause",getWhereClause(propertyName,searchText));
+            rgxvmmoss1.QueryService qs = new rgxvmmoss1.QueryService();
+            qs.Url = WebConfigurationManager.AppSettings["rgxvmmoss1.search"].ToString();
+            qs.Credentials = (ICredentials)Application["Credentials"];
+            ds = qs.QueryEx(SQL);
+        }
+        catch(Exception ex) { this.Context.Response.AppendToLog(ex.ToString()); }
+        return ds;
+    }
+    
+    [WebMethod]
+    public void GetTestImage(string file) {
+        //Return an image from local disk in the web reponse
+        Stream stream=null;
+        try {
+            //
+            //Load the image from file and load into an image object
+            stream = File.OpenRead(file);
+            Bitmap image = new Bitmap(stream);
+
+            //Render as jpeg to browser
+            HttpResponse response = this.Context.Response;
+            response.Clear();
+            response.ContentType = "image/jpeg";
+            image.Save(response.OutputStream,ImageFormat.Jpeg);
+        }
+        catch(Exception ex) { this.Context.Response.AppendToLog(ex.ToString()); }
+        finally { if(stream != null) stream.Close(); }
+    }
+
+    #region SQL Free-text Services: getQuery(), getSelectClause(), getWhereClause(), getDateComparisonClause()
+    private string getQuery() {
+        //
+        string FTQuery = "<?xml version=\"1.0\" encoding=\"utf-8\" ?>" +
+                "<QueryPacket xmlns=\"urn:Microsoft.Search.Query\" Revision=\"1000\">" +
+                   "<Query domain=\"QDomain\">" +
+                       "<QueryId>Client Query ID</QueryId>" +
+                       "<OriginatorId>Imaging Search ver.1</OriginatorId>" +
+                       "<SupportedFormats>" +
+                           "<Format>urn:Microsoft.Search.Response.Document.Document</Format>" +
+                       "</SupportedFormats>" +
+                       "<Context>" +
+                           "<QueryText language=\"en-US\" type=\"MSSQLFT\">" +
+                                   "<![CDATA[SELECT selectStmnt FROM scope() WHERE (\"isdocument\" = 1 AND whereClause) ]]>" +
+                           "</QueryText>" +
+                           "<OriginatorContext>" +
+                               "<Argix xmlns=\"urn:SomeNameSpace\">SearchReturn</Argix>" +
+                           "</OriginatorContext>" +
+                       "</Context>" +
+                       "<Range>" +
+                           "<StartAt>1</StartAt>" +
+                           "<Count>MaxSearchResults</Count>" +
+                       "</Range>" +
+                   "</Query>" +
+               "</QueryPacket>";
+        return FTQuery.Replace("MaxSearchResults",Application["ResultCount"].ToString());
+    }
+    private string getSelectClause(string docClass) {
+        //docClass: TBill, ISA, TDS, BOL
+        string schema = ", \"";
+        StringBuilder sb = new StringBuilder("\"DAV:displayname\", \"DAV:href\"");
+        MetaData metaData = getMetaData(docClass);
+        foreach(MetaData.MetaDataTableRow row in metaData.MetaDataTable.Rows)
+            sb.Append(schema + XmlConvert.EncodeName(row.Property) + "\"");
+        return sb.ToString();
+    }
+    private string getWhereClause(string propertyName, string searchText) {
+        //
+        string schema = "(\"Property\" LIKE 'SearchText') ";
+        StringBuilder sb = new StringBuilder();
+        if(searchText != "") {
+            propertyName = XmlConvert.EncodeName(propertyName);
+            if(propertyName.ToLower().Contains("date"))
+                sb.Append(getDateComparisonClause(propertyName,searchText));
+            else
+                sb.Append(schema.Replace("Property",propertyName).Replace("SearchText",searchText));
+        }
+        return sb.ToString();
+    }
+    private string getDateComparisonClause(string propName,string propValue) {
+        //
+        string schema = "\"Property\" ";
+        string propertyName = schema.Replace("Property",propName);
+        string searchDate = Microsoft.SharePoint.Utilities.SPUtility.CreateISO8601DateTimeFromSystemDateTime(Convert.ToDateTime(propValue));
+        string searchDate2 = Microsoft.SharePoint.Utilities.SPUtility.CreateISO8601DateTimeFromSystemDateTime(Convert.ToDateTime(propValue).AddDays(1));
+        return " ((" + propertyName + " >= '" + searchDate + "') AND (" + propertyName + " < '" + searchDate2 + "'))";
+    }
+    #endregion
+    #region Local Services: getMetaData()
+    private MetaData getMetaData(string className) {
+        //
+        MetaData metaData = null;
+        try {
+            MetaData _metaData = (MetaData)Application["MetaData"];
+            metaData = new MetaData();
+            metaData.Merge(_metaData.MetaDataTable.Select("ClassName='" + className + "'"));
+        }
+        catch(Exception ex) { throw ex; }
+        return metaData;
+    }
+    #endregion
+}
+

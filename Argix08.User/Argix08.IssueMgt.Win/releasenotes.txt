@@ -1,0 +1,146 @@
+              --------------------------------------------------------
+                    Issue Management Application Readme File
+		                       	  September, 2010
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2005-2010
+
+This document provides late-breaking or other information that supplements the Issue Management documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+Issue Management is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\Argix08\IssueMgt on a web server like RGXWEB using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+		Argix08.AppLogging.dll
+		Argix08.Configuration.dll
+		Argix08.Data.dll
+		Argix08.Export.dll
+		Argix08.IssueMgt.Lib.dll
+		Argix08.Windows.dll
+		Infragistics.Shared.v8.1.dll
+		Infragistics.Win.UltraWinGrid.v8.1.dll
+		Infragistics.Win.v8.1.dll
+		Microsoft.Office.Interop.Outlook.dll
+		Microsoft.Office.Interop.Word.dll
+		IssueMgt.exe
+		IssueMgt.exe.config
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+NOTES
+==============
+GENERAL
+The Issue Management Application (IssueMgt.exe) is a Windows based application used to...
+
+OPERATION
+Normal:
+The Issue Management Application (IssueMgt.exe) operates by launching from a web server deployment url 
+(i.e. http://rgxdevdb/IssueMgt/IssueMgt.exe). After a brief splash screen, a sizeable window appears and 
+displays a split window. The taskbar displays the operating location and connection status. 
+Additional operating steps can be found in the on-line documentation provided by the Help/Contents menu item.
+
+Diagnostics Mode:
+CTL ENTER at the Splash screen displays a dialog that examines configuration and database requirements.
+
+
+VERSION HISTORY
+v2.8.0, 01/07/09 ---------------------------------------------------------------------------
+Requirements/features
+- Initial release.
+Design/deployment
+- Initial release.
+
+v2.8.3, 05/11/09 ---------------------------------------------------------------------------
+Requirements/features
+- New Action comment text box character limit changed from 500 to 2500 characters.
+Design/deployment
+- Initial release.
+
+v2.8.4, 05/14/09 ---------------------------------------------------------------------------
+Requirements/features
+- Added spell checking to actions dialog.
+Design/deployment
+- Added reference to Microsoft Word 11.0.
+
+v2.8.5, 05/14/09 ---------------------------------------------------------------------------
+Requirements/features
+- Corrected refresh problem.
+Design/deployment
+- None.
+
+v3.1.0, 04/22/10 ---------------------------------------------------------------------------
+Requirements/features
+- Changed to SDI user interface.
+- Added drag/drop of attachments from desktop and from Outlook.
+- Added Max view to show/hide Contact and Delivery Details and maximize Action panes.
+Design/deployment
+- Changed to main view from MDI to SDI.
+- Added local uiser settings for issue header column header order and column filters.
+
+
+v3.1.1, 05/06/10 ---------------------------------------------------------------------------
+Requirements/features
+- Changed zone to Main Zone; main zone always populated by agent or store main zone.
+- Added issue header column for Coordinator (data unavailable at present) and Create User.
+- Company NOT selected, by default, in the new issue dialog.
+- Removed AutoRefresh menu item from the issue header context menu.
+- Improved issue printing: font matches view; fixed multi-page problem.
+- New issue cannot be created until the store is verified to exist.
+- New issue dialog shows agents that are applicable to the selected company.
+Design/deployment
+- Added local WinPrinter class to handle printing an issue.
+- AutoRefreshOn (bool) added to the configuration database.
+
+
+v3.1.2, 06/16/10 ---------------------------------------------------------------------------
+Requirements/features
+- Issue header view now shows new/updated issues in bold font until selected. 
+- Modified File\SaveAs menu feature to export issue headers to an Excel spreadsheet.
+- Changed title line from subject to zone/store/agent/company/type/subject combination.
+- Modified action view; removed header and running option.
+Design/deployment
+- Corrected bug in Location control that allowed location selection without company selected.
+- Re-added highlight of search word in action view.
+
+v3.2.0, 07/15/10 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Implemented issue header local cache and partial updates (i.e. new/changed headers from new actions) on refresh.
+- Moved components from Argix08.IssueMgt.Lib into the main application.
+
+v3.5.0, 09/10/10 ---------------------------------------------------------------------------
+Requirements/features
+- Advanced search
+- Clear filters toolbar button
+- Save filters and column headers when closing- restore on next session
+- Hold sorted item record between OSD and POD screens
+Design/deployment
+- Design changes including a new backend wcf service (Argix08.CustomerServices)
+- Fix for inactive customers
+

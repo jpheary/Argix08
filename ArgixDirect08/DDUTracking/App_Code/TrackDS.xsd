@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrackDS" targetNamespace="http://tempuri.org/TrackDS.xsd" xmlns:mstns="http://tempuri.org/TrackDS.xsd" xmlns="http://tempuri.org/TrackDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TrackDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TrackDS" msprop:Generator_DataSetName="TrackDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TrackingSummaryTable" msprop:Generator_UserTableName="TrackingSummaryTable" msprop:Generator_RowDeletedName="TrackingSummaryTableRowDeleted" msprop:Generator_RowChangedName="TrackingSummaryTableRowChanged" msprop:Generator_RowClassName="TrackingSummaryTableRow" msprop:Generator_RowChangingName="TrackingSummaryTableRowChanging" msprop:Generator_RowEvArgName="TrackingSummaryTableRowChangeEvent" msprop:Generator_RowEvHandlerName="TrackingSummaryTableRowChangeEventHandler" msprop:Generator_TableClassName="TrackingSummaryTableDataTable" msprop:Generator_TableVarName="tableTrackingSummaryTable" msprop:Generator_RowDeletingName="TrackingSummaryTableRowDeleting" msprop:Generator_TablePropName="TrackingSummaryTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LabelSequenceNumber" msprop:Generator_UserColumnName="LabelSequenceNumber" msprop:Generator_ColumnVarNameInTable="columnLabelSequenceNumber" msprop:Generator_ColumnPropNameInRow="LabelSequenceNumber" msprop:Generator_ColumnPropNameInTable="LabelSequenceNumberColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ItemNumber" msprop:Generator_UserColumnName="ItemNumber" msprop:Generator_ColumnVarNameInTable="columnItemNumber" msprop:Generator_ColumnPropNameInRow="ItemNumber" msprop:Generator_ColumnPropNameInTable="ItemNumberColumn" type="xs:string" />
+              <xs:element name="OsTrackingNumber" msprop:Generator_UserColumnName="OsTrackingNumber" msprop:Generator_ColumnVarNameInTable="columnOsTrackingNumber" msprop:Generator_ColumnPropNameInRow="OsTrackingNumber" msprop:Generator_ColumnPropNameInTable="OsTrackingNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_UserColumnName="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationName" msprop:Generator_UserColumnName="LocationName" msprop:Generator_ColumnVarNameInTable="columnLocationName" msprop:Generator_ColumnPropNameInRow="LocationName" msprop:Generator_ColumnPropNameInTable="LocationNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperName" msprop:Generator_UserColumnName="ShipperName" msprop:Generator_ColumnVarNameInTable="columnShipperName" msprop:Generator_ColumnPropNameInRow="ShipperName" msprop:Generator_ColumnPropNameInTable="ShipperNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperCity" msprop:Generator_UserColumnName="ShipperCity" msprop:Generator_ColumnVarNameInTable="columnShipperCity" msprop:Generator_ColumnPropNameInRow="ShipperCity" msprop:Generator_ColumnPropNameInTable="ShipperCityColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperState" msprop:Generator_UserColumnName="ShipperState" msprop:Generator_ColumnVarNameInTable="columnShipperState" msprop:Generator_ColumnPropNameInRow="ShipperState" msprop:Generator_ColumnPropNameInTable="ShipperStateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperZip" msprop:Generator_UserColumnName="ShipperZip" msprop:Generator_ColumnVarNameInTable="columnShipperZip" msprop:Generator_ColumnPropNameInRow="ShipperZip" msprop:Generator_ColumnPropNameInTable="ShipperZipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperCountry" msprop:Generator_UserColumnName="ShipperCountry" msprop:Generator_ColumnVarNameInTable="columnShipperCountry" msprop:Generator_ColumnPropNameInRow="ShipperCountry" msprop:Generator_ColumnPropNameInTable="ShipperCountryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConsigneeName" msprop:Generator_UserColumnName="ConsigneeName" msprop:Generator_ColumnVarNameInTable="columnConsigneeName" msprop:Generator_ColumnPropNameInRow="ConsigneeName" msprop:Generator_ColumnPropNameInTable="ConsigneeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConsigneeCity" msprop:Generator_UserColumnName="ConsigneeCity" msprop:Generator_ColumnVarNameInTable="columnConsigneeCity" msprop:Generator_ColumnPropNameInRow="ConsigneeCity" msprop:Generator_ColumnPropNameInTable="ConsigneeCityColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConsigneeState" msprop:Generator_UserColumnName="ConsigneeState" msprop:Generator_ColumnVarNameInTable="columnConsigneeState" msprop:Generator_ColumnPropNameInRow="ConsigneeState" msprop:Generator_ColumnPropNameInTable="ConsigneeStateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConsigneeZip" msprop:Generator_UserColumnName="ConsigneeZip" msprop:Generator_ColumnVarNameInTable="columnConsigneeZip" msprop:Generator_ColumnPropNameInRow="ConsigneeZip" msprop:Generator_ColumnPropNameInTable="ConsigneeZipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConsigneeCountry" msprop:Generator_UserColumnName="ConsigneeCountry" msprop:Generator_ColumnVarNameInTable="columnConsigneeCountry" msprop:Generator_ColumnPropNameInRow="ConsigneeCountry" msprop:Generator_ColumnPropNameInTable="ConsigneeCountryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Pieces" msprop:Generator_UserColumnName="Pieces" msprop:Generator_ColumnVarNameInTable="columnPieces" msprop:Generator_ColumnPropNameInRow="Pieces" msprop:Generator_ColumnPropNameInTable="PiecesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Weight" msprop:Generator_UserColumnName="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ShipDate" msprop:Generator_UserColumnName="ShipDate" msprop:Generator_ColumnVarNameInTable="columnShipDate" msprop:Generator_ColumnPropNameInRow="ShipDate" msprop:Generator_ColumnPropNameInTable="ShipDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShipTime" msprop:Generator_UserColumnName="ShipTime" msprop:Generator_ColumnVarNameInTable="columnShipTime" msprop:Generator_ColumnPropNameInRow="ShipTime" msprop:Generator_ColumnPropNameInTable="ShipTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TenderedDate" msprop:Generator_UserColumnName="TenderedDate" msprop:Generator_ColumnVarNameInTable="columnTenderedDate" msprop:Generator_ColumnPropNameInRow="TenderedDate" msprop:Generator_ColumnPropNameInTable="TenderedDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TenderedTime" msprop:Generator_UserColumnName="TenderedTime" msprop:Generator_ColumnVarNameInTable="columnTenderedTime" msprop:Generator_ColumnPropNameInRow="TenderedTime" msprop:Generator_ColumnPropNameInTable="TenderedTimeColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TrackingDetailTable" msprop:Generator_UserTableName="TrackingDetailTable" msprop:Generator_RowDeletedName="TrackingDetailTableRowDeleted" msprop:Generator_RowChangedName="TrackingDetailTableRowChanged" msprop:Generator_RowClassName="TrackingDetailTableRow" msprop:Generator_RowChangingName="TrackingDetailTableRowChanging" msprop:Generator_RowEvArgName="TrackingDetailTableRowChangeEvent" msprop:Generator_RowEvHandlerName="TrackingDetailTableRowChangeEventHandler" msprop:Generator_TableClassName="TrackingDetailTableDataTable" msprop:Generator_TableVarName="tableTrackingDetailTable" msprop:Generator_RowDeletingName="TrackingDetailTableRowDeleting" msprop:Generator_TablePropName="TrackingDetailTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemNumber" msprop:Generator_UserColumnName="ItemNumber" msprop:Generator_ColumnVarNameInTable="columnItemNumber" msprop:Generator_ColumnPropNameInRow="ItemNumber" msprop:Generator_ColumnPropNameInTable="ItemNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_UserColumnName="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationName" msprop:Generator_UserColumnName="LocationName" msprop:Generator_ColumnVarNameInTable="columnLocationName" msprop:Generator_ColumnPropNameInRow="LocationName" msprop:Generator_ColumnPropNameInTable="LocationNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TrackingSummaryTable" />
+      <xs:field xpath="mstns:ItemNumber" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="TrackingSummaryTable_TrackingDetailTable" msdata:parent="TrackingSummaryTable" msdata:child="TrackingDetailTable" msdata:parentkey="ItemNumber" msdata:childkey="ItemNumber" msprop:Generator_UserRelationName="TrackingSummaryTable_TrackingDetailTable" msprop:Generator_RelationVarName="relationTrackingSummaryTable_TrackingDetailTable" msprop:Generator_UserChildTable="TrackingDetailTable" msprop:Generator_UserParentTable="TrackingSummaryTable" msprop:Generator_ParentPropName="TrackingSummaryTableRow" msprop:Generator_ChildPropName="GetTrackingDetailTableRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

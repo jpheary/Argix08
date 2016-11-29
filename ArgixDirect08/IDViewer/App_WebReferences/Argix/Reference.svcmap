@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="09e2eb36-0e81-4353-b1a5-6d5b731cc701" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59181/Argix08.KronosService/KronosService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="KronosService.wsdl" MetadataType="Wsdl" ID="6a5761a6-15e4-47a5-b4b5-94186a49cb3e" SourceId="1" SourceUrl="http://localhost:59181/Argix08.KronosService/KronosService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="KronosService.disco" MetadataType="Disco" ID="b3f35fad-ab59-4870-abfd-d52f4ae5f529" SourceId="1" SourceUrl="http://localhost:59181/Argix08.KronosService/KronosService.svc?disco" />
+    <MetadataFile FileName="Kronos.wsdl" MetadataType="Wsdl" ID="376c2c18-ad30-4502-b7b1-39819fd154f3" SourceId="1" SourceUrl="http://localhost:59181/Argix08.KronosService/KronosService.svc?wsdl" />
+    <MetadataFile FileName="KronosService.xsd" MetadataType="Schema" ID="0e040a78-8183-4e64-8c90-d126b926e4bf" SourceId="1" SourceUrl="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd3" />
+    <MetadataFile FileName="KronosService2.xsd" MetadataType="Schema" ID="4f093c34-ed7c-497e-bc28-51f8e677635f" SourceId="1" SourceUrl="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd4" />
+    <MetadataFile FileName="KronosService3.xsd" MetadataType="Schema" ID="f4913d26-2a33-4749-a775-0c783289fdbd" SourceId="1" SourceUrl="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd2" />
+    <MetadataFile FileName="KronosService4.xsd" MetadataType="Schema" ID="281b579d-1aae-43b4-b743-a02c9d695b59" SourceId="1" SourceUrl="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd1" />
+    <MetadataFile FileName="KronosService5.xsd" MetadataType="Schema" ID="7cd74675-90c1-40ae-be98-982b6437c954" SourceId="1" SourceUrl="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,205 @@
+              --------------------------------------------------------
+                    		Zone Closing Application Readme File
+		                       			December, 2014
+              --------------------------------------------------------
+                         (c) Copyright Argix Logistics, 2004-2014
+
+This document provides late-breaking or other information that supplements the Zone Closing documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+Zone Closing is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\Zone Closing on a web server using Windows explorer.
+2.	Copy the following files into this folder-
+		Argix08.AppLogging.dll
+		Argix08.Configuration.dll
+		Argix08.Data.dll
+		Argix08.Windows.dll
+		Infragistics2.Shared.v10.1.dll
+		Infragistics2.Win.UltraWinGrid.v10.1.dll
+		Infragistics2.Win.v10.1.dll
+		Microsoft.ApplicationBlocks.Data.dll
+		ZoneClosing.exe
+		ZoneClosing.exe.config
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the application configuration file (i.e. ZoneClosing.exe.config), go to the <configuration> section, 
+and add/edit the values below:
+	
+Open the local sort database, goto the Configuration table, and add/edit the values below. Add 
+override entries for any applicable machine names or domain usernames (any Default entry can be 
+overridden).
+	Application     PCName          Key                       Value                      Security 
+	--------------- --------------- ------------------------- -------------------------  -------- 
+	Zone Closing	Default	        ClosedTLsDays             30                         1 
+	Zone Closing    Default         MISPassword               ********                   1        
+	Zone Closing    Default         ReadOnly                  true                       1        
+	Zone Closing	Default	        ShowLaneChanges           true                       1 
+	Zone Closing	Default	        ShowShipSchedule          true                       1 
+	Zone Closing    Default         TraceLevel                3                          1        
+	Zone Closing    <username>      ReadOnly                  false                      1        
+
+NOTES
+==============
+GENERAL
+The Zone Closing Application (ZoneClosing.exe) is a Windows based application used to manage routing 
+of sorted cartons (lane designations), organize groups of outbound freight into TL’s, and associate 
+outbound freight with line-haul schedules at a local terminal. In addition, the application provides 
+related reports.
+
+
+OPERATION
+Normal:
+The Zone Closing Application (ZoneClosing.exe) operates by launching from a web server deployment url 
+(i.e. http://<server>/Argix08/Apps/Freight/ZoneClosing/ZoneClosing.application). After a brief splash screen, 
+the application displays a list of open TLs. The taskbar displays the operating terminal and connection 
+status. Additional operating steps can be found in the on-line documentation provided by the Help/Contents 
+menu item.
+
+
+VERSION HISTORY
+v2.5.0, 01/09/06 ---------------------------------------------------------------------------
+Requirements/features
+- initial release per requirements and features detailed in the use case Manage Zone Closing.
+Design/deployment
+- none.
+
+v2.5.1, 06/13/06 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- Revised exception handling and logging.
+
+v2.5.2, 12/21/06 ---------------------------------------------------------------------------
+Requirements/features
+- added new ship schedule features.
+- corrected bug with trips available for moving closed TLs.
+Design/deployment
+- none.
+
+v2.5.5, 01/09/07 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- modified code for ship schedule data to correct bug in Infragistics UltraGrid that
+  caused text to disappear from the trip rows (not the stop rows).
+- upgraded to Infragistics NetAdvantage 2006 third party control suite (required: Infragistics.Win.v6.3.dll, Infragistics.Shared.v6.3.dll, Infragistics.Win.UltraWinGrid.v6.3.dll)
+
+v2.5.6, 02/13/07 ---------------------------------------------------------------------------
+Requirements/features
+- Added support for assigning closed TLs to the ship schedules.
+Design/deployment
+- changed Zone CLosing History report to run from SQL Reporting Services.
+
+v2.5.7, 04/04/07 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- corrected focus issue with ship schedule grid (ship schedule date picker kept focus from grid).
+
+v2.5.8, 05/24/07 ---------------------------------------------------------------------------
+Requirements/features
+- added new feature to find the ship schedule a TL (open or closed) may be assigned to.
+Design/deployment
+- corrected grid focus issues.
+
+v2.7.0, 09/11/07 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- added Diagnostic features.
+- removed Tsort.Controls.dll (replaced by the updated Tsort.Windows.dll).
+
+v2.7.1, 01/02/08 ---------------------------------------------------------------------------
+Requirements/features
+- added grid columns for TL Date and Close Number to all applicable grids.
+Design/deployment
+- none.
+
+v2.7.2, 02/27/08 ---------------------------------------------------------------------------
+Requirements/features
+- revised to support change in TL# format.
+Design/deployment
+- removed configuration parameters 05_TL_CH,05_TL_CH2,05_TL_TIME (related to generating TL#).
+- removed logic for TL generation; TLs generated by stored procedures.
+- revised logic for business rules to use TLDate and CloseNumber instead of TL#.
+
+v2.7.3, 04/28/08 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- added ReadOnly status to status bar.
+
+v3.0.0, 09/15/09 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Application ported to .NET Framework 3.5 using Visual Studio 2008.
+- upgraded to Infragistics NetAdvantage 2008 third party control suite (required: Infragistics2.Win.v8.1.dll, Infragistics2.Shared.v8.1.dll, Infragistics2.Win.UltraWinGrid.v8.1.dll)
+
+v3.0.0.1, 08/19/10 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Fixed bug with moving closed TLs on the ship schedule.
+
+v3.5.0, 08/24/10 ---------------------------------------------------------------------------
+Requirements/features
+- removed web service data access feature.
+Design/deployment
+- upgraded to Infragistics NetAdvantage 2010 third party control suite (required: Infragistics2.Win.v10.1.dll, Infragistics2.Shared.v10.1.dll, Infragistics2.Win.UltraWinGrid.v10.1.dll)
+
+v3.5.1, 01/13/11, 02/14/11, 02/15/11, 03/24/11, 08/11/11, 09/28/11, 10/11/11, 10/24/11, 11/28/11, 02/09/12, 03/26/12, 04/18/12, 08/03/12, 08/13/13, 06/11/14, 11/05/14, 11/11/14, 11/17/14, 12/02/14, 12/10/14, 12/16/14
+Requirements/features
+- added support for TL changes (i.e. TL based upon zone code and client number).
+Design/deployment
+- added client number/name columns to applicable views
+- using new stored procedures for lane changes (uspZoneCloseLaneUpdateTL) and zone 
+  closes (uspZoneCloseZoneCloseTL)
+- fixed bug with moving a TL between ship schedules
+- added SQL command timeout to configuration (180sec)
+- fixed bug with moving multiple TL's (same zone different client) for closing
+- rebuild for change in config database connection (JARGXTS to JARGXVMTS)
+- removed Zone Close History report (no longer available) menu item
+- rebuild for change in config database connection (LLRGXAD2 to LLRGXAD1)
+- rebuild for change in config database connection (MMRGXAD2 to MMRGXAD1)
+- rebuild for change in config database connection (ATRGXAD2 to ATRGXAD1)
+- rebuild for change in config database connection (CHRGXAD2 to CHRGXAD1)
+- rebuild for change in config database connection (MARGXAD2 to MARGXAD1)
+- rebuild for change in config database connection (CTRGXAD1 to CTRGXAD2)
+- rebuild for new config database connection (NFIVMRGXTS)
+- rebuild for new config database connections (AGNFIRGXTS, AGSFSRGXTS)
+- rebuild for new config database connection (RFRGXVMTS)
+- rebuild for change in config database connection (ATRGXAD1 to ATRGXVMSQL)
+- rebuild for change in config database connection (CHRGXAD1 to chrgxvmsql)
+- rebuild for change in config database connection (MARGXAD1 to margxvmsql)
+- rebuild for change in config database connection (rfrgxvmts to rfrgxvmsql1)
+- rebuild for change in config database connection (llrgxad1 to llrgxvmsql)
+- rebuild for change in config database connection (ctrgxad2 to ctrgxvmsql)
+- rebuild for change in config database connection (mmrgxad1 to mmrgxvmsql)

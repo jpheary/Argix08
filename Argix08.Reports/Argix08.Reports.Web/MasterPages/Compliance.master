@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" AutoEventWireup="false" CodeFile="Compliance.master.cs" Inherits="ComplianceMaster" %>
+<%@ Register Src="../DualDateTimePicker.ascx" TagName="DualDateTimePicker" TagPrefix="uc1" %>
+<%@ MasterType VirtualPath="~/MasterPages/Default.master" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Setup" Runat="Server">
+<asp:Panel ID="pnlSetup" runat="server" Width="100%" Height="100%" GroupingText="Setup">
+    <table width="100%" border="0px" cellpadding="0px" cellspacing="3px">
+        <tr style="font-size:1px"><td width="96px">&nbsp;</td><td width="384px">&nbsp;</td><td>&nbsp;</td></tr>
+         <tr>
+            <td colspan="2">&nbsp;<uc1:DualDateTimePicker ID="ddpPOD" runat="server" Width="332px" LabelWidth="96px" DateDaysBack="365" DateDaysForward="0" DateDaysSpread="365" EnableViewState="true" OnDateTimeChanged="OnFromToDateChanged" /></td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+        <tr>
+            <td align="right">Client&nbsp;</td>
+            <td colspan="2" valign="middle">
+                <asp:DropDownList id="cboClient" runat="server" Width="288px" DataSourceID="odsClients" DataTextField="ClientName" DataValueField="ClientNumber" AutoPostBack="True" OnSelectedIndexChanged="OnClientChanged"></asp:DropDownList>
+                <asp:ObjectDataSource ID="odsClients" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetSecureClients" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="900">
+                    <SelectParameters>
+                        <asp:ControlParameter Name="activeOnly" ControlID="chkActiveOnly" PropertyName="Checked" Type="Boolean" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+                &nbsp;&nbsp;
+                <asp:CheckBox ID="chkActiveOnly" runat="server" AutoPostBack="true" Text="Active Only" Checked="true" OnCheckedChanged="OnActiveOnlyChecked" />
+            </td>
+        </tr>
+        <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+        <tr>
+            <td align="right">Vendor&nbsp;</td>
+            <td>
+                <asp:DropDownList id="cboVendor" runat="server" Width="288px" DataSourceID="odsVendors" DataTextField="VendorSummary" DataValueField="VendorNumber" AppendDataBoundItems="true" AutoPostBack="True" OnSelectedIndexChanged="OnVendorChanged">
+                    <asp:ListItem Text="All" Value="" Selected="True" />
+                </asp:DropDownList>
+                <asp:ObjectDataSource ID="odsVendors" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetParentVendors" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="600" >
+                    <SelectParameters>
+                        <asp:ControlParameter Name="clientNumber" ControlID="cboClient" PropertyName="SelectedValue" Type="String" />
+                        <asp:Parameter Name="clientTerminal" DefaultValue="" ConvertEmptyStringToNull="true" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+         <tr>
+            <td align="right">Vendor Location&nbsp;</td>
+            <td>
+                <asp:DropDownList id="cboVendorLoc" runat="server" Width="288px" DataSourceID="odsVendorLocs" DataTextField="VendorSummary" DataValueField="VendorNumber" AppendDataBoundItems="true" AutoPostBack="True" OnSelectedIndexChanged="OnVendorLocChanged">
+                    <asp:ListItem Text="All" Value="" Selected="True" />
+                </asp:DropDownList>
+                <asp:ObjectDataSource ID="odsVendorLocs" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetVendorLocations" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="600" >
+                    <SelectParameters>
+                        <asp:ControlParameter Name="clientNumber" ControlID="cboClient" PropertyName="SelectedValue" Type="String" />
+                        <asp:Parameter Name="clientTerminal" DefaultValue="" ConvertEmptyStringToNull="true" Type="String" />
+                        <asp:ControlParameter Name="vendorNumber" ControlID="cboVendor" PropertyName="SelectedValue" ConvertEmptyStringToNull="true" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+        <tr>
+            <td align="right">Agent&nbsp;</td>
+            <td>
+                <asp:DropDownList ID="cboAgent" runat="server" Width="234px" AppendDataBoundItems="true" DataSourceID="odsAgents" DataTextField="AgentSummary" DataValueField="AgentNumber" AutoPostBack="True" OnSelectedIndexChanged="OnAgentChanged">
+                    <asp:ListItem Text="All" Value="" Selected="True" />
+                </asp:DropDownList>
+                <asp:ObjectDataSource ID="odsAgents" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetParentAgents" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="900" />
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+         <tr>
+            <td align="right">Agent Location&nbsp;</td>
+            <td>
+                <asp:DropDownList id="cboAgentLoc" runat="server" Width="288px" DataSourceID="odsAgentLocs" AppendDataBoundItems="true" DataTextField="AgentSummary" DataValueField="AgentNumber" AutoPostBack="True" OnSelectedIndexChanged="OnAgentLocChanged">
+                    <asp:ListItem Text="All" Value="" Selected="True" />
+                </asp:DropDownList>
+                <asp:ObjectDataSource ID="odsAgentLocs" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetAgentLocations" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="600" >
+                    <SelectParameters>
+                        <asp:ControlParameter Name="agent" ControlID="cboAgent" PropertyName="SelectedValue" ConvertEmptyStringToNull="true" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+   </table>
+</asp:Panel>
+</asp:Content>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="28305273-a0d9-4783-ba50-88e461e41841" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Argix08.AppServices/AppService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AppService.xsd" MetadataType="Schema" ID="18be4ff5-b856-443a-98c8-494b5ee8007e" SourceId="1" SourceUrl="http://tpjheary.argix.com/Argix08.AppServices/AppService.svc?xsd=xsd4" />
+    <MetadataFile FileName="AppService.disco" MetadataType="Disco" ID="ef7a372d-01e0-4c04-a94a-27e5f427113c" SourceId="1" SourceUrl="http://tpjheary.argix.com/Argix08.AppServices/AppService.svc?disco" />
+    <MetadataFile FileName="AppService1.xsd" MetadataType="Schema" ID="e60609ba-7d0f-4643-8896-d62115ac202f" SourceId="1" SourceUrl="http://tpjheary.argix.com/Argix08.AppServices/AppService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AppService2.xsd" MetadataType="Schema" ID="2e1cabe1-50fc-4a77-969b-3fbffc17fd0c" SourceId="1" SourceUrl="http://tpjheary.argix.com/Argix08.AppServices/AppService.svc?xsd=xsd3" />
+    <MetadataFile FileName="AppService3.xsd" MetadataType="Schema" ID="95bf7df7-b379-443f-91b8-017f6403580c" SourceId="1" SourceUrl="http://tpjheary.argix.com/Argix08.AppServices/AppService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AppService.wsdl" MetadataType="Wsdl" ID="3eae3a8f-fb68-48e6-a04e-2cbd330e30c6" SourceId="1" SourceUrl="http://tpjheary.argix.com/Argix08.AppServices/AppService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="AppService4.xsd" MetadataType="Schema" ID="81410f73-a17a-4de0-8fde-f31d65fb7bbb" SourceId="1" SourceUrl="http://tpjheary.argix.com/Argix08.AppServices/AppService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AppService1.wsdl" MetadataType="Wsdl" ID="f6d7cf42-2d33-48c7-b535-16baedac72fc" SourceId="1" SourceUrl="http://tpjheary.argix.com/Argix08.AppServices/AppService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

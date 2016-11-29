@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="OutboundServiceTypeDS" targetNamespace="http://www.tempuri.org/OutboundServiceTypeDS.xsd"
+	xmlns:mstns="http://www.tempuri.org/OutboundServiceTypeDS.xsd" xmlns="http://www.tempuri.org/OutboundServiceTypeDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="OutboundServiceTypeDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="OutboundServiceTypeTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ServiceID" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="FreightType" type="xs:string" />
+							<xs:element name="Mnemonic" type="xs:string" />
+							<xs:element name="IsPickup" type="xs:boolean" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="AgentServiceID" type="xs:int" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

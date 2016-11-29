@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InvoiceDS" targetNamespace="http://tempuri.org/InvoiceDS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/InvoiceDS.xsd" xmlns:mstns="http://tempuri.org/InvoiceDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="ClientTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ClientNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="DivisionNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                <xs:element name="TerminalCode" type="xs:string" minOccurs="0" />
+                <xs:element name="TerminalName" type="xs:string" minOccurs="0" />
+                <xs:element name="ARNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ClientInvoiceTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="InvoiceNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="InvoiceDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="PostToARDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Cartons" type="xs:int" minOccurs="0" />
+                <xs:element name="Pallets" type="xs:int" minOccurs="0" />
+                <xs:element name="Weight" type="xs:int" minOccurs="0" />
+                <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="ReleaseDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="InvoiceSummaryTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="BillToName" type="xs:string" minOccurs="0" />
+                <xs:element name="BillToAddressline1" type="xs:string" minOccurs="0" />
+                <xs:element name="BillToAddressline2" type="xs:string" minOccurs="0" />
+                <xs:element name="BillToCity" type="xs:string" minOccurs="0" />
+                <xs:element name="BillToState" type="xs:string" minOccurs="0" />
+                <xs:element name="BillToZip" type="xs:string" minOccurs="0" />
+                <xs:element name="BillToZIP4" type="xs:string" minOccurs="0" />
+                <xs:element name="Account_x0023_" type="xs:string" minOccurs="0" />
+                <xs:element name="InvoiceNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="InvoiceDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Terms" type="xs:string" minOccurs="0" />
+                <xs:element name="RemitToName" type="xs:string" minOccurs="0" />
+                <xs:element name="RemitToAddressLine1" type="xs:string" minOccurs="0" />
+                <xs:element name="RemitToAddressLine2" type="xs:string" minOccurs="0" />
+                <xs:element name="RemitToCity" type="xs:string" minOccurs="0" />
+                <xs:element name="RemitToState" type="xs:string" minOccurs="0" />
+                <xs:element name="RemitToZip" type="xs:string" minOccurs="0" />
+                <xs:element name="RemitToZip4" type="xs:string" minOccurs="0" />
+                <xs:element name="ShipmentDay" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Pieces" type="xs:int" minOccurs="0" />
+                <xs:element name="Weight" type="xs:int" minOccurs="0" />
+                <xs:element name="DeliveryCharges" type="xs:decimal" minOccurs="0" />
+                <xs:element name="LinehaulCharges" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TotalAmountDue" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="InvoiceDetailTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PerGallon" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ManifestNumbers" type="xs:string" minOccurs="0" />
+                <xs:element name="DestinationZip" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreCity" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalPieces" type="xs:int" minOccurs="0" />
+                <xs:element name="TotalWeight" type="xs:int" minOccurs="0" />
+                <xs:element name="DeliveryRate" type="xs:decimal" minOccurs="0" />
+                <xs:element name="DeliveryCharges" type="xs:decimal" minOccurs="0" />
+                <xs:element name="FSCPercentage" type="xs:decimal" minOccurs="0" />
+                <xs:element name="FuelSurcharge" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TotalDeliveryCharges" type="xs:decimal" minOccurs="0" />
+                <xs:element name="LHAllocation" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TotalCharges" type="xs:decimal" minOccurs="0" />
+				<xs:element name="DestinationState" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="InvoiceTLDetailTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="PerGallon" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Trip" type="xs:long" minOccurs="0" />
+                <xs:element name="DepartureDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="UnloadDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="Miles" type="xs:int" minOccurs="0" />
+                <xs:element name="RatePerMile" type="xs:decimal" minOccurs="0" />
+                <xs:element name="FCSPerMile" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TotalPerMile" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TrailerCharge" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TotalWeight" type="xs:int" minOccurs="0" />
+                <xs:element name="CostPerPound" type="xs:decimal" minOccurs="0" />
+                <xs:element name="BLNumber" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b38627e1-7707-4451-b17b-51c94a41c1d2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DeliveryPointsService4.xsd" MetadataType="Schema" ID="dcdb177c-6d3d-4fbd-8941-79dfcd97435e" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd4" />
+    <MetadataFile FileName="DeliveryPointsDS1.xsd" MetadataType="Schema" ID="0806d8a3-fce5-4c52-8fc6-de7ca07db40a" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd6" />
+    <MetadataFile FileName="DeliveryPointsService41.xsd" MetadataType="Schema" ID="3aa983f2-dc3c-489a-bcda-47d04429227e" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="DeliveryPointsService42.xsd" MetadataType="Schema" ID="e0020853-7b10-49d5-a176-97c93200467a" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd5" />
+    <MetadataFile FileName="DeliveryPointsService43.xsd" MetadataType="Schema" ID="fbc2e34f-bd85-4f45-b2b9-180ccc215185" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd3" />
+    <MetadataFile FileName="DeliveryPointsService1.disco" MetadataType="Disco" ID="7dd4ea45-6662-4e14-a6d3-2307917e0435" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?disco" />
+    <MetadataFile FileName="DeliveryPointsService2.wsdl" MetadataType="Wsdl" ID="5b0e8b27-59ef-4d58-8e8a-1004a977234c" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="DeliveryPointsService44.xsd" MetadataType="Schema" ID="14bb1308-1d25-4f1e-a0c6-2eda7e8bc55e" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DeliveryPointsService21.wsdl" MetadataType="Wsdl" ID="eab4206d-7917-4679-a730-3eec0b04413b" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?wsdl" />
+    <MetadataFile FileName="DeliveryPointsService45.xsd" MetadataType="Schema" ID="18b0cc03-c0ea-4d7e-8f8f-ba93649f1bbf" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

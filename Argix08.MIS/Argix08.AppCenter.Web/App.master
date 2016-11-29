@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Default.master" AutoEventWireup="true" CodeFile="App.master.cs" Inherits="App" %>
+<%@ MasterType VirtualPath="~/Default.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Body" Runat="Server">
+<asp:Panel ID="pnlDescription" runat="server" Width="100%" Height="96px" GroupingText="Description">
+    <table width="100%" border="0px" cellpadding="0px" cellspacing="3px">
+        <tr style="font-size:1px"><td width="100%">&nbsp;</td></tr>
+        <tr><td><asp:ContentPlaceHolder id="Description" runat="server"></asp:ContentPlaceHolder></td></tr>
+        <tr style="font-size:1px"><td width="100%">&nbsp;</td></tr>
+   </table>
+</asp:Panel>
+<br />
+<asp:Panel ID="pnlLinks" runat="server" Width="100%" Height="96px" GroupingText="Links">
+    <table width="100%" border="0px" cellpadding="0px" cellspacing="3px">
+        <tr style="font-size:1px"><td width="100%">&nbsp;</td></tr>
+        <tr><td><asp:ContentPlaceHolder id="Links" runat="server"></asp:ContentPlaceHolder></td></tr>
+        <tr style="font-size:1px"><td width="100%">&nbsp;</td></tr>
+  </table>
+</asp:Panel>
+</asp:Content>
+

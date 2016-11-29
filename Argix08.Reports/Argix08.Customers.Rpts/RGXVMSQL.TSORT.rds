@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="RGXVMSQL.TSORT">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=RGXVMSQL;Initial Catalog=TSORT</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>0b55c2b9-ab3f-48ff-9c23-7cf188df17e3</DataSourceID>
+</RptDataSource>

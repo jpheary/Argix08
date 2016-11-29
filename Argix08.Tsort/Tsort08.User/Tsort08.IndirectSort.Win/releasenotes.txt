@@ -1,0 +1,235 @@
+              --------------------------------------------------------
+                    		Indirect Sort Application Readme File
+		                       			December, 2014
+              --------------------------------------------------------
+                         (c) Copyright Argix Logistics, 2004 - 2014
+
+This document provides late-breaking or other information that supplements the Indirect Sort documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+Indirect Sort is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\IndirectSort on a web server like RGXDEV using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+		Argix08.AppLogging.dll
+		Argix08.Configuration.dll
+		Argix08.Data.dll
+		Argix08.Windows.dll
+		IndirectSort.exe
+		IndirectSort.exe.config
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the application configuration file (i.e. IndirectSort.exe.config), go to the <configuration> section, 
+and add/edit the values below:
+<configSections>
+	<sectionGroup name="station">
+		<section name="printer" type="System.Configuration.NameValueSectionHandler" />
+		<section name="scale" type="System.Configuration.NameValueSectionHandler" />
+	</sectionGroup>
+	<sectionGroup name="menu">
+		<section name="help" type="System.Configuration.NameValueSectionHandler" />
+	</sectionGroup>
+</configSections>
+<station>
+	<printer>
+		<add key="BaudRate" value="19200" />
+		<add key="DataBits" value="7" />
+		<add key="Parity" value="None" />
+		<add key="StopBits" value="1" />
+		<add key="Handshake" value="None" />
+		<add key="CheckStatus" value="true" />
+		<add key="LogEvents" value="false" />
+	</printer>
+	<scale>
+	</scale>
+</station>
+<menu>
+	<help>
+		<add key="Contents..." value="" />
+		<add key="Release Notes..." value="http://RGXDEVDB/IndirectSort/releasenotes.txt" />
+	</help>
+</menu>
+
+<appSettings>
+	<!-- Client configuration -->
+	<add key="UseWebSvc" value="true" />
+	<add key="IndirectSort.DataWS.DataAccess" value="http://RGXDEVDB/RGXDEVDB.TSORTLOCAL.WebSvc/DataAccess.asmx"/>
+	<add key="EventLogMachineName" value="RGXDEV" />
+	
+	<!-- Database configuration (for two-tier deployment only: UseWebSvc=false) -->
+	<add key="SQLConnection" value="Data Source=RGXDEVDB;Initial Catalog=TSORTLOCAL;User ID=;Password=;Persist Security Info=True;Packet Size=4096;" />
+</appSettings>
+	
+Open the local sort database (i.e. TSORT on JARGXTS), goto the Configuration table, and add/edit the 
+values below:
+	Application     PCName          Key                       Value                     Security 
+	--------------- --------------- ------------------------- ------------------------- -------- 
+	Indirect Sort   Default         LabelOverrideRegular      54A                       1        
+	Indirect Sort   Default         LabelOverrideReturn       55A                       1        
+	Indirect Sort   Default         LanePrefix                99                        1        
+	Indirect Sort   Default         MISPassword               ********                  1        
+	Indirect Sort   Default         ReadOnly                  false                     1        
+	Indirect Sort   Default         ScanSize                  24                        1        
+	Indirect Sort   Default         TraceLevel                2                         1        
+	Indirect Sort   Default         ValidateLane              true                      1        
+	Indirect Sort   Default         ValidateSmalLane          true                      1        
+
+
+
+NOTES
+==============
+GENERAL
+The Indirect Sort Application (IndirectSort.exe) is a Windows based application used in sorting indirect freight.
+
+
+OPERATION
+Normal:
+The Indirect Sort Application (Indirect Sort.exe) operates by launching from a web server deployment 
+url (i.e. http://rgxvmweb/Argix08/Aps/IndirectSort/IndirectSort.application). After a brief splash screen, a sizeable window appears and 
+displays details of the current trip assignment for the operating station. The taskbar displays the operating 
+terminal and sort station.Additional operating steps can be found in the on-line documentation provided by the 
+Help/Contents menu item.
+
+Diagnostics Mode:
+CTL ENTER at the Splash screen displays a dialog that examines configuration, database, assembly, 
+and deployment requirements.
+
+
+VERSION HISTORY
+v2.0.0, 06/02/04 ---------------------------------------------------------------------------
+Requirements/features
+- no new requirements or features
+
+Design/deployment
+- added support for SQL Server data sources
+- application configuration parameters moved from app.config to database (ScanSize, OutboundLabelTypeOverride, OutboundLabelTypeOverrideReturns)
+- added app.config keys for COM printer configuration (BaudRate, DataBits, RS232Parity, RS232StopBits, RS232Handshake)
+- added support for application log tracing to Windows event log and database ArgixLog table
+
+
+v2.1.0, 10/28/04 ---------------------------------------------------------------------------
+Requirements/features
+- added new status bar to display operating terminal and database connection source/status
+- added new menu item Tools/Use Web Services... that allows runtime switching between backend data source access (IT USE ONLY)
+
+Design/deployment
+- removed support for DB2 data sources (no longer required: Tsort.IndirectSort.Bus.dll)
+- added app.config key (UseWebSvc) for configuration switching between backend data source access (web service or ado.net)
+- removed business layer component (no longer required: Tsort.IndirectSort.Bus.dll)
+- added data access through generic web service Tsort.Data.WebSvc (i.e. JARGXTS.TSORT.WebSvc)
+- added additional configuration parameters to database (MISPassword, TraceLevel= 0:None; 1:Debug; 2:Information; 3:Warning; 4:Error)
+- upgraded to Infragistics NetAdvantage 2004 third party control suite (required: Infragistics.Win.v3.2.dll, Infragistics.Shared.v3.2.dll, Infragistics.Win.UltraWinGrid.v3.2.dll)
+
+
+v2.1.1, 11/09/04 ---------------------------------------------------------------------------
+Requirements/features
+- no new features.
+
+Design/deployment
+- revised trace log messages to assist with problem regarding carton overages.
+
+
+v2.1.2, 11/10/04 ---------------------------------------------------------------------------
+Requirements/features
+- no new features.
+
+Design/deployment
+- revised trace log messages to assist with problem regarding carton overages.
+
+
+v2.1.3, 11/11/04 ---------------------------------------------------------------------------
+Requirements/features
+- new release addresses carton overages problem. 
+- carton is saved to database despite print-related errors (but not if label creation fails).
+
+Design/deployment
+- revised trace log messages.
+
+
+v2.2.0, 12/16/04 ---------------------------------------------------------------------------
+Requirements/features
+- no new features.
+
+Design/deployment
+- revised CreateCarton() to pass DateTime.Now instead of DateTime.Now.ToString("") to preserve true time (GMT).
+- using new features built into Tsort.Shared.User.dll.
+- revised Help menu to support dynamically configurable (app.config) ShowHelp menu items.
+- revised design and implementation to support Diagnostics mode.
+- merged datasets Clients, Lanes, Stores, Vendors into LaneAssignDS.
+
+
+v2.2.1, 01/06/05 ---------------------------------------------------------------------------
+Requirements/features
+- added support for Transfer freight through use of a lane prefix.
+
+Design/deployment
+- added configuration parameters to database (LanePrefix, ReadOnly).
+
+
+v2.2.2, 01/13/05 ---------------------------------------------------------------------------
+Requirements/features
+- revised to provide lane\small lane validation when creating a label.
+
+Design/deployment
+- added additional configuration parameters to database (ValidateLane, ValidateSmallLane)
+
+
+v2.7.0, 11/12/07 ---------------------------------------------------------------------------
+Requirements/features
+- revised to support new token, <localRouteLane>.
+
+Design/deployment
+- revised design to use Tsort.Data.dll.
+- replaced Tsort.Shared.User.dll with Tsort.Windows.dll.
+- removed Tsort.Controls.dll (replaced by the updated Tsort.Windows.dll).
+- added Diagnostic features.
+
+v3.5.0, 09/21/11, 10/11/11, 11/28/11, 02/09/12, 03/26/12, 08/13/13, 06/11/14, 11/05/14, 11/11/14, 11/17/14, 12/02/14, 12/10/14, 12/16/14
+Requirements/features
+- none.
+Design/deployment
+- Application ported to .NET Framework 3.5 using Visual Studio 2008.
+- removed web service data access feature.
+- upgraded to Infragistics NetAdvantage 2010 third party control suite (required: Infragistics2.Win.v10.1.dll, Infragistics2.Shared.v10.1.dll, Infragistics2.Win.UltraWinGrid.v10.1.dll)
+- rebuild for change in config database connection (MMRGXAD2 to MMRGXAD1)
+- rebuild for change in config database connection (CHRGXAD2 to CHRGXAD1)
+- rebuild for change in config database connection (MARGXAD2 to MARGXAD1)
+- rebuild for change in config database connection (CTRGXAD1 to CTRGXAD2)
+- rebuild for change in config database connection (RFRGXAD2 to RFRGXVMTS)
+- rebuild for change in config database connection (ATRGXAD1 to ATRGXVMSQL)
+- rebuild for change in config database connection (CHRGXAD1 to chrgxvmsql)
+- rebuild for change in config database connection (MARGXAD1 to margxvmsql)
+- rebuild for change in config database connection (rfrgxvmts to rfrgxvmsql1)
+- rebuild for change in config database connection (llrgxad1 to llrgxvmsql)
+- rebuild for change in config database connection (ctrgxad2 to ctrgxvmsql)
+- rebuild for change in config database connection (mmrgxad1 to mmrgxvmsql)
+
+
+

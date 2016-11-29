@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PandaDS" targetNamespace="http://tempuri.org/PandaDS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/PandaDS.xsd" xmlns:mstns="http://tempuri.org/PandaDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="PandaDS" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="PandaTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CartonID" type="xs:string" minOccurs="0" />
+                            <xs:element name="StatusCode" type="xs:int" minOccurs="0" />
+                            <xs:element name="LabelData" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="PacketTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Received" type="xs:dateTime" />
+                            <xs:element name="MessageLength" type="xs:int" minOccurs="0" />
+                            <xs:element name="MessageCode" type="xs:int" minOccurs="0" />
+                            <xs:element name="MessageNumber" type="xs:int" minOccurs="0" />
+                            <xs:element name="OriginalMessageCode" type="xs:int" minOccurs="0" />
+                            <xs:element name="MessageFlags" type="xs:int" minOccurs="0" />
+                            <xs:element name="RecordIterator" type="xs:int" minOccurs="0" />
+                            <xs:element name="MessageBody" type="xs:string" minOccurs="0" />
+                            <xs:element name="Valid" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="Exception" type="xs:string" minOccurs="0" />
+                            <xs:element name="ProcessingTime" type="xs:float" minOccurs="0" />
+                            <xs:element name="ClientID" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CartonTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CartonID" type="xs:string" minOccurs="0" />
+							<xs:element name="Barcode1" type="xs:string" minOccurs="0" />
+							<xs:element name="Barcode2" type="xs:string" minOccurs="0" />
+							<xs:element name="Barcode3" type="xs:string" minOccurs="0" />
+							<xs:element name="Barcode4" type="xs:string" minOccurs="0" />
+							<xs:element name="Barcode5" type="xs:string" minOccurs="0" />
+							<xs:element name="Barcode6" type="xs:string" minOccurs="0" />
+							<xs:element name="ItemWeight" type="xs:decimal" minOccurs="0" />
+							<xs:element name="StatusCode" type="xs:int" minOccurs="0" />
+							<xs:element name="LabelFormat" type="xs:string" minOccurs="0" />
+							<xs:element name="Verify" type="xs:string" minOccurs="0" />
+							<xs:element name="LabelException" type="xs:string" minOccurs="0" />
+							<xs:element name="SaveException" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix/Imports">
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd0" namespace="http://Argix" />
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Argix" />
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAppService_GetTerminalInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfo" />
+  </wsdl:message>
+  <wsdl:message name="IAppService_GetTerminalInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAppService_GetUserConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="IAppService_GetUserConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAppService_GetUserConfiguration_ConfigurationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Argix" name="detail" element="q1:ConfigurationFault" />
+  </wsdl:message>
+  <wsdl:message name="IAppService_GetUserConfiguration2_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfiguration2" />
+  </wsdl:message>
+  <wsdl:message name="IAppService_GetUserConfiguration2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfiguration2Response" />
+  </wsdl:message>
+  <wsdl:message name="IAppService_GetUserConfiguration2_ConfigurationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Argix" name="detail" element="q2:ConfigurationFault" />
+  </wsdl:message>
+  <wsdl:message name="IAppService_WriteLogEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteLogEntry" />
+  </wsdl:message>
+  <wsdl:portType name="IAppService">
+    <wsdl:operation name="GetTerminalInfo">
+      <wsdl:input wsaw:Action="http://Argix/IAppService/GetTerminalInfo" message="tns:IAppService_GetTerminalInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IAppService/GetTerminalInfoResponse" message="tns:IAppService_GetTerminalInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserConfiguration">
+      <wsdl:input wsaw:Action="http://Argix/IAppService/GetUserConfiguration" message="tns:IAppService_GetUserConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IAppService/GetUserConfigurationResponse" message="tns:IAppService_GetUserConfiguration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.ConfigurationFault" name="ConfigurationFaultFault" message="tns:IAppService_GetUserConfiguration_ConfigurationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserConfiguration2">
+      <wsdl:input wsaw:Action="http://Argix/IAppService/GetUserConfiguration2" message="tns:IAppService_GetUserConfiguration2_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IAppService/GetUserConfiguration2Response" message="tns:IAppService_GetUserConfiguration2_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.ConfigurationFault" name="ConfigurationFaultFault" message="tns:IAppService_GetUserConfiguration2_ConfigurationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteLogEntry">
+      <wsdl:input wsaw:Action="http://Argix/IAppService/WriteLogEntry" message="tns:IAppService_WriteLogEntry_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

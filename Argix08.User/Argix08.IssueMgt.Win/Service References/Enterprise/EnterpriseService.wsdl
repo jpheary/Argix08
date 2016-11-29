@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix.Enterprise" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix.Enterprise" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix.Enterprise/Imports">
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd0" namespace="http://Argix.Enterprise" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd2" namespace="http://tempuri.org/CompanyDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd4" namespace="http://tempuri.org/LocationDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd5" namespace="http://tempuri.org/AgentDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd6" namespace="http://tempuri.org/StoreDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd7" namespace="http://tempuri.org/EnterpriseDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd8" namespace="http://tempuri.org/ContactDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/Argix.Enterprise" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEnterpriseService_GetCompanies_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanies" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetCompanies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompaniesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompany" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetDistricts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistricts" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetDistricts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistrictsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetRegions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegions" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetRegions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetAgents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgents" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetAgents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetAgentsForClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgentsForClient" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetAgentsForClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgentsForClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetStoreDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoreDetail" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetStoreDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoreDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetSubStoreDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubStoreDetail" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetSubStoreDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubStoreDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetDeliveries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveries" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetDeliveries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetDelivery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDelivery" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetDelivery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetOSDScans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOSDScans" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetOSDScans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOSDScansResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetPODScans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPODScans" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetPODScans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPODScansResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetContacts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContacts" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetContacts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetContactsForLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactsForLocation" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetContactsForLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactsForLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContact" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_GetContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_CreateContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateContact" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_CreateContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_UpdateContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateContact" />
+  </wsdl:message>
+  <wsdl:message name="IEnterpriseService_UpdateContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateContactResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEnterpriseService">
+    <wsdl:operation name="GetCompanies">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetCompanies" message="tns:IEnterpriseService_GetCompanies_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetCompaniesResponse" message="tns:IEnterpriseService_GetCompanies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompany">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetCompany" message="tns:IEnterpriseService_GetCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetCompanyResponse" message="tns:IEnterpriseService_GetCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistricts">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetDistricts" message="tns:IEnterpriseService_GetDistricts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetDistrictsResponse" message="tns:IEnterpriseService_GetDistricts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetRegions" message="tns:IEnterpriseService_GetRegions_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetRegionsResponse" message="tns:IEnterpriseService_GetRegions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgents">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetAgents" message="tns:IEnterpriseService_GetAgents_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetAgentsResponse" message="tns:IEnterpriseService_GetAgents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentsForClient">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetAgentsForClient" message="tns:IEnterpriseService_GetAgentsForClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetAgentsForClientResponse" message="tns:IEnterpriseService_GetAgentsForClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreDetail">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetStoreDetail" message="tns:IEnterpriseService_GetStoreDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetStoreDetailResponse" message="tns:IEnterpriseService_GetStoreDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubStoreDetail">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetSubStoreDetail" message="tns:IEnterpriseService_GetSubStoreDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetSubStoreDetailResponse" message="tns:IEnterpriseService_GetSubStoreDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveries">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetDeliveries" message="tns:IEnterpriseService_GetDeliveries_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetDeliveriesResponse" message="tns:IEnterpriseService_GetDeliveries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDelivery">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetDelivery" message="tns:IEnterpriseService_GetDelivery_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetDeliveryResponse" message="tns:IEnterpriseService_GetDelivery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOSDScans">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetOSDScans" message="tns:IEnterpriseService_GetOSDScans_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetOSDScansResponse" message="tns:IEnterpriseService_GetOSDScans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPODScans">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetPODScans" message="tns:IEnterpriseService_GetPODScans_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetPODScansResponse" message="tns:IEnterpriseService_GetPODScans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContacts">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetContacts" message="tns:IEnterpriseService_GetContacts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetContactsResponse" message="tns:IEnterpriseService_GetContacts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactsForLocation">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetContactsForLocation" message="tns:IEnterpriseService_GetContactsForLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetContactsForLocationResponse" message="tns:IEnterpriseService_GetContactsForLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContact">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetContact" message="tns:IEnterpriseService_GetContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/GetContactResponse" message="tns:IEnterpriseService_GetContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateContact">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/CreateContact" message="tns:IEnterpriseService_CreateContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/CreateContactResponse" message="tns:IEnterpriseService_CreateContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <wsdl:input wsaw:Action="http://Argix.Enterprise/IEnterpriseService/UpdateContact" message="tns:IEnterpriseService_UpdateContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Enterprise/IEnterpriseService/UpdateContactResponse" message="tns:IEnterpriseService_UpdateContact_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

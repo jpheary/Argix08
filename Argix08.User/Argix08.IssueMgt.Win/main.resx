@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="mnuMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>11, 13</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="mnuFileActionNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAeVJREFUOE+N0F1I
+        U2Ecx/F534sZeBVS0E3dZIGG4UtQaSX0ir2AgSnSrIQi0IusC0MwphQVZFIXjqiVikKwylotk1EiqVsn
+        TbENZjvzbIjFdDs7Z37zrAaB4DkP/Hguzvl/fg//NNO/43OcRVZjpujCtCk+P23KLfempb4ZuicclSTk
+        YdRIJy7bNgwNaT/96DvJVL+ZYec+EjEnSrgRe8cWbjdm0lqXoQ8J9tMkFDeqPIiy0I36+xoR3ykkoZiG
+        mg36wEhPHurcY+SQBXmuCSVUya/xPXx7l01ZSbo+4Gpfj70ti+47WUTFama/FnDu2FoKt6/mcP4afSC1
+        rPbmTYTH9uN5tZGtm1cZH0wBzZfSqS3P4MzBdZzY+3d5rV0hLM+lZG7aJOofBrlwT6SiJcDuej9Fdf6V
+        izTA+hEevV+k7Y2KpTfOjU6ZhicxzPfnKbzs0QdatPZnEtetM1TdClDW9JOSq37yrvjJrfmyMvDUPoS6
+        qC5LNK7gDUbJP3LeGOAcnESLhr0eGF/Kd4QpkaLjF40B/79Ca5+NKAwJS0vUAzp6XclWrd3xaQJtuOet
+        h64+NwMjXn3ggc2RBGZCYXwBCfdkkM+CyIdRkRf9YxQc1dnBXetLdhRXsLO0mpwDVcuy65CZP6Q5gbin
+        NSa7AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="mnuSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAixJREFUOE+tk91L
+        k3EUx/0Xuvcm6KJbmzPG1mI1eMo5lGXDsCJ6eyKXpekyTVK0TKOWL5CtcOmk1WoSTiryBUyREtlYSr5l
+        rnCJw1dsIhh8+51f9PyyrJv6wbn8fM5zzvk+cXH/4z1/FgOVv3UZLb4lPPTMo6kxirvOadTVTsFxM4xr
+        FRMoLRlDUeE75OcN4tzZEJTeBHZ1ArU1q/jbW1ldgymjCwcynvJSBL4ni1xQVbnwR57g6PwKdlpeQKWS
+        Yd3vFQLPgzkuKC35vKHgB/whsohEsx+FFyexz9IsBK6GGS64YH//m+Bn+O14FFslH3JzhpGW6hKC+tsR
+        Lsg+M7hO8CvcF4og3uCBLA/AbHYKQU31Jy6QTw4ogo3gzv6P2KRtxMFDr5CcXCcE16sm0dEOdkrgyLE3
+        sB7u5dumhdHM9NnU+TvcjXTrS0iSQwjKy8bR5gfLANDs/sru/gUVV2f5UmlhNLMtK6TAKWmtMBorheBS
+        0TC8j4D7rjUWnBhMmTnrynLUjszTxbxzSiqD93phMJQJgT1/iMFA9a0Y70wCFhIk6iQERmcwNDELOe8K
+        dptaOKzb5YZeXywEFEvnHSifTQKCTxXcwEh4DuHpJZy/7IDa4GZwE9Q77kGnLRACW1aQzb3MZ95i9GLz
+        NgmP23rgb+9DR3c/el8HsMdshUrfgCQGJ2jqodHkCkEwsIATx3t4PClhFBK6M52Ktk0Lo5mpKxXB25Oy
+        heBf/uhvBAg8UNDrQl8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="mnuFileSetup.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAW9JREFUOE+tk79L
+        QlEUxx1raKkhCBpqaoqWoq0ximiIIIiGQP8ZhYIUpeyHkUqpYaFgaKVlGalZSb6wouHVIGJZGqamvm/c
+        Ky8yn88Gv3C4y/1+zvnew5VIGiWbN4q/ZXVHYHJewWD3I3T7BNFexEx0J2Po+VsrliMMjMrEITseBlFp
+        BMxsGOGZS4SmAvBPnOF07BhqgxMuX6QMYVjhSSz7Ydr0ejpUNYFqY4+a+RKMsum4oMbg5HkVwDa4CwLh
+        QYIAva1s9I17KwAcx2G7z4z4a4YC+kekwhHWrCfU6Bk+qADkv4ow9ujBxlLiAK3JTY3OIccPoFjikM7k
+        oetaxT2bFAdojC5qJHl5ZXMFJN4+sdSxiJuHhDiA5CMieYkKxRLeP3J4jqehalMiyMTqA8y9WzTvercO
+        y51aaNrVULYuYL5lDopmRX0A6UzykodLprL04ZjHF8ib5DgMsP8D8PuuddZcI79jcqFeNeoDU843i/3P
+        jndGO2AAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="mnuFilePrint.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAjNJREFUOE+1k+1P
+        klEYxv2nWK2tVlttGmpltrCcEQ1XUjSMaUHJNLIlNcnCragplBvUoBd0SMw0lqQPuSRlStgEcoJEiIAI
+        8nL1vNQcgVsf6mz3l/s81++6n+ucU1b2P5bbG4Lx7ey2ZRiZwba+lHiU8ODPld7Mwre8iufmCVRxJaUB
+        ydQm9JZP2Ehl8D0Sg80xR9dLKwGdyQ7HrB/1wk4cP9deGvDBuQj79GKBOeW8Fk/BtRCEwUKg8tQVmKz2
+        YkA4moDaYEc2l4c/EC5wN9s+g5jxoa5Jjlq+DLfVr3BPa96COOe8tHiEcNPulOtv50A4Abc3jIc6K/3v
+        su4BPDaMo+q0lAG4vvjRox2GxvQRD/Q2PHk9iR6NBe139RB1qMFtVuAQ+XFFfQtOnL8BZd8gxHI1DjZc
+        ZgB3+t8glkgVpU41MtkckmSgVAahSBJLK3FIuzRobO0mJ/h1EvJeI0xj03hhdUBjHMV97RA6Vc8g6eqD
+        sE0F3iUFOE0dOMyTovykGBfIXp3gOvbWCpkJ2pS6ku5UM7aehi+whqn5EN47gxi0L4EruoXKhlawKs4w
+        AIniaRGAzBA/4hnMf1vHuCsCdu9O6N6t0Mkf5V/DnhrBFqDlZj/SGYA0QySRx3I0j4VgDhOeDQxNxTFg
+        W4WSxYJqOEoDDnBEtNgyNslMIJY/gocUUJt/UwViCvDVF0BNowzVvKtgk7esnDyu/Zxm7Dt2EbuPCLCr
+        +ix2sPm0a5H4X7zkn9YBQJfwwbXXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="mnuFilePreview.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAdtJREFUOE+t099L
+        U3EYx3H/m666iDK68CaCfkgSQTEiuqiJC3ESSnq5m4qgH2ZDt8StZgt/jI5xVrmZ7ejOXCsaFWxNhZJE
+        3WSpRbmj29w7N7F2Otu66YGHAwc+r+c5X76nqup/lOif4u8WfBEGve9wul8T/jhHxTn5cLnqdY2zv7a+
+        MjIsRcsCXU4vo5ORbST6pfQmrhcfygLmvpFCeKdLfkr/87caIJNOMTE5geW+gyu3Orne2UVNnb70Bg/F
+        kApYX08hejyM+QPEk1+ZSyRxCiL6psuspRQtYhdkFSAFZLySv/Auk4UfyiaLK1nM9iH6XcNaoGfQpwK6
+        7Q4WlpK/w4lvGaYX0rjlKZpbWrRA96NRFdBh6WF+abkwObGa3QpvEJpWuPc4RKPRqAXyJ11cguhG9ErE
+        V7cmL6Z5NaPwLPwTY7uJXpuN4LhHjRQDuVyOz7Oz3OgwYxt4yhM5hlUIYWwzoTtzmoE75xCtl9RIMbCR
+        zrLyXSESi3HXYsHQ2MSF+gbO6k5ibj1E/MERNoPncdxu5dNMdHuTHSD/LNdXr93kYt0+3puqmbceZNmt
+        o81w4g9QfUzPv/pw7SkMx/fysv0ADUd38yYoVf7JSl3bcGCMmj27kH0jhfAv+SEv7P9MHPUAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="mnuEditCut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAalJREFUOE+t099L
+        U2Ecx3H/l/DCi0iysovwJ6Mr04RzupA13YGFDMxsTqERtfIU/pg/GNpozDahjmc6dMtxNre1WhuL5U3k
+        zXJGYiD4R7zbgrw8Hsnn8svzeT083+f71NWd94ppHwgoMf65pVKJcuWAuaXgSU33zLi2zfTiColk6m9g
+        b69COJoiEHxrDKiFFl6vsqJEyeVyHBweYbvvQl1VjAPqZoYpb5DPhSLZ/A6ixU5kff0MwEayCoTwvVEY
+        e+pB6JOMh2tX2Hyv4XjiQRp6jGAeZGjEeTaghtgevkTsf4BwT8YXCBsHIvEiTt8+4vOfDM8U6Br/ym3X
+        N8bmC/jfpfWhta0iZs8xovsHbZZlbvZ76XZk6H60i8mewPHilEY6X5UR5d+02za4LsxiHvHTNfqFrcRH
+        5gJJrlVrukN0Z+IXaiyPEklztXeauJai1/UdNfoJ2RvhYoddHxCeVaqbc3j8Gk23Jshmswy487RYVRpu
+        SFyov6QPSPIOrdYwTT2TNJusZNJpFpYTXOm00dh6F3n+lGn0BrcxWZa43CHhngkZf7r/+dF/ABW8/Gj5
+        9D5jAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="mnuEditCopy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAeJJREFUOE+lk9FP
+        klEYxv1TSsecde0f0FpZrTbbal7URVvZuuJCr7pq2WzLNWy0iSHNwtIB9qG0ltLSYRJpBomUgZPMGSyU
+        8SmJIOiv7zssCdrAzXd77s77e5/nnPdUVR20HBPfUCWNB4QsI176HB8IL/9iX2y1ubTMwx6utz0nuLhc
+        GWIfCxT153Z26ep/g9Md4FJLZ2WIZdQnAM4QSJ/BH5Z5aH6NNCljm0hgdSV4MppAPxQXCq5kil31OTx7
+        DjLbOeSNNJFYUgBKq31glfpmN76F9QLEZHOJc73ubXQjMreln7Q+DdP/du0/QIsxhmNK5mjTMJ/m43mI
+        Qcmr5t5MZVlNpFiKrPM1vIbpVVQAOqSckF+ZekUX5UjTS+ouDFLb+CwPUPNupbN7k7WmEDcMX3hgXSpy
+        IP/OsrCyhXtuA6M0g+bc4wJATqaZ/x7DF4zg8f9g/OMibb355701kERriHL5fojzd2aFjNI0mjPdBUD9
+        6auUqlU/KwBZJV4skWUuvMmYV8b+Ls6jQQ81DfryO3KtfUoA/p3810G37T3VJ3TlARdvukhldjANeemx
+        z2B8MS0mq80GyySHj98rD2jQOpXbtgrVNprRnO2h5lQX1Sc7leYODh27W3nN9/WZDnroDx0A5wwhdtmt
+        AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="mnuEditPaste.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAl5JREFUOE+1k19I
+        k1EYxj/owm6K/lBXXRVEN1FEUF1kFLbCZotFYkarRcxJySbL2kZqzRy6dHNp2hbNbaipsxKljWJDaDjK
+        zFmb0R+JnJFrWfs2N+eyePq+E8tG/y6iFx7em/P8nve8nENR/6PcvWq4bqjQ3ayAb8iJP2Z4BxzoatF9
+        V3PtIYSDrYgFryIwUoPTIg50lTJc1iihryxhgK50IGtO0DYkI51IhNtgbZIhPmmBplSEp/1ynD3JhVy4
+        EUH3EUzaV0Ii2PszgDUnI+1oVB+G11MD+k09JkaUeOU5hh4jDwX5mWgtXYFHOgqFB/ekAzottSQ9SV9n
+        UgUol+VBWZSLM4V8yEQ8SIVciPOzUCdZRQB52ZnpgDaTBjN0B2ZCBsTHqxB6XAS/ZSmRz7wE3qYFGNBn
+        EDOrrC3r0wFWgxrToWZMj1Ug/uwEYkP7QfcuhNZsR5WhG+cudUCusUKqMqJAoYeguDodYGpQYSqgR2xE
+        hKmHXETvbcC7W8uIOVXJ2c8IRxIYmwgjV3weOUeVcxCjtgz08wpEH3AQ7VuLiGM5AmaKJLNluukmMrS7
+        4BsNEvPdfj928YXfIA3VCnwYPoWIaw3o24sRsmVg9BpFxv40+wUfo0zy2zB8L4PwDL9Gdr4UHMa8Y/c+
+        ZG7dBqruQglC98WMeRHed83HeMs8+BspSJg7s2OnJrjCTFBvdaCnz086q83rVoO6WF5MHkhqy6kuYhb2
+        Y7LT84KYbXe8aLcPzgGeDDqhLTvOvDAehPydyNm+iZDZbbN3TqX9qpMJflcHmG2zB/6mf/7MXwEEtPyA
+        vhdrJwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="mnuViewRefresh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAeVJREFUOE+dk0tr
+        E1EYho+/SFy4cOdWf4A7XbR040IwCwWhu+qm0IpixIIWUkrRoBarLbVYq1kYhHqpmgabJm3S5m5bnGQy
+        98dzZgjJTFDUD14+DmfeZ77LzLHxR3VEJGxHCNNGdCyEbkr1ZcMSwpB3KmxHZgVIvMXX9JrH1CuX+LLD
+        zRc24/MWY0mT0TmDqwmdy/fbXLzXZuSO5uvEyDo+oF9jszWuTde4dLfC0ESZczf2OTta4vSVEqdixZCO
+        D6URM8/S/G14Hjiuh2l7dEyXk2eGEQ+epP7ov3BL+PeedFsuvlmX5sU3nwPA1MPVAUCl/YVM4ynvShMo
+        gJJtg2GCbrhoutMDRFtQ5q6pm4fjAaQlAZrucqj1AaItqAfV21VUtB6s1YHDlpQ0N4+s37ewlI/5ZgWy
+        rCArc3IzRvMn0mxTPTB7gPjsy4EZdEvPN7/55kztqw+qHkD1h8VewyS5/CkY4u3EUggQ7b97Xs3NU6zD
+        Xt1kt2ow8/xjGCBXjOPIVTlB2eevCxa3JlnITrJezvjmfAN2Kga5cicMUDt21I5lz7qhJh1A6kdykLLs
+        kjQWavC9Atv7BtmiHgaoryub22Vjc4f3GwVSHwqspLdZSOV4/HqLuZVBhVpQw/hfRf/kfz7/AnpK5JN9
+        UL0GAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <metadata name="imlMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>115, 13</value>
+  </metadata>
+  <data name="imlMain.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAK
+        CQAAAk1TRnQBSQFMAgEBAgEAAQQBAAEEAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAARADAAEBAQABCAYAAQQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/1IAAfEBkgH3AfE8AAEc
+        AUsBjQHsAfItAAPvAfMDAAPvAfQDAAGaAVMBTALsAfIsAAEUARUBAAHwAwABEgERAQAB8QMAAfYBmgFT
+        AXQC7AHyAQAD/ycAARUBQwEAAe8B8wH0AfIBEwEQAQAB8QQAAf8BwwFTAUwB7AH3AfEB7wH3Ae8B8QH/
+        JgAB6wIAAQ4BEgHtAwAB8QUAAf8BmgFTAXMB7AHtAbUBuwG1AesB9wH/JQABBwIAAf8BAAHzAwAB8QYA
+        AfYBGgEHAbUBGQLiAfQB3QHrAQckAAFtAesCAAG8AQAB7QIAAREB8wcAAf8CCQEZAeIB9AL/ARkB7QH/
+        IwAB/wESAZIBAAEOAe0B7wIAAfMIAAH0AQkCGQHiAfQC/wHiAfcB9CQAAewCAAETAQcCAAERCQAB8gMZ
+        AuIB9ALiAbsB9CUAAQ8BQwIAAQ8BEgHzCQAB/wEJAxkD4gEZAbUB/yYAAQ4CAAEPAQ4B8wkAAf8B8AEZ
+        Af8BGQEJAhkBuwEHNwAB/wG8ARkB4gIZAQkBtQH0OAAB9AEHAbUCCQG8AfRiAAFCAU0BPgcAAT4DAAEo
+        AwABQAMAARADAAEBAQABAQUAAYAXAAP/AQAE/wQAAv8BhwH/BAAC/wGDAf8EAAHhAcMBgQH/BAAB4QHD
+        AYABjwQAAeABAwHAAQMEAAHgAQMB4AEBBAAB4AEDAfABAQQAAeABAwH4BQAB4AEHAfgFAAHwAQ8B+AUA
+        AfkBjwH4BQAB+QGPAfgBAQQAAv8B/AEBBAAC/wH+AQMEAAT/BAAL
+</value>
+  </data>
+  <metadata name="tmrAutoHide.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>211, 13</value>
+  </metadata>
+  <data name="mExplorer.ColumnFilters" xml:space="preserve">
+    <value>&lt;SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"&gt;
+&lt;SOAP-ENV:Body&gt;
+&lt;a1:UltraGridDisplayLayout id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Override href="#ref-3"/&gt;
+&lt;TabNavigation&gt;1&lt;/TabNavigation&gt;
+&lt;ViewStyle&gt;0&lt;/ViewStyle&gt;
+&lt;ScrollStyle&gt;1&lt;/ScrollStyle&gt;
+&lt;Bands href="#ref-4"/&gt;
+&lt;ScrollBounds&gt;0&lt;/ScrollBounds&gt;
+&lt;/a1:UltraGridDisplayLayout&gt;
+&lt;a1:UltraGridOverride id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;AllowAddNew&gt;2&lt;/AllowAddNew&gt;
+&lt;AllowDelete&gt;2&lt;/AllowDelete&gt;
+&lt;AllowUpdate&gt;2&lt;/AllowUpdate&gt;
+&lt;CellClickAction&gt;2&lt;/CellClickAction&gt;
+&lt;HeaderClickAction&gt;2&lt;/HeaderClickAction&gt;
+&lt;MaxSelectedRows&gt;1&lt;/MaxSelectedRows&gt;
+&lt;RowSelectors&gt;2&lt;/RowSelectors&gt;
+&lt;SelectTypeRow&gt;2&lt;/SelectTypeRow&gt;
+&lt;AllowRowFiltering&gt;1&lt;/AllowRowFiltering&gt;
+&lt;_x0034_ href="#ref-6"/&gt;
+&lt;_x0035_ href="#ref-7"/&gt;
+&lt;/a1:UltraGridOverride&gt;
+&lt;a1:BandsCollection id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Count&gt;1&lt;/Count&gt;
+&lt;_x0030_ href="#ref-8"/&gt;
+&lt;/a1:BandsCollection&gt;
+&lt;a2:AppearanceHolder id="ref-6" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;Appearance href="#ref-9"/&gt;
+&lt;/a2:AppearanceHolder&gt;
+&lt;a2:AppearanceHolder id="ref-7" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;Appearance href="#ref-10"/&gt;
+&lt;/a2:AppearanceHolder&gt;
+&lt;a1:UltraGridBand id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Key id="ref-11"&gt;IssueTable&lt;/Key&gt;
+&lt;ScrollTipField id="ref-12"&gt;LastActionCreated&lt;/ScrollTipField&gt;
+&lt;Override href="#ref-13"/&gt;
+&lt;Columns href="#ref-14"/&gt;
+&lt;/a1:UltraGridBand&gt;
+&lt;a2:Appearance id="ref-9" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;BackColor xsi:type="a3:Color" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;
+&lt;name xsi:null="1"/&gt;
+&lt;value&gt;0&lt;/value&gt;
+&lt;knownColor&gt;5&lt;/knownColor&gt;
+&lt;state&gt;1&lt;/state&gt;
+&lt;/BackColor&gt;
+&lt;FontData href="#ref-16"/&gt;
+&lt;TextHAlign&gt;1&lt;/TextHAlign&gt;
+&lt;Id&gt;0&lt;/Id&gt;
+&lt;/a2:Appearance&gt;
+&lt;a2:Appearance id="ref-10" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;BorderColor xsi:type="a3:Color" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;
+&lt;name xsi:null="1"/&gt;
+&lt;value&gt;0&lt;/value&gt;
+&lt;knownColor&gt;8&lt;/knownColor&gt;
+&lt;state&gt;1&lt;/state&gt;
+&lt;/BorderColor&gt;
+&lt;Id&gt;0&lt;/Id&gt;
+&lt;/a2:Appearance&gt;
+&lt;a1:UltraGridOverride id="ref-13" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;RowFilterMode&gt;1&lt;/RowFilterMode&gt;
+&lt;/a1:UltraGridOverride&gt;
+&lt;a1:ColumnsCollection id="ref-14" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Count&gt;25&lt;/Count&gt;
+&lt;_x0030_ href="#ref-17"/&gt;
+&lt;_x0031_ href="#ref-18"/&gt;
+&lt;_x0032_ href="#ref-19"/&gt;
+&lt;_x0033_ href="#ref-20"/&gt;
+&lt;_x0034_ href="#ref-21"/&gt;
+&lt;_x0035_ href="#ref-22"/&gt;
+&lt;_x0036_ href="#ref-23"/&gt;
+&lt;_x0037_ href="#ref-24"/&gt;
+&lt;_x0038_ href="#ref-25"/&gt;
+&lt;_x0039_ href="#ref-26"/&gt;
+&lt;_x0031_0 href="#ref-27"/&gt;
+&lt;_x0031_1 href="#ref-28"/&gt;
+&lt;_x0031_2 href="#ref-29"/&gt;
+&lt;_x0031_3 href="#ref-30"/&gt;
+&lt;_x0031_4 href="#ref-31"/&gt;
+&lt;_x0031_5 href="#ref-32"/&gt;
+&lt;_x0031_6 href="#ref-33"/&gt;
+&lt;_x0031_7 href="#ref-34"/&gt;
+&lt;_x0031_8 href="#ref-35"/&gt;
+&lt;_x0031_9 href="#ref-36"/&gt;
+&lt;_x0032_0 href="#ref-37"/&gt;
+&lt;_x0032_1 href="#ref-38"/&gt;
+&lt;_x0032_2 href="#ref-39"/&gt;
+&lt;_x0032_3 href="#ref-40"/&gt;
+&lt;_x0032_4 href="#ref-41"/&gt;
+&lt;/a1:ColumnsCollection&gt;
+&lt;a2:FontData id="ref-16" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;Name id="ref-42"&gt;Verdana&lt;/Name&gt;
+&lt;SizeInPoints&gt;8&lt;/SizeInPoints&gt;
+&lt;Bold&gt;1&lt;/Bold&gt;
+&lt;/a2:FontData&gt;
+&lt;a1:UltraGridColumn id="ref-17" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-43"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-44"&gt;ID&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-18" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-45"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-46"&gt;TypeID&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-19" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-47"/&gt;
+&lt;Key id="ref-48"&gt;Type&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-20" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-49"/&gt;
+&lt;Key id="ref-50"&gt;Subject&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-21" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-51"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-52"&gt;ContactID&lt;/Key&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-22" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-53"/&gt;
+&lt;Key id="ref-54"&gt;ContactName&lt;/Key&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-23" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-55"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-56"&gt;CompanyID&lt;/Key&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-24" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-57"/&gt;
+&lt;Key id="ref-58"&gt;CompanyName&lt;/Key&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-25" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-59"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-60"&gt;RegionNumber&lt;/Key&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-26" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-61"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-62"&gt;DistrictNumber&lt;/Key&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-27" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-63"/&gt;
+&lt;Key id="ref-64"&gt;AgentNumber&lt;/Key&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-28" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-65"/&gt;
+&lt;Key id="ref-66"&gt;StoreNumber&lt;/Key&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-29" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-67"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-68"&gt;OFD1FromDate&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-30" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-69"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-70"&gt;OFD1ToDate&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-31" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-71"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-72"&gt;PROID&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-32" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-73"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-74"&gt;FirstActionID&lt;/Key&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-33" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-75"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-76"&gt;FirstActionDescription&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-34" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-77"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-78"&gt;FirstActionCreated&lt;/Key&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-35" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-79"/&gt;
+&lt;Key id="ref-80"&gt;FirstActionUserID&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-36" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-81"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-82"&gt;LastActionID&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-37" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-83"/&gt;
+&lt;Key id="ref-84"&gt;LastActionDescription&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-38" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-85"/&gt;
+&lt;Key href="#ref-12"/&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;Format id="ref-86"&gt;MM/dd/yyyy hh:mm tt&lt;/Format&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-39" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-87"/&gt;
+&lt;Key id="ref-88"&gt;LastActionUserID&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-40" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-89"/&gt;
+&lt;Key id="ref-90"&gt;Zone&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;1&lt;/AllowRowFiltering&gt;
+&lt;Width&gt;60&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-41" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-91"/&gt;
+&lt;Key id="ref-92"&gt;Coordinator&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:ColumnHeader id="ref-43" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;0&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-45" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;22&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-47" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;5&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-49" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;8&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-51" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;9&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-53" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-93"&gt;Contact&lt;/Caption&gt;
+&lt;VisiblePosition&gt;10&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-55" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;11&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-57" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-94"&gt;Company&lt;/Caption&gt;
+&lt;VisiblePosition&gt;4&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-59" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-95"&gt;Region#&lt;/Caption&gt;
+&lt;VisiblePosition&gt;12&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-61" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-96"&gt;District#&lt;/Caption&gt;
+&lt;VisiblePosition&gt;13&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-63" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-97"&gt;Agent#&lt;/Caption&gt;
+&lt;VisiblePosition&gt;3&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-65" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-98"&gt;Store#&lt;/Caption&gt;
+&lt;VisiblePosition&gt;2&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-67" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;14&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-69" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;15&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-71" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;16&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-73" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;17&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-75" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-99"&gt;Initial Action&lt;/Caption&gt;
+&lt;VisiblePosition&gt;18&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-77" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;19&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-79" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-100"&gt;Originator&lt;/Caption&gt;
+&lt;VisiblePosition&gt;23&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-81" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;20&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-83" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-101"&gt;Action&lt;/Caption&gt;
+&lt;VisiblePosition&gt;6&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-85" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-102"&gt;Received&lt;/Caption&gt;
+&lt;VisiblePosition&gt;7&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-87" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-103"&gt;Last User&lt;/Caption&gt;
+&lt;VisiblePosition&gt;21&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-89" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;1&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-91" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;24&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;/SOAP-ENV:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;
+</value>
+  </data>
+  <data name="mExplorer.ColumnHeaders" xml:space="preserve">
+    <value>&lt;SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"&gt;
+&lt;SOAP-ENV:Body&gt;
+&lt;a1:UltraGridDisplayLayout id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Override href="#ref-3"/&gt;
+&lt;TabNavigation&gt;1&lt;/TabNavigation&gt;
+&lt;ViewStyle&gt;0&lt;/ViewStyle&gt;
+&lt;ScrollStyle&gt;1&lt;/ScrollStyle&gt;
+&lt;Bands href="#ref-4"/&gt;
+&lt;ScrollBounds&gt;0&lt;/ScrollBounds&gt;
+&lt;/a1:UltraGridDisplayLayout&gt;
+&lt;a1:UltraGridOverride id="ref-3" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;AllowAddNew&gt;2&lt;/AllowAddNew&gt;
+&lt;AllowDelete&gt;2&lt;/AllowDelete&gt;
+&lt;AllowUpdate&gt;2&lt;/AllowUpdate&gt;
+&lt;CellClickAction&gt;2&lt;/CellClickAction&gt;
+&lt;HeaderClickAction&gt;2&lt;/HeaderClickAction&gt;
+&lt;MaxSelectedRows&gt;1&lt;/MaxSelectedRows&gt;
+&lt;RowSelectors&gt;2&lt;/RowSelectors&gt;
+&lt;SelectTypeRow&gt;2&lt;/SelectTypeRow&gt;
+&lt;AllowRowFiltering&gt;1&lt;/AllowRowFiltering&gt;
+&lt;_x0034_ href="#ref-6"/&gt;
+&lt;_x0035_ href="#ref-7"/&gt;
+&lt;/a1:UltraGridOverride&gt;
+&lt;a1:BandsCollection id="ref-4" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Count&gt;1&lt;/Count&gt;
+&lt;_x0030_ href="#ref-8"/&gt;
+&lt;/a1:BandsCollection&gt;
+&lt;a2:AppearanceHolder id="ref-6" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;Appearance href="#ref-9"/&gt;
+&lt;/a2:AppearanceHolder&gt;
+&lt;a2:AppearanceHolder id="ref-7" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;Appearance href="#ref-10"/&gt;
+&lt;/a2:AppearanceHolder&gt;
+&lt;a1:UltraGridBand id="ref-8" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Key id="ref-11"&gt;IssueTable&lt;/Key&gt;
+&lt;ScrollTipField id="ref-12"&gt;LastActionCreated&lt;/ScrollTipField&gt;
+&lt;Override href="#ref-13"/&gt;
+&lt;Columns href="#ref-14"/&gt;
+&lt;SortedCols href="#ref-15"/&gt;
+&lt;/a1:UltraGridBand&gt;
+&lt;a2:Appearance id="ref-9" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;BackColor xsi:type="a3:Color" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;
+&lt;name xsi:null="1"/&gt;
+&lt;value&gt;0&lt;/value&gt;
+&lt;knownColor&gt;5&lt;/knownColor&gt;
+&lt;state&gt;1&lt;/state&gt;
+&lt;/BackColor&gt;
+&lt;FontData href="#ref-17"/&gt;
+&lt;TextHAlign&gt;1&lt;/TextHAlign&gt;
+&lt;Id&gt;0&lt;/Id&gt;
+&lt;/a2:Appearance&gt;
+&lt;a2:Appearance id="ref-10" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;BorderColor xsi:type="a3:Color" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/System.Drawing/System.Drawing"&gt;
+&lt;name xsi:null="1"/&gt;
+&lt;value&gt;0&lt;/value&gt;
+&lt;knownColor&gt;8&lt;/knownColor&gt;
+&lt;state&gt;1&lt;/state&gt;
+&lt;/BorderColor&gt;
+&lt;Id&gt;0&lt;/Id&gt;
+&lt;/a2:Appearance&gt;
+&lt;a1:UltraGridOverride id="ref-13" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;RowFilterMode&gt;1&lt;/RowFilterMode&gt;
+&lt;/a1:UltraGridOverride&gt;
+&lt;a1:ColumnsCollection id="ref-14" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Count&gt;25&lt;/Count&gt;
+&lt;_x0030_ href="#ref-18"/&gt;
+&lt;_x0031_ href="#ref-19"/&gt;
+&lt;_x0032_ href="#ref-20"/&gt;
+&lt;_x0033_ href="#ref-21"/&gt;
+&lt;_x0034_ href="#ref-22"/&gt;
+&lt;_x0035_ href="#ref-23"/&gt;
+&lt;_x0036_ href="#ref-24"/&gt;
+&lt;_x0037_ href="#ref-25"/&gt;
+&lt;_x0038_ href="#ref-26"/&gt;
+&lt;_x0039_ href="#ref-27"/&gt;
+&lt;_x0031_0 href="#ref-28"/&gt;
+&lt;_x0031_1 href="#ref-29"/&gt;
+&lt;_x0031_2 href="#ref-30"/&gt;
+&lt;_x0031_3 href="#ref-31"/&gt;
+&lt;_x0031_4 href="#ref-32"/&gt;
+&lt;_x0031_5 href="#ref-33"/&gt;
+&lt;_x0031_6 href="#ref-34"/&gt;
+&lt;_x0031_7 href="#ref-35"/&gt;
+&lt;_x0031_8 href="#ref-36"/&gt;
+&lt;_x0031_9 href="#ref-37"/&gt;
+&lt;_x0032_0 href="#ref-38"/&gt;
+&lt;_x0032_1 href="#ref-39"/&gt;
+&lt;_x0032_2 href="#ref-40"/&gt;
+&lt;_x0032_3 href="#ref-41"/&gt;
+&lt;_x0032_4 href="#ref-42"/&gt;
+&lt;/a1:ColumnsCollection&gt;
+&lt;a1:SortedColumnsCollection id="ref-15" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Count&gt;1&lt;/Count&gt;
+&lt;_x0030_ href="#ref-43"/&gt;
+&lt;/a1:SortedColumnsCollection&gt;
+&lt;a2:FontData id="ref-17" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win/Infragistics2.Win.v10.1"&gt;
+&lt;Name id="ref-44"&gt;Verdana&lt;/Name&gt;
+&lt;SizeInPoints&gt;8&lt;/SizeInPoints&gt;
+&lt;Bold&gt;1&lt;/Bold&gt;
+&lt;/a2:FontData&gt;
+&lt;a1:UltraGridColumn id="ref-18" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-45"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-46"&gt;ID&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-19" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-47"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-48"&gt;TypeID&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-20" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-49"/&gt;
+&lt;Key id="ref-50"&gt;Type&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-21" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-51"/&gt;
+&lt;Key id="ref-52"&gt;Subject&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-22" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-53"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-54"&gt;ContactID&lt;/Key&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-23" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-55"/&gt;
+&lt;Key id="ref-56"&gt;ContactName&lt;/Key&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-24" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-57"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-58"&gt;CompanyID&lt;/Key&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-25" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-59"/&gt;
+&lt;Key id="ref-60"&gt;CompanyName&lt;/Key&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-26" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-61"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-62"&gt;RegionNumber&lt;/Key&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-27" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-63"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-64"&gt;DistrictNumber&lt;/Key&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-28" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-65"/&gt;
+&lt;Key id="ref-66"&gt;AgentNumber&lt;/Key&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-29" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-67"/&gt;
+&lt;Key id="ref-68"&gt;StoreNumber&lt;/Key&gt;
+&lt;Width&gt;72&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-30" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-69"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-70"&gt;OFD1FromDate&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-31" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-71"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-72"&gt;OFD1ToDate&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-32" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-73"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-74"&gt;PROID&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;2&lt;/AllowRowFiltering&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-33" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-75"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-76"&gt;FirstActionID&lt;/Key&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-34" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-77"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-78"&gt;FirstActionDescription&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-35" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-79"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-80"&gt;FirstActionCreated&lt;/Key&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-36" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-81"/&gt;
+&lt;Key id="ref-82"&gt;FirstActionUserID&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-37" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-83"/&gt;
+&lt;Hidden&gt;true&lt;/Hidden&gt;
+&lt;Key id="ref-84"&gt;LastActionID&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-38" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-85"/&gt;
+&lt;Key id="ref-86"&gt;LastActionDescription&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-39" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-87"/&gt;
+&lt;Key href="#ref-12"/&gt;
+&lt;Width&gt;144&lt;/Width&gt;
+&lt;Format id="ref-88"&gt;MM/dd/yyyy hh:mm tt&lt;/Format&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-40" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-89"/&gt;
+&lt;Key id="ref-90"&gt;LastActionUserID&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-41" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-91"/&gt;
+&lt;Key id="ref-92"&gt;Zone&lt;/Key&gt;
+&lt;AllowRowFiltering&gt;1&lt;/AllowRowFiltering&gt;
+&lt;Width&gt;60&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:UltraGridColumn id="ref-42" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Header href="#ref-93"/&gt;
+&lt;Key id="ref-94"&gt;Coordinator&lt;/Key&gt;
+&lt;Width&gt;96&lt;/Width&gt;
+&lt;IsBound&gt;true&lt;/IsBound&gt;
+&lt;/a1:UltraGridColumn&gt;
+&lt;a1:SerializedColumnID id="ref-43" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Key href="#ref-12"/&gt;
+&lt;RelativeIndex&gt;21&lt;/RelativeIndex&gt;
+&lt;Bound&gt;true&lt;/Bound&gt;
+&lt;SortIndicator&gt;2&lt;/SortIndicator&gt;
+&lt;IsGroupByColumn&gt;false&lt;/IsGroupByColumn&gt;
+&lt;/a1:SerializedColumnID&gt;
+&lt;a1:ColumnHeader id="ref-45" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;0&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-47" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;22&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-49" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;5&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-51" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;8&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-53" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;9&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-55" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-95"&gt;Contact&lt;/Caption&gt;
+&lt;VisiblePosition&gt;10&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-57" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;11&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-59" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-96"&gt;Company&lt;/Caption&gt;
+&lt;VisiblePosition&gt;4&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-61" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-97"&gt;Region#&lt;/Caption&gt;
+&lt;VisiblePosition&gt;12&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-63" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-98"&gt;District#&lt;/Caption&gt;
+&lt;VisiblePosition&gt;13&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-65" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-99"&gt;Agent#&lt;/Caption&gt;
+&lt;VisiblePosition&gt;3&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-67" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-100"&gt;Store#&lt;/Caption&gt;
+&lt;VisiblePosition&gt;2&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-69" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;14&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-71" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;15&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-73" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;16&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-75" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;17&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-77" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-101"&gt;Initial Action&lt;/Caption&gt;
+&lt;VisiblePosition&gt;18&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-79" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;19&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-81" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-102"&gt;Originator&lt;/Caption&gt;
+&lt;VisiblePosition&gt;23&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-83" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;20&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-85" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-103"&gt;Action&lt;/Caption&gt;
+&lt;VisiblePosition&gt;6&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-87" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-104"&gt;Received&lt;/Caption&gt;
+&lt;VisiblePosition&gt;7&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-89" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;Caption id="ref-105"&gt;Last User&lt;/Caption&gt;
+&lt;VisiblePosition&gt;21&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-91" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;1&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;a1:ColumnHeader id="ref-93" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Infragistics.Win.UltraWinGrid/Infragistics2.Win.UltraWinGrid.v10.1"&gt;
+&lt;VisiblePosition&gt;24&lt;/VisiblePosition&gt;
+&lt;/a1:ColumnHeader&gt;
+&lt;/SOAP-ENV:Body&gt;
+&lt;/SOAP-ENV:Envelope&gt;
+</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>41</value>
+  </metadata>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICAQAAEABADoAgAAJgAAABAQEAABAAQAKAEAAA4DAAAoAAAAIAAAAEAAAAABAAQAAAAAAIAC
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/
+        AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAAAAABz
+        cwAAAAAAAAAAAAAAAAAANwA3AAAAAAAAAAAAAAAAA3D4AHMAAAAAAAAAAAAAAAcI//gANwAAAAAAAAAA
+        AABzD///+ABzAAAAAAAAAAAAMI/3f//4ADcAAAAAAAAAA3D/9/d/j/gAcwAAAAAAAAcI/3//gY//+AA3
+        AAAAAABzD/93gRGI///4AHMAAAAAMI/3cRERj4j///g3AAAAA3D/9/EfEY//iP//cAAAAAcI/3//fxGP
+        //+P9zAAAABzD/939/+Bj////3MAAAAAMI/3f3f/8YiP//83AAAAA3D/9/d///H4+I/3cAAAAAcI/3//
+        f///GP//9zAAAABzD/939/+I/xj//3MAAAAAMI///3f//4gfj/83AAAAA4D/////////gY/3cAAAAAg4
+        //8A//////H/9zAAAAAAg4j3iHD//////3MAAAAAAAA4N/iIcP////83AAAAAAAAAIf4iIhw///3cAAA
+        AAAAAAAPj/iIh///9zAAAAAAAAAAD4iP+If//3MAAAAAAAAAAA+ACId4//83AAAAAAAAAAAP9wiAg4P3
+        cAAAAAAAAAAAAA/4AAA4ODAAAAAAAAAAAAAAAAAAAIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/8f///+B
+        ////gH///wAf//8AB//+AAH//gAAf/wAAB/8AAAH+AAAAfgAAAHwAAAB8AAAA+AAAAPgAAAHwAAAB8AA
+        AA+AAAAPgAAAHwAAAB8AAAA/AAAAPwAAAH/AAAB/8AAA//wAAP/8AAH//AAB//wAA//+BAP//48H////
+        x/8oAAAAEAAAACAAAAABAAQAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAA
+        AACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAA/wAA
+        AAAAAAD//wAAAAAAD////wAAAAAP8R///wAAAP8RH///AAAA//8f//AAAA///x//8AAAD///8f8AAAD/
+        ///x/wAAAP8P//HwAAAAAPAP//AAAAAA+/D/AAAAAAAAsP8AAAAAAAAAAAAAAAAAAAAAAAAA/P8AAPg/
+        AAD4DwAA8AMAAPABAADgAQAA4AMAAMADAADABwAAgAcAAIAPAADADwAA4B8AAPAfAAD9PwAA//8AAA==
+</value>
+  </data>
+</root>

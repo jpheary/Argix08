@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.argixdirect.com/webservices" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.argixdirect.com/webservices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Generic Data Access Web Service</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.argixdirect.com/webservices">
+      <s:element name="ExecuteDataset">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExecuteDatasetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteDatasetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQuery">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteNonQueryResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryWithReturn">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteNonQueryWithReturnResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteNonQueryWithReturnResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteReader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteReaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteReaderResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteScalar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteScalarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteScalarResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteXmlReader">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="XmlReader" abstract="true" />
+      <s:element name="ExecuteXmlReaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ExecuteXmlReaderResult" type="tns:XmlReader" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillDataset">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillDatasetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillDatasetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillDatasetWithTimeout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramValues" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FillDatasetWithTimeoutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FillDatasetWithTimeoutResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDataset">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="spInsert" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="spDelete" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="spUpdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDatasetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateDatasetResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ExecuteDatasetSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteDataset" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteDatasetSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteDatasetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQuerySoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQuery" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQuerySoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryWithReturnSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryWithReturn" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteNonQueryWithReturnSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryWithReturnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteReaderSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteReader" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteReaderSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteReaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteScalarSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteScalar" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteScalarSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteScalarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteXmlReaderSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteXmlReader" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteXmlReaderSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteXmlReaderResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillDataSoapIn">
+    <wsdl:part name="parameters" element="tns:FillData" />
+  </wsdl:message>
+  <wsdl:message name="FillDataSoapOut">
+    <wsdl:part name="parameters" element="tns:FillDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillDatasetSoapIn">
+    <wsdl:part name="parameters" element="tns:FillDataset" />
+  </wsdl:message>
+  <wsdl:message name="FillDatasetSoapOut">
+    <wsdl:part name="parameters" element="tns:FillDatasetResponse" />
+  </wsdl:message>
+  <wsdl:message name="FillDatasetWithTimeoutSoapIn">
+    <wsdl:part name="parameters" element="tns:FillDatasetWithTimeout" />
+  </wsdl:message>
+  <wsdl:message name="FillDatasetWithTimeoutSoapOut">
+    <wsdl:part name="parameters" element="tns:FillDatasetWithTimeoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDatasetSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateDataset" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDatasetSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDatasetResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DataAccessSoap">
+    <wsdl:operation name="ExecuteDataset">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method returns a DataSet object that contains the resultset returned by a command.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteDatasetSoapIn" />
+      <wsdl:output message="tns:ExecuteDatasetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to execute commands that do not return any rows or values. They are generally used to perform database updates, but they can also be used to return output parameters from stored procedures.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteNonQuerySoapIn" />
+      <wsdl:output message="tns:ExecuteNonQuerySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryWithReturn">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Same as ExecuteNonQuery except will return a single value for an output parameter.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteNonQueryWithReturnSoapIn" />
+      <wsdl:output message="tns:ExecuteNonQueryWithReturnSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteReader">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to return a SqlDataReader object that contains the resultset returned by a command.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteReaderSoapIn" />
+      <wsdl:output message="tns:ExecuteReaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method returns a single value. The value is always the first column of the first row returned by the command.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteScalarSoapIn" />
+      <wsdl:output message="tns:ExecuteScalarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteXmlReader">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method returns an XML fragment from a FOR XML query.</wsdl:documentation>
+      <wsdl:input message="tns:ExecuteXmlReaderSoapIn" />
+      <wsdl:output message="tns:ExecuteXmlReaderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns XML in tableName table of an untyped dataset. Provide parameter values in the correct sequence e.g. new object[]{value1,value2}</wsdl:documentation>
+      <wsdl:input message="tns:FillDataSoapIn" />
+      <wsdl:output message="tns:FillDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillDataset">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is similar to ExecuteDataset, except that a pre-existing DataSet can be passed in, allowing additional tables to be added.</wsdl:documentation>
+      <wsdl:input message="tns:FillDatasetSoapIn" />
+      <wsdl:output message="tns:FillDatasetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FillDatasetWithTimeout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is similar to ExecuteDataset, except that a pre-existing DataSet can be passed in, allowing additional tables to be added. LongQuery increases the query timeout value.</wsdl:documentation>
+      <wsdl:input message="tns:FillDatasetWithTimeoutSoapIn" />
+      <wsdl:output message="tns:FillDatasetWithTimeoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataset">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method updates a DataSet using an existing connection and user-specified update commands. It is typically used with CreateCommand.</wsdl:documentation>
+      <wsdl:input message="tns:UpdateDatasetSoapIn" />
+      <wsdl:output message="tns:UpdateDatasetSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DataAccessHttpGet" />
+  <wsdl:portType name="DataAccessHttpPost" />
+  <wsdl:binding name="DataAccessSoap" type="tns:DataAccessSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExecuteDataset">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/ExecuteDataset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/ExecuteNonQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryWithReturn">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/ExecuteNonQueryWithReturn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteReader">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/ExecuteReader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/ExecuteScalar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteXmlReader">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/ExecuteXmlReader" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillData">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/FillData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillDataset">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/FillDataset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillDatasetWithTimeout">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/FillDatasetWithTimeout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataset">
+      <soap:operation soapAction="http://www.argixdirect.com/webservices/UpdateDataset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataAccessSoap12" type="tns:DataAccessSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ExecuteDataset">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/ExecuteDataset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/ExecuteNonQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQueryWithReturn">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/ExecuteNonQueryWithReturn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteReader">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/ExecuteReader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteScalar">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/ExecuteScalar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteXmlReader">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/ExecuteXmlReader" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillData">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/FillData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillDataset">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/FillDataset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillDatasetWithTimeout">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/FillDatasetWithTimeout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDataset">
+      <soap12:operation soapAction="http://www.argixdirect.com/webservices/UpdateDataset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DataAccessHttpGet" type="tns:DataAccessHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="DataAccessHttpPost" type="tns:DataAccessHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="DataAccess">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Generic Data Access Web Service</wsdl:documentation>
+    <wsdl:port name="DataAccessSoap" binding="tns:DataAccessSoap">
+      <soap:address location="http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataAccessSoap12" binding="tns:DataAccessSoap12">
+      <soap12:address location="http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataAccessHttpGet" binding="tns:DataAccessHttpGet">
+      <http:address location="http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DataAccessHttpPost" binding="tns:DataAccessHttpPost">
+      <http:address location="http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

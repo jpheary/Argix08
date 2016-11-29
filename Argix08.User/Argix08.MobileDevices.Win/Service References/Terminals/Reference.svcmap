@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1f9c438d-8b3d-44c7-a2c2-5406d9094612" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MobileDevicesService.xsd" MetadataType="Schema" ID="5d10b6d8-5791-4ac2-bd42-ea979c25c851" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd5" />
+    <MetadataFile FileName="MobileDevicesService3.xsd" MetadataType="Schema" ID="9b55bfc9-a968-420b-9c89-7e684ef4910d" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd6" />
+    <MetadataFile FileName="MobileDevicesService1.xsd" MetadataType="Schema" ID="ae851415-966e-4ae8-963e-f90f44098d39" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd4" />
+    <MetadataFile FileName="MobileDevicesService31.xsd" MetadataType="Schema" ID="e736d2b8-8630-4ab0-9b75-bb205fc23242" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd7" />
+    <MetadataFile FileName="MobileDevicesService2.xsd" MetadataType="Schema" ID="0cc6ec8b-a380-4266-81c1-f6ba08396893" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd3" />
+    <MetadataFile FileName="MobileDevicesService4.xsd" MetadataType="Schema" ID="4fda199a-22a7-4d6e-a93f-b6f3cd9152a5" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd0" />
+    <MetadataFile FileName="DriverDS.xsd" MetadataType="Schema" ID="57d70caf-8a5d-40f0-8d2e-92534163d865" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd2" />
+    <MetadataFile FileName="MobileDevicesService.wsdl" MetadataType="Wsdl" ID="b25eec29-5092-46fc-a623-a4d0e6e6c455" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="MobileDevicesService.disco" MetadataType="Disco" ID="2b391d6c-daf7-46b5-b3ec-bfa54dfcd4c0" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?disco" />
+    <MetadataFile FileName="MobileDevicesService5.xsd" MetadataType="Schema" ID="5f853c59-670b-4f45-859b-0c01ad69b1a0" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MobileDevicesService1.wsdl" MetadataType="Wsdl" ID="6083bdf5-fe26-4f4a-887f-583db16d69ce" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

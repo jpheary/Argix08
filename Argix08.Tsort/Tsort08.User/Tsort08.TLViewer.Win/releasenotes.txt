@@ -1,0 +1,153 @@
+              --------------------------------------------------------
+                    		TLViewer Application Readme File
+		                       		March, 2011
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2011
+
+This document provides late-breaking or other information that supplements the TLViewer documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+TLViewer is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\Argix08.TLViewer on a web server using Windows explorer.
+2.	Copy the following files into this folder:
+		Argix08.Windows.dll
+		Infragistics2.Shared.v10.1.dll
+		Infragistics2.Win.UltraWinGrid.v10.1.dll
+		Infragistics2.Win.v10.1.dll
+		TLViewer.exe
+		TLViewer.exe.config
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the global database, goto the Configuration table, and add/edit the values below:
+	Application     PCName          Key                       Value                     Security 
+	--------------- --------------- ------------------------- ------------------------- -------- 
+	TLViewer        jheary          LocalTerminalID           5                         1        
+	TLViewer        Default         EnableAgentReport         true                      1        
+	TLViewer        Default         EnableAllTerminals        false                     1        
+	TLViewer        Default         MISPassword               ********                  1        
+	TLViewer        Default         ReadOnly                  false                     1        
+	TLViewer        Default         TraceLevel                4                         1        
+
+
+NOTES
+==============
+GENERAL
+The TLViewer Application (TLViewer.exe) is a Windows based application that provides information
+about trailer load capacities (weight, cube) for a selection of active TLs at a given terminal. It
+also provides summary information about trailer loads and load capacities for each agent.
+
+
+OPERATION
+Normal:
+The TLViewer Application (tlviewer.exe) operates by launching from a web server deployment 
+url (i.e. http://rgxweb/tlviewer/tlviewer.exe). After a brief splash screen , a view of TLs 
+for the selected terminal will appear. Additional operating steps can be found in the 
+on-line documentation provided by the Help/Contents menu item.
+
+
+VERSION HISTORY
+v2.1.0, 09/14/04 ---------------------------------------------------------------------------
+Requirements/features
+- no new requirements or features
+Design/deployment
+ -	added app.config key (UseWebSvc) for configuration switching between backend data source access 
+	(web service or ado.net)
+ -	added additional configuration parameters to database (MISPassword, TraceLevel= 0:None; 1:Debug; 
+	2:Information; 3:Warning; 4:Error)
+ -	changed from custom web service to generic web service Tsort.Data.WebSvc (no longer required: 
+	Tsort.Sort.WebSvc web service)
+ -	upgraded to Infragistics NetAdvantage 2004 third party control suite (required: 
+	Infragistics.Win.v3.2.dll, Infragistics.Shared.v3.2.dll, Infragistics.Win.UltraWinGrid.v3.2.dll)
+
+
+v2.2.0, 12/14/04 ---------------------------------------------------------------------------
+Requirements/features
+ -	none
+Design/deployment
+ - updated stored procedure names per canges to database
+ - using new features built into Tsort.Shared.User.dll
+ - revised Help menu to support dynamically configurable (app.config) ShowHelp menu items
+ - revised implementation to support Diagnostics mode
+ 
+ 
+ v2.3.0, 06/30/05 ---------------------------------------------------------------------------
+Requirements/features
+ -	corrected issues with grid focus.
+ -  added muli-column sort support.
+ -  removed toolbar button for terminal selection.
+Design/deployment
+ - revised design per latest design paradigm.
+ - upgraded to Infragistics NetAdvantage 2005 third party control suite (required: 
+   Infragistics.Win.v5.1.dll, Infragistics.Shared.v5.1.dll, Infragistics.Win.UltraWinGrid.v5.1.dll)
+
+
+ v2.5.0, 01/25/06 ---------------------------------------------------------------------------
+Requirements/features
+ - none.
+Design/deployment
+ - replaced Tsort.Shared.User.dll with Tsort.Data.dll and Tsort.Windows.dll.
+
+
+ v2.5.1, 10/11/06 ---------------------------------------------------------------------------
+Requirements/features
+ -	none.
+Design/deployment
+ - full trailer weight/cube now configurable in app.config.
+ - revised exception handlers.
+
+
+ v2.7.0, 01/02/08 ---------------------------------------------------------------------------
+Requirements/features
+ - none.
+Design/deployment
+ - added grid columns for TL Date and Close Number to all applicable grids.
+ - upgraded to Infragistics NetAdvantage 2006 third party control suite (required: Infragistics.Win.v6.3.dll, Infragistics.Shared.v6.3.dll, Infragistics.Win.UltraWinGrid.v6.3.dll)
+ - removed Tsort.Controls.dll (replaced by the updated Tsort.Windows.dll).
+
+
+ v2.8.0, 08/14/08 ---------------------------------------------------------------------------
+Requirements/features
+ - .Net Framework 2.0
+Design/deployment
+ - ported to VS 2005
+
+
+v3.5.0, 08/19/10 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Application ported to .NET Framework 3.5 using Visual Studio 2008.
+
+
+v3.5.1, 01/10/11, 03/30/11 -----------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Re-designed to use Argix08.GlobalServices.TLViewerService WCF service.

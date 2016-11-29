@@ -1,0 +1,79 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Timer.aspx.cs" Inherits="Timer" StylesheetTheme="Argix" %>
+
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.WebControls" TagPrefix="asp" %>
+<%@ Register Assembly="Infragistics35.Web.v10.1, Version=10.1.20101.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.Web.UI.GridControls" TagPrefix="ig" %>
+<%@ Register Assembly="Infragistics35.WebUI.UltraWebGrid.v10.1, Version=10.1.20101.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.WebUI.UltraWebGrid" TagPrefix="igtbl" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Issue Management</title>
+    <script type="text/javascript" language="jscript">
+        function pageLoad() {
+        }
+    </script>
+</head>
+<body>
+<form id="form1" runat="server">
+<div>
+<asp:ScriptManager ID="smPage" runat="server" EnablePartialRendering="true" ScriptMode="Auto" />
+<asp:UpdatePanel ID="upnlTimer" runat="server" UpdateMode="Always">
+        <ContentTemplate>
+            <asp:Timer ID="tmrRefresh" runat="server" Interval="15000" Enabled="false" OnTick="OnIssueTimerTick"></asp:Timer>
+        </ContentTemplate>
+</asp:UpdatePanel>
+<asp:Table ID="tblPage" runat="server" Height="100%" Width="100%" BorderWidth="0" CellPadding="0" CellSpacing="0">
+    <asp:TableRow Font-Size="1px" Height="1px"><asp:TableCell>&nbsp;</asp:TableCell><asp:TableCell>&nbsp;</asp:TableCell><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+    <asp:TableRow Height="36px">
+        <asp:TableCell ID="tcTitle" ColumnSpan="3" SkinID="PageTitle">
+            <asp:Table ID="tblTitle" runat="server" Width="100%" BorderStyle="None" BorderWidth="0px" CellPadding="0" CellSpacing="0"> 
+                <asp:TableRow>
+                    <asp:TableCell>
+                        <asp:Image ID="imgTitle" runat="server" ImageUrl="~/App_Themes/Argix/Images/app.gif" ImageAlign="Middle" />
+                        &nbsp;<asp:Label id="lblTitle" runat="server" Height="100%" Text="">&nbsp;Argix Direct Issue Management</asp:Label>
+                    </asp:TableCell>
+                    <asp:TableCell HorizontalAlign="Right" VerticalAlign="Middle">
+                       <asp:LinkButton ID="lnkReports" runat="server" PostBackUrl="" OnClientClick="javascript:window.open('http://rgxvmweb/argix08/reports'); return false;" ToolTip="Opens the Argix Reports application" SkinID="GlobalLink">Reports</asp:LinkButton>
+                        &nbsp;
+                       <asp:LinkButton ID="lnkTracking" runat="server" PostBackUrl="" OnClientClick="javascript:window.open('http://rgxvmweb/argix08/tracking/login.aspx'); return false;" ToolTip="Opens the Carton Tracking application" SkinID="GlobalLink">Carton Tracking</asp:LinkButton>
+                        &nbsp;
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </asp:TableCell>
+    </asp:TableRow>
+    <asp:TableRow><asp:TableCell ColumnSpan="3" Font-Size="1px" Height="6px">&nbsp;</asp:TableCell></asp:TableRow>
+    <asp:TableRow>
+        <asp:TableCell VerticalAlign="Top">
+            <asp:UpdatePanel ID="upnlIssues" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <igtbl:UltraWebGrid ID="grdIssues" runat="server" DataMember="IssueTable" Height="192px" DataKeyField="ID" OnInitializeLayout="OnIssuesInitializeLayout" OnInitializeRow="OnIssuesInitializeRow">
+                        <Bands>
+                            <igtbl:UltraGridBand BaseTableName="IssueTable" Key="IssueTable" GridLines="Both" RowSelectors="No" CellClickAction="RowSelect">
+                                <Columns>
+                                    <igtbl:UltraGridColumn BaseColumnName="ID" IsBound="true" Key="ID" Width="0px" DataType="System.Int64"><Header Caption="ID" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="Zone" IsBound="true" Key="Zone" Width="60px" AllowRowFiltering="false" ><Header Caption="Zone" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="StoreNumber" IsBound="true" Key="StoreNumber" DataType="System.Int32" Width="60px" AllowRowFiltering="false"><Header Caption="Store" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="AgentNumber" IsBound="true" Key="AgentNumber" Width="60px" AllowRowFiltering="true"><Header Caption="Agent" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="CompanyName" IsBound="true" Key="CompanyName" Width="144px" AllowRowFiltering="false"><Header Caption="CompanyName" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="Type" IsBound="true" Key="Type" Width="96px" AllowRowFiltering="false" ><Header Caption="Type" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="LastActionDescription" IsBound="true" Key="LastActionDescription" Width="96px" AllowRowFiltering="false"><Header Caption="Action" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="LastActionCreated" IsBound="true" Key="LastActionCreated" Width="144px" DataType="System.DateTime" AllowRowFiltering="false" Format="MM/dd/yyyy HH:mm" HTMLEncodeContent="false"><Header Caption="Received" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="Subject" IsBound="true" Key="Subject" AllowRowFiltering="false"><Header Caption="Subject" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="ContactName" IsBound="true" Key="ContactName" Width="144px" AllowRowFiltering="false"><Header Caption="Contact" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="LastActionUserID" IsBound="true" Key="LastActionUserID" Width="96px" AllowRowFiltering="false" ><Header Caption="Last User" /></igtbl:UltraGridColumn>
+                                    <igtbl:UltraGridColumn BaseColumnName="Coordinator" IsBound="true" Key="Coordinator" Width="96px" AllowRowFiltering="false"><Header Caption="Coordinator" /></igtbl:UltraGridColumn>
+                                </Columns>
+                            </igtbl:UltraGridBand>
+                        </Bands>
+                    </igtbl:UltraWebGrid>
+                </ContentTemplate>
+           </asp:UpdatePanel>
+            <asp:UpdateProgress ID="uprgIssues" runat="server" AssociatedUpdatePanelID="upnlIssues"><ProgressTemplate>Updating issues...</ProgressTemplate></asp:UpdateProgress>
+        </asp:TableCell>
+    </asp:TableRow>
+</asp:Table>
+</div>
+</form>
+</body>
+</html>

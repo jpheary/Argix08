@@ -1,0 +1,1116 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{888BD35D-6526-40DC-8FDF-1F7652ADC5FD}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Administration"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "Tsort"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = "Tsort.frmMain"
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE;ISMDILIB"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Drawing.Design"
+                    AssemblyName = "System.Drawing.Design"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Drawing.Design.dll"
+                />
+                <Reference
+                    Name = "System.Runtime.Remoting"
+                    AssemblyName = "System.Runtime.Remoting"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.0.3705\System.Runtime.Remoting.dll"
+                />
+                <Reference
+                    Name = "System.Design"
+                    AssemblyName = "System.Design"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Design.dll"
+                />
+                <Reference
+                    Name = "Tsort.Windows"
+                    AssemblyName = "Tsort.Windows"
+                    HintPath = "..\..\Build\Tsort.Windows.dll"
+                />
+                <Reference
+                    Name = "Microsoft.ApplicationBlocks.Data"
+                    AssemblyName = "Microsoft.ApplicationBlocks.Data"
+                    HintPath = "..\..\Build\Microsoft.ApplicationBlocks.Data.dll"
+                />
+                <Reference
+                    Name = "Tsort.AppLogging"
+                    AssemblyName = "Tsort.AppLogging"
+                    HintPath = "..\..\Build\Tsort.AppLogging.dll"
+                />
+                <Reference
+                    Name = "Tsort.Data"
+                    AssemblyName = "Tsort.Data"
+                    HintPath = "..\..\Build\Tsort.Data.dll"
+                />
+                <Reference
+                    Name = "Infragistics.Shared.v6.3"
+                    AssemblyName = "Infragistics.Shared.v6.3"
+                    HintPath = "..\..\..\..\..\Program Files\Infragistics\NetAdvantage 2006 Volume 3 CLR 1.x\Windows Forms\Bin\Infragistics.Shared.v6.3.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20063"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinEditors.v6.3"
+                    AssemblyName = "Infragistics.Win.UltraWinEditors.v6.3"
+                    HintPath = "..\..\..\..\..\Program Files\Infragistics\NetAdvantage 2006 Volume 3 CLR 1.x\Windows Forms\Bin\Infragistics.Win.UltraWinEditors.v6.3.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20063"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinGrid.v6.3"
+                    AssemblyName = "Infragistics.Win.UltraWinGrid.v6.3"
+                    HintPath = "..\..\..\..\..\Program Files\Infragistics\NetAdvantage 2006 Volume 3 CLR 1.x\Windows Forms\Bin\Infragistics.Win.UltraWinGrid.v6.3.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20063"
+                />
+                <Reference
+                    Name = "Infragistics.Win.UltraWinMaskedEdit.v6.3"
+                    AssemblyName = "Infragistics.Win.UltraWinMaskedEdit.v6.3"
+                    HintPath = "..\..\..\..\..\Program Files\Infragistics\NetAdvantage 2006 Volume 3 CLR 1.x\Windows Forms\Bin\Infragistics.Win.UltraWinMaskedEdit.v6.3.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20063"
+                />
+                <Reference
+                    Name = "Infragistics.Win.v6.3"
+                    AssemblyName = "Infragistics.Win.v6.3"
+                    HintPath = "..\..\..\..\..\Program Files\Infragistics\NetAdvantage 2006 Volume 3 CLR 1.x\Windows Forms\Bin\Infragistics.Win.v6.3.dll"
+                    AssemblyFolderKey = "hklm\infragistics.winassemblies.20063"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "app.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "app.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "assemblyinfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "businessadmin.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgaddress.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgaddress.resx"
+                    DependentUpon = "dlgaddress.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgagent.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgagent.resx"
+                    DependentUpon = "dlgagent.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgcarrier.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgcarrier.resx"
+                    DependentUpon = "dlgcarrier.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgclient.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgclient.resx"
+                    DependentUpon = "dlgclient.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgclientvendor.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgclientvendor.resx"
+                    DependentUpon = "dlgclientvendor.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgcompanypaymentservice.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgcompanypaymentservice.resx"
+                    DependentUpon = "dlgcompanypaymentservice.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgconsigneeoverrides.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgconsigneeoverrides.resx"
+                    DependentUpon = "dlgconsigneeoverrides.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgdamagecode.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgdamagecode.resx"
+                    DependentUpon = "dlgdamagecode.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgdriver.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgdriver.resx"
+                    DependentUpon = "dlgdriver.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgenterpriseterminal.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgenterpriseterminal.resx"
+                    DependentUpon = "dlgenterpriseterminal.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgfreightpath.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgfreightpath.resx"
+                    DependentUpon = "dlgfreightpath.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlginboundlabel.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlginboundlabel.resx"
+                    DependentUpon = "dlginboundlabel.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgmap.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgmap.resx"
+                    DependentUpon = "dlgmap.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgmap2.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgmap2.resx"
+                    DependentUpon = "dlgmap2.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgpaymentservice.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgpaymentservice.resx"
+                    DependentUpon = "dlgpaymentservice.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgservicetype.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgservicetype.resx"
+                    DependentUpon = "dlgservicetype.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgshiftschedule.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgshiftschedule.resx"
+                    DependentUpon = "dlgshiftschedule.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgstore.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgstore.resx"
+                    DependentUpon = "dlgstore.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgstoreerrorcode.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgstoreerrorcode.resx"
+                    DependentUpon = "dlgstoreerrorcode.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgswitcher.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgswitcher.resx"
+                    DependentUpon = "dlgswitcher.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgterminal.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgterminal.resx"
+                    DependentUpon = "dlgterminal.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgterminallane.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgterminallane.resx"
+                    DependentUpon = "dlgterminallane.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgterminalworkstation.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgterminalworkstation.resx"
+                    DependentUpon = "dlgterminalworkstation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgtrailer.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgtrailer.resx"
+                    DependentUpon = "dlgtrailer.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgvehicle.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgvehicle.resx"
+                    DependentUpon = "dlgvehicle.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgvendor.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgvendor.resx"
+                    DependentUpon = "dlgvendor.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgwarehouse.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgwarehouse.resx"
+                    DependentUpon = "dlgwarehouse.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgyard.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgyard.resx"
+                    DependentUpon = "dlgyard.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgyardlocation.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgyardlocation.resx"
+                    DependentUpon = "dlgyardlocation.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "dlgyardsection.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "dlgyardsection.resx"
+                    DependentUpon = "dlgyardsection.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "globals.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "licenses.licx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "main.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "main.resx"
+                    DependentUpon = "main.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "systemadmin.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "terminaladmin.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ultragridprinter.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ultragridsvcs.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Enterprise\AddressDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "AddressDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\AddressDS.cs"
+                    DependentUpon = "AddressDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\AddressTypeDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "AddressTypeDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\AddressTypeDS.cs"
+                    DependentUpon = "AddressTypeDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\AgentDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "AgentDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\AgentDS.cs"
+                    DependentUpon = "AgentDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\ClientDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ClientDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\ClientDS.cs"
+                    DependentUpon = "ClientDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\ClientTerminal.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ClientTerminal1.cs"
+                />
+                <File
+                    RelPath = "Enterprise\ClientTerminal1.cs"
+                    DependentUpon = "ClientTerminal.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\CompanyDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "CompanyDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\CompanyDS.cs"
+                    DependentUpon = "CompanyDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\CountryDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "CountryDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\CountryDS.cs"
+                    DependentUpon = "CountryDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\CountryDS.xsx"
+                    DependentUpon = "CountryDS.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Enterprise\CVLocationDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "CVLocationDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\CVLocationDS.cs"
+                    DependentUpon = "CVLocationDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\DeliveryLocationDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DeliveryLocationDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\DeliveryLocationDS.cs"
+                    DependentUpon = "DeliveryLocationDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\EnterpriseDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "EnterpriseDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\EnterpriseDS.cs"
+                    DependentUpon = "EnterpriseDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\enterprisefactory.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Enterprise\FreightPathDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "FreightPathDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\FreightPathDS.cs"
+                    DependentUpon = "FreightPathDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\LocationDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "LocationDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\LocationDS.cs"
+                    DependentUpon = "LocationDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\MapDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "MapDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\MapDS.cs"
+                    DependentUpon = "MapDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\OutboundAgentServiceDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "OutboundAgentServiceDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\OutboundAgentServiceDS.cs"
+                    DependentUpon = "OutboundAgentServiceDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\OutboundFreightTypeDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "OutboundFreightTypeDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\OutboundFreightTypeDS.cs"
+                    DependentUpon = "OutboundFreightTypeDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\OutboundServiceTypeDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "OutboundServiceTypeDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\OutboundServiceTypeDS.cs"
+                    DependentUpon = "OutboundServiceTypeDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\PaymentServiceDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "PaymentServiceDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\PaymentServiceDS.cs"
+                    DependentUpon = "PaymentServiceDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\ShipperTypesDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ShipperTypesDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\ShipperTypesDS.cs"
+                    DependentUpon = "ShipperTypesDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\SortProfile.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "SortProfile.cs"
+                />
+                <File
+                    RelPath = "Enterprise\SortProfile.cs"
+                    DependentUpon = "SortProfile.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\StateDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "StateDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\StateDS.cs"
+                    DependentUpon = "StateDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\StateDS.xsx"
+                    DependentUpon = "StateDS.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Enterprise\StoreDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "StoreDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\StoreDS.cs"
+                    DependentUpon = "StoreDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\StoreErrorCode.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "StoreErrorCode.cs"
+                />
+                <File
+                    RelPath = "Enterprise\StoreErrorCode.cs"
+                    DependentUpon = "StoreErrorCode.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\terminal.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Enterprise\TerminalDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "TerminalDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\TerminalDS.cs"
+                    DependentUpon = "TerminalDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\TerminalLaneDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "TerminalLaneDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\TerminalLaneDS.cs"
+                    DependentUpon = "TerminalLaneDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\VendorDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "VendorDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\VendorDS.cs"
+                    DependentUpon = "VendorDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\WarehouseDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "WarehouseDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\WarehouseDS.cs"
+                    DependentUpon = "WarehouseDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Enterprise\WorkstationDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "WorkstationDS.cs"
+                />
+                <File
+                    RelPath = "Enterprise\WorkstationDS.cs"
+                    DependentUpon = "WorkstationDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Freight\DamageCodeDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DamageCodeDS.cs"
+                />
+                <File
+                    RelPath = "Freight\DamageCodeDS.cs"
+                    DependentUpon = "DamageCodeDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Freight\freightfactory.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Freight\InboundLabelDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "InboundLabelDS.cs"
+                />
+                <File
+                    RelPath = "Freight\InboundLabelDS.cs"
+                    DependentUpon = "InboundLabelDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Freight\ShiftDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "ShiftDS.cs"
+                />
+                <File
+                    RelPath = "Freight\ShiftDS.cs"
+                    DependentUpon = "ShiftDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\CarrierDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "CarrierDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\CarrierDS.cs"
+                    DependentUpon = "CarrierDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\DriverDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "DriverDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\DriverDS.cs"
+                    DependentUpon = "DriverDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\SwitcherDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "SwitcherDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\SwitcherDS.cs"
+                    DependentUpon = "SwitcherDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\TrailerDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "TrailerDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\TrailerDS.cs"
+                    DependentUpon = "TrailerDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\transportationfactory.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Transportation\VehicleDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "VehicleDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\VehicleDS.cs"
+                    DependentUpon = "VehicleDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\VehicleTypeDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "VehicleTypeDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\VehicleTypeDS.cs"
+                    DependentUpon = "VehicleTypeDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\YardDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "YardDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\YardDS.cs"
+                    DependentUpon = "YardDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\YardLocationDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "YardLocationDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\YardLocationDS.cs"
+                    DependentUpon = "YardLocationDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\YardLocationTypeDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "YardLocationTypeDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\YardLocationTypeDS.cs"
+                    DependentUpon = "YardLocationTypeDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Transportation\YardSectionDS.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "YardSectionDS.cs"
+                />
+                <File
+                    RelPath = "Transportation\YardSectionDS.cs"
+                    DependentUpon = "YardSectionDS.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

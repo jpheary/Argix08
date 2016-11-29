@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ClientDS" targetNamespace="http://www.tempuri.org/ClientDS.xsd" xmlns:mstns="http://www.tempuri.org/ClientDS.xsd" xmlns="http://www.tempuri.org/ClientDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ClientDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ClientDS" msprop:Generator_DataSetName="ClientDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ClientTable" msprop:Generator_UserTableName="ClientTable" msprop:Generator_RowDeletedName="ClientTableRowDeleted" msprop:Generator_RowChangedName="ClientTableRowChanged" msprop:Generator_RowClassName="ClientTableRow" msprop:Generator_RowChangingName="ClientTableRowChanging" msprop:Generator_RowEvArgName="ClientTableRowChangeEvent" msprop:Generator_RowEvHandlerName="ClientTableRowChangeEventHandler" msprop:Generator_TableClassName="ClientTableDataTable" msprop:Generator_TableVarName="tableClientTable" msprop:Generator_RowDeletingName="ClientTableRowDeleting" msprop:Generator_TablePropName="ClientTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ClientNumber" msprop:Generator_UserColumnName="ClientNumber" msprop:Generator_ColumnVarNameInTable="columnClientNumber" msprop:Generator_ColumnPropNameInRow="ClientNumber" msprop:Generator_ColumnPropNameInTable="ClientNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DivisionNumber" msprop:Generator_UserColumnName="DivisionNumber" msprop:Generator_ColumnVarNameInTable="columnDivisionNumber" msprop:Generator_ColumnPropNameInRow="DivisionNumber" msprop:Generator_ColumnPropNameInTable="DivisionNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" msprop:Generator_UserColumnName="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TerminalCode" msprop:Generator_UserColumnName="TerminalCode" msprop:Generator_ColumnVarNameInTable="columnTerminalCode" msprop:Generator_ColumnPropNameInRow="TerminalCode" msprop:Generator_ColumnPropNameInTable="TerminalCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

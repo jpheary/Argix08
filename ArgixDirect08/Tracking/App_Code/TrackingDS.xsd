@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrackingDS" targetNamespace="http://tempuri.org/TrackingDS.xsd" xmlns:mstns="http://tempuri.org/TrackingDS.xsd" xmlns="http://tempuri.org/TrackingDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TrackingDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TrackingDS" msprop:Generator_DataSetName="TrackingDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CartonSearchTable" msprop:Generator_UserTableName="CartonSearchTable" msprop:Generator_RowDeletedName="CartonSearchTableRowDeleted" msprop:Generator_RowChangedName="CartonSearchTableRowChanged" msprop:Generator_RowClassName="CartonSearchTableRow" msprop:Generator_RowChangingName="CartonSearchTableRowChanging" msprop:Generator_RowEvArgName="CartonSearchTableRowChangeEvent" msprop:Generator_RowEvHandlerName="CartonSearchTableRowChangeEventHandler" msprop:Generator_TableClassName="CartonSearchTableDataTable" msprop:Generator_TableVarName="tableCartonSearchTable" msprop:Generator_RowDeletingName="CartonSearchTableRowDeleting" msprop:Generator_TablePropName="CartonSearchTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SearchID" msprop:Generator_UserColumnName="SearchID" msprop:Generator_ColumnVarNameInTable="columnSearchID" msprop:Generator_ColumnPropNameInRow="SearchID" msprop:Generator_ColumnPropNameInTable="SearchIDColumn" type="xs:string" />
+              <xs:element name="Found" msprop:Generator_UserColumnName="Found" msprop:Generator_ColumnVarNameInTable="columnFound" msprop:Generator_ColumnPropNameInRow="Found" msprop:Generator_ColumnPropNameInTable="FoundColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Sequence" msprop:Generator_UserColumnName="Sequence" msprop:Generator_ColumnVarNameInTable="columnSequence" msprop:Generator_ColumnPropNameInRow="Sequence" msprop:Generator_ColumnPropNameInTable="SequenceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Count" msprop:Generator_UserColumnName="Count" msprop:Generator_ColumnVarNameInTable="columnCount" msprop:Generator_ColumnPropNameInRow="Count" msprop:Generator_ColumnPropNameInTable="CountColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Valid" msprop:Generator_UserColumnName="Valid" msprop:Generator_ColumnPropNameInRow="Valid" msprop:Generator_ColumnVarNameInTable="columnValid" msprop:Generator_ColumnPropNameInTable="ValidColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CartonSummaryTable" msprop:Generator_UserTableName="CartonSummaryTable" msprop:Generator_RowDeletedName="CartonSummaryTableRowDeleted" msprop:Generator_RowChangedName="CartonSummaryTableRowChanged" msprop:Generator_RowClassName="CartonSummaryTableRow" msprop:Generator_RowChangingName="CartonSummaryTableRowChanging" msprop:Generator_RowEvArgName="CartonSummaryTableRowChangeEvent" msprop:Generator_RowEvHandlerName="CartonSummaryTableRowChangeEventHandler" msprop:Generator_TableClassName="CartonSummaryTableDataTable" msprop:Generator_TableVarName="tableCartonSummaryTable" msprop:Generator_RowDeletingName="CartonSummaryTableRowDeleting" msprop:Generator_TablePropName="CartonSummaryTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:string" />
+              <xs:element name="CTNNumber" msprop:Generator_UserColumnName="CTNNumber" msprop:Generator_ColumnPropNameInRow="CTNNumber" msprop:Generator_ColumnVarNameInTable="columnCTNNumber" msprop:Generator_ColumnPropNameInTable="CTNNumberColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="LBLNumber" msprop:Generator_UserColumnName="LBLNumber" msprop:Generator_ColumnPropNameInRow="LBLNumber" msprop:Generator_ColumnVarNameInTable="columnLBLNumber" msprop:Generator_ColumnPropNameInTable="LBLNumberColumn" type="xs:string" default="" minOccurs="0" />
+              <xs:element name="DisplayNumber" msprop:Generator_UserColumnName="DisplayNumber" msprop:Generator_ColumnPropNameInRow="DisplayNumber" msprop:Generator_ColumnVarNameInTable="columnDisplayNumber" msprop:Generator_ColumnPropNameInTable="DisplayNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DateTime" msprop:Generator_UserColumnName="DateTime" msprop:Generator_ColumnPropNameInRow="DateTime" msprop:Generator_ColumnVarNameInTable="columnDateTime" msprop:Generator_ColumnPropNameInTable="DateTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInTable="LocationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CBOL" msprop:Generator_UserColumnName="CBOL" msprop:Generator_ColumnVarNameInTable="columnCBOL" msprop:Generator_ColumnPropNameInRow="CBOL" msprop:Generator_ColumnPropNameInTable="CBOLColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CartonDetailTable" msprop:Generator_UserTableName="CartonDetailTable" msprop:Generator_RowDeletedName="CartonDetailTableRowDeleted" msprop:Generator_RowChangedName="CartonDetailTableRowChanged" msprop:Generator_RowClassName="CartonDetailTableRow" msprop:Generator_RowChangingName="CartonDetailTableRowChanging" msprop:Generator_RowEvArgName="CartonDetailTableRowChangeEvent" msprop:Generator_RowEvHandlerName="CartonDetailTableRowChangeEventHandler" msprop:Generator_TableClassName="CartonDetailTableDataTable" msprop:Generator_TableVarName="tableCartonDetailTable" msprop:Generator_RowDeletingName="CartonDetailTableRowDeleting" msprop:Generator_TablePropName="CartonDetailTable">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SCNTP" type="xs:decimal" minOccurs="0" />
+                <xs:element name="OM" type="xs:string" minOccurs="0" />
+                <xs:element name="CTN" type="xs:string" minOccurs="0" />
+                <xs:element name="LBL" type="xs:decimal" minOccurs="0" />
+                <xs:element name="PUD" type="xs:string" minOccurs="0" />
+                <xs:element name="BL" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SRTLOC" type="xs:string" minOccurs="0" />
+                <xs:element name="AGNM" type="xs:string" minOccurs="0" />
+                <xs:element name="AGCT" type="xs:string" minOccurs="0" />
+                <xs:element name="AGST" type="xs:string" minOccurs="0" />
+                <xs:element name="AGZ" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SAGNM" type="xs:string" minOccurs="0" />
+                <xs:element name="SAGCT" type="xs:string" minOccurs="0" />
+                <xs:element name="SAGST" type="xs:string" minOccurs="0" />
+                <xs:element name="SAGZ" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CL" type="xs:string" minOccurs="0" />
+                <xs:element name="CLNM" type="xs:string" minOccurs="0" />
+                <xs:element name="V" type="xs:string" minOccurs="0" />
+                <xs:element name="VNM" type="xs:string" minOccurs="0" />
+                <xs:element name="VCT" type="xs:string" minOccurs="0" />
+                <xs:element name="VST" type="xs:string" minOccurs="0" />
+                <xs:element name="VZ" type="xs:decimal" minOccurs="0" />
+                <xs:element name="S" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SNM" type="xs:string" minOccurs="0" />
+                <xs:element name="SA1" type="xs:string" minOccurs="0" />
+                <xs:element name="SA2" type="xs:string" minOccurs="0" />
+                <xs:element name="SCT" type="xs:string" minOccurs="0" />
+                <xs:element name="SST" type="xs:string" minOccurs="0" />
+                <xs:element name="SZ" type="xs:decimal" minOccurs="0" />
+                <xs:element name="ASFD" type="xs:string" minOccurs="0" />
+                <xs:element name="ASFT" type="xs:string" minOccurs="0" />
+                <xs:element name="ADPD" type="xs:string" minOccurs="0" />
+                <xs:element name="ADPT" type="xs:string" minOccurs="0" />
+                <xs:element name="AARD" type="xs:string" minOccurs="0" />
+                <xs:element name="AART" type="xs:string" minOccurs="0" />
+                <xs:element name="ACTSDD" type="xs:string" minOccurs="0" />
+                <xs:element name="SCD" type="xs:string" minOccurs="0" />
+                <xs:element name="SCTM" type="xs:string" minOccurs="0" />
+                <xs:element name="PO" type="xs:string" minOccurs="0" />
+                <xs:element name="WT" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TL" type="xs:string" minOccurs="0" />
+                <xs:element name="T" type="xs:string" minOccurs="0" />
+                <xs:element name="ISMN" type="xs:int" minOccurs="0" />
+                <xs:element name="PVNO" type="xs:string" minOccurs="0" />
+                <xs:element name="SHPR" type="xs:string" minOccurs="0" />
+                <xs:element name="VK" type="xs:string" minOccurs="0" />
+                <xs:element name="ShipmentNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="CBOL" type="xs:string" minOccurs="0" />
+                <xs:element name="Signer" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CartonDetailForStoreTable" msprop:Generator_UserTableName="CartonDetailForStoreTable" msprop:Generator_RowDeletedName="CartonDetailForStoreTableRowDeleted" msprop:Generator_RowChangedName="CartonDetailForStoreTableRowChanged" msprop:Generator_RowClassName="CartonDetailForStoreTableRow" msprop:Generator_RowChangingName="CartonDetailForStoreTableRowChanging" msprop:Generator_RowEvArgName="CartonDetailForStoreTableRowChangeEvent" msprop:Generator_RowEvHandlerName="CartonDetailForStoreTableRowChangeEventHandler" msprop:Generator_TableClassName="CartonDetailForStoreTableDataTable" msprop:Generator_TableVarName="tableCartonDetailForStoreTable" msprop:Generator_RowDeletingName="CartonDetailForStoreTableRowDeleting" msprop:Generator_TablePropName="CartonDetailForStoreTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CartonNo" msprop:Generator_UserColumnName="CartonNo" msprop:Generator_ColumnVarNameInTable="columnCartonNo" msprop:Generator_ColumnPropNameInRow="CartonNo" msprop:Generator_ColumnPropNameInTable="CartonNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LBLNo" msprop:Generator_UserColumnName="LBLNo" msprop:Generator_ColumnVarNameInTable="columnLBLNo" msprop:Generator_ColumnPropNameInRow="LBLNo" msprop:Generator_ColumnPropNameInTable="LBLNoColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TL" msprop:Generator_UserColumnName="TL" msprop:Generator_ColumnVarNameInTable="columnTL" msprop:Generator_ColumnPropNameInRow="TL" msprop:Generator_ColumnPropNameInTable="TLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Terminal" msprop:Generator_UserColumnName="Terminal" msprop:Generator_ColumnVarNameInTable="columnTerminal" msprop:Generator_ColumnPropNameInRow="Terminal" msprop:Generator_ColumnPropNameInTable="TerminalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AG" msprop:Generator_UserColumnName="AG" msprop:Generator_ColumnVarNameInTable="columnAG" msprop:Generator_ColumnPropNameInRow="AG" msprop:Generator_ColumnPropNameInTable="AGColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AgName" msprop:Generator_UserColumnName="AgName" msprop:Generator_ColumnVarNameInTable="columnAgName" msprop:Generator_ColumnPropNameInRow="AgName" msprop:Generator_ColumnPropNameInTable="AgNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Store" msprop:Generator_UserColumnName="Store" msprop:Generator_ColumnVarNameInTable="columnStore" msprop:Generator_ColumnPropNameInRow="Store" msprop:Generator_ColumnPropNameInTable="StoreColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Trf" msprop:Generator_UserColumnName="Trf" msprop:Generator_ColumnVarNameInTable="columnTrf" msprop:Generator_ColumnPropNameInRow="Trf" msprop:Generator_ColumnPropNameInTable="TrfColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CBOL" msprop:Generator_UserColumnName="CBOL" msprop:Generator_ColumnVarNameInTable="columnCBOL" msprop:Generator_ColumnPropNameInRow="CBOL" msprop:Generator_ColumnPropNameInTable="CBOLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OFD1" msprop:Generator_UserColumnName="OFD1" msprop:Generator_ColumnVarNameInTable="columnOFD1" msprop:Generator_ColumnPropNameInRow="OFD1" msprop:Generator_ColumnPropNameInTable="OFD1Column" type="xs:date" minOccurs="0" />
+              <xs:element name="ShpName" msprop:Generator_UserColumnName="ShpName" msprop:Generator_ColumnVarNameInTable="columnShpName" msprop:Generator_ColumnPropNameInRow="ShpName" msprop:Generator_ColumnPropNameInTable="ShpNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShpCity" msprop:Generator_UserColumnName="ShpCity" msprop:Generator_ColumnVarNameInTable="columnShpCity" msprop:Generator_ColumnPropNameInRow="ShpCity" msprop:Generator_ColumnPropNameInTable="ShpCityColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShpState" msprop:Generator_UserColumnName="ShpState" msprop:Generator_ColumnVarNameInTable="columnShpState" msprop:Generator_ColumnPropNameInRow="ShpState" msprop:Generator_ColumnPropNameInTable="ShpStateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShpZip" msprop:Generator_UserColumnName="ShpZip" msprop:Generator_ColumnVarNameInTable="columnShpZip" msprop:Generator_ColumnPropNameInRow="ShpZip" msprop:Generator_ColumnPropNameInTable="ShpZipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Pudt" msprop:Generator_UserColumnName="Pudt" msprop:Generator_ColumnVarNameInTable="columnPudt" msprop:Generator_ColumnPropNameInRow="Pudt" msprop:Generator_ColumnPropNameInTable="PudtColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Weight" msprop:Generator_UserColumnName="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PodDate" msprop:Generator_UserColumnName="PodDate" msprop:Generator_ColumnVarNameInTable="columnPodDate" msprop:Generator_ColumnPropNameInRow="PodDate" msprop:Generator_ColumnPropNameInTable="PodDateColumn" type="xs:date" minOccurs="0" />
+              <xs:element name="PodTime" msprop:Generator_UserColumnName="PodTime" msprop:Generator_ColumnVarNameInTable="columnPodTime" msprop:Generator_ColumnPropNameInRow="PodTime" msprop:Generator_ColumnPropNameInTable="PodTimeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ScnSts" msprop:Generator_UserColumnName="ScnSts" msprop:Generator_ColumnVarNameInTable="columnScnSts" msprop:Generator_ColumnPropNameInRow="ScnSts" msprop:Generator_ColumnPropNameInTable="ScnStsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CtnSts" msprop:Generator_UserColumnName="CtnSts" msprop:Generator_ColumnVarNameInTable="columnCtnSts" msprop:Generator_ColumnPropNameInRow="CtnSts" msprop:Generator_ColumnPropNameInTable="CtnStsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CartonCount" msprop:Generator_UserColumnName="CartonCount" msprop:Generator_ColumnVarNameInTable="columnCartonCount" msprop:Generator_ColumnPropNameInRow="CartonCount" msprop:Generator_ColumnPropNameInTable="CartonCountColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CartonSearchTable" />
+      <xs:field xpath="mstns:SearchID" />
+    </xs:unique>
+    <xs:unique name="CartonDSKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CartonSummaryTable" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

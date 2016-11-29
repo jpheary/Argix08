@@ -1,0 +1,118 @@
+              --------------------------------------------------------
+                    ISD Export Application Readme File
+		                       	  August, 2008
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2004-2008
+
+This document provides late-breaking or other information that supplements the RDS Export documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+RDS Export is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\RDS Export on a web server like RGXDEV using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+		Argix.AppLogging.dll
+		Argix.Configuration.dll
+		Argix.Data.dll
+		Argix.Windows.dll
+		ISDExport.exe
+		ISDExport.exe.config
+		Infragistics2.Shared.v8.1.dll
+		Infragistics2.Win.UltraWinGrid.v8.1.dll
+		Infragistics2.Win.v8.1.dll
+		Microsoft.ApplicationBlocks.Data.dll
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the application configuration file (i.e. ISDExport.exe.config), go to the <configuration> section, 
+and add/edit the values below:
+<configuration>
+	<!-- Test configuration -->
+	<configSections>
+		<sectionGroup name="menu">
+			<section name="help" type="System.Configuration.NameValueSectionHandler" />
+		</sectionGroup>
+	</configSections>
+	<menu>
+		<help>
+			<add key="Contents..." value="http://rgxshpnt/C11/Help/Document%20Library/RDS%20Export/RDS%20Export-MainFrame.htm" />
+			<add key="Release Notes..." value="http://RGXDEVDB/ISDExport/releasenotes.txt" />
+			<add key="Issue Log..." value="http://rgxshpnt/Tsort%20Applications/Lists/Issue%20Log/AllItems.aspx" />
+		</help>
+	</menu>
+	<appSettings>		
+		<!-- Client configuration -->
+		<add key="UseWebSvc" value="false" />
+		<add key="EventLogMachineName" value="RGXDEVDB" />
+		
+		<!-- Tsort.Data configuration -->
+		<add key="Tsort.Data.DataWS.DataAccess" value="http://RGXDEVDB/RGXDEVDB.TSORTLOCAL.WebSvc/DataAccess.asmx" />
+		<add key="SQLConnection" value="data source=RGXDEVDB;initial catalog=TSORTLOCAL;persist security info=False;user id=*;password=*;packet size=4096;Connect Timeout=30" />
+	</appSettings>
+</configuration>
+
+Open the local sort database (i.e. TSORTLOCAL on RGXDEVDB), goto the Configuration table, and add/edit the 
+values below:
+	Application     PCName          Key                       Value                     Security 
+	--------------- --------------- ------------------------- ------------------------- -------- 
+	RDS Export      Default         DateDaysBack              60                        1        
+	RDS Export      Default         MISPassword               ********                  1        
+	RDS Export      Default         ReadOnly                  false                     1        
+	RDS Export      Default         TraceLevel                3                         1        
+
+
+
+NOTES
+==============
+GENERAL
+The RDS Export Application (ISDExport.exe) is a Windows based application used to export sorted item 
+records into a text file suitable for import into the Bearware RDS system.
+
+
+OPERATION
+Normal:
+The RDS Export Application (ISDExport.exe) operates by launching from a web server deployment url 
+(i.e. http://rgxdevdb/ISDExport/ISDExport.exe). After a brief splash screen, a sizeable window appears and 
+displays a split window with a Pickups grid on top and a Sorted Items grid on bottom. The Pickups grid shows pickups 
+for the selected day for RDS clients. Select a pickup to display the cartons sorted for that pickup 
+in the Sorted Items grid. If there are sorted cartons for the selected pickup, use the File/Export Sorted Items menu 
+item to export the sorted items to a text file. The taskbar displays the operating terminal and connection status. 
+Additional operating steps can be found in the on-line documentation provided by the Help/Contents menu item.
+
+Diagnostics Mode:
+CTL ENTER at the Splash screen displays a dialog that examines configuration and database requirements.
+
+
+VERSION HISTORY
+v2.8.0, 09/10/08 ---------------------------------------------------------------------------
+Requirements/features
+- supports export to Bearware RDS v3.0, Bearware RDS v4.0, PCS vx.x.
+
+Design/deployment
+- require .NET Framework 2.0

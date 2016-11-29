@@ -1,0 +1,118 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml;
+using System.Xml.Linq;
+using Argix.Customers;
+using Infragistics.WebUI.UltraWebGrid;
+
+public partial class Timer:System.Web.UI.Page {
+    //Members
+
+    //Interface
+    protected void Page_Load(object sender,EventArgs e) {
+        //Event handler for page load event
+        if(!Page.IsPostBack) {
+            ViewState.Add("LastNewIssueTime",Session["LastNewIssueTime"]);
+            ViewState.Add("OldItems",new Hashtable());
+            this.tmrRefresh.Enabled = Convert.ToBoolean(Session["AutoRefreshOn"]);
+            OnIssueToolbarClick(null,new CommandEventArgs("Refresh","ViewChange"));
+        }
+    }
+    protected void OnIssueTimerTick(object sender,EventArgs e) {
+        //Event handler for issue timer tick event
+        System.Diagnostics.Debug.WriteLine("OnIssueTimerTick(); timer " + (this.tmrRefresh.Enabled?"on":"off"));
+        OnIssueToolbarClick(this.tmrRefresh,new CommandEventArgs("Refresh",null));
+        this.upnlIssues.Update();
+    }
+    protected void OnIssueToolbarClick(object sender,CommandEventArgs e) {
+        //Event handler for issue toolbar refresh button
+        System.Diagnostics.Debug.WriteLine("OnIssueToolbarClick()");
+        string key = e.CommandArgument == null && this.grdIssues.DisplayLayout.SelectedRows.Count > 0 ? this.grdIssues.DisplayLayout.SelectedRows[0].DataKey.ToString() : "";
+        this.grdIssues.DataSource = new CustomerProxy().GetIssues();
+        this.grdIssues.DataBind();
+        for(int i=0;i<this.grdIssues.Rows.Count;i++) {
+            if(key.Length == 0 || this.grdIssues.Rows[i].Cells[0].Text == key) {
+                this.grdIssues.Rows[i].Selected = true;
+                this.grdIssues.Rows[i].Activate();
+                break;
+            }
+        }
+    }
+    protected void OnIssuesInitializeDataSource(object sender,UltraGridEventArgs e) {
+        //
+        System.Diagnostics.Debug.WriteLine("OnIssuesInitializeDataSource()");
+        this.grdIssues.DataSource = new CustomerProxy().GetIssues();
+    }
+    protected void OnIssuesInitializeLayout(object sender,LayoutEventArgs e) {
+        //
+        this.grdIssues.Browser = BrowserLevel.Xml;
+        this.grdIssues.DisplayLayout.LoadOnDemand = LoadOnDemand.Manual;
+        this.grdIssues.DisplayLayout.ViewType = ViewType.Flat;
+        this.grdIssues.Bands[0].FilterOptions.AllowRowFiltering = RowFiltering.OnServer;
+        this.grdIssues.Bands[0].FilterOptions.RowFilterMode = RowFilterMode.SiblingRowsOnly;
+        this.grdIssues.Bands[0].FilterOptions.ShowAllCondition = ShowFilterString.Yes;
+        this.grdIssues.Bands[0].FilterOptions.ShowEmptyCondition = ShowFilterString.No;
+        this.grdIssues.Bands[0].FilterOptions.ShowNonEmptyCondition = ShowFilterString.No;
+
+        //this.grdIssues.Bands[0].Columns.FromKey("AgentNumber").AllowRowFiltering = false;
+        //ValueListItemsCollection fl = this.grdIssues.Bands[0].Columns.FromKey("AgentNumber").FilterCollectionValues;
+        //fl.Add("0129","0129");
+        //fl.Add("0130","0130");
+    }
+    protected void OnIssuesInitializeRow(object sender,RowEventArgs e) {
+        //Event handler for issue row data bound
+        //Bold rows of new issues/actions
+        int id=0;
+        try { id = Convert.ToInt32(e.Row.Cells[0].Text); } catch { }
+        if(id > 0) {
+            //Init
+            DateTime lastNewIssueTime = (DateTime)ViewState["LastNewIssueTime"];
+            Hashtable oldItems = (Hashtable)ViewState["OldItems"];
+            DateTime dt1;
+            if(DateTime.TryParse(e.Row.Cells[7].Text,out dt1)) {
+                if(!oldItems.ContainsKey(id)) {
+                    //Not viewed or startup (i.e. collection is empty)
+                    if(dt1.CompareTo(lastNewIssueTime) > 0)
+                        e.Row.Style.Font.Bold = true;
+                } 
+                else {
+                    DateTime dt2 = Convert.ToDateTime(oldItems[id]);
+                    if(dt1.CompareTo(dt2) > 0) {
+                        //LastActionCreated is different then last time viewed
+                        e.Row.Style.Font.Bold = true;
+                    }
+                }
+            }
+        }
+    }
+    protected void OnIssueFilterPopulating(object sender,FilterDropDownEventArgs e) {
+        //Event handler for issue grid row filter populating
+        this.tmrRefresh.Enabled = false;
+        System.Diagnostics.Debug.WriteLine("OnIssueFilterPopulating(); timer " + (this.tmrRefresh.Enabled?"on":"off"));
+    }
+    protected void OnIssueFilterPopulated(object sender,FilterDropDownEventArgs e) {
+        //Event handler for issue grid row filter populated
+        System.Diagnostics.Debug.WriteLine("OnIssueFilterPopulated(); timer " + (this.tmrRefresh.Enabled?"on":"off"));
+    }
+    protected void OnIssueFilterApplying(object sender, FilterEventArgs e) {
+        //Event handler for issue grid row filter applying
+        System.Diagnostics.Debug.WriteLine("OnIssueFilterApplying(); timer " + (this.tmrRefresh.Enabled?"on":"off"));
+    }
+    protected void OnIssueFilterApplied(object sender,FilterEventArgs e) { 
+        //Event handler for issue grid row filter applied
+        this.tmrRefresh.Enabled = Convert.ToBoolean(Session["AutoRefreshOn"]);
+        System.Diagnostics.Debug.WriteLine("OnIssueFilterApplied(); timer " + (this.tmrRefresh.Enabled?"on":"off"));
+
+        //Save filter to cookie
+        //Session["AgentFilter"] = e.ActiveColumnFilter.ToString();
+    }
+}

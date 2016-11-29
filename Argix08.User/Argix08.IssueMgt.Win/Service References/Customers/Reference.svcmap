@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b17ca7a6-bfa0-457d-a56b-0e3068501df6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IssueMgtService.xsd" MetadataType="Schema" ID="45a159a7-79d7-40fd-a5dd-0afb016deeb8" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd3" />
+    <MetadataFile FileName="CompanyDS.xsd" MetadataType="Schema" ID="ef641701-1d7d-410d-8ec8-a38833ad18fd" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd9" />
+    <MetadataFile FileName="ContactDS.xsd" MetadataType="Schema" ID="0fb25f20-ee5e-4b2e-a191-c8b7c4a3806d" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd2" />
+    <MetadataFile FileName="IssueMgtService1.xsd" MetadataType="Schema" ID="738f51d5-7b80-4581-9342-bb0e8aa7cba4" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd1" />
+    <MetadataFile FileName="IssueMgtService3.xsd" MetadataType="Schema" ID="a62d15da-78bb-4d03-8e55-e413098c2996" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd8" />
+    <MetadataFile FileName="IssueDS.xsd" MetadataType="Schema" ID="edc1e38e-4ce4-4272-b2c7-0f8f73b2e519" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd7" />
+    <MetadataFile FileName="IssueMgtService2.xsd" MetadataType="Schema" ID="77ab4580-dfa7-4e47-a27c-f8df061766cc" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ActionTypeDS.xsd" MetadataType="Schema" ID="1d7dc4e2-5e3c-44bf-8f88-d53bc92debd2" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd6" />
+    <MetadataFile FileName="DeliveryDS.xsd" MetadataType="Schema" ID="0fcf7a2e-51a1-4f81-b520-3c2942099e21" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd15" />
+    <MetadataFile FileName="StoreDS.xsd" MetadataType="Schema" ID="95a549a8-8c7f-4ad1-b1bf-8ae78efc8a3e" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd12" />
+    <MetadataFile FileName="IssueMgtService.wsdl" MetadataType="Wsdl" ID="6bc529aa-ae54-4326-a5d8-61d6a4a30508" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="LocationDS.xsd" MetadataType="Schema" ID="25b5fb20-2d48-4288-8576-c06109cafe89" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd10" />
+    <MetadataFile FileName="AgentDS.xsd" MetadataType="Schema" ID="5c2e80b1-305f-4ce3-9fbb-8baa9974684f" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd11" />
+    <MetadataFile FileName="IssueMgtService1.wsdl" MetadataType="Wsdl" ID="fe74c172-67af-4ae4-bc23-d4a5f46c2a2a" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?wsdl" />
+    <MetadataFile FileName="IssueMgtService.disco" MetadataType="Disco" ID="c389a70f-f0f4-4931-9bbd-06313244d63f" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?disco" />
+    <MetadataFile FileName="IssueTypeDS.xsd" MetadataType="Schema" ID="897ba7fe-4eef-49a0-bba5-b4070c2a8447" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd5" />
+    <MetadataFile FileName="StoreDS1.xsd" MetadataType="Schema" ID="065e7e0e-13ff-499d-aad1-50addc22bfc3" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd14" />
+    <MetadataFile FileName="IssueMgtService4.xsd" MetadataType="Schema" ID="ea3ed4f9-d3a1-4a7a-8fe0-5b128ebf4da9" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd4" />
+    <MetadataFile FileName="EnterpriseDS.xsd" MetadataType="Schema" ID="fefc9f16-fcfc-45c1-8aae-4c6ca3256528" SourceId="1" SourceUrl="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd13" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+    <ExtensionFile FileName="configuration911.svcinfo" Name="configuration91.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9c358a57-471e-405e-a73f-be1f7f7ab33e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RoadshowService.wsdl" MetadataType="Wsdl" ID="3f46105d-0359-4080-9a85-e9872c6feaeb" SourceId="1" SourceUrl="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?wsdl" />
+    <MetadataFile FileName="Roadshow.xsd" MetadataType="Schema" ID="f59d8cb3-a02d-4d89-845f-27ef1dd2bd4b" SourceId="1" SourceUrl="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd2" />
+    <MetadataFile FileName="Roadshow1.xsd" MetadataType="Schema" ID="33f08a44-37b8-488d-9ab6-7a9a0e411b6c" SourceId="1" SourceUrl="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd0" />
+    <MetadataFile FileName="Roadshow.disco" MetadataType="Disco" ID="a7ca0d2a-71f7-440b-836f-bbaca3703c8a" SourceId="1" SourceUrl="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?disco" />
+    <MetadataFile FileName="Roadshow2.xsd" MetadataType="Schema" ID="88797e8f-d873-46ce-8ca1-a9133343b95b" SourceId="1" SourceUrl="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd4" />
+    <MetadataFile FileName="Roadshow3.xsd" MetadataType="Schema" ID="731cb4c5-87f3-4e09-9793-dc7d73691c78" SourceId="1" SourceUrl="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd3" />
+    <MetadataFile FileName="Roadshow.wsdl" MetadataType="Wsdl" ID="02e0a4da-7155-49cf-a97e-68a9dd6fe86d" SourceId="1" SourceUrl="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="Roadshow4.xsd" MetadataType="Schema" ID="0f3f8109-b862-4378-8ba8-2122fa51887d" SourceId="1" SourceUrl="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

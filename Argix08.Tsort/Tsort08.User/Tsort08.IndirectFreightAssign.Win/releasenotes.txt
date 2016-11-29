@@ -1,0 +1,157 @@
+                         --------------------------------------------------
+                    	Indirect Freight Assignment Application Readme File
+		                       			December, 2014
+                         --------------------------------------------------
+                         		(c) Copyright Argix Logistics, 2004-2014
+
+This document provides late-breaking or other information that supplements the Indirect Freight Assignment 
+documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+Indirect Freight Assignment is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\IndirectFreightAssign on a web server like RGXDEV using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+		Argix08.AppLogging.dll
+		Argix08.Configuration.dll
+		Argix08.Data.dll
+		Argix08.Windows.dll
+		IndirectFreightAssign.exe
+		IndirectFreightAssign.exe.config
+		Infragistics2.Shared.v10.1.dll
+		Infragistics2.Win.UltraWinGrid.v10.1.dll
+		Infragistics2.Win.v10.1.dll
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION	
+Open the local sort database (i.e. TSORT on JARGXTS), goto the Configuration table, and add/edit the 
+values below:
+	Application                 PCName          Key                     Value                     Security 
+	--------------------------- --------------- ----------------------- ------------------------- -------- 
+	Indirect Freight Assignment Default         ExportPath              r:\retail\imports\        1        
+	Indirect Freight Assignment Default         ImportFile              r:\argix\tripsumm.xml     1        
+	Indirect Freight Assignment Default         ManualEntry             true                      1        
+	Indirect Freight Assignment Default         ManualImport            true                      1        
+	Indirect Freight Assignment Default         MISPassword             ********                  1        
+	Indirect Freight Assignment Default         ReadOnly                true                      1        
+	Indirect Freight Assignment Default         TraceLevel              3                         1        
+	Indirect Freight Assignment Default         TripDays                2                         1        
+
+
+
+NOTES
+==============
+GENERAL
+The Indirect Freight Assignment Application (IndirectFreightAssign.exe) is a Windows based application used to 
+manage station assignments for sorting indirect freight.
+
+
+OPERATION
+Normal:
+The Indirect Freight Assignment Application (IndirectFreightAssign.exe) operates by launching from a web server deployment 
+url (i.e. http://rgxvmweb/Argix08/Apps/IndirectFreightAssign/IndirectFreightAssign.application). After a brief splash screen, a sizeable window 
+appears and displays imported trips in an upper grid and station sort assignments in a lower grid. The user can import 
+trips from a pre-defined location or from a user defined location. The user can assign and unassign these trips from sort 
+stations in the operating terminal. The taskbar displays the operating terminal and sort station. Additional operating steps 
+can be found in the on-line documentation provided by the Help/Contents menu item.
+
+
+VERSION HISTORY
+v2.0.0, 06/03/04 ---------------------------------------------------------------------------
+Requirements/features
+- no new requirements or features
+Design/deployment
+- added support for SQL Server data sources
+- added support for application log tracing to Windows event log
+
+v2.2.0, 12/16/04 ---------------------------------------------------------------------------
+Requirements/features
+- removed manual (File/Delete Trips... menu item) and automatic (Form Unload event) deletion of trips older than a number of days 
+  as defined by configuration parameter TripDaysDelete
+- added new status bar to display operating terminal and database connection source/status
+- added new menu item Tools/Use Web Services... that allows runtime switching between backend data source access (IT USE ONLY)
+Design/deployment
+- removed support for DB2 data sources (no longer required: Tsort.DataAccess.OLEDBase.dll, Tsort.IndirectFreightAssign.Bus.dll)
+- added support for application log tracing to database ArgixLog table
+- added app.config key (UseWebSvc) for configuration switching between backend data source access (web service or ado.net)
+- removed business layer component (no longer required: Tsort.IndirectFreightAssign.Bus.dll)
+- added data access through generic web service Tsort.Data.WebSvc (i.e. JARGXTS.TSORT.WebSvc)
+- application configuration parameters moved from app.config to database (ExportPath, ImportFile, ManualEntry, ManualImport, TripDays)
+- added additional configuration parameters to database (MISPassword, TraceLevel= 0:None; 1:Debug; 2:Information; 3:Warning; 4:Error)
+- upgraded to Infragistics NetAdvantage 2004 third party control suite (required: Infragistics.Win.v3.2.dll, Infragistics.Shared.v3.2.dll, Infragistics.Win.UltraWinGrid.v3.2.dll)
+- using new features built into Tsort.Shared.User.dll
+- revised Help menu to support dynamically configurable (app.config) ShowHelp menu items
+- revised implementation to support Diagnostics mode
+
+v2.2.1, 01/06/05 ---------------------------------------------------------------------------
+Requirements/features
+- none
+Design/deployment
+- added configuration parameter to database (ReadOnly)
+
+v2.3.0, 04/20/05 ---------------------------------------------------------------------------
+Requirements/features
+- corrected bug when importing trip with just one of the date fields (i.e. trailerArrival, firstScanTime, osdCreated)
+Design/deployment
+- added MessageManager for statusbar message management.
+- upgraded to Infragistics NetAdvantage 2005 third party control suite (required: Infragistics.Win.v5.1.dll, Infragistics.Shared.v5.1.dll, Infragistics.Win.UltraWinGrid.v5.1.dll)
+
+v2.3.0, 04/20/05 ---------------------------------------------------------------------------
+Requirements/features
+- none
+Design/deployment
+- revised error handling notification/trace logging for exceptions generated by invalid trip file imports.
+
+v2.5.5, 02/05/07 ---------------------------------------------------------------------------
+Requirements/features
+- none
+Design/deployment
+- upgraded to Infragistics NetAdvantage 2006 third party control suite (required: Infragistics.Win.v5.1.dll, Infragistics.Shared.v5.1.dll, Infragistics.Win.UltraWinGrid.v5.1.dll)
+
+v3.5.0, 03/24/11. 09/28/11, 10/11/11, 11/28/11, 02/09/12, 03/26/12, 08/13/13, 06/11/14, 11/05/14, 11/11/14, 11/17/14, 12/02/14, 12/10/14, 12/16/14
+Requirements/features
+- none.
+Design/deployment
+- Application ported to .NET Framework 3.5 using Visual Studio 2008.
+- removed web service data access feature.
+- upgraded to Infragistics NetAdvantage 2010 third party control suite (required: Infragistics2.Win.v10.1.dll, Infragistics2.Shared.v10.1.dll, Infragistics2.Win.UltraWinGrid.v10.1.dll)
+- rebuild for change in config database connection (LLRGXAD2 to LLRGXAD1)
+- rebuild for change in config database connection (MMRGXAD2 to MMRGXAD1)
+- rebuild for change in config database connection (CHRGXAD2 to CHRGXAD1)
+- rebuild for change in config database connection (MARGXAD2 to MARGXAD1)
+- rebuild for change in config database connection (CTRGXAD1 to CTRGXAD2)
+- rebuild for change in config database connection (RFRGXAD2 to RFRGXVMTS)
+- rebuild for change in config database connection (ATRGXAD1 to ATRGXVMSQL)
+- rebuild for change in config database connection (CHRGXAD1 to chrgxvmsql)
+- rebuild for change in config database connection (MARGXAD1 to margxvmsql)
+- rebuild for change in config database connection (rfrgxvmts to rfrgxvmsql1)
+- rebuild for change in config database connection (llrgxad1 to llrgxvmsql)
+- rebuild for change in config database connection (ctrgxad2 to ctrgxvmsql)
+- rebuild for change in config database connection (mmrgxad1 to mmrgxvmsql)
+

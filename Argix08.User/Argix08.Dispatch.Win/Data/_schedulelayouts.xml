@@ -1,0 +1,6265 @@
+<?xml version="1.0" standalone="yes"?>
+<LayoutDS xmlns="http://tempuri.org/LayoutDS.xsd">
+  <xs:schema id="LayoutDS" targetNamespace="http://tempuri.org/LayoutDS.xsd" xmlns:mstns="http://tempuri.org/LayoutDS.xsd" xmlns="http://tempuri.org/LayoutDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="LayoutDS" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+		  <xs:element name="ViewTable">
+			<xs:complexType>
+			  <xs:sequence>
+				<xs:element name="ViewName" type="xs:string" />
+				<xs:element name="ScheduleName" type="xs:string" />
+				<xs:element name="Active" type="xs:boolean" />
+			  </xs:sequence>
+			</xs:complexType>
+		  </xs:element>
+		  <xs:element name="LayoutTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ViewName" type="xs:string" />
+                <xs:element name="ScheduleName" type="xs:string" />
+                <xs:element name="Key" type="xs:string" />
+                <xs:element name="VisiblePosition" type="xs:int" />
+                <xs:element name="Visible" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Caption" type="xs:string" minOccurs="0" />
+                <xs:element name="Width" type="xs:int" minOccurs="0" />
+                <xs:element name="Alignment" type="xs:string" minOccurs="0" />
+                <xs:element name="Format" type="xs:string" minOccurs="0" />
+                <xs:element name="NullText" type="xs:string" minOccurs="0" />
+                <xs:element name="Sort" type="xs:string" minOccurs="0" />
+                <xs:element name="SortOrder" type="xs:int" minOccurs="0" />
+                <xs:element name="GroupBy" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <ViewTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Active>false</Active>
+  </ViewTable>
+    <ViewTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Active>true</Active>
+  </ViewTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>VendorName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>ConsigneeName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Consignee</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>ETATime</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ETA</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>In</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>In?</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Tsort/ISA</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>VendorName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>ConsigneeName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Consignee</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>ETATime</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ETA</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>In</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>In?</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Tsort/ISA</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Inbound Sheet</ViewName>
+    <ScheduleName>Argix Client Inbound Sheet</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>VendorName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>ConsigneeName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Consignee</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>ETATime</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ETA</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>In</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>In?</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Tsort/ISA</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>VendorName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>ConsigneeName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Consignee</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>ETATime</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ETA</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>In</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>In?</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Tsort/ISA</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound Sheet</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>VendorName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>ConsigneeName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Consignee</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>ETATime</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ETA</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>In</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>In?</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Tsort/ISA</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>VendorName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>D</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>ConsigneeName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Consignee</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>ETATime</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ETA</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>In</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>In?</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Tsort/ISA</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Sheet</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Inbound</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Inbound</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Inbound Freight</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ID</Caption>
+    <Width>48</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>CallerName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CallerName</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>ClientName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Client</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>ShipperName</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor/Store Name</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>ShipperAddress</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ShipperAddress</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>DeliveryWindow</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>DeliveryWindow</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>13</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>FreightType</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>AutoNumber</Key>
+    <VisiblePosition>14</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>AutoNumber</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>RequestDate</Key>
+    <VisiblePosition>15</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date Requested</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>PickUpDate</Key>
+    <VisiblePosition>16</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date Pickup Made</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Updated</Key>
+    <VisiblePosition>17</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>Updated</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>MustBeReady</Key>
+    <VisiblePosition>18</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MustBeReady</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>PickedUp</Key>
+    <VisiblePosition>19</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>PickedUp?</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ID</Caption>
+    <Width>48</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>CallerName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CallerName</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>ClientName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Client</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>ShipperName</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor/Store Name</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>ShipperAddress</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ShipperAddress</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>DeliveryWindow</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>DeliveryWindow</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>13</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>FreightType</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>AutoNumber</Key>
+    <VisiblePosition>14</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>AutoNumber</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>RequestDate</Key>
+    <VisiblePosition>15</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date Requested</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>PickUpDate</Key>
+    <VisiblePosition>16</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date Pickup Made</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>Updated</Key>
+    <VisiblePosition>17</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>Updated</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>MustBeReady</Key>
+    <VisiblePosition>18</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MustBeReady</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log</ScheduleName>
+    <Key>PickedUp</Key>
+    <VisiblePosition>19</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>PickedUp?</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ID</Caption>
+    <Width>48</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>CallerName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CallerName</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>ClientName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Client</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>ShipperName</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor/Store Name</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>ShipperAddress</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ShipperAddress</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>DeliveryWindow</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>DeliveryWindow</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>13</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>FreightType</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>AutoNumber</Key>
+    <VisiblePosition>14</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>AutoNumber</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>RequestDate</Key>
+    <VisiblePosition>15</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date Requested</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>PickUpDate</Key>
+    <VisiblePosition>16</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date Pickup Made</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Updated</Key>
+    <VisiblePosition>17</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>Updated</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>MustBeReady</Key>
+    <VisiblePosition>18</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MustBeReady</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>PickedUp</Key>
+    <VisiblePosition>19</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>PickedUp?</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>ID</Caption>
+    <Width>48</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>CallerName</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CallerName</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>ClientName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Client</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>ShipperName</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Vendor/Store Name</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>ShipperAddress</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ShipperAddress</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>DeliveryWindow</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>DeliveryWindow</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Amount</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Amount</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>AmountType</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Cartons/Skids</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>FreightType</Key>
+    <VisiblePosition>13</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>FreightType</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>AutoNumber</Key>
+    <VisiblePosition>14</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>AutoNumber</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>RequestDate</Key>
+    <VisiblePosition>15</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date Requested</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>PickUpDate</Key>
+    <VisiblePosition>16</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date Pickup Made</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>Updated</Key>
+    <VisiblePosition>17</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>Updated</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>MustBeReady</Key>
+    <VisiblePosition>18</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MustBeReady</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Pickup Log Archive</ScheduleName>
+    <Key>PickedUp</Key>
+    <VisiblePosition>19</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>PickedUp?</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Scheduled Outbound</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Outbound</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>Confirmed</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>C</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>DriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Driver</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ScheduledDeparture</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ActualDeparture</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Departure</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>FromLocation</Key>
+    <VisiblePosition>8</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight From</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>1</SortOrder>
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ToLocation</Key>
+    <VisiblePosition>9</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Freight To</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ScheduledDelivery</Key>
+    <VisiblePosition>10</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Sch. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>ActualDelivery</Key>
+    <VisiblePosition>11</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Act. Delivery</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Outbound Freight</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>12</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>ScheduledArrival</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Scheduled Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>ActualArrival</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Actual Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>ScheduledArrival</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Scheduled Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>ActualArrival</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Actual Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Line Haul Schedule</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>ScheduledArrival</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Scheduled Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>ActualArrival</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Actual Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>ScheduledArrival</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Scheduled Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>ActualArrival</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Actual Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Advance Line Haul Schedule</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>ScheduledArrival</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Scheduled Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>ActualArrival</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Actual Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Date</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format>dddd, MMMM dd, yyyy</Format>
+    <NullText />
+    <Sort>A</Sort>
+    <SortOrder>0</SortOrder>
+    <GroupBy>true</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>Terminal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Terminal</Caption>
+    <Width>120</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer#</Caption>
+    <Width>96</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>ScheduledArrival</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Scheduled Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>ActualArrival</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Actual Arrival</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format>MM/dd/yyyy hh:mm tt</Format>
+    <NullText>None</NullText>
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Archive of Line Haul Schedule</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>7</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comment</Caption>
+    <Width>144</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>Created</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>IncomingDate</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Date</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>IncomingCarrier</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Carrier</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>IncomingSeal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Seal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>IncomingDriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Driver</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>InitialYardLocation</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Initial Loc.</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>LoadSheetReady</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>LoadSheetReady</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>MoveInProgress</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MoveInProgress</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>OutgoingDate</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingDate</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>OutgoingCarrier</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingCarrier</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>OutgoingSeal</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingSeal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>OutgoingDriverName</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingDriverName</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>MovedOut</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MovedOut</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>192</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>Created</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>IncomingDate</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Date</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>IncomingCarrier</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Carrier</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>IncomingSeal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Seal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>IncomingDriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Driver</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>InitialYardLocation</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Initial Loc.</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>LoadSheetReady</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>LoadSheetReady</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>MoveInProgress</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MoveInProgress</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>OutgoingDate</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingDate</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>OutgoingCarrier</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingCarrier</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>OutgoingSeal</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingSeal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>OutgoingDriverName</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingDriverName</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>MovedOut</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MovedOut</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>192</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>Created</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>IncomingDate</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Date</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>IncomingCarrier</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Carrier</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>IncomingSeal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Seal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>IncomingDriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Driver</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>InitialYardLocation</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Initial Loc.</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>LoadSheetReady</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>LoadSheetReady</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>MoveInProgress</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MoveInProgress</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>OutgoingDate</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingDate</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>OutgoingCarrier</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingCarrier</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>OutgoingSeal</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingSeal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>OutgoingDriverName</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingDriverName</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>MovedOut</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MovedOut</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Default</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>192</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>ID</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>ID</Caption>
+    <Width>24</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>Created</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>Created</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>CreatedBy</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>CreatedBy</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>TrailerNumber</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Trailer</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>IncomingDate</Key>
+    <VisiblePosition>1</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Date</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>IncomingCarrier</Key>
+    <VisiblePosition>2</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Carrier</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>IncomingSeal</Key>
+    <VisiblePosition>3</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Seal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>IncomingDriverName</Key>
+    <VisiblePosition>4</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Incoming Driver</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>InitialYardLocation</Key>
+    <VisiblePosition>5</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Initial Loc.</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>LoadSheetReady</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>LoadSheetReady</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>MoveInProgress</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MoveInProgress</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>OutgoingDate</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingDate</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>OutgoingCarrier</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingCarrier</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>OutgoingSeal</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingSeal</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>OutgoingDriverName</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>OutgoingDriverName</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>MovedOut</Key>
+    <VisiblePosition>0</VisiblePosition>
+    <Visible>false</Visible>
+    <Caption>MovedOut</Caption>
+    <Width>72</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+  <LayoutTable>
+    <ViewName>Current</ViewName>
+    <ScheduleName>Trailer Tracking Archive</ScheduleName>
+    <Key>Comments</Key>
+    <VisiblePosition>6</VisiblePosition>
+    <Visible>true</Visible>
+    <Caption>Comments</Caption>
+    <Width>192</Width>
+    <Alignment>L</Alignment>
+    <Format />
+    <NullText />
+    <Sort />
+    <GroupBy>false</GroupBy>
+  </LayoutTable>
+</LayoutDS>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cc77eaeb-28fa-4068-9db4-47da9b140111" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InvoicingService.xsd" MetadataType="Schema" ID="2f20524f-1bdd-45c6-811f-a6691a0f025d" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?xsd=xsd1" />
+    <MetadataFile FileName="InvoicingService1.xsd" MetadataType="Schema" ID="1db17ff3-fae3-43c4-977a-2eabe5bab1d9" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?xsd=xsd4" />
+    <MetadataFile FileName="InvoicingService2.xsd" MetadataType="Schema" ID="c42fa42b-b947-4560-872e-ca07553172be" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?xsd=xsd0" />
+    <MetadataFile FileName="InvoicingService.disco" MetadataType="Disco" ID="446aca19-8953-49d0-8414-056b5f2e2289" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?disco" />
+    <MetadataFile FileName="InvoicingService.wsdl" MetadataType="Wsdl" ID="51555ea1-fe25-4ad4-aae2-b2c4ec55850f" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?wsdl" />
+    <MetadataFile FileName="InvoicingService3.xsd" MetadataType="Schema" ID="fdc4a1c7-c745-4a40-9b80-0acd2ec1ac37" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?xsd=xsd2" />
+    <MetadataFile FileName="InvoicingService4.xsd" MetadataType="Schema" ID="662e2db4-4878-4e34-9a0e-d8c121ad8e2a" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?xsd=xsd5" />
+    <MetadataFile FileName="InvoicingService1.wsdl" MetadataType="Wsdl" ID="154392a6-9206-4606-b836-30f2e836fab8" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="InvoicingService6.xsd" MetadataType="Schema" ID="def401ea-b94f-4624-8312-0af4c091e914" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?xsd=xsd3" />
+    <MetadataFile FileName="ClientDS.xsd" MetadataType="Schema" ID="30667960-1bc9-4f66-bd23-605ac87af857" SourceId="1" SourceUrl="http://localhost:60203/Argix08.GlobalServices/InvoicingService.svc?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

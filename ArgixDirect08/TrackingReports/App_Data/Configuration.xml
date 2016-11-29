@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<reports>
+	<report name="DeliveryInfoByPickup">
+		<DualDateTimePicker  datedaysback="180" datedaysforward="0" datedaysspread="14" />
+		<Services run="true" data="false" excel="false" pdfonly="true" />
+	</report>
+	<report name="DeliveryWindowDetailByStore">
+		<Services run="true" data="false" excel="false" pdfonly="true" />
+	</report>
+	<report name="DeliveryWindowSummaryByStore">
+		<Services run="true" data="false" excel="false" pdfonly="true" />
+	</report>
+	<report name="LOccitaneDelivery">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="PacSunDelivery">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="PacSunSummary">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="RequestedDeliveryDate">
+		<DualDateTimePicker  datedaysback="90" datedaysforward="30" datedaysspread="0" />
+		<Services run="true" data="false" excel="false" pdfonly="false" />
+	</report>
+	<report name="ScanningDetailByStore">
+		<Services run="true" data="false" excel="false" pdfonly="true" />
+	</report>
+	<report name="ScanningSummaryByStore">
+		<Services run="true" data="false" excel="false" pdfonly="true" />
+	</report>
+</reports>

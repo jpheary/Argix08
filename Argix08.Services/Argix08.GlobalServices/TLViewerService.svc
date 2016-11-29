@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Argix.Freight.TLViewerService" CodeBehind="~/App_Code/Freight/TLViewerService.cs" %>

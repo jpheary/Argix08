@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Argix.Freight.Tsort.TsortService" CodeBehind="~/App_Code/TsortService.cs" %>

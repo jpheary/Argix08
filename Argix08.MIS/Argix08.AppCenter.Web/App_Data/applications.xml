@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<applications>
+    <application Name="" Department="" Group="">
+        <deployment Name="" Text="" NavigateUrl="" DeploymentUnc="" />
+    </application>
+    <application Name="" Department="" Group="">
+        <deployment Name="" Text="" NavigateUrl="" DeploymentUnc="" />
+    </application>
+    <application Name="Zone Closing" Department="Freight" Group="Argix08">
+        <deployment Name="Jamesburg" Text="Jamesburg (JA)" NavigateUrl="http://rgxvmweb/argix08/apps/freight/zoneclosing/zoneclosing.application" DeploymentUnc="\\rgxvmweb\c$\inetpub\wwwroot\argix08\apps\freight\zoneclosing\" />
+    </application>
+</applications>

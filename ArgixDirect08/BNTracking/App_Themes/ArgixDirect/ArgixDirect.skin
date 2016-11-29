@@ -1,0 +1,65 @@
+<asp:Label Runat="server" Font-Names="Verdana" Font-Size="8pt" Font-Bold="true" ForeColor="#CC3333" skinid="lblTextRed" />
+<asp:TextBox Runat="server" Font-Names="Verdana" Font-Size="8pt" Font-Style="normal" BackColor="white" />
+<asp:Button Runat="server" Font-Names="Verdana" Font-Size="8pt" />
+<asp:RadioButtonList Runat="server" Font-Names="Verdana" Font-Size="8pt" />
+<asp:DropDownList Runat="server" Font-Names="Verdana" Font-Size="8pt" />
+<asp:CheckBoxList runat="server" Font-Names="Verdana" Font-Size="8pt" ForeColor="buttontext" />
+<asp:CheckBox runat="server" Font-Names="Verdana" Font-Size="8pt" ForeColor="buttontext" />
+<asp:HyperLink Runat="server" Font-Names="Verdana" Font-Size="8pt"  ForeColor="#CC3333" />
+<asp:LinkButton Runat="server" Font-Names="Verdana" Font-Size="8pt" Font-Bold="true" VerticalAlign="Center"  ForeColor="#CC3333" SkinID="linkBtn" />
+<asp:Panel runat="server" Wrap="False"  BorderStyle="Solid" BorderWidth="2px" BorderColor="#B5AAA8" />
+
+<asp:Label Runat="server" Font-Names="Ariel" Font-Size="10pt" ForeColor="black" skinid="lblText" />
+<asp:Label Runat="server" Font-Names="Ariel" Font-Size="14pt" ForeColor="black"  skinid="lblTextDetail" Padding="5px"/>
+<asp:Label Runat="server" Font-Names="Ariel" Font-Size="14pt" Font-Bold="True" Style="text-transform: uppercase;" ForeColor="#CC3333" skinid="lblStatusDetail" Padding="2px"/>
+<asp:Label Runat="server" Font-Names="Ariel" Font-Size="10pt" ForeColor="black"  skinid="lblDetailSum" Padding="2px"/>
+
+
+<asp:Calendar runat="server" DayNameFormat="FirstLetter" NextPrevFormat="CustomText" ShowGridLines="True" BorderColor="#E7000D" BorderStyle="Solid" BorderWidth="1px">
+    <TodayDayStyle BackColor="#FFE0F3" Font-Names="Verdana" Font-Size="7pt" ForeColor="Black" />
+    <DayStyle Font-Names="Verdana" Font-Size="7pt" ForeColor="Black" />
+    <WeekendDayStyle BackColor="#C0C0FF" Font-Names="Verdana" Font-Size="7pt" ForeColor="Black" />
+    <NextPrevStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="White" />
+    <DayHeaderStyle BackColor="#FFE0F3" Font-Bold="True" Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" />
+    <TitleStyle BackColor="#E7000D" Font-Bold="False" Font-Names="Verdana" Font-Size="9pt" ForeColor="White" />
+</asp:Calendar>
+<asp:WebPartZone runat="server" BorderColor="#CCCCCC" Font-Names="Verdana" Padding="6">
+    <PartChromeStyle BackColor="#F7F6F3" BorderColor="#E2DED6" Font-Names="Verdana" ForeColor="White" />
+    <MenuLabelHoverStyle ForeColor="#E2DED6" />
+    <EmptyZoneTextStyle Font-Size="0.8em" />
+    <MenuLabelStyle ForeColor="White" />
+    <MenuVerbHoverStyle BackColor="#F7F6F3" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" ForeColor="#333333" />
+    <HeaderStyle Font-Size="0.7em" ForeColor="#CCCCCC" HorizontalAlign="Center" />
+    <MenuVerbStyle BorderColor="#5D7B9D" BorderStyle="Solid" BorderWidth="1px" ForeColor="White" />
+    <PartStyle Font-Size="0.8em" ForeColor="#333333" />
+    <TitleBarVerbStyle Font-Size="0.6em" Font-Underline="False" ForeColor="White" />
+    <MenuPopupStyle BackColor="#5D7B9D" BorderColor="#CCCCCC" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.6em" />
+    <PartTitleStyle BackColor="#e7000d" Font-Bold="True" Font-Size="9pt" ForeColor="White" />
+</asp:WebPartZone>
+<asp:LoginName runat="server" Font-Names="Verdana" Font-Size="8pt" ForeColor="black" Font-Bold="True" />
+<asp:LoginStatus runat="server" Font-Names="Verdana" Font-Size="9pt" Font-Underline="true" ForeColor="#e7000d" Font-Bold="True" />
+
+<asp:RegularExpressionValidator Runat="server" Font-Names="Verdana" Font-Size="9pt" forecolor="#e7000d" />
+<asp:RequiredFieldValidator Runat="server" Font-Names="Verdana" Font-Size="9pt" forecolor="#e7000d" />
+<asp:CustomValidator Runat="server" Font-Names="Verdana" Font-Size="8pt" Font-Bold="true" ForeColor="#CC3333" BackColor="#ffe0f3" />
+<asp:ValidationSummary Runat="server" Font-Names="Verdana" Font-Size="8pt" Font-Bold="true" ForeColor="#CC3333" BackColor="#ffe0f3" />
+
+ <asp:GridView  runat="server" AutoGenerateColumns="False" CellPadding="2"  ForeColor="#333333"  CaptionAlign="Left" SkinID="GridSkin"> 
+            <FooterStyle BackColor="#999999" Font-Bold="True" ForeColor="White" />
+            <RowStyle BackColor="White" ForeColor="#333333" />
+            <EditRowStyle BackColor="#999999" />
+            <SelectedRowStyle BackColor="#CCCCCC" Font-Bold="True" ForeColor="#333333" />
+            <PagerStyle BackColor="#CCCCCC" ForeColor="White" HorizontalAlign="Center" />
+            <HeaderStyle BackColor="#999999" Font-Bold="True" ForeColor="Black" />
+            <AlternatingRowStyle BackColor="#CCCCCC" ForeColor="#333333" />
+ </asp:GridView>
+
+<asp:GridView Runat="server" Font-Names="Verdana" Font-Size="8pt" ForeColor="#333333" BackColor="#C0C0FF" BorderStyle="Solid" BorderWidth="0px" CellPadding="1" CellSpacing="1" CaptionAlign="Left" GridLines="None">
+    <HeaderStyle ForeColor="ControlText" BackColor="Control" Font-Bold="True" Height="28px" />
+    <RowStyle ForeColor="WindowText" BackColor="Window" Height="18px" Wrap="False" />
+    <AlternatingRowStyle ForeColor="ControlText" BackColor="WhiteSmoke" Height="18px" Wrap="False"></AlternatingRowStyle>
+    <SelectedRowStyle ForeColor="HighlightText" BackColor="Highlight" Font-Bold="False" />
+    <EditRowStyle BackColor="#999999" />
+    <PagerStyle ForeColor="ControlText" BackColor="Control" HorizontalAlign="Left" />
+    <FooterStyle ForeColor="White" BackColor="Control" Font-Bold="True" />
+</asp:GridView>

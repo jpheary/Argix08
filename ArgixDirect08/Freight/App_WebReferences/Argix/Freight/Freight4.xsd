@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Argix.Freight" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Argix.Freight" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TerminalInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Connection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TerminalID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TerminalInfo" nillable="true" type="tns:TerminalInfo" />
+  <xs:complexType name="Terminals">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Terminal" nillable="true" type="tns:Terminal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Terminals" nillable="true" type="tns:Terminals" />
+  <xs:complexType name="Terminal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TerminalID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Terminal" nillable="true" type="tns:Terminal" />
+  <xs:complexType name="InboundFreight">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InboundShipment" nillable="true" type="tns:InboundShipment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InboundFreight" nillable="true" type="tns:InboundFreight" />
+  <xs:complexType name="InboundShipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CarrierNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="Cartons" type="xs:int" />
+      <xs:element minOccurs="0" name="ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CurrentLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DriverNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="FloorStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FreightID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FreightType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSortable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Pallets" type="xs:int" />
+      <xs:element minOccurs="0" name="Pickup" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReceiveDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SealNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShipperName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShipperNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StorageTrailerNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TDSNumber" type="xs:int" />
+      <xs:element minOccurs="0" name="TerminalID" type="xs:int" />
+      <xs:element minOccurs="0" name="TrailerNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnloadedStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VendorKey" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InboundShipment" nillable="true" type="tns:InboundShipment" />
+  <xs:complexType name="StationAssignments">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StationAssignment" nillable="true" type="tns:StationAssignment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StationAssignments" nillable="true" type="tns:StationAssignments" />
+  <xs:complexType name="StationAssignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InboundFreight" nillable="true" type="tns:InboundShipment" />
+      <xs:element minOccurs="0" name="SortStation" nillable="true" type="tns:Workstation" />
+      <xs:element minOccurs="0" name="SortType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SortTypeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StationAssignment" nillable="true" type="tns:StationAssignment" />
+  <xs:complexType name="Workstation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrinterPort" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrinterType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScalePort" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScaleType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TerminalID" type="xs:int" />
+      <xs:element minOccurs="0" name="Trace" type="xs:boolean" />
+      <xs:element minOccurs="0" name="WorkStationID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Workstation" nillable="true" type="tns:Workstation" />
+</xs:schema>

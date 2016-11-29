@@ -1,0 +1,15 @@
+body
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 0.7em;
+	color: Black;
+	background-color: ButtonFace;
+}
+.GridTitle
+{
+	font-size: 1.0em;
+	vertical-align: middle;
+	padding-left: 6px; 
+	background-image: url(../Images/gridtitle.gif); 
+	background-repeat: repeat-x;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="https://www.argixlogistics.com/Tracking/CartonWSDetail" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="https://www.argixlogistics.com/Tracking/CartonWSDetail" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="https://www.argixlogistics.com/Tracking/CartonWSDetail" id="CartonWSDetail" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="CartonWSDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CartonWSDetailTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="CartonNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="LblSeqNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="BLNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="TLNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="PONumber" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreName" type="xs:string" />
+              <xs:element minOccurs="0" name="Client" type="xs:string" />
+              <xs:element minOccurs="0" name="Vendor" type="xs:string" />
+              <xs:element minOccurs="0" name="PickupDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ScheduledDeliveryDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="SortFacilityArrivalDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="SortFacilityArrivalStatus" type="xs:string" />
+              <xs:element minOccurs="0" name="SortFacilityLocation" type="xs:string" />
+              <xs:element minOccurs="0" name="ActualDepartureDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ActualDepartureStatus" type="xs:string" />
+              <xs:element minOccurs="0" name="ActualDepartureLocation" type="xs:string" />
+              <xs:element minOccurs="0" name="ActualArrivalDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ActualArrivalStatus" type="xs:string" />
+              <xs:element minOccurs="0" name="ActualArrivalLocation" type="xs:string" />
+              <xs:element minOccurs="0" name="ActualStoreDeliveryDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ActualStoreDeliveryStatus" type="xs:string" />
+              <xs:element minOccurs="0" name="ActualStoreDeliveryLocation" type="xs:string" />
+              <xs:element minOccurs="0" name="PODScanDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="PODScanStatus" type="xs:string" />
+              <xs:element minOccurs="0" name="PODScanLocation" type="xs:string" />
+              <xs:element minOccurs="0" name="ErrorMessage" type="xs:string" />
+              <xs:element minOccurs="0" name="Weight" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

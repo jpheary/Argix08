@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="yes" ?>
+<ClassCodeDS xmlns="http://tempuri.org/ClassCodeDS.xsd">
+	<ClassCodeTable>
+		<Class>60</Class>
+		<Description> 60 Books</Description>
+	</ClassCodeTable>
+	<ClassCodeTable>
+		<Class>70</Class>
+		<Description> 70 China</Description>
+	</ClassCodeTable>
+	<ClassCodeTable>
+		<Class>85</Class>
+		<Description> 85 Auto parts</Description>
+	</ClassCodeTable>
+	<ClassCodeTable>
+		<Class>100</Class>
+		<Description>100 Apparel and Footwear</Description>
+	</ClassCodeTable>
+	<ClassCodeTable>
+		<Class>150</Class>
+		<Description>150 Sporting Goods and Toys</Description>
+	</ClassCodeTable>
+	<ClassCodeTable>
+		<Class>175</Class>
+		<Description>175 Business And Consumer Electronics</Description>
+	</ClassCodeTable>
+	<ClassCodeTable>
+		<Class>775</Class>
+		<Description>775 Leather goods</Description>
+	</ClassCodeTable>
+</ClassCodeDS>

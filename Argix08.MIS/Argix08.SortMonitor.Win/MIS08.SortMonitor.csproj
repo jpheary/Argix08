@@ -1,0 +1,344 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F04ED42C-9D43-4E3C-9E1A-59FE9411B0C1}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SortMonitor</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tsort</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Tsort.Tools.frmMain</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Release\SortMonitor\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Argix.AppLogging, Version=2.0.0.27534, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Argix\Build\Argix.AppLogging.dll</HintPath>
+    </Reference>
+    <Reference Include="Argix.Data, Version=2.0.0.27554, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Argix\Build\Argix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Argix.Windows, Version=2.0.0.27534, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Argix\Build\Argix.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Enterprise\AgentDS.xsc">
+      <DependentUpon>AgentDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\AgentDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgentDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Enterprise\ArgixLogDS.xsc">
+      <DependentUpon>ArgixLogDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\ClientDS.xsc">
+      <DependentUpon>ClientDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\ClientDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClientDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Enterprise\TerminalDS.xss">
+      <DependentUpon>TerminalDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\VendorDS.xsc">
+      <DependentUpon>VendorDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\VendorDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VendorDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Freight\InboundFreightDS.xsc">
+      <DependentUpon>InboundFreightDS.xsd</DependentUpon>
+    </None>
+    <None Include="Freight\InboundFreightDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InboundFreightDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Freight\InboundFreightDS.xss">
+      <DependentUpon>InboundFreightDS.xsd</DependentUpon>
+    </None>
+    <None Include="Freight\InboundFreightDS.xsx">
+      <DependentUpon>InboundFreightDS.xsd</DependentUpon>
+    </None>
+    <None Include="Freight\OutboundFreightDS.xsc">
+      <DependentUpon>OutboundFreightDS.xsd</DependentUpon>
+    </None>
+    <None Include="Freight\OutboundFreightDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OutboundFreightDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Freight\OutboundFreightDS.xss">
+      <DependentUpon>OutboundFreightDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\TerminalDS.xsc">
+      <DependentUpon>TerminalDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\WorkstationDS.xsc">
+      <DependentUpon>WorkstationDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\WorkstationDS.xss">
+      <DependentUpon>WorkstationDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Enterprise\StationAssignmentDS.xsc">
+      <DependentUpon>StationAssignmentDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\StationAssignmentDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StationAssignmentDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Enterprise\StationAssignmentDS.xss">
+      <DependentUpon>StationAssignmentDS.xsd</DependentUpon>
+    </None>
+    <Content Include="app.ico" />
+    <Content Include="Enterprise\ArgixLogDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ArgixLogDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Enterprise\TerminalDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TerminalDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Enterprise\WorkstationDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WorkstationDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Compile Include="assemblyinfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enterprise\agent.cs" />
+    <Compile Include="Enterprise\AgentDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgentDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\ArgixLogDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArgixLogDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\client.cs" />
+    <Compile Include="Enterprise\ClientDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\enterprisefactory.cs" />
+    <Compile Include="Enterprise\shipper.cs" />
+    <Compile Include="Enterprise\vendor.cs" />
+    <Compile Include="Enterprise\VendorDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VendorDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Freight\freightfactory.cs" />
+    <Compile Include="Freight\inboundfreight.cs" />
+    <Compile Include="Freight\InboundFreightDS.cs">
+      <DependentUpon>InboundFreightDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Freight\InboundFreightDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InboundFreightDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Freight\OutboundFreightDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutboundFreightDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\StationAssignmentDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StationAssignmentDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="winDirect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="winDirect.Designer.cs">
+      <DependentUpon>winDirect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="winIndirect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="winIndirect.Designer.cs">
+      <DependentUpon>winIndirect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="winPanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="winPanda.Designer.cs">
+      <DependentUpon>winPanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="winStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printers\dlgzebraprinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printers\zebraprinter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sort\sortfactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enterprise\sortstation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enterprise\stationfreightassignment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enterprise\terminal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enterprise\TerminalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TerminalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\WorkstationDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkstationDS.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="winDirect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>winDirect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winIndirect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>winIndirect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winPanda.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>winPanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winStation.resx">
+      <DependentUpon>winStation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printers\dlgzebraprinter.resx">
+      <DependentUpon>dlgzebraprinter.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix.Terminals" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix.Terminals" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix.Terminals/Imports">
+      <xsd:import schemaLocation="http://tpjheary.argix.com/Argix08/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd0" namespace="http://Argix.Terminals" />
+      <xsd:import schemaLocation="http://tpjheary.argix.com/Argix08/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://tpjheary.argix.com/Argix08/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Argix.Enterprise" />
+      <xsd:import schemaLocation="http://tpjheary.argix.com/Argix08/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd3" namespace="http://tempuri.org/DeliveryPointsDS.xsd" />
+      <xsd:import schemaLocation="http://tpjheary.argix.com/Argix08/Argix08.GlobalServices/DeliveryPointsService.svc?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDeliveryPointsService_GetTerminalInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfo" />
+  </wsdl:message>
+  <wsdl:message name="IDeliveryPointsService_GetTerminalInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeliveryPointsService_GetDeliveryPoints_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryPoints" />
+  </wsdl:message>
+  <wsdl:message name="IDeliveryPointsService_GetDeliveryPoints_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryPointsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeliveryPointsService_GetExportDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetExportDate" />
+  </wsdl:message>
+  <wsdl:message name="IDeliveryPointsService_GetExportDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetExportDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDeliveryPointsService_UpdateExportDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExportDate" />
+  </wsdl:message>
+  <wsdl:message name="IDeliveryPointsService_UpdateExportDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateExportDateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDeliveryPointsService">
+    <wsdl:operation name="GetTerminalInfo">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IDeliveryPointsService/GetTerminalInfo" message="tns:IDeliveryPointsService_GetTerminalInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IDeliveryPointsService/GetTerminalInfoResponse" message="tns:IDeliveryPointsService_GetTerminalInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveryPoints">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IDeliveryPointsService/GetDeliveryPoints" message="tns:IDeliveryPointsService_GetDeliveryPoints_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IDeliveryPointsService/GetDeliveryPointsResponse" message="tns:IDeliveryPointsService_GetDeliveryPoints_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExportDate">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IDeliveryPointsService/GetExportDate" message="tns:IDeliveryPointsService_GetExportDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IDeliveryPointsService/GetExportDateResponse" message="tns:IDeliveryPointsService_GetExportDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateExportDate">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IDeliveryPointsService/UpdateExportDate" message="tns:IDeliveryPointsService_UpdateExportDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IDeliveryPointsService/UpdateExportDateResponse" message="tns:IDeliveryPointsService_UpdateExportDate_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

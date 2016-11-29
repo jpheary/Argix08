@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Net.Mail;
+//using System.Web.Configuration;
+//using System.Web.Hosting;
+//using System.IO;
+
+
+namespace Argix {
+    //
+    class TextService {
+        //Members
+        private string mSMTPServer = "";
+        private string mEmailFrom = "";
+        private string mTextServer="@txt.att.net";
+
+        //Interface
+        public TextService(string smtpServer, string emailFrom) {
+            //Constructor
+            this.mSMTPServer = smtpServer;
+            this.mEmailFrom = emailFrom;
+        }
+        #region Accessors: SMTPServer, FromEmailAddress
+        public string SMTPServer { get { return this.mSMTPServer; } }
+        public string FromEmailAddress { get { return this.mEmailFrom; } }
+        #endregion
+        public bool SendTextMessage(string mobileNumber,string subject,string message) {
+            //
+            bool retValue = false;
+            if(mobileNumber.Length != 10) 
+                throw new ApplicationException("Mobile number must be 10 digits.");
+            MailMessage email = new MailMessage(this.mEmailFrom,mobileNumber + this.mTextServer,subject,message);
+            SmtpClient smtpClient = new SmtpClient(this.mSMTPServer);
+            smtpClient.Send(email);
+            retValue = true;
+            return retValue;
+        }
+    }
+}

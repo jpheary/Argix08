@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EnterpriseDS" targetNamespace="http://tempuri.org/EnterpriseDS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/EnterpriseDS.xsd" xmlns:mstns="http://tempuri.org/EnterpriseDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="CompanyTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+                <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+                <xs:element name="Number" type="xs:string" minOccurs="0" />
+                <xs:element name="CompanyType" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="StoreTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+                <xs:element name="ClientNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="SubStoreNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="SanNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreName" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreAddressline1" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreAddressline2" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreCity" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreState" type="xs:string" minOccurs="0" />
+                <xs:element name="StoreZip" type="xs:string" minOccurs="0" />
+                <xs:element name="ContactName" type="xs:string" minOccurs="0" />
+                <xs:element name="PhoneNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="WindowTimeStart" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="WindowTimeEnd" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Zone" type="xs:string" minOccurs="0" />
+                <xs:element name="AgentNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="AgentName" type="xs:string" minOccurs="0" />
+                <xs:element name="SpecialInstructions" type="xs:string" minOccurs="0" />
+                <xs:element name="Division" type="xs:string" minOccurs="0" />
+                <xs:element name="DeliveryScanStatus" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="ScanStatusDescrption" type="xs:string" minOccurs="0" />
+                <xs:element name="IsDeliveryDayMonday" type="xs:string" minOccurs="0" />
+                <xs:element name="IsDeliveryDayTuesday" type="xs:string" minOccurs="0" />
+                <xs:element name="IsDeliveryDayWednesday" type="xs:string" minOccurs="0" />
+                <xs:element name="IsDeliveryDayThursday" type="xs:string" minOccurs="0" />
+                <xs:element name="IsDeliveryDayFriday" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOutforDeliveryDay1" type="xs:string" minOccurs="0" />
+                <xs:element name="IsOutforDeliveryDay2" type="xs:string" minOccurs="0" />
+                <xs:element name="StandardTransit" type="xs:unsignedByte" minOccurs="0" />
+                <xs:element name="District" type="xs:string" minOccurs="0" />
+                <xs:element name="DistrictName" type="xs:string" minOccurs="0" />
+                <xs:element name="Region" type="xs:string" minOccurs="0" />
+                <xs:element name="RegionDescription" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DeliveryTable">
+        <xs:complexType>
+            <xs:sequence>
+				<xs:element name="CBOL" type="xs:string" minOccurs="0" />
+				<xs:element name="CPROID" type="xs:long" minOccurs="0" />
+				<xs:element name="CPRONumber" type="xs:long" minOccurs="0" />
+				<xs:element name="StoreNumber" type="xs:int" minOccurs="0" />
+				<xs:element name="OFD1" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="OFD2" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="PodDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="PodTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="ShouldBeDeliveredOn" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="WindowStartTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="WindowEndTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="CartonsSorted" type="xs:int" minOccurs="0" />
+				<xs:element name="Weight" type="xs:int" minOccurs="0" />
+				<xs:element name="TLS" type="xs:string" minOccurs="0" />
+				<xs:element name="PODCartonsMatch" type="xs:int" minOccurs="0" />
+				<xs:element name="PODCartonsShort" type="xs:int" minOccurs="0" />
+				<xs:element name="PODCartonsOver" type="xs:int" minOccurs="0" />
+				<xs:element name="PODCartonsMisroute" type="xs:int" minOccurs="0" />
+				<xs:element name="PODCartonsDamaged" type="xs:int" minOccurs="0" />
+				<xs:element name="PODCartonsScanned" type="xs:int" minOccurs="0" />
+				<xs:element name="PODCartonsManual" type="xs:int" minOccurs="0" />
+				<xs:element name="OSDCartonsMatch" type="xs:int" minOccurs="0" />
+				<xs:element name="OSDCartonsShort" type="xs:int" minOccurs="0" />
+				<xs:element name="OSDCartonsOver" type="xs:int" minOccurs="0" />
+				<xs:element name="OSDCartonsMisroute" type="xs:int" minOccurs="0" />
+				<xs:element name="OSDCartonsDamaged" type="xs:int" minOccurs="0" />
+				<xs:element name="OSDCartonsScanned" type="xs:int" minOccurs="0" />
+				<xs:element name="OSDCartonsManual" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+	<xs:element name="OSDScanTable">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:long" minOccurs="0" />
+				<xs:element name="LabelSequenceNumber" type="xs:long" minOccurs="0" />
+				<xs:element name="ScanStatus" type="xs:string" minOccurs="0" />
+				<xs:element name="CartonStatus" type="xs:string" minOccurs="0" />
+				<xs:element name="Damage" type="xs:string" minOccurs="0" />
+				<xs:element name="ScanDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="ScanTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="TrackingNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorName" type="xs:string" minOccurs="0" />
+				<xs:element name="Weight" type="xs:int" minOccurs="0" />
+				<xs:element name="ZoneCode" type="xs:string" minOccurs="0" />
+				<xs:element name="TLNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="BLNumber" type="xs:int" minOccurs="0" />
+				<xs:element name="PickupDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="PickupNumber" type="xs:int" minOccurs="0" />
+				<xs:element name="ItemNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorKey" type="xs:string" minOccurs="0" />
+				<xs:element name="SortDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="SortTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="SortedLocation" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PODScanTable">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:long" minOccurs="0" />
+				<xs:element name="LabelSequenceNumber" type="xs:long" minOccurs="0" />
+				<xs:element name="ScanStatus" type="xs:string" minOccurs="0" />
+				<xs:element name="CartonStatus" type="xs:string" minOccurs="0" />
+				<xs:element name="Damage" type="xs:string" minOccurs="0" />
+				<xs:element name="ScanDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="ScanTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="TrackingNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorName" type="xs:string" minOccurs="0" />
+				<xs:element name="Weight" type="xs:int" minOccurs="0" />
+				<xs:element name="ZoneCode" type="xs:string" minOccurs="0" />
+				<xs:element name="TLNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="BLNumber" type="xs:int" minOccurs="0" />
+				<xs:element name="PickupDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="PickupNumber" type="xs:int" minOccurs="0" />
+				<xs:element name="ItemNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorKey" type="xs:string" minOccurs="0" />
+				<xs:element name="SortDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="SortTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="SortedLocation" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="RegionTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Region" type="xs:string" />
+                <xs:element name="RegionName" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DistrictTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="District" type="xs:string" />
+                <xs:element name="DistrictName" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AgentTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="AgentNumber" type="xs:string" />
+                <xs:element name="AgentName" type="xs:string" />
+                <xs:element name="MainZone" type="xs:string" minOccurs="0" />
+                <xs:element name="AgentParentNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="AgentSummary" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

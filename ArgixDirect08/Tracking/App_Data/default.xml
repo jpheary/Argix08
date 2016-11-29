@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<reports Text="Argix Direct Reports">
+    <department Text="Delivery Window">
+        <report Text="Detail By Store" Value="DeliveryWindowDetailByStore" NavigateUrl="/TrackingReports/Reports/DeliveryWindowDetailByStore.aspx" />
+        <report Text="Summary By Store" Value="DeliveryWindowSummaryByStore" NavigateUrl="/TrackingReports/Reports/DeliveryWindowSummaryByStore.aspx" />
+    </department>
+    <department Text="Scanning">
+        <report Text="Detail By Store" Value="ScanningDetailByStore" NavigateUrl="/TrackingReports/Reports/ScanningDetailByStore.aspx" />
+        <report Text="Summary By Store" Value="ScanningSummaryByStore" NavigateUrl="/TrackingReports/Reports/ScanningSummaryByStore.aspx" />
+    </department>
+</reports>

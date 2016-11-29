@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TLDS" targetNamespace="http://tempuri.org/TLDS.xsd" xmlns:mstns="http://tempuri.org/TLDS.xsd" xmlns="http://tempuri.org/TLDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="TLDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TLDS" msprop:Generator_DataSetName="TLDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TLListViewTable" msprop:Generator_UserTableName="TLListViewTable" msprop:Generator_RowDeletedName="TLListViewTableRowDeleted" msprop:Generator_TableClassName="TLListViewTableDataTable" msprop:Generator_RowChangedName="TLListViewTableRowChanged" msprop:Generator_RowClassName="TLListViewTableRow" msprop:Generator_RowChangingName="TLListViewTableRowChanging" msprop:Generator_RowEvArgName="TLListViewTableRowChangeEvent" msprop:Generator_RowEvHandlerName="TLListViewTableRowChangeEventHandler" msprop:Generator_TablePropName="TLListViewTable" msprop:Generator_TableVarName="tableTLListViewTable" msprop:Generator_RowDeletingName="TLListViewTableRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="NUMBER" type="xs:string" minOccurs="0" />
+                <xs:element name="ZONE_CODE" type="xs:string" minOccurs="0" />
+                <xs:element name="ZONE_TYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="AGENT_NUMBER" type="xs:string" minOccurs="0" />
+                <xs:element name="OPEN_DATE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="OPEN_TIME" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CLOSE_DATE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CLOSE_TIME" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="PRINTED_DATE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="PRINTED_TIME" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CTM_DATE" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CTM_TIME" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

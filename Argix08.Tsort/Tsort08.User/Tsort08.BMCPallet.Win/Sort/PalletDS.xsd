@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PalletDS" targetNamespace="http://tempuri.org/PalletDS.xsd" xmlns:mstns="http://tempuri.org/PalletDS.xsd" xmlns="http://tempuri.org/PalletDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="PalletDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PalletDS" msprop:Generator_DataSetName="PalletDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PalletTable" msprop:Generator_UserTableName="PalletTable" msprop:Generator_RowDeletedName="PalletTableRowDeleted" msprop:Generator_TableClassName="PalletTableDataTable" msprop:Generator_RowChangedName="PalletTableRowChanged" msprop:Generator_RowClassName="PalletTableRow" msprop:Generator_RowChangingName="PalletTableRowChanging" msprop:Generator_RowEvArgName="PalletTableRowChangeEvent" msprop:Generator_RowEvHandlerName="PalletTableRowChangeEventHandler" msprop:Generator_TablePropName="PalletTable" msprop:Generator_TableVarName="tablePalletTable" msprop:Generator_RowDeletingName="PalletTableRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LABEL_SEQ_NUMBER" msprop:Generator_UserColumnName="LABEL_SEQ_NUMBER" msprop:Generator_ColumnPropNameInRow="LABEL_SEQ_NUMBER" msprop:Generator_ColumnVarNameInTable="columnLABEL_SEQ_NUMBER" msprop:Generator_ColumnPropNameInTable="LABEL_SEQ_NUMBERColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_NUMBER" msprop:Generator_UserColumnName="CLIENT_NUMBER" msprop:Generator_ColumnPropNameInRow="CLIENT_NUMBER" msprop:Generator_ColumnVarNameInTable="columnCLIENT_NUMBER" msprop:Generator_ColumnPropNameInTable="CLIENT_NUMBERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CLIENT_DIV_NUM" msprop:Generator_UserColumnName="CLIENT_DIV_NUM" msprop:Generator_ColumnPropNameInRow="CLIENT_DIV_NUM" msprop:Generator_ColumnVarNameInTable="columnCLIENT_DIV_NUM" msprop:Generator_ColumnPropNameInTable="CLIENT_DIV_NUMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VENDOR_NUMBER" msprop:Generator_UserColumnName="VENDOR_NUMBER" msprop:Generator_ColumnPropNameInRow="VENDOR_NUMBER" msprop:Generator_ColumnVarNameInTable="columnVENDOR_NUMBER" msprop:Generator_ColumnPropNameInTable="VENDOR_NUMBERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PICKUP_DATE" msprop:Generator_UserColumnName="PICKUP_DATE" msprop:Generator_ColumnPropNameInRow="PICKUP_DATE" msprop:Generator_ColumnVarNameInTable="columnPICKUP_DATE" msprop:Generator_ColumnPropNameInTable="PICKUP_DATEColumn" type="xs:dateTime" />
+              <xs:element name="PICKUP_NUMBER" msprop:Generator_UserColumnName="PICKUP_NUMBER" msprop:Generator_ColumnPropNameInRow="PICKUP_NUMBER" msprop:Generator_ColumnVarNameInTable="columnPICKUP_NUMBER" msprop:Generator_ColumnPropNameInTable="PICKUP_NUMBERColumn" type="xs:int" />
+              <xs:element name="STORE" msprop:Generator_UserColumnName="STORE" msprop:Generator_ColumnPropNameInRow="STORE" msprop:Generator_ColumnVarNameInTable="columnSTORE" msprop:Generator_ColumnPropNameInTable="STOREColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ZONE_CODE" msprop:Generator_UserColumnName="ZONE_CODE" msprop:Generator_ColumnPropNameInRow="ZONE_CODE" msprop:Generator_ColumnVarNameInTable="columnZONE_CODE" msprop:Generator_ColumnPropNameInTable="ZONE_CODEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRAILER_LOAD_NUM" msprop:Generator_UserColumnName="TRAILER_LOAD_NUM" msprop:Generator_ColumnPropNameInRow="TRAILER_LOAD_NUM" msprop:Generator_ColumnVarNameInTable="columnTRAILER_LOAD_NUM" msprop:Generator_ColumnPropNameInTable="TRAILER_LOAD_NUMColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_TYPE" msprop:Generator_UserColumnName="ITEM_TYPE" msprop:Generator_ColumnPropNameInRow="ITEM_TYPE" msprop:Generator_ColumnVarNameInTable="columnITEM_TYPE" msprop:Generator_ColumnPropNameInTable="ITEM_TYPEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_WEIGHT" msprop:Generator_UserColumnName="ITEM_WEIGHT" msprop:Generator_ColumnPropNameInRow="ITEM_WEIGHT" msprop:Generator_ColumnVarNameInTable="columnITEM_WEIGHT" msprop:Generator_ColumnPropNameInTable="ITEM_WEIGHTColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="VENDOR_KEY" msprop:Generator_UserColumnName="VENDOR_KEY" msprop:Generator_ColumnPropNameInRow="VENDOR_KEY" msprop:Generator_ColumnVarNameInTable="columnVENDOR_KEY" msprop:Generator_ColumnPropNameInTable="VENDOR_KEYColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VENDOR_ITEM_NUMBER" msprop:Generator_UserColumnName="VENDOR_ITEM_NUMBER" msprop:Generator_ColumnPropNameInRow="VENDOR_ITEM_NUMBER" msprop:Generator_ColumnVarNameInTable="columnVENDOR_ITEM_NUMBER" msprop:Generator_ColumnPropNameInTable="VENDOR_ITEM_NUMBERColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SORT_DATE" msprop:Generator_UserColumnName="SORT_DATE" msprop:Generator_ColumnPropNameInRow="SORT_DATE" msprop:Generator_ColumnVarNameInTable="columnSORT_DATE" msprop:Generator_ColumnPropNameInTable="SORT_DATEColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PalletTable" />
+      <xs:field xpath="mstns:LABEL_SEQ_NUMBER" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

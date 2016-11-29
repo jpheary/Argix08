@@ -1,0 +1,30 @@
+body
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 0.7em;
+	color: ButtonText;
+	background-color: ButtonFace;
+}
+.dialogbody
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 0.7em;
+	color: ButtonText;
+	background-color: ButtonFace;
+}
+.WindowTitle
+{
+	font-size: 1.1em; 
+	vertical-align: middle;
+	padding-left: 6px; 
+	background-image: url(Images/windowtitle.gif); 
+	background-repeat: repeat-x;
+}
+.GridTitle
+{
+	font-size: 1.0em; 
+	vertical-align: middle;
+	padding-left: 6px; 
+	background-image: url(Images/gridtitle.gif); 
+	background-repeat: repeat-x;
+}

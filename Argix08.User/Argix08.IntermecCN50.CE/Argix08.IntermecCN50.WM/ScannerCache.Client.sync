@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<syncDesignerSurface dslVersion="1.0.0.0" Id="2ebaf84c-bda7-4995-ae66-04a8366d1ff8" parentDesignerName="ScannerCache" codeGenerationMode="ClientOnly" synchronizeInOneTransaction="true" clientFileLocation="5a1c5691-c9d3-4473-af87-cdc7983ada90" serverFileLocation="974861d6-2df2-4bed-b600-e3498698b786" isRootSyncDesigner="false" rootSyncDesignerHintPath="..\..\..\Argix08.Services\Argix08.ScannerServerSync.Lib\ScannerCache.sync" rootSyncDesignerShouldGenerateCode="true" isClientSyncDesigner="true" isServerSyncDesigner="false" changeTrackingType="SqlServerChangeTracking" xmlns="http://schemas.microsoft.com/dsltools/SyncDesigner">
+  <syncTables>
+    <syncTable Id="167fae29-a02d-42ff-8053-447a7deeda03" name="GPSDataSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="GPSData" fullTableName="dbo.GPSData" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/2ebaf84c-bda7-4995-ae66-04a8366d1ff8/ScannerCacheSyncGroup" />
+      </syncGroup>
+    </syncTable>
+  </syncTables>
+  <syncGroups>
+    <syncGroup Id="5d1cf174-a61e-4177-9be1-9012e6e9599a" name="ScannerCacheSyncGroup" />
+  </syncGroups>
+  <clientSyncProvider>
+    <clientSyncProvider Id="ca8681ac-e3da-4464-ae5e-79c2429bebd4" name="ScannerCacheClientSyncProvider">
+      <syncConnection>
+        <syncConnectionMoniker name="/2ebaf84c-bda7-4995-ae66-04a8366d1ff8/ClientConnection" />
+      </syncConnection>
+    </clientSyncProvider>
+  </clientSyncProvider>
+  <syncAgent>
+    <syncAgent name="ScannerCacheSyncAgent">
+      <clientSyncProvider>
+        <clientSyncProviderMoniker name="/2ebaf84c-bda7-4995-ae66-04a8366d1ff8/ScannerCacheClientSyncProvider" />
+      </clientSyncProvider>
+      <syncTables>
+        <syncTableMoniker name="/2ebaf84c-bda7-4995-ae66-04a8366d1ff8/GPSDataSyncTable" />
+      </syncTables>
+    </syncAgent>
+  </syncAgent>
+  <syncConnections>
+    <syncConnection Id="98ff01fa-a1de-4197-b712-192b3819c541" connectionString="Data Source=C:\Data\Projects\Argix08\Argix08.User\Argix08.IntermecCN50.CE\Argix08.IntermecCN50.WM\Scanner.sdf" providerInvariantName="Microsoft.SqlServerCe.Client.3.5" name="ClientConnection" connectionDisplayString="Scanner.sdf" isAppSettings="false" appSettingsObjectName="&lt;&lt;FSIM&gt;&gt;" appSettingsPropertyReference="" />
+  </syncConnections>
+</syncDesignerSurface>

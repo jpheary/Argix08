@@ -1,0 +1,74 @@
+body {
+}
+.masterHeader
+{
+    /* background-image: url(Images/topbanner.jpg); */
+}
+.masterMenu
+{
+    background-repeat: repeat-x;
+    background-image: url(Images/navbk.jpg);
+}
+.masterMenuRow
+{
+   background-color:#CC3333;   
+
+}
+.spacer
+{
+    background-image: url(Images/spacer.gif);
+}
+.tableHeader
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e7000d;
+}
+.tableHeaderBold
+{
+	/*background-color: #e7000d;*/
+	background-color: #CC3333;
+	text-align: left;
+	height: 18px;
+}
+.altRow
+{
+	background-color: #ffe2e7;
+	text-align: left;
+	height: 16px;
+}
+.row
+{
+	text-align: left;
+	height: 16px;
+}
+.normalText
+{
+   Font: "Verdana";  
+   Font-Size:12px;
+   Font-Style:normal;
+   
+}
+.ClientTitle
+{
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	vertical-align: middle;
+	color: #CC3333;
+	font-family: Verdana;
+	text-align: left;
+}
+.Label
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: buttontext;
+}
+.LabelRequired
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight:bold;
+	color: buttontext;
+}

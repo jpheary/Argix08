@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ItemDS" targetNamespace="http://tempuri.org/ItemDS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ItemDS.xsd" xmlns:mstns="http://tempuri.org/ItemDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="ItemDS" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="DeviceItemTable">
+                    <xs:complexType>
+                        <xs:sequence>
+							<xs:element name="ItemID" type="xs:string" minOccurs="0" />
+							<xs:element name="TypeID" type="xs:string" minOccurs="0" />
+							<xs:element name="TerminalID" type="xs:long" minOccurs="0" />
+							<xs:element name="Terminal" type="xs:string" minOccurs="0" />
+							<xs:element name="Status" type="xs:string" minOccurs="0" />
+							<xs:element name="Comments" type="xs:string" minOccurs="0" />
+							<xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="RowVersion" minOccurs="0" type="xs:string" />
+							<xs:element name="DeviceID" type="xs:string" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="ModelNumber" type="xs:string" minOccurs="0" />
+                            <xs:element name="PriorItemID" type="xs:string" minOccurs="0" />
+                            <xs:element name="PriorDeviceID" type="xs:string" minOccurs="0" />
+                            <xs:element name="InstallationType" type="xs:string" minOccurs="0" />
+                            <xs:element name="InstallationNumber" type="xs:string" minOccurs="0" />
+                            <xs:element name="FirmWareVersion" type="xs:string" minOccurs="0" />
+                            <xs:element name="SoftWareVersion" type="xs:string" minOccurs="0" />
+                            <xs:element name="ServiceExpiration" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="AccountID" type="xs:string" minOccurs="0" />
+                            <xs:element name="PriorAccountID" type="xs:string" minOccurs="0" />
+                            <xs:element name="DriverID" type="xs:int" minOccurs="0" />
+                            <xs:element name="LastName" type="xs:string" minOccurs="0" />
+                            <xs:element name="FirstName" type="xs:string" minOccurs="0" />
+                            <xs:element name="FullName" type="xs:string" minOccurs="0" />
+                            <xs:element name="PriorOwnerLastName" type="xs:string" minOccurs="0" />
+                            <xs:element name="PriorOwnerFirstName" type="xs:string" minOccurs="0" />
+                            <xs:element name="PriorOwnerFullName" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="BatteryItemTable">
+                    <xs:complexType>
+                        <xs:sequence>
+							<xs:element name="ItemID" type="xs:string" minOccurs="0" />
+							<xs:element name="TypeID" type="xs:string" minOccurs="0" />
+							<xs:element name="TerminalID" type="xs:long" minOccurs="0" />
+                            <xs:element name="Terminal" type="xs:string" minOccurs="0" />
+							<xs:element name="Status" type="xs:string" minOccurs="0" />
+							<xs:element name="Comments" type="xs:string" minOccurs="0" />
+							<xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CreatedUserID" type="xs:string" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+							<xs:element name="DeviceID" type="xs:string" minOccurs="0" />
+                            <xs:element name="Description" type="xs:string" minOccurs="0" />
+                            <xs:element name="CycleStart" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="ElapsedTimeCharging" type="xs:string" minOccurs="0" />
+                            <xs:element name="RemainingTimeCharging" type="xs:string" minOccurs="0" />
+                            <xs:element name="CycleEnd" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="CycleComplete" type="xs:int" minOccurs="0" />
+                            <xs:element name="TimeElapsedSinceComplete" type="xs:string" minOccurs="0" />
+                            <xs:element name="MinHoursToCharge" type="xs:int" minOccurs="0" />
+                            <xs:element name="NumberOfCycles" type="xs:int" minOccurs="0" />
+                            <xs:element name="AssignedDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="InServiceDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DriverID" type="xs:int" minOccurs="0" />
+							<xs:element name="FullName" type="xs:string" minOccurs="0" />
+							<xs:element name="FirstName" type="xs:string" minOccurs="0" />
+							<xs:element name="LastName" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+				<xs:element name="BatteryItemAssignmentTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DriverID" type="xs:int" minOccurs="0" />
+							<xs:element name="ItemID" type="xs:string" minOccurs="0" />
+							<xs:element name="Comments" type="xs:string" minOccurs="0" />
+							<xs:element name="AssignedDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="AssignedUser" type="xs:string" minOccurs="0" />
+							<xs:element name="RowVersion" minOccurs="0" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,74 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="InboundLabelDS" targetNamespace="http://www.tempuri.org/InboundLabelDS.xsd"
+	xmlns:mstns="http://www.tempuri.org/InboundLabelDS.xsd" xmlns="http://www.tempuri.org/InboundLabelDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="InboundLabelDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="InboundLabelViewTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LabelID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="SortTypeID" type="xs:int" />
+							<xs:element name="SortType" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="Input1Len" type="xs:short" />
+							<xs:element name="Input1ValidString" type="xs:string" />
+							<xs:element name="Input1ValidStart" type="xs:short" />
+							<xs:element name="Input2Len" type="xs:short" />
+							<xs:element name="Input2ValidString" type="xs:string" />
+							<xs:element name="Input2ValidStart" type="xs:short" />
+							<xs:element name="Input3Len" type="xs:short" />
+							<xs:element name="Input3ValidString" type="xs:string" />
+							<xs:element name="Input3ValidStart" type="xs:short" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="InboundLabelDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LabelID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="SortTypeID" type="xs:int" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="Input1Len" type="xs:short" />
+							<xs:element name="Input1ValidString" type="xs:string" />
+							<xs:element name="Input1ValidStart" type="xs:short" />
+							<xs:element name="Input2Len" type="xs:short" />
+							<xs:element name="Input2ValidString" type="xs:string" />
+							<xs:element name="Input2ValidStart" type="xs:short" />
+							<xs:element name="Input3Len" type="xs:short" />
+							<xs:element name="Input3ValidString" type="xs:string" />
+							<xs:element name="Input3ValidStart" type="xs:short" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="InboundLabelDataElementTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Required" type="xs:boolean" minOccurs="0" />
+                        	<xs:element name="Selected" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LabelID" type="xs:int" />
+							<xs:element name="ElementType" type="xs:string" />
+							<xs:element name="InputNumber" type="xs:short" />
+							<xs:element name="Start" type="xs:short" />
+							<xs:element name="Length" type="xs:short" />
+							<xs:element name="IsValueRequired" type="xs:boolean" />
+							<xs:element name="IsDuplicateAllowed" type="xs:boolean" />
+							<xs:element name="IsCheckDigitValidation" type="xs:boolean" />
+							<xs:element name="IsUseAltNumber" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

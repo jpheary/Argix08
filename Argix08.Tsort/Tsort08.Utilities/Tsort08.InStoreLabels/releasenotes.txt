@@ -1,0 +1,137 @@
+              --------------------------------------------------------
+							InStore Labels Utility Readme File
+		                       		October, 2011
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2011
+
+This document provides late-breaking or other information that supplements the InStore Labels documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+InStore Labels is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\InStore Labels on a web server like RGXDEVDB using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+        Argix08.AppLogging.dll
+        Argix08.Configuration.dll
+		Argix08.Data.dll
+		Argix08.Windows.dll
+		Infragistics.Shared.v10.1.dll
+		Infragistics.Win.UltraWinGrid.v10.1.dll
+		Infragistics.Win.v10.1.dll
+		InStoreLabels.exe
+		InStoreLabels.exe.config
+		Tsort08.Devices.dll
+		Tsort08.Labels.dll
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the application configuration file (i.e. InStore Labels.exe.config), go to the <configuration> section, 
+and add/edit the values below:
+	<!-- Test Configuration -->
+	<configSections>
+		<sectionGroup name="station">
+			<section name="printer" type="System.Configuration.NameValueSectionHandler"/>
+		</sectionGroup>
+		<sectionGroup name="menu">
+			<section name="help" type="System.Configuration.NameValueSectionHandler" />
+		</sectionGroup>
+	</configSections>
+	<station>
+		<printer>
+			<add key="BaudRate" value="19200" />
+			<add key="DataBits" value="7" />
+			<add key="RS232Parity" value="None" />
+			<add key="RS232StopBits" value="1" />
+			<add key="RS232Handshake" value="None" />
+		</printer>
+	</station>
+	<menu>
+		<help>
+			<add key="Contents..." value="" />
+			<add key="Release Notes..." value="http://RGXDEVDB/InStoreLabels/releasenotes.txt" />
+		</help>
+	</menu>
+	
+	<appSettings>
+		<!-- Client configuration -->
+		<add key="UseWebSvc" value="false" />
+		<add key="EventLogMachineName" value="RGXDEVDB"/>
+		
+		<!-- Tsort.Data configuration -->
+		<add key="Tsort.Data.DataWS.DataAccess" value="http://RGXDEVDB/RGXDEVDB.TSORTLOCAL.WebSvc/DataAccess.asmx" />
+		<add key="SQLConnection" value="data source=RGXDEVDB;initial catalog=TSORTLOCAL;integrated security=SSPI;persist security info=False;packet size=4096;Connection Timeout=15" />
+	</appSettings>
+
+	
+Open the local sort database (i.e. TSORTLOCAL on RGXDEVDB), goto the Configuration table, and add/edit the 
+values below:
+	Application     PCName          Key                       Value                     Security 
+	--------------- --------------- ------------------------- ------------------------- -------- 
+	InStoreLabels          Default         LabelType                 22                        1        
+	InStoreLabels          Default         MISPassword               ********                  1        
+	InStoreLabels          Default         PrinterPort               COM1                      1        
+	InStoreLabels          Default         PrinterType               170Xi2                    1        
+	InStoreLabels          Default         ReadOnly                  true                      1        
+	InStoreLabels          Default         TraceLevel                3                         1        
+
+
+NOTES
+==============
+GENERAL
+The InStore Labels Utility (InStoreLabels.exe) is a Windows based application used to print store
+identification labels.
+
+
+OPERATION
+Normal:
+The InStore Labels Application (InStore Labels.exe) operates by launching from a web server deployment url 
+(i.e. http://rgxdevdb/InStoreLabels/InStoreLabels.exe). After a brief splash screen, a sizeable window appears and 
+displays... The taskbar displays the operating terminal and connection status. Additional operating 
+steps can be found in the on-line documentation provided by the Help/Contents menu item.
+
+Diagnostics Mode:
+CTL ENTER at the Splash screen displays a dialog that examines configuration, database, assembly, 
+and deployment requirements.
+
+
+VERSION HISTORY
+v2.8.0, 07/22/04 ---------------------------------------------------------------------------
+Requirements/features
+- Created.
+
+Design/deployment
+- None.
+
+
+v3.5.0, 10/03/11 ---------------------------------------------------------------------------
+Requirements/features
+- Ported to .NET Framework 3.5.
+
+Design/deployment
+- None.

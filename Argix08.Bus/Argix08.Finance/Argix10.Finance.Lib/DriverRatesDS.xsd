@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DriverRatesDS" targetNamespace="http://tempuri.org/DriverRatesDS.xsd" xmlns:mstns="http://tempuri.org/DriverRatesDS.xsd" xmlns="http://tempuri.org/DriverRatesDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="DriverRatesDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DriverRatesDS" msprop:Generator_DataSetName="DriverRatesDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RateMileageTable" msprop:Generator_UserTableName="RateMileageTable" msprop:Generator_RowDeletedName="RateMileageTableRowDeleted" msprop:Generator_RowChangedName="RateMileageTableRowChanged" msprop:Generator_RowClassName="RateMileageTableRow" msprop:Generator_RowChangingName="RateMileageTableRowChanging" msprop:Generator_RowEvArgName="RateMileageTableRowChangeEvent" msprop:Generator_RowEvHandlerName="RateMileageTableRowChangeEventHandler" msprop:Generator_TableClassName="RateMileageTableDataTable" msprop:Generator_TableVarName="tableRateMileageTable" msprop:Generator_RowDeletingName="RateMileageTableRowDeleting" msprop:Generator_TablePropName="RateMileageTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="AgentNumber" msprop:Generator_UserColumnName="AgentNumber" msprop:Generator_ColumnVarNameInTable="columnAgentNumber" msprop:Generator_ColumnPropNameInRow="AgentNumber" msprop:Generator_ColumnPropNameInTable="AgentNumberColumn" type="xs:string" />
+              <xs:element name="EquipmentTypeID" msprop:Generator_UserColumnName="EquipmentTypeID" msprop:Generator_ColumnVarNameInTable="columnEquipmentTypeID" msprop:Generator_ColumnPropNameInRow="EquipmentTypeID" msprop:Generator_ColumnPropNameInTable="EquipmentTypeIDColumn" type="xs:int" />
+              <xs:element name="EffectiveDate" msprop:Generator_UserColumnName="EffectiveDate" msprop:Generator_ColumnVarNameInTable="columnEffectiveDate" msprop:Generator_ColumnPropNameInRow="EffectiveDate" msprop:Generator_ColumnPropNameInTable="EffectiveDateColumn" type="xs:dateTime" />
+              <xs:element name="Mile" msprop:Generator_UserColumnName="Mile" msprop:Generator_ColumnVarNameInTable="columnMile" msprop:Generator_ColumnPropNameInRow="Mile" msprop:Generator_ColumnPropNameInTable="MileColumn" type="xs:double" />
+              <xs:element name="BaseRate" msprop:Generator_UserColumnName="BaseRate" msprop:Generator_ColumnVarNameInTable="columnBaseRate" msprop:Generator_ColumnPropNameInRow="BaseRate" msprop:Generator_ColumnPropNameInTable="BaseRateColumn" type="xs:decimal" />
+              <xs:element name="Rate" msprop:Generator_UserColumnName="Rate" msprop:Generator_ColumnVarNameInTable="columnRate" msprop:Generator_ColumnPropNameInRow="Rate" msprop:Generator_ColumnPropNameInTable="RateColumn" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RateMileageRouteTable" msprop:Generator_UserTableName="RateMileageRouteTable" msprop:Generator_RowDeletedName="RateMileageRouteTableRowDeleted" msprop:Generator_RowChangedName="RateMileageRouteTableRowChanged" msprop:Generator_RowClassName="RateMileageRouteTableRow" msprop:Generator_RowChangingName="RateMileageRouteTableRowChanging" msprop:Generator_RowEvArgName="RateMileageRouteTableRowChangeEvent" msprop:Generator_RowEvHandlerName="RateMileageRouteTableRowChangeEventHandler" msprop:Generator_TableClassName="RateMileageRouteTableDataTable" msprop:Generator_TableVarName="tableRateMileageRouteTable" msprop:Generator_RowDeletingName="RateMileageRouteTableRowDeleting" msprop:Generator_TablePropName="RateMileageRouteTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="AgentNumber" msprop:Generator_UserColumnName="AgentNumber" msprop:Generator_ColumnVarNameInTable="columnAgentNumber" msprop:Generator_ColumnPropNameInRow="AgentNumber" msprop:Generator_ColumnPropNameInTable="AgentNumberColumn" type="xs:string" />
+              <xs:element name="Route" msprop:Generator_UserColumnName="Route" msprop:Generator_ColumnVarNameInTable="columnRoute" msprop:Generator_ColumnPropNameInRow="Route" msprop:Generator_ColumnPropNameInTable="RouteColumn" type="xs:string" />
+              <xs:element name="EffectiveDate" msprop:Generator_UserColumnName="EffectiveDate" msprop:Generator_ColumnVarNameInTable="columnEffectiveDate" msprop:Generator_ColumnPropNameInRow="EffectiveDate" msprop:Generator_ColumnPropNameInTable="EffectiveDateColumn" type="xs:dateTime" />
+              <xs:element name="Mile" msprop:Generator_UserColumnName="Mile" msprop:Generator_ColumnVarNameInTable="columnMile" msprop:Generator_ColumnPropNameInRow="Mile" msprop:Generator_ColumnPropNameInTable="MileColumn" type="xs:double" />
+              <xs:element name="BaseRate" msprop:Generator_UserColumnName="BaseRate" msprop:Generator_ColumnVarNameInTable="columnBaseRate" msprop:Generator_ColumnPropNameInRow="BaseRate" msprop:Generator_ColumnPropNameInTable="BaseRateColumn" type="xs:decimal" />
+              <xs:element name="Rate" msprop:Generator_UserColumnName="Rate" msprop:Generator_ColumnVarNameInTable="columnRate" msprop:Generator_ColumnPropNameInRow="Rate" msprop:Generator_ColumnPropNameInTable="RateColumn" type="xs:decimal" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RateUnitTable" msprop:Generator_UserTableName="RateUnitTable" msprop:Generator_RowDeletedName="RateUnitTableRowDeleted" msprop:Generator_RowChangedName="RateUnitTableRowChanged" msprop:Generator_RowClassName="RateUnitTableRow" msprop:Generator_RowChangingName="RateUnitTableRowChanging" msprop:Generator_RowEvArgName="RateUnitTableRowChangeEvent" msprop:Generator_RowEvHandlerName="RateUnitTableRowChangeEventHandler" msprop:Generator_TableClassName="RateUnitTableDataTable" msprop:Generator_TableVarName="tableRateUnitTable" msprop:Generator_RowDeletingName="RateUnitTableRowDeleting" msprop:Generator_TablePropName="RateUnitTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="AgentNumber" msprop:Generator_UserColumnName="AgentNumber" msprop:Generator_ColumnVarNameInTable="columnAgentNumber" msprop:Generator_ColumnPropNameInRow="AgentNumber" msprop:Generator_ColumnPropNameInTable="AgentNumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EquipmentTypeID" msprop:Generator_UserColumnName="EquipmentTypeID" msprop:Generator_ColumnVarNameInTable="columnEquipmentTypeID" msprop:Generator_ColumnPropNameInRow="EquipmentTypeID" msprop:Generator_ColumnPropNameInTable="EquipmentTypeIDColumn" type="xs:int" />
+              <xs:element name="EffectiveDate" msprop:Generator_UserColumnName="EffectiveDate" msprop:Generator_ColumnVarNameInTable="columnEffectiveDate" msprop:Generator_ColumnPropNameInRow="EffectiveDate" msprop:Generator_ColumnPropNameInTable="EffectiveDateColumn" type="xs:dateTime" />
+              <xs:element name="DayRate" msprop:Generator_UserColumnName="DayRate" msprop:Generator_ColumnVarNameInTable="columnDayRate" msprop:Generator_ColumnPropNameInRow="DayRate" msprop:Generator_ColumnPropNameInTable="DayRateColumn" type="xs:decimal" />
+              <xs:element name="MultiTripRate" msprop:Generator_UserColumnName="MultiTripRate" msprop:Generator_ColumnVarNameInTable="columnMultiTripRate" msprop:Generator_ColumnPropNameInRow="MultiTripRate" msprop:Generator_ColumnPropNameInTable="MultiTripRateColumn" type="xs:decimal" />
+              <xs:element name="StopRate" msprop:Generator_UserColumnName="StopRate" msprop:Generator_ColumnVarNameInTable="columnStopRate" msprop:Generator_ColumnPropNameInRow="StopRate" msprop:Generator_ColumnPropNameInTable="StopRateColumn" type="xs:decimal" />
+              <xs:element name="CartonRate" msprop:Generator_UserColumnName="CartonRate" msprop:Generator_ColumnVarNameInTable="columnCartonRate" msprop:Generator_ColumnPropNameInRow="CartonRate" msprop:Generator_ColumnPropNameInTable="CartonRateColumn" type="xs:decimal" />
+              <xs:element name="PalletRate" msprop:Generator_UserColumnName="PalletRate" msprop:Generator_ColumnVarNameInTable="columnPalletRate" msprop:Generator_ColumnPropNameInRow="PalletRate" msprop:Generator_ColumnPropNameInTable="PalletRateColumn" type="xs:decimal" />
+              <xs:element name="PickupCartonRate" msprop:Generator_UserColumnName="PickupCartonRate" msprop:Generator_ColumnVarNameInTable="columnPickupCartonRate" msprop:Generator_ColumnPropNameInRow="PickupCartonRate" msprop:Generator_ColumnPropNameInTable="PickupCartonRateColumn" type="xs:decimal" />
+              <xs:element name="MinimumAmount" msprop:Generator_UserColumnName="MinimumAmount" msprop:Generator_ColumnVarNameInTable="columnMinimumAmount" msprop:Generator_ColumnPropNameInRow="MinimumAmount" msprop:Generator_ColumnPropNameInTable="MinimumAmountColumn" type="xs:decimal" />
+              <xs:element name="MaximumAmount" msprop:Generator_UserColumnName="MaximumAmount" msprop:Generator_ColumnPropNameInRow="MaximumAmount" msprop:Generator_ColumnVarNameInTable="columnMaximumAmount" msprop:Generator_ColumnPropNameInTable="MaximumAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MaximumTriggerField" msprop:Generator_UserColumnName="MaximumTriggerField" msprop:Generator_ColumnPropNameInRow="MaximumTriggerField" msprop:Generator_ColumnVarNameInTable="columnMaximumTriggerField" msprop:Generator_ColumnPropNameInTable="MaximumTriggerFieldColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaximumTriggerValue" msprop:Generator_UserColumnName="MaximumTriggerValue" msprop:Generator_ColumnPropNameInRow="MaximumTriggerValue" msprop:Generator_ColumnVarNameInTable="columnMaximumTriggerValue" msprop:Generator_ColumnPropNameInTable="MaximumTriggerValueColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FSBase" msprop:Generator_UserColumnName="FSBase" msprop:Generator_ColumnVarNameInTable="columnFSBase" msprop:Generator_ColumnPropNameInRow="FSBase" msprop:Generator_ColumnPropNameInTable="FSBaseColumn" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RateUnitRouteTable" msprop:Generator_UserTableName="RateUnitRouteTable" msprop:Generator_RowDeletedName="RateUnitRouteTableRowDeleted" msprop:Generator_RowChangedName="RateUnitRouteTableRowChanged" msprop:Generator_RowClassName="RateUnitRouteTableRow" msprop:Generator_RowChangingName="RateUnitRouteTableRowChanging" msprop:Generator_RowEvArgName="RateUnitRouteTableRowChangeEvent" msprop:Generator_RowEvHandlerName="RateUnitRouteTableRowChangeEventHandler" msprop:Generator_TableClassName="RateUnitRouteTableDataTable" msprop:Generator_TableVarName="tableRateUnitRouteTable" msprop:Generator_RowDeletingName="RateUnitRouteTableRowDeleting" msprop:Generator_TablePropName="RateUnitRouteTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="AgentNumber" msprop:Generator_UserColumnName="AgentNumber" msprop:Generator_ColumnVarNameInTable="columnAgentNumber" msprop:Generator_ColumnPropNameInRow="AgentNumber" msprop:Generator_ColumnPropNameInTable="AgentNumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Route" msprop:Generator_UserColumnName="Route" msprop:Generator_ColumnVarNameInTable="columnRoute" msprop:Generator_ColumnPropNameInRow="Route" msprop:Generator_ColumnPropNameInTable="RouteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EffectiveDate" msprop:Generator_UserColumnName="EffectiveDate" msprop:Generator_ColumnVarNameInTable="columnEffectiveDate" msprop:Generator_ColumnPropNameInRow="EffectiveDate" msprop:Generator_ColumnPropNameInTable="EffectiveDateColumn" type="xs:dateTime" />
+              <xs:element name="DayRate" msprop:Generator_UserColumnName="DayRate" msprop:Generator_ColumnVarNameInTable="columnDayRate" msprop:Generator_ColumnPropNameInRow="DayRate" msprop:Generator_ColumnPropNameInTable="DayRateColumn" type="xs:decimal" />
+              <xs:element name="MultiTripRate" msprop:Generator_UserColumnName="MultiTripRate" msprop:Generator_ColumnVarNameInTable="columnMultiTripRate" msprop:Generator_ColumnPropNameInRow="MultiTripRate" msprop:Generator_ColumnPropNameInTable="MultiTripRateColumn" type="xs:decimal" />
+              <xs:element name="StopRate" msprop:Generator_UserColumnName="StopRate" msprop:Generator_ColumnVarNameInTable="columnStopRate" msprop:Generator_ColumnPropNameInRow="StopRate" msprop:Generator_ColumnPropNameInTable="StopRateColumn" type="xs:decimal" />
+              <xs:element name="CartonRate" msprop:Generator_UserColumnName="CartonRate" msprop:Generator_ColumnVarNameInTable="columnCartonRate" msprop:Generator_ColumnPropNameInRow="CartonRate" msprop:Generator_ColumnPropNameInTable="CartonRateColumn" type="xs:decimal" />
+              <xs:element name="PalletRate" msprop:Generator_UserColumnName="PalletRate" msprop:Generator_ColumnVarNameInTable="columnPalletRate" msprop:Generator_ColumnPropNameInRow="PalletRate" msprop:Generator_ColumnPropNameInTable="PalletRateColumn" type="xs:decimal" />
+              <xs:element name="PickupCartonRate" msprop:Generator_UserColumnName="PickupCartonRate" msprop:Generator_ColumnVarNameInTable="columnPickupCartonRate" msprop:Generator_ColumnPropNameInRow="PickupCartonRate" msprop:Generator_ColumnPropNameInTable="PickupCartonRateColumn" type="xs:decimal" />
+              <xs:element name="MinimumAmount" msprop:Generator_UserColumnName="MinimumAmount" msprop:Generator_ColumnVarNameInTable="columnMinimumAmount" msprop:Generator_ColumnPropNameInRow="MinimumAmount" msprop:Generator_ColumnPropNameInTable="MinimumAmountColumn" type="xs:decimal" />
+              <xs:element name="MaximumAmount" msprop:Generator_UserColumnName="MaximumAmount" msprop:Generator_ColumnPropNameInRow="MaximumAmount" msprop:Generator_ColumnVarNameInTable="columnMaximumAmount" msprop:Generator_ColumnPropNameInTable="MaximumAmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MaximumTriggerField" msprop:Generator_UserColumnName="MaximumTriggerField" msprop:Generator_ColumnPropNameInRow="MaximumTriggerField" msprop:Generator_ColumnVarNameInTable="columnMaximumTriggerField" msprop:Generator_ColumnPropNameInTable="MaximumTriggerFieldColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaximumTriggerValue" msprop:Generator_UserColumnName="MaximumTriggerValue" msprop:Generator_ColumnPropNameInRow="MaximumTriggerValue" msprop:Generator_ColumnVarNameInTable="columnMaximumTriggerValue" msprop:Generator_ColumnPropNameInTable="MaximumTriggerValueColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FSBase" msprop:Generator_UserColumnName="FSBase" msprop:Generator_ColumnVarNameInTable="columnFSBase" msprop:Generator_ColumnPropNameInRow="FSBase" msprop:Generator_ColumnPropNameInTable="FSBaseColumn" type="xs:decimal" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RateTypeTable" msprop:Generator_UserTableName="RateTypeTable" msprop:Generator_RowDeletedName="RateTypeTableRowDeleted" msprop:Generator_RowChangedName="RateTypeTableRowChanged" msprop:Generator_RowClassName="RateTypeTableRow" msprop:Generator_RowChangingName="RateTypeTableRowChanging" msprop:Generator_RowEvArgName="RateTypeTableRowChangeEvent" msprop:Generator_RowEvHandlerName="RateTypeTableRowChangeEventHandler" msprop:Generator_TableClassName="RateTypeTableDataTable" msprop:Generator_TableVarName="tableRateTypeTable" msprop:Generator_RowDeletingName="RateTypeTableRowDeleting" msprop:Generator_TablePropName="RateTypeTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:RateTypeTable" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

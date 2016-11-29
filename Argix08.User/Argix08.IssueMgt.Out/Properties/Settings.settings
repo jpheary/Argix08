@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Argix.CustomerSvc" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UseWebSvc" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SQLConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">data source=RGXSQL;initial catalog=TSORT;persist security info=True;user id=sa;password=objects;packet size=4096;Connect Timeout=3</Value>
+    </Setting>
+    <Setting Name="DataAccessWS" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://RGXWEB/RGXSQL.Tsort.WebSvc/DataAccess.asmx</Value>
+    </Setting>
+    <Setting Name="TempFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c:\Temp\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

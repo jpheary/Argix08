@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Argix.Terminals" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Argix.Terminals" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Argix.Enterprise" />
+  <xs:complexType name="LocalTerminals">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LocalTerminal" nillable="true" type="tns:LocalTerminal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocalTerminals" nillable="true" type="tns:LocalTerminals" />
+  <xs:complexType name="LocalTerminal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="TerminalID" type="xs:long" />
+      <xs:element minOccurs="0" name="TerminalName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocalTerminal" nillable="true" type="tns:LocalTerminal" />
+  <xs:complexType name="MobileDevicesFault">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Exception" nillable="true" type="q1:Exception" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MobileDevicesFault" nillable="true" type="tns:MobileDevicesFault" />
+  <xs:complexType name="LocalDrivers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LocalDriver" nillable="true" type="tns:LocalDriver" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LocalDrivers" nillable="true" type="tns:LocalDrivers" />
+  <xs:complexType name="LocalDriver">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Argix.Enterprise" base="q2:Driver">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Assignments" nillable="true" type="tns:BatteryItemAssignments" />
+          <xs:element minOccurs="0" name="NumberOfBatteries" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LocalDriver" nillable="true" type="tns:LocalDriver" />
+  <xs:complexType name="BatteryItemAssignments">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BatteryItemAssignment" nillable="true" type="tns:BatteryItemAssignment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BatteryItemAssignments" nillable="true" type="tns:BatteryItemAssignments" />
+  <xs:complexType name="BatteryItemAssignment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AssignedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AssignedUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DriverID" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BatteryItemAssignment" nillable="true" type="tns:BatteryItemAssignment" />
+  <xs:complexType name="DeviceItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DeviceItem" nillable="true" type="tns:DeviceItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeviceItems" nillable="true" type="tns:DeviceItems" />
+  <xs:complexType name="DeviceItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MobileItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirmWareVersion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InstallationNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InstallationType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ModelNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriorAccountID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriorDeviceID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PriorItemID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ServiceExpiration" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="SoftWareVersion" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DeviceItem" nillable="true" type="tns:DeviceItem" />
+  <xs:complexType name="MobileItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Comments" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Created" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedUserID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Driver" nillable="true" type="tns:LocalDriver" />
+      <xs:element minOccurs="0" name="DriverName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="ItemID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastUpdated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusList" nillable="true">
+        <xs:complexType>
+          <xs:annotation>
+            <xs:appinfo>
+              <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element ref="xs:schema" />
+            <xs:any />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="Terminal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TerminalID" type="xs:long" />
+      <xs:element minOccurs="0" name="TypeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MobileItem" nillable="true" type="tns:MobileItem" />
+  <xs:complexType name="BatteryItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BatteryItem" nillable="true" type="tns:BatteryItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BatteryItems" nillable="true" type="tns:BatteryItems" />
+  <xs:complexType name="BatteryItem">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:MobileItem">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AssignedDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CycleComplete" type="xs:int" />
+          <xs:element minOccurs="0" name="CycleEnd" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CycleStart" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeviceID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ElapsedTimeCharging" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InServiceDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MinHoursToCharge" type="xs:int" />
+          <xs:element minOccurs="0" name="NumberOfCycles" type="xs:int" />
+          <xs:element minOccurs="0" name="RemainingTimeCharging" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TimeElapsedSinceComplete" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BatteryItem" nillable="true" type="tns:BatteryItem" />
+  <xs:complexType name="ComponentTypes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ComponentType" nillable="true" type="tns:ComponentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ComponentTypes" nillable="true" type="tns:ComponentTypes" />
+  <xs:complexType name="ComponentType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CategoryID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="LastUpdated" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ComponentType" nillable="true" type="tns:ComponentType" />
+</xs:schema>

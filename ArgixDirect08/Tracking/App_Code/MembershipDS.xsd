@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MembershipDS" targetNamespace="http://tempuri.org/MembershipDS.xsd" xmlns:mstns="http://tempuri.org/MembershipDS.xsd" xmlns="http://tempuri.org/MembershipDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="MembershipDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MembershipDS" msprop:Generator_DataSetName="MembershipDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MemberTable" msprop:Generator_UserTableName="MemberTable" msprop:Generator_RowDeletedName="MemberTableRowDeleted" msprop:Generator_RowChangedName="MemberTableRowChanged" msprop:Generator_RowClassName="MemberTableRow" msprop:Generator_RowChangingName="MemberTableRowChanging" msprop:Generator_RowEvArgName="MemberTableRowChangeEvent" msprop:Generator_RowEvHandlerName="MemberTableRowChangeEventHandler" msprop:Generator_TableClassName="MemberTableDataTable" msprop:Generator_TableVarName="tableMemberTable" msprop:Generator_RowDeletingName="MemberTableRowDeleting" msprop:Generator_TablePropName="MemberTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserID" msprop:Generator_UserColumnName="UserID" msprop:Generator_ColumnPropNameInRow="UserID" msprop:Generator_ColumnVarNameInTable="columnUserID" msprop:Generator_ColumnPropNameInTable="UserIDColumn" type="xs:string" />
+              <xs:element name="UserFullName" msprop:Generator_UserColumnName="UserFullName" msprop:Generator_ColumnPropNameInRow="UserFullName" msprop:Generator_ColumnVarNameInTable="columnUserFullName" msprop:Generator_ColumnPropNameInTable="UserFullNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_UserColumnName="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInTable="EmailColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Company" msprop:Generator_UserColumnName="Company" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInTable="CompanyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyID" msprop:Generator_UserColumnName="CompanyID" msprop:Generator_ColumnPropNameInRow="CompanyID" msprop:Generator_ColumnVarNameInTable="columnCompanyID" msprop:Generator_ColumnPropNameInTable="CompanyIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IsWebServiceUser" msprop:Generator_UserColumnName="IsWebServiceUser" msprop:Generator_ColumnPropNameInRow="IsWebServiceUser" msprop:Generator_ColumnVarNameInTable="columnIsWebServiceUser" msprop:Generator_ColumnPropNameInTable="IsWebServiceUserColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="LastActivity" msprop:Generator_UserColumnName="LastActivity" msprop:Generator_ColumnPropNameInRow="LastActivity" msprop:Generator_ColumnVarNameInTable="columnLastActivity" msprop:Generator_ColumnPropNameInTable="LastActivityColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastUpdated" msprop:Generator_UserColumnName="LastUpdated" msprop:Generator_ColumnPropNameInRow="LastUpdated" msprop:Generator_ColumnVarNameInTable="columnLastUpdated" msprop:Generator_ColumnPropNameInTable="LastUpdatedColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

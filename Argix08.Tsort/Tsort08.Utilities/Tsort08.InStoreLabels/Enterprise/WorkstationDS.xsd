@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="WorkstationDS" targetNamespace="http://tempuri.org/WorkstationDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/WorkstationDS.xsd" xmlns:mstns="http://tempuri.org/WorkstationDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="WorkstationDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="WorkstationDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="WorkStationID" type="xs:string" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" minOccurs="0" />
+							<xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+							<xs:element name="Number" type="xs:string" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="ScaleType" type="xs:string" minOccurs="0" />
+							<xs:element name="ScalePort" type="xs:string" minOccurs="0" />
+							<xs:element name="PrinterType" type="xs:string" minOccurs="0" />
+							<xs:element name="PrinterPort" type="xs:string" minOccurs="0" />
+							<xs:element name="Trace" type="xs:boolean" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="WorkstationDSKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:Workstation" />
+			<xs:field xpath="mstns:WorkStationID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

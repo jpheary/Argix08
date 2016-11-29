@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ShipperDS" targetNamespace="http://tempuri.org/ShipperDS.xsd" xmlns:mstns="http://tempuri.org/ShipperDS.xsd" xmlns="http://tempuri.org/ShipperDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ShipperDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ShipperDS" msprop:Generator_DataSetName="ShipperDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ShipperTable" msprop:Generator_UserTableName="ShipperTable" msprop:Generator_RowDeletedName="ShipperTableRowDeleted" msprop:Generator_TableClassName="ShipperTableDataTable" msprop:Generator_RowChangedName="ShipperTableRowChanged" msprop:Generator_RowClassName="ShipperTableRow" msprop:Generator_RowChangingName="ShipperTableRowChanging" msprop:Generator_RowEvArgName="ShipperTableRowChangeEvent" msprop:Generator_RowEvHandlerName="ShipperTableRowChangeEventHandler" msprop:Generator_TablePropName="ShipperTable" msprop:Generator_TableVarName="tableShipperTable" msprop:Generator_RowDeletingName="ShipperTableRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ShipperNumber" msdata:Caption="AgentNumber" msprop:Generator_UserColumnName="ShipperNumber" msprop:Generator_ColumnPropNameInRow="ShipperNumber" msprop:Generator_ColumnVarNameInTable="columnShipperNumber" msprop:Generator_ColumnPropNameInTable="ShipperNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperName" msdata:Caption="AgentName" msprop:Generator_UserColumnName="ShipperName" msprop:Generator_ColumnPropNameInRow="ShipperName" msprop:Generator_ColumnVarNameInTable="columnShipperName" msprop:Generator_ColumnPropNameInTable="ShipperNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperParentNumber" msdata:Caption="AgentParentNumber" msprop:Generator_UserColumnName="ShipperParentNumber" msprop:Generator_ColumnPropNameInRow="ShipperParentNumber" msprop:Generator_ColumnVarNameInTable="columnShipperParentNumber" msprop:Generator_ColumnPropNameInTable="ShipperParentNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperSummary" msdata:Caption="AgentSummary" msprop:Generator_UserColumnName="ShipperSummary" msprop:Generator_ColumnPropNameInRow="ShipperSummary" msprop:Generator_ColumnVarNameInTable="columnShipperSummary" msprop:Generator_ColumnPropNameInTable="ShipperSummaryColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

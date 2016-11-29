@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/TrackDS.xsd" xmlns="http://tempuri.org/TrackDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/TrackDS.xsd" id="TrackDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="TrackDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TrackingSummaryTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="LabelSequenceNumber" type="xs:long" />
+              <xs:element name="ItemNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="OsTrackingNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Time" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Status" type="xs:string" />
+              <xs:element minOccurs="0" name="LocationName" type="xs:string" />
+              <xs:element minOccurs="0" name="ShipperName" type="xs:string" />
+              <xs:element minOccurs="0" name="ShipperCity" type="xs:string" />
+              <xs:element minOccurs="0" name="ShipperState" type="xs:string" />
+              <xs:element minOccurs="0" name="ShipperZip" type="xs:string" />
+              <xs:element minOccurs="0" name="ShipperCountry" type="xs:string" />
+              <xs:element minOccurs="0" name="ConsigneeName" type="xs:string" />
+              <xs:element minOccurs="0" name="ConsigneeCity" type="xs:string" />
+              <xs:element minOccurs="0" name="ConsigneeState" type="xs:string" />
+              <xs:element minOccurs="0" name="ConsigneeZip" type="xs:string" />
+              <xs:element minOccurs="0" name="ConsigneeCountry" type="xs:string" />
+              <xs:element minOccurs="0" name="Pieces" type="xs:int" />
+              <xs:element minOccurs="0" name="Weight" type="xs:int" />
+              <xs:element minOccurs="0" name="ShipDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ShipTime" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="TenderedDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="TenderedTime" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TrackingDetailTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ItemNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Time" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Status" type="xs:string" />
+              <xs:element minOccurs="0" name="LocationName" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:TrackingSummaryTable" />
+      <xs:field xpath="mstns:ItemNumber" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="TrackingSummaryTable_TrackingDetailTable" msdata:parent="TrackingSummaryTable" msdata:child="TrackingDetailTable" msdata:parentkey="ItemNumber" msdata:childkey="ItemNumber" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

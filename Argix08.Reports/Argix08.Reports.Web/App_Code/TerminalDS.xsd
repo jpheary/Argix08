@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TerminalDS" targetNamespace="http://www.tempuri.org/TerminalDS.xsd" xmlns:mstns="http://www.tempuri.org/TerminalDS.xsd" xmlns="http://www.tempuri.org/TerminalDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="TerminalDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TerminalDS" msprop:Generator_DataSetName="TerminalDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TerminalTable" msprop:Generator_UserTableName="ArgixTerminalTable" msprop:Generator_RowDeletedName="ArgixTerminalTableRowDeleted" msprop:Generator_RowChangedName="ArgixTerminalTableRowChanged" msprop:Generator_RowClassName="ArgixTerminalTableRow" msprop:Generator_RowChangingName="ArgixTerminalTableRowChanging" msprop:Generator_RowEvArgName="ArgixTerminalTableRowChangeEvent" msprop:Generator_RowEvHandlerName="ArgixTerminalTableRowChangeEventHandler" msprop:Generator_TableClassName="ArgixTerminalTableDataTable" msprop:Generator_TableVarName="tableArgixTerminalTable" msprop:Generator_RowDeletingName="ArgixTerminalTableRowDeleting" msprop:Generator_TablePropName="ArgixTerminalTable">
+          <xs:complexType>
+            <xs:sequence>
+				<xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:long" minOccurs="0" />
+				<xs:element name="TerminalID" msprop:Generator_UserColumnName="TerminalID" msprop:Generator_ColumnVarNameInTable="columnTerminalID" msprop:Generator_ColumnPropNameInRow="TerminalID" msprop:Generator_ColumnPropNameInTable="TerminalIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:string" minOccurs="0" />
+				<xs:element name="TerminalCode" msprop:Generator_UserColumnName="TerminalCode" msprop:Generator_ColumnVarNameInTable="columnTerminalCode" msprop:Generator_ColumnPropNameInRow="TerminalCode" msprop:Generator_ColumnPropNameInTable="TerminalCodeColumn" type="xs:string" minOccurs="0" />
+				<xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AgentID" msprop:Generator_UserColumnName="AgentID" msprop:Generator_ColumnVarNameInTable="columnAgentID" msprop:Generator_ColumnPropNameInRow="AgentID" msprop:Generator_ColumnPropNameInTable="AgentIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

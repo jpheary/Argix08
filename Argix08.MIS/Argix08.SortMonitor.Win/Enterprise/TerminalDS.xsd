@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TerminalDS" targetNamespace="http://tempuri.org/TerminalDS.xsd" xmlns:mstns="http://tempuri.org/TerminalDS.xsd" xmlns="http://tempuri.org/TerminalDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TsortLocalConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="TsortLocalConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Tsort.Properties.Settings.GlobalReference.Default.TsortLocalConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TerminalDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TerminalDS" msprop:Generator_DataSetName="TerminalDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DBATerminalTable" msprop:Generator_UserTableName="DBATerminalTable" msprop:Generator_RowDeletedName="DBATerminalTableRowDeleted" msprop:Generator_TableClassName="DBATerminalTableDataTable" msprop:Generator_RowChangedName="DBATerminalTableRowChanged" msprop:Generator_RowClassName="DBATerminalTableRow" msprop:Generator_RowChangingName="DBATerminalTableRowChanging" msprop:Generator_RowEvArgName="DBATerminalTableRowChangeEvent" msprop:Generator_RowEvHandlerName="DBATerminalTableRowChangeEventHandler" msprop:Generator_TablePropName="DBATerminalTable" msprop:Generator_TableVarName="tableDBATerminalTable" msprop:Generator_RowDeletingName="DBATerminalTableRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TerminalID" msprop:Generator_UserColumnName="TerminalID" msprop:Generator_ColumnPropNameInRow="TerminalID" msprop:Generator_ColumnVarNameInTable="columnTerminalID" msprop:Generator_ColumnPropNameInTable="TerminalIDColumn" type="xs:int" />
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInTable="NumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DBServerName" msprop:Generator_UserColumnName="DBServerName" msprop:Generator_ColumnPropNameInRow="DBServerName" msprop:Generator_ColumnVarNameInTable="columnDBServerName" msprop:Generator_ColumnPropNameInTable="DBServerNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LinkedServerName" msprop:Generator_UserColumnName="LinkedServerName" msprop:Generator_ColumnPropNameInRow="LinkedServerName" msprop:Generator_ColumnVarNameInTable="columnLinkedServerName" msprop:Generator_ColumnPropNameInTable="LinkedServerNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DBType" msprop:Generator_UserColumnName="DBType" msprop:Generator_ColumnPropNameInRow="DBType" msprop:Generator_ColumnVarNameInTable="columnDBType" msprop:Generator_ColumnPropNameInTable="DBTypeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AgentID" msprop:Generator_UserColumnName="AgentID" msprop:Generator_ColumnPropNameInRow="AgentID" msprop:Generator_ColumnVarNameInTable="columnAgentID" msprop:Generator_ColumnPropNameInTable="AgentIDColumn" type="xs:int" />
+              <xs:element name="AgentNumber" msprop:Generator_UserColumnName="AgentNumber" msprop:Generator_ColumnPropNameInRow="AgentNumber" msprop:Generator_ColumnVarNameInTable="columnAgentNumber" msprop:Generator_ColumnPropNameInTable="AgentNumberColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShipperID" msprop:Generator_UserColumnName="ShipperID" msprop:Generator_ColumnPropNameInRow="ShipperID" msprop:Generator_ColumnVarNameInTable="columnShipperID" msprop:Generator_ColumnPropNameInTable="ShipperIDColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ClientDivision" msprop:Generator_UserColumnName="ClientDivision" msprop:Generator_ColumnPropNameInRow="ClientDivision" msprop:Generator_ColumnVarNameInTable="columnClientDivision" msprop:Generator_ColumnPropNameInTable="ClientDivisionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LocationID" msprop:Generator_UserColumnName="LocationID" msprop:Generator_ColumnPropNameInRow="LocationID" msprop:Generator_ColumnVarNameInTable="columnLocationID" msprop:Generator_ColumnPropNameInTable="LocationIDColumn" type="xs:long" />
+              <xs:element name="Mnemonic" msprop:Generator_UserColumnName="Mnemonic" msprop:Generator_ColumnPropNameInRow="Mnemonic" msprop:Generator_ColumnVarNameInTable="columnMnemonic" msprop:Generator_ColumnPropNameInTable="MnemonicColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsActive" msprop:Generator_UserColumnName="IsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" type="xs:unsignedByte" />
+              <xs:element name="SQLConnection" msprop:Generator_UserColumnName="SQLConnection" msprop:Generator_ColumnPropNameInRow="SQLConnection" msprop:Generator_ColumnVarNameInTable="columnSQLConnection" msprop:Generator_ColumnPropNameInTable="SQLConnectionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DBATerminalTable" />
+      <xs:field xpath="mstns:TerminalID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

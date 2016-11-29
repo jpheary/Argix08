@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ToolsVersion="2.0">
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD50cnVlPC9FbmFibGVkPg0KICA8UHJvamVjdE5hbWU+IiQvQXJnaXgwOC9BcmdpeDA4LlJlcG9ydHMvQXJnaXgwOC5GcmVpZ2h0LlJwdHMiLCBTRUpCQUFBQTwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD4uPC9Mb2NhbFBhdGg+DQogIDxQcm92aWRlcj5NU1NDQ0k6TWljcm9zb2Z0IFZpc3VhbCBTb3VyY2VTYWZlPC9Qcm92aWRlcj4NCjwvU291cmNlQ29udHJvbEluZm8+</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>RGXSQL400.TSORT.rds</Name>
+      <FullPath>RGXSQL400.TSORT.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RGXSQLR.TSORTR.rds</Name>
+      <FullPath>RGXSQLR.TSORTR.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RGXVMDEV.TSORT.rds</Name>
+      <FullPath>RGXVMDEV.TSORT.rds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RGXVMSQL.TSORT.rds</Name>
+      <FullPath>RGXVMSQL.TSORT.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSets />
+  <Reports>
+    <ProjectItem>
+      <Name>Delivery Appointment Sheet.rdl</Name>
+      <FullPath>Delivery Appointment Sheet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Driver Settlement Sheet.rdl</Name>
+      <FullPath>Driver Settlement Sheet.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Outbound Load Summary.rdl</Name>
+      <FullPath>Outbound Load Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pallet Shipment Inbound Tracking Zone Loads.rdl</Name>
+      <FullPath>Pallet Shipment Inbound Tracking Zone Loads.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pallet Shipment Inbound Tracking.rdl</Name>
+      <FullPath>Pallet Shipment Inbound Tracking.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pallet Shipment Labels.rdl</Name>
+      <FullPath>Pallet Shipment Labels.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pallet Shipment Paperwork.rdl</Name>
+      <FullPath>Pallet Shipment Paperwork.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pallet Shipment Pickup Requests.rdl</Name>
+      <FullPath>Pallet Shipment Pickup Requests.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pallet Shipment Quote Log.rdl</Name>
+      <FullPath>Pallet Shipment Quote Log.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pallet Shipment Tracking.rdl</Name>
+      <FullPath>Pallet Shipment Tracking.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PCS Inbound Schedule.rdl</Name>
+      <FullPath>PCS Inbound Schedule.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PCS Pickup Log.rdl</Name>
+      <FullPath>PCS Pickup Log.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PCS Trailer Log Inbound.rdl</Name>
+      <FullPath>PCS Trailer Log Inbound.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PCS Trailer Log Outbound.rdl</Name>
+      <FullPath>PCS Trailer Log Outbound.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Pickup Requests Advanced.rdl</Name>
+      <FullPath>Pickup Requests Advanced.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Shipment Tracking.rdl</Name>
+      <FullPath>Shipment Tracking.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BBB TDS Info.rdl</Name>
+      <FullPath>BBB TDS Info.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>Argix08.Freight.Rpts</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\DebugLocal</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>Argix08.Freight.Rpts</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Release</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>Argix08.Freight.Rpts</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

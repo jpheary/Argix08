@@ -1,0 +1,117 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="TerminalDS" targetNamespace="http://www.tempuri.org/TerminalDS.xsd" xmlns:mstns="http://www.tempuri.org/TerminalDS.xsd" xmlns="http://www.tempuri.org/TerminalDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="TerminalDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TerminalDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LocationID" type="xs:int" minOccurs="0" />
+							<xs:element name="CompanyID" type="xs:int" />
+							<xs:element name="Number" type="xs:string" minOccurs="0" />
+							<xs:element name="LocationTypeID" type="xs:int" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="OpenTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CloseTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ContactName" type="xs:string" minOccurs="0" />
+							<xs:element name="Phone" type="xs:string" minOccurs="0" />
+							<xs:element name="Extension" type="xs:string" minOccurs="0" />
+							<xs:element name="Fax" type="xs:string" minOccurs="0" />
+							<xs:element name="Email" type="xs:string" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="SpecialInstructions" type="xs:string" minOccurs="0" />
+							<xs:element name="UserLabelData" type="xs:string" minOccurs="0" />
+							<xs:element name="Mnemonic" type="xs:string" minOccurs="0" />
+							<xs:element name="Exception" type="xs:string" minOccurs="0" />
+							<xs:element name="IsArgixUse" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TerminalViewTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LocationID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="CompanyID" type="xs:int" />
+							<xs:element name="Number" type="xs:string" />
+							<xs:element name="LocationTypeID" type="xs:int" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="OpenTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CloseTime" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ContactName" type="xs:string" />
+							<xs:element name="Phone" type="xs:string" />
+							<xs:element name="Extension" type="xs:string" />
+							<xs:element name="Fax" type="xs:string" />
+							<xs:element name="EMail" type="xs:string" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="AddressID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" minOccurs="0" />
+							<xs:element name="AddressLine1" type="xs:string" minOccurs="0" />
+							<xs:element name="AddressLine2" type="xs:string" minOccurs="0" />
+							<xs:element name="City" type="xs:string" minOccurs="0" />
+							<xs:element name="StateOrProvince" type="xs:string" minOccurs="0" />
+							<xs:element name="StateProvinceName" type="xs:string" minOccurs="0" />
+							<xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+							<xs:element name="Region" type="xs:string" minOccurs="0" />
+							<xs:element name="CountryID" type="xs:int" minOccurs="0" />
+							<xs:element name="Country" type="xs:string" minOccurs="0" />
+							<xs:element name="SpecialInstructions" type="xs:string" minOccurs="0" />
+							<xs:element name="UserLabelData" type="xs:string" minOccurs="0" />
+							<xs:element name="Mnemonic" type="xs:string" minOccurs="0" />
+							<xs:element name="Exception" type="xs:string" minOccurs="0" />
+							<xs:element name="IsArgixUse" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TerminalListTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+							<xs:element name="TerminalName" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="LocalTerminalTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TerminalID" type="xs:int" />
+							<xs:element name="Number" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="DBServerName" type="xs:string" />
+							<xs:element name="LinkedServerName" type="xs:string" />
+							<xs:element name="DBType" type="xs:string" />
+							<xs:element name="AgentID" type="xs:int" />
+							<xs:element name="AgentNumber" type="xs:string" />
+							<xs:element name="ShipperID" type="xs:string" />
+							<xs:element name="IsActive" type="xs:unsignedByte" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AddressDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LocationID" type="xs:int" minOccurs="0" />
+							<xs:element name="AddressID" type="xs:int" minOccurs="0" />
+							<xs:element name="AddressType" type="xs:string" />
+							<xs:element name="AddressLine1" type="xs:string" />
+							<xs:element name="AddressLine2" type="xs:string" minOccurs="0" />
+							<xs:element name="City" type="xs:string" />
+							<xs:element name="StateOrProvince" type="xs:string" minOccurs="0" />
+							<xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+							<xs:element name="Region" type="xs:string" minOccurs="0" />
+							<xs:element name="CountryID" type="xs:int" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

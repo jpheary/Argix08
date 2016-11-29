@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ZoneDS" targetNamespace="http://tempuri.org/ZoneDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ZoneDS.xsd" xmlns:mstns="http://tempuri.org/ZoneDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ZoneDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ZoneTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CODE" type="xs:string" />
+							<xs:element name="TYPE" type="xs:string" />
+							<xs:element name="TRAILER_LOAD_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="LABEL_TYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="LANE" type="xs:string" minOccurs="0" />
+							<xs:element name="STATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="RB_TL_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="AgentID" type="xs:int" minOccurs="0" />
+							<xs:element name="AGENT_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRIPTION" type="xs:string" minOccurs="0" />
+							<xs:element name="LOCATION" type="xs:string" minOccurs="0" />
+							<xs:element name="SortCenterID" type="xs:int" minOccurs="0" />
+							<xs:element name="SHIP_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CAN_BE_CLOSED" type="xs:string" minOccurs="0" />
+							<xs:element name="OSDStatus" type="xs:string" minOccurs="0" />
+							<xs:element name="LABELTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="LANE_SMALL_SORT" type="xs:string" minOccurs="0" />
+							<xs:element name="IsMain" type="xs:short" minOccurs="0" />
+							<xs:element name="ShipScdeToClose" type="xs:short" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ZoneChangeHistoryTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CODE" type="xs:string" />
+							<xs:element name="CHANGE_DATE" type="xs:dateTime" />
+							<xs:element name="CHANGE_TIME" type="xs:dateTime" />
+							<xs:element name="TYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="TRAILER_LOAD_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="NEW_TR_LOAD_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="RB_TR_LOAD_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="LANE" type="xs:string" minOccurs="0" />
+							<xs:element name="NEW_LANE" type="xs:string" minOccurs="0" />
+							<xs:element name="RB_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="RB_TIME" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LANE_SMALL_SORT" type="xs:string" minOccurs="0" />
+							<xs:element name="NEWLANE_SMALL_SORT" type="xs:string" minOccurs="0" />
+							<xs:element name="STATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="DESCRIPTION" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ZoneDSKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ZoneTable" />
+			<xs:field xpath="mstns:CODE" />
+			<xs:field xpath="mstns:TYPE" />
+		</xs:unique>
+		<xs:unique name="ZoneDSKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ZoneChangeHistoryTable" />
+			<xs:field xpath="mstns:CODE" />
+			<xs:field xpath="mstns:CHANGE_DATE" />
+			<xs:field xpath="mstns:CHANGE_TIME" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,14 @@
+body
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 0.7em;
+	color: WindowText;
+	background-color: Window;
+}
+.dialogbody
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 0.7em;
+	color: ButtonText;
+	background-color: ButtonFace;
+}

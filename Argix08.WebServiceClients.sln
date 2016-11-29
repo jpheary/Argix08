@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Argix08.WebSvc.Web", "Argix08.User\Argix08.WebSvc.Web", "{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/Argix08/Argix08.User/Argix08.WebSvc.Web", MQDBAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Argix08.WebSvc.Web"
+		Debug.AspNetCompiler.PhysicalPath = "..\Argix08.WebSvc.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Argix08.WebSvc.Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Argix08.WebSvc.Web"
+		Release.AspNetCompiler.PhysicalPath = "..\Argix08.WebSvc.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Argix08.WebSvc.Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51062"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argix08.WebSvc.Win", "Argix08.User\Argix08.WebSvc.Win\Argix08.WebSvc.Win.csproj", "{31392C07-C505-45CE-9A9E-A93C8BFB6F94}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = Argix08.User\\Argix08.WebSvc.Web
+		SccProjectName1 = \u0022$/Argix08/Argix08.User/Argix08.WebSvc.Web\u0022,\u0020MQDBAAAA
+		SccLocalPath1 = C:\\Data\\Projects\\Argix08\\Argix08.User\\Argix08.WebSvc.Web
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = Argix08.User\\Argix08.WebSvc.Win\\Argix08.WebSvc.Win.csproj
+		SccProjectName2 = \u0022$/Argix08/Argix08.User/Argix08.WebSvc.Win\u0022,\u0020QPDBAAAA
+		SccLocalPath2 = Argix08.User\\Argix08.WebSvc.Win
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Debug|.NET.ActiveCfg = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Debug|.NET.Build.0 = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Release|.NET.ActiveCfg = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Release|.NET.Build.0 = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{6FD90AC0-B7DE-4115-B88E-EF32C846EAB9}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Release|.NET.ActiveCfg = Release|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{31392C07-C505-45CE-9A9E-A93C8BFB6F94}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

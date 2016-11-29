@@ -1,0 +1,44 @@
+              --------------------------------------------------------
+                    Invoicing Application Readme File
+		                       	  December, 2010
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2004-2010
+
+This document provides late-breaking or other information that supplements the Invoicing documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+NOTES
+   GENERAL
+   DEPENDENCIES
+   VERSION HISTORY
+==============
+
+
+NOTES
+==============
+GENERAL
+The Invoicing Application (Invoicing.exe) is a Windows based application used to open client
+and vendor invoices.
+
+
+DEPENDENCIES
+None.
+
+
+VERSION HISTORY
+v3.5.0, 11/15/10 ---------------------------------------------------------------------------
+Requirements/features
+- new release.
+
+Design
+- new release.
+

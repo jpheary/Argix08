@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="InboundLabelDS" targetNamespace="http://tempuri.org/InboundLabelDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/InboundLabelDS.xsd" xmlns:mstns="http://tempuri.org/InboundLabelDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="InboundLabelDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="InboundLabelTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LabelID" type="xs:int" />
+							<xs:element name="SortTypeID" type="xs:int" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="Input1Len" type="xs:short" />
+							<xs:element name="Input1ValidString" type="xs:string" minOccurs="0" />
+							<xs:element name="Input1ValidStart" type="xs:short" />
+							<xs:element name="Input2Len" type="xs:short" minOccurs="0" />
+							<xs:element name="Input2ValidString" type="xs:string" minOccurs="0" />
+							<xs:element name="Input2ValidStart" type="xs:short" minOccurs="0" />
+							<xs:element name="Input3Len" type="xs:short" minOccurs="0" />
+							<xs:element name="Input3ValidString" type="xs:string" minOccurs="0" />
+							<xs:element name="Input3ValidStart" type="xs:short" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:unsignedByte" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="RowVersionID" type="xs:base64Binary" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="InboundLabelDataElementTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LabelID" type="xs:int" />
+							<xs:element name="ElementType" type="xs:string" />
+							<xs:element name="InputNumber" type="xs:short" />
+							<xs:element name="Start" type="xs:short" />
+							<xs:element name="Length" type="xs:short" />
+							<xs:element name="IsValueRequired" type="xs:unsignedByte" />
+							<xs:element name="IsDuplicateAllowed" type="xs:unsignedByte" />
+							<xs:element name="IsCheckDigitValidation" type="xs:unsignedByte" />
+							<xs:element name="ConstantValue" type="xs:string" />
+							<xs:element name="ValidationExp" type="xs:string" />
+							<xs:element name="CheckDigitType" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

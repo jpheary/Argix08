@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TrackingDS" targetNamespace="http://www.argixdirect.com/Tracking/TrackingDS" xmlns:mstns="http://www.argixdirect.com/Tracking/TrackingDS" xmlns="http://www.argixdirect.com/Tracking/TrackingDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="TrackingDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="TrackingTable">
+              <xs:complexType>
+                  <xs:sequence>
+                      <xs:element name="SCNTP" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="CTN" type="xs:string" minOccurs="0" />
+                      <xs:element name="LBL" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="PUD" type="xs:string" minOccurs="0" />
+                      <xs:element name="BL" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="SRTLOC" type="xs:string" minOccurs="0" />
+                      <xs:element name="AGNM" type="xs:string" minOccurs="0" />
+                      <xs:element name="AGCT" type="xs:string" minOccurs="0" />
+                      <xs:element name="AGST" type="xs:string" minOccurs="0" />
+                      <xs:element name="AGZ" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="SAGNM" type="xs:string" minOccurs="0" />
+                      <xs:element name="SAGCT" type="xs:string" minOccurs="0" />
+                      <xs:element name="SAGST" type="xs:string" minOccurs="0" />
+                      <xs:element name="SAGZ" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="CL" type="xs:string" minOccurs="0" />
+                      <xs:element name="CLNM" type="xs:string" minOccurs="0" />
+                      <xs:element name="V" type="xs:string" minOccurs="0" />
+                      <xs:element name="VNM" type="xs:string" minOccurs="0" />
+                      <xs:element name="VCT" type="xs:string" minOccurs="0" />
+                      <xs:element name="VST" type="xs:string" minOccurs="0" />
+                      <xs:element name="VZ" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="S" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="SNM" type="xs:string" minOccurs="0" />
+                      <xs:element name="SA1" type="xs:string" minOccurs="0" />
+                      <xs:element name="SA2" type="xs:string" minOccurs="0" />
+                      <xs:element name="SCT" type="xs:string" minOccurs="0" />
+                      <xs:element name="SST" type="xs:string" minOccurs="0" />
+                      <xs:element name="SZ" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="ASFD" type="xs:string" minOccurs="0" />
+                      <xs:element name="ASFT" type="xs:string" minOccurs="0" />
+                      <xs:element name="ADPD" type="xs:string" minOccurs="0" />
+                      <xs:element name="ADPT" type="xs:string" minOccurs="0" />
+                      <xs:element name="AARD" type="xs:string" minOccurs="0" />
+                      <xs:element name="AART" type="xs:string" minOccurs="0" />
+                      <xs:element name="ACTSDD" type="xs:string" minOccurs="0" />
+                      <xs:element name="SCD" type="xs:string" minOccurs="0" />
+                      <xs:element name="SCTM" type="xs:string" minOccurs="0" />
+                      <xs:element name="PO" type="xs:string" minOccurs="0" />
+                      <xs:element name="WT" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="TL" type="xs:string" minOccurs="0" />
+                      <xs:element name="T" type="xs:string" minOccurs="0" />
+                      <xs:element name="ISMN" type="xs:int" minOccurs="0" />
+                      <xs:element name="PVNO" type="xs:string" minOccurs="0" />
+                      <xs:element name="SHPR" type="xs:string" minOccurs="0" />
+                      <xs:element name="VK" type="xs:string" minOccurs="0" />
+                      <xs:element name="ShipmentNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="CBOL" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+              </xs:complexType>
+          </xs:element>
+          <xs:element name="ItemTable">
+              <xs:complexType>
+                  <xs:sequence>
+                      <xs:element name="ItemNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="CartonNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="LabelNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="DateTime" type="xs:string" minOccurs="0" />
+                      <xs:element name="Location" type="xs:string" minOccurs="0" />
+                      <xs:element name="Status" type="xs:string" minOccurs="0" />
+                      <xs:element name="BOLNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="TLNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="PONumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="VendorKey" type="xs:string" minOccurs="0" />
+                      <xs:element name="ShipmentNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="CBOL" type="xs:string" minOccurs="0" />
+                      <xs:element name="Client" type="xs:string" minOccurs="0" />
+                      <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                      <xs:element name="Vendor" type="xs:string" minOccurs="0" />
+                      <xs:element name="VendorName" type="xs:string" minOccurs="0" />
+                      <xs:element name="VendorCity" type="xs:string" minOccurs="0" />
+                      <xs:element name="VendorState" type="xs:string" minOccurs="0" />
+                      <xs:element name="VendorZip" type="xs:string" minOccurs="0" />
+                      <xs:element name="AgentName" type="xs:string" minOccurs="0" />
+                      <xs:element name="AgentCity" type="xs:string" minOccurs="0" />
+                      <xs:element name="AgentState" type="xs:string" minOccurs="0" />
+                      <xs:element name="AgentZip" type="xs:string" minOccurs="0" />
+                      <xs:element name="SubAgentName" type="xs:string" minOccurs="0" />
+                      <xs:element name="SubAgentCity" type="xs:string" minOccurs="0" />
+                      <xs:element name="SubAgentState" type="xs:string" minOccurs="0" />
+                      <xs:element name="SubAgentZip" type="xs:string" minOccurs="0" />
+                      <xs:element name="StoreNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="StoreName" type="xs:string" minOccurs="0" />
+                      <xs:element name="StoreAddress1" type="xs:string" minOccurs="0" />
+                      <xs:element name="StoreAddress2" type="xs:string" minOccurs="0" />
+                      <xs:element name="StoreCity" type="xs:string" minOccurs="0" />
+                      <xs:element name="StoreState" type="xs:string" minOccurs="0" />
+                      <xs:element name="StoreZip" type="xs:string" minOccurs="0" />
+                      <xs:element name="PickupDate" type="xs:string" minOccurs="0" />
+                      <xs:element name="ScheduledDeliveryDate" type="xs:string" minOccurs="0" />
+                      <xs:element name="SortFacilityArrivalDate" type="xs:string" minOccurs="0" />
+                      <xs:element name="SortFacilityArrivalStatus" type="xs:string" minOccurs="0" />
+                      <xs:element name="SortFacilityLocation" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualDepartureDate" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualDepartureStatus" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualDepartureLocation" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualArrivalDate" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualArrivalStatus" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualArrivalLocation" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualStoreDeliveryDate" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualStoreDeliveryStatus" type="xs:string" minOccurs="0" />
+                      <xs:element name="ActualStoreDeliveryLocation" type="xs:string" minOccurs="0" />
+                      <xs:element name="PODScanDate" type="xs:string" minOccurs="0" />
+                      <xs:element name="PODScanStatus" type="xs:string" minOccurs="0" />
+                      <xs:element name="PODScanLocation" type="xs:string" minOccurs="0" />
+                      <xs:element name="TrackingNumber" type="xs:string" minOccurs="0" />
+                      <xs:element name="IsManualEntry" type="xs:int" minOccurs="0" />
+                      <xs:element name="Weight" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="ScanType" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="PVNO" type="xs:string" minOccurs="0" />
+                      <xs:element name="Shipper" type="xs:string" minOccurs="0" />
+                      <xs:element name="ErrorMessage" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+              </xs:complexType>
+          </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

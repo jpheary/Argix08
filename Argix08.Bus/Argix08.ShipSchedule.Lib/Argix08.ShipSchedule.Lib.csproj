@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8ED0C3E2-BBB4-4711-BE40-8ADDB9871908}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Argix</RootNamespace>
+    <AssemblyName>Argix08.ShipSchedule.Lib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Argix08.AppLogging, Version=3.0.0.17555, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build\Argix08.AppLogging.dll</HintPath>
+    </Reference>
+    <Reference Include="Argix08.Data, Version=3.0.0.20236, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Build\Argix08.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentLineHaul\TemplateFactory.cs" />
+    <Compile Include="Enterprise\EnterpriseFactory.cs" />
+    <Compile Include="Enterprise\SelectionDS.cs">
+      <DependentUpon>SelectionDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enterprise\SelectionDS.Designer.cs">
+      <DependentUpon>SelectionDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="globals.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\appsecurity.cs" />
+    <Compile Include="AgentLineHaul\ShipScheduleFactory.cs" />
+    <Compile Include="AgentLineHaul\shipschedule.cs" />
+    <Compile Include="AgentLineHaul\ShipScheduleDS.cs">
+      <DependentUpon>ShipScheduleDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AgentLineHaul\ShipScheduleDS.Designer.cs">
+      <DependentUpon>ShipScheduleDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="AgentLineHaul\TemplateDS.Designer.cs">
+      <DependentUpon>TemplateDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Enterprise\SelectionDS.xsc">
+      <DependentUpon>SelectionDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\SelectionDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SelectionDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Enterprise\SelectionDS.xss">
+      <DependentUpon>SelectionDS.xsd</DependentUpon>
+    </None>
+    <None Include="AgentLineHaul\ShipScheduleDS.xsc">
+      <DependentUpon>ShipScheduleDS.xsd</DependentUpon>
+    </None>
+    <None Include="AgentLineHaul\ShipScheduleDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ShipScheduleDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgentLineHaul\ShipScheduleDS.xss">
+      <DependentUpon>ShipScheduleDS.xsd</DependentUpon>
+    </None>
+    <None Include="AgentLineHaul\ShipScheduleDS.xsx">
+      <DependentUpon>ShipScheduleDS.xsd</DependentUpon>
+    </None>
+    <None Include="AgentLineHaul\TemplateDS.xsc">
+      <DependentUpon>TemplateDS.xsd</DependentUpon>
+    </None>
+    <None Include="AgentLineHaul\TemplateDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TemplateDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgentLineHaul\TemplateDS.xss">
+      <DependentUpon>TemplateDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

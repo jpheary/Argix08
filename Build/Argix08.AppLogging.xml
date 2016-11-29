@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Argix08.AppLogging</name>
+    </assembly>
+    <members>
+        <member name="T:Argix.ArgixEventLogTraceListener">
+            <summary>A System.Diagnostics.TraceListener that logs Argix08.TraceMessage to a System.Diagnostics.EventLog.</summary>
+        </member>
+        <member name="M:Argix.ArgixEventLogTraceListener.#ctor(Argix.LogLevel,System.String)">
+            <summary>Initializes a new instance of the Argix08.ArgixEventLogTraceListener class that listens for Argix08.TraceMessages and logs them to a System.Diagnostics.EventLog.</summary>
+            <param name="logLevelFloor">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+            <param name="eventLogName"></param>
+        </member>
+        <member name="M:Argix.ArgixEventLogTraceListener.#ctor(Argix.LogLevel,System.String,System.String)">
+            <summary>Initializes a new instance of the Argix08.ArgixEventLogTraceListener class that listens for Argix08.TraceMessages and logs them to a System.Diagnostics.EventLog.</summary>
+            <param name="logLevelFloor">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+            <param name="eventLogName">Gets or sets the name of the log to read from or write to. </param>
+            <param name="machineName">Gets or sets the name of the computer on which to read or write events.</param>
+        </member>
+        <member name="M:Argix.ArgixEventLogTraceListener.Write(System.String)">
+            <summary>Logs a string message if this log level floor is no higher than LogLevel.Debug.</summary>
+            <param name="message">The message to log.</param>
+        </member>
+        <member name="M:Argix.ArgixEventLogTraceListener.Write(System.Object)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A message object that derives from Argix08.TraceMessage.</param>
+        </member>
+        <member name="M:Argix.ArgixEventLogTraceListener.WriteLine(System.String)">
+            <summary>Logs a string message if this log level floor is no higher than LogLevel.Debug.</summary>
+            <param name="message">The message to log.</param>
+        </member>
+        <member name="M:Argix.ArgixEventLogTraceListener.WriteLine(System.Object)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A message object that derives from Argix08.TraceMessage.</param>
+        </member>
+        <member name="T:Argix.LogLevel">
+            <summary>Trace logging level enumeration.</summary>
+        </member>
+        <member name="F:Argix.LogLevel.None">
+            <summary>0</summary>
+        </member>
+        <member name="F:Argix.LogLevel.Debug">
+            <summary>1</summary>
+        </member>
+        <member name="F:Argix.LogLevel.Information">
+            <summary>2</summary>
+        </member>
+        <member name="F:Argix.LogLevel.Warning">
+            <summary>3</summary>
+        </member>
+        <member name="F:Argix.LogLevel.Error">
+            <summary>4</summary>
+        </member>
+        <member name="T:Argix.LoggingErrorEventHandler">
+            <summary>Logging exception event handler. </summary>
+            <param name="source">Error source.</param>
+            <param name="e">Exception data for the event.</param>
+        </member>
+        <member name="T:Argix.LoggingErrorEventArgs">
+            <summary>Logging error event args for LoggingErrorEventHandler. </summary>
+        </member>
+        <member name="M:Argix.LoggingErrorEventArgs.#ctor(System.Exception)">
+            <summary> </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Argix.LoggingErrorEventArgs.#ctor(System.Exception,System.Boolean,Argix.LogLevel)">
+            <summary> </summary>
+            <param name="ex"></param>
+            <param name="displayMessage"></param>
+            <param name="logLevel"></param>
+        </member>
+        <member name="P:Argix.LoggingErrorEventArgs.Exception">
+            <summary> </summary>
+        </member>
+        <member name="P:Argix.LoggingErrorEventArgs.DisplayMessage">
+            <summary> </summary>
+        </member>
+        <member name="P:Argix.LoggingErrorEventArgs.Level">
+            <summary> </summary>
+        </member>
+        <member name="T:Argix.ArgixTextBoxListener">
+            <summary>System.Diagnostics.TraceListener that logs Argix08.TraceMessage to a textbox.</summary>
+        </member>
+        <member name="M:Argix.ArgixTextBoxListener.#ctor(Argix.LogLevel,System.Windows.Forms.TextBox)">
+            <summary>Initializes a new instance of the Argix08.ArgixTextBoxListener class that listens for Argix08.TraceMessages and logs them to a System.Windows.Forms.Textbox.</summary>
+            <param name="logLevelFloor">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+            <param name="textBox">A System.Windows.Forms.Textbox to log messages to.</param>
+        </member>
+        <member name="M:Argix.ArgixTextBoxListener.#ctor(Argix.LogLevel,System.Windows.Forms.RichTextBox)">
+            <summary>Initializes a new instance of the Argix08.ArgixTextBoxListener class that listens for Argix08.TraceMessages and logs them to a System.Windows.Forms.RichTextbox.</summary>
+            <param name="logLevelFloor">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+            <param name="richTextBox">A System.Windows.Forms.RichTextbox to log messages to.</param>
+        </member>
+        <member name="M:Argix.ArgixTextBoxListener.Write(System.String)">
+            <summary>Logs a string message if this log level floor is no higher than LogLevel.Debug.</summary>
+            <param name="message">The message to log.</param>
+        </member>
+        <member name="M:Argix.ArgixTextBoxListener.Write(System.Object)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A message object that derives from Argix08.TraceMessage.</param>
+        </member>
+        <member name="M:Argix.ArgixTextBoxListener.WriteLine(System.String)">
+            <summary>Logs a string message if this log level floor is no higher than LogLevel.Debug.</summary>
+            <param name="message">The message to log.</param>
+        </member>
+        <member name="M:Argix.ArgixTextBoxListener.WriteLine(System.Object)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A message object that derives from Argix08.TraceMessage.</param>
+        </member>
+        <member name="T:Argix.winTrace">
+            <summary> </summary>
+        </member>
+        <member name="M:Argix.winTrace.#ctor">
+            <summary>Constructor</summary>
+        </member>
+        <member name="M:Argix.winTrace.Dispose(System.Boolean)">
+            <summary>Disposes of the resources (other than memory) used by the System.Windows.Forms.Form.</summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Argix.winTrace.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Argix.TraceMessage">
+            <summary> </summary>
+        </member>
+        <member name="M:Argix.TraceMessage.#ctor(System.String,System.String,Argix.LogLevel)">
+            <summary>A new instance of the Argix08.TraceMessage class that contains message information for Trace logging.</summary>
+            <param name="message">The message to log.</param>
+            <param name="source"></param>
+            <param name="logLevel">The severity log level for this message.</param>
+        </member>
+        <member name="M:Argix.TraceMessage.#ctor(System.String,System.String,Argix.LogLevel,System.String)">
+            <summary>A new instance of the Argix08.TraceMessage class that contains message information for Trace logging.</summary>
+            <param name="message">The message to log.</param>
+            <param name="source"></param>
+            <param name="logLevel">The severity log level for this message.</param>
+            <param name="keyData1">An additional data field.</param>
+        </member>
+        <member name="M:Argix.TraceMessage.#ctor(System.String,System.String,Argix.LogLevel,System.String,System.String)">
+            <summary>A new instance of the Argix08.TraceMessage class that contains message information for Trace logging.</summary>
+            <param name="message">The message to log.</param>
+            <param name="source"></param>
+            <param name="logLevel">The severity log level for this message.</param>
+            <param name="keyData1">An additional data field.</param>
+            <param name="keyData2">An additional data field.</param>
+        </member>
+        <member name="M:Argix.TraceMessage.#ctor(System.String,System.String,Argix.LogLevel,System.String,System.String,System.String)">
+            <summary>A new instance of the Argix08.TraceMessage class that contains message information for Trace logging.</summary>
+            <param name="message">The message to log.</param>
+            <param name="source"></param>
+            <param name="logLevel">The severity log level for this message.</param>
+            <param name="keyData1">An additional data field.</param>
+            <param name="keyData2">An additional data field.</param>
+            <param name="keyData3">An additional data field.</param>
+        </member>
+        <member name="M:Argix.TraceMessage.AppendToMessage(System.String)">
+            <summary>Appends a new message to this message.</summary>
+            <param name="message">The message to append.</param>
+        </member>
+        <member name="M:Argix.TraceMessage.AppendLineToMessage(System.String)">
+            <summary>Appends a CR and a new message to this message.</summary>
+            <param name="message">The message to append.</param>
+        </member>
+        <member name="P:Argix.TraceMessage.Message">
+            <summary>Gets and sets the Message field.</summary>
+        </member>
+        <member name="P:Argix.TraceMessage.Source">
+            <summary>Gets and sets the Source field.</summary>
+        </member>
+        <member name="P:Argix.TraceMessage.EventLogLevel">
+            <summary>Gets and sets the EventLogLevel field.</summary>
+        </member>
+        <member name="P:Argix.TraceMessage.KeyData1">
+            <summary>Gets and sets the KeyData1 field.</summary>
+        </member>
+        <member name="P:Argix.TraceMessage.KeyData2">
+            <summary>Gets and sets the KeyData2 field.</summary>
+        </member>
+        <member name="P:Argix.TraceMessage.KeyData3">
+            <summary>Gets and sets the KeyData3 field.</summary>
+        </member>
+        <member name="T:Argix.ArgixTrace">
+            <summary>Custom System.Diagnostics.Trace class.</summary>
+        </member>
+        <member name="F:Argix.ArgixTrace.LogLevelFloor">
+            <summary>Threshold level for message severity to exceed in order to log the message.</summary>
+        </member>
+        <member name="M:Argix.ArgixTrace.AddListener(System.Diagnostics.TraceListener)">
+            <summary>Adds a System.Diagnostics.TraceListener to the System.Diagnostics.Trace.Listeners collection.</summary>
+            <param name="listener">A Argix08.TraceListener instance.</param>
+        </member>
+        <member name="M:Argix.ArgixTrace.ClearListeners">
+            <summary>Clears all System.Diagnostics.TraceListeners from the System.Diagnostics.Trace.Listeners collection.</summary>
+        </member>
+        <member name="M:Argix.ArgixTrace.ContainsListener(System.Diagnostics.TraceListener)">
+            <summary>Determines if the System.Diagnostics.TraceListener exists in the System.Diagnostics.Trace.Listeners collection.</summary>
+            <param name="listener">A Argix08.TraceListener instance.</param>
+            <returns>Returns true if the listener exists.</returns>
+        </member>
+        <member name="M:Argix.ArgixTrace.RemoveListener(System.Diagnostics.TraceListener)">
+            <summary>Removes a System.Diagnostics.TraceListener from the System.Diagnostics.Trace.Listeners collection.</summary>
+            <param name="listener">A Argix08.TraceListener instance.</param>
+        </member>
+        <member name="M:Argix.ArgixTrace.RemoveListener(System.String)">
+            <summary>Removes a System.Diagnostics.TraceListener from the System.Diagnostics.Trace.Listeners collection by name.</summary>
+            <param name="name">The name of the System.Diagnostics.TraceListener.</param>
+        </member>
+        <member name="M:Argix.ArgixTrace.Write(Argix.TraceMessage)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A Argix08.TraceMessage message.</param>
+        </member>
+        <member name="M:Argix.ArgixTrace.WriteLine(Argix.TraceMessage)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A Argix08.TraceMessage message.</param>
+        </member>
+        <member name="P:Argix.ArgixTrace.ListenersCount">
+            <summary>A count of all System.Diagnostics.TraceListener in the System.Diagnostics.Trace.Listeners collection.</summary>
+        </member>
+        <member name="T:Argix.ArgixTextWriterTraceListener">
+            <summary>A System.Diagnostics.TextWriterTraceListener that logs Argix08.TraceMessage to a System.IO.TextWriter or to a System.IO.Stream, such as System.Console.Out or System.IO.FileStream.</summary>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.#ctor(System.IO.Stream,System.String,Argix.LogLevel)">
+            <summary>Initializes a new instance of the Argix08.ArgixTextWriterTraceListener class that listens for Argix08.TraceMessages and logs them to a System.IO.Stream.</summary>
+            <param name="stream">A System.IO.Stream that represents the stream the Argix08.ArgixTextWriterTraceListener writes to.</param>
+            <param name="name">The name of the new instance.</param>
+            <param name="logLevel">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.#ctor(System.IO.Stream,Argix.LogLevel)">
+            <summary>Initializes a new instance of the Argix08.ArgixTextWriterTraceListener class that listens for Argix08.TraceMessages and logs them to a System.IO.Stream.</summary>
+            <param name="stream">A System.IO.Stream that represents the stream the Argix08.ArgixTextWriterTraceListener writes to.</param>
+            <param name="logLevel">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.#ctor(System.String,System.String,Argix.LogLevel)">
+            <summary>Initializes a new instance of the Argix08.ArgixTextWriterTraceListener class with the specified name, using the file as the recipient of the debugging and tracing output.</summary>
+            <param name="fileName">The name of the file the Argix08.ArgixTextWriterTraceListener writes to.</param>
+            <param name="name">The name of the new instance.</param>
+            <param name="logLevel">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.#ctor(System.String,Argix.LogLevel)">
+            <summary>Initializes a new instance of the Argix08.ArgixTextWriterTraceListener class with the specified name, using the file as the recipient of the debugging and tracing output.</summary>
+            <param name="fileName">The name of the file the Argix08.ArgixTextWriterTraceListener writes to.</param>
+            <param name="logLevel"></param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.#ctor(System.IO.TextWriter,System.String,Argix.LogLevel)">
+            <summary>Initializes a new instance of the Argix08.ArgixTextWriterTraceListener class, using the file as the recipient of the debugging and tracing output.</summary>
+            <param name="writer">A System.IO.TextWriter that receives the output from the Argix08.ArgixTextWriterTraceListener.</param>
+            <param name="name">The name of the new instance.</param>
+            <param name="logLevel">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.#ctor(System.IO.TextWriter,Argix.LogLevel)">
+            <summary>Initializes a new instance of the Argix08.ArgixTextWriterTraceListener class that listens for Argix08.TraceMessages and logs them to a System.IO.TextWriter.</summary>
+            <param name="writer"></param>
+            <param name="logLevel">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.Write(System.String)">
+            <summary>Logs a string message if this log level floor is no higher than LogLevel.Debug.</summary>
+            <param name="message">The message to log.</param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.Write(System.Object)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A message object that derives from Argix08.TraceMessage.</param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.WriteLine(System.String)">
+            <summary>Logs a string message if this log level floor is no higher than LogLevel.Debug.</summary>
+            <param name="message">The message to log.</param>
+        </member>
+        <member name="M:Argix.ArgixTextWriterTraceListener.WriteLine(System.Object)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A message object that derives from Argix08.TraceMessage.</param>
+        </member>
+        <member name="T:Argix.DBTraceListener">
+            <summary>System.Diagnostics.TraceListener that logs Argix08.TraceMessage to a database.</summary>
+        </member>
+        <member name="F:Argix.DBTraceListener.ARGIXLOG_SPNAME">
+            <summary>Trace database stored procedure name for database logging.</summary>
+        </member>
+        <member name="F:Argix.DBTraceListener.ARGIXLOG_ENTRYNAME">
+            <summary>Entry name in database log.</summary>
+        </member>
+        <member name="M:Argix.DBTraceListener.#ctor(Argix.LogLevel,Argix.Data.Mediator)">
+            <summary>Initializes a new instance of the Argix08.DBTraceListener class that listens for Argix08.TraceMessages and logs them to database through a Tsort05.ITraceDB object.</summary>
+            <param name="logLevelFloor">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+            <param name="mediator">An Argix.Data.Mediator instance for data access.</param>
+        </member>
+        <member name="M:Argix.DBTraceListener.#ctor(Argix.LogLevel,Argix.Data.Mediator,System.String,System.String)">
+            <summary>Initializes a new instance of the Argix08.DBTraceListener class that listens for Argix08.TraceMessages and logs them to database through a Tsort05.ITraceDB object.</summary>
+            <param name="logLevelFloor">The minimum log level (floor) that Argix08.TraceMessage must meet to be logged.</param>
+            <param name="mediator">An Argix.Data.Mediator instance for data access.</param>
+            <param name="spName"></param>
+            <param name="entryName"></param>
+        </member>
+        <member name="M:Argix.DBTraceListener.Write(System.String)">
+            <summary>Logs a string message if this log level floor is no higher than LogLevel.Debug.</summary>
+            <param name="message">The message to log.</param>
+        </member>
+        <member name="M:Argix.DBTraceListener.Write(System.Object)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A message object that derives from Argix08.TraceMessage.</param>
+        </member>
+        <member name="M:Argix.DBTraceListener.WriteLine(System.String)">
+            <summary>Logs a string message if this log level floor is no higher than LogLevel.Debug.</summary>
+            <param name="message">The message to log.</param>
+        </member>
+        <member name="M:Argix.DBTraceListener.WriteLine(System.Object)">
+            <summary>Logs a message if the message LogLevel exceeds this log level floor.</summary>
+            <param name="message">A message object that derives from Argix08.TraceMessage.</param>
+        </member>
+    </members>
+</doc>

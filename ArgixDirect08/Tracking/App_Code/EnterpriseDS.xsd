@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EnterpriseDS" targetNamespace="http://tempuri.org/EnterpriseDS.xsd" xmlns:mstns="http://tempuri.org/EnterpriseDS.xsd" xmlns="http://tempuri.org/EnterpriseDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="EnterpriseDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EnterpriseDS" msprop:Generator_DataSetName="EnterpriseDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded" >
+		<xs:element name="ClientTable">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="ClientID" type="xs:string" minOccurs="0" />
+					<xs:element name="VendorID" type="xs:string" minOccurs="0" />
+					<xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+					<xs:element name="CompanyType" type="xs:string" minOccurs="0" />
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		  <xs:element name="StoreTable">
+			  <xs:complexType>
+				  <xs:sequence>
+					  <xs:element name="NUMBER" type="xs:int" minOccurs="0" />
+					  <xs:element name="NAME" type="xs:string" minOccurs="0" />
+					  <xs:element name="ADDRESSLINE1" type="xs:string" minOccurs="0" />
+					  <xs:element name="ADDRESS_LINE2" type="xs:string" minOccurs="0" />
+					  <xs:element name="CITY" type="xs:string" minOccurs="0" />
+					  <xs:element name="STATE" type="xs:string" minOccurs="0" />
+					  <xs:element name="ZIP" type="xs:string" minOccurs="0" />
+					  <xs:element name="DESCRIPTION" type="xs:string" minOccurs="0" />
+				  </xs:sequence>
+			  </xs:complexType>
+		  </xs:element>
+	  </xs:choice>
+  </xs:complexType>
+  </xs:element>
+</xs:schema>

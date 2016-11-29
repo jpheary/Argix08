@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="43d59e3e-27d4-4aa2-a392-051ed49a71b5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TLViewerService4.xsd" MetadataType="Schema" ID="c5e6dccd-7ea7-438d-b38d-bf3a9eba48fd" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?xsd=xsd5" />
+    <MetadataFile FileName="TLViewerService1.xsd" MetadataType="Schema" ID="56fe85bd-0400-45dd-90f6-1df63f543aa3" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TLViewerService.wsdl" MetadataType="Wsdl" ID="b2a47f73-a3db-489e-aca4-d47f667a4858" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?wsdl" />
+    <MetadataFile FileName="TLViewerService.xsd" MetadataType="Schema" ID="fb831db7-de3e-462b-959c-356e749309d1" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TLViewerService42.xsd" MetadataType="Schema" ID="022a48dd-fe85-4f47-bfaa-0f87e555f8e9" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?xsd=xsd4" />
+    <MetadataFile FileName="TLViewerService1.wsdl" MetadataType="Wsdl" ID="d5c09524-4a78-4ab1-9b9c-3bd7a6914554" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="TLViewerService43.xsd" MetadataType="Schema" ID="8fcc3071-aa82-43b0-8d86-5a23147a21c9" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?xsd=xsd6" />
+    <MetadataFile FileName="TLViewerService2.xsd" MetadataType="Schema" ID="02353ac7-422b-4a1e-8ecc-15660107531f" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?xsd=xsd3" />
+    <MetadataFile FileName="TLViewerService.disco" MetadataType="Disco" ID="b5e665c7-bf0d-4a8c-9d6c-ac20fc4bca95" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?disco" />
+    <MetadataFile FileName="TLViewerService3.xsd" MetadataType="Schema" ID="7997ccc3-119e-4c63-bb8f-423b6f1b30f0" SourceId="1" SourceUrl="http://localhost:62775/Argix08.GlobalServices/TLViewerService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

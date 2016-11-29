@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="IPhone.master.cs" Inherits="IPhoneMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Issue Management</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body id="idBody" runat="server" style=" position:relative; margin-top:0; " >
+<form id="idForm" runat="server" >
+    <asp:ScriptManager ID="smPage" runat="server" EnablePartialRendering="true" ScriptMode="Auto" />
+    <asp:Table id="idMaster" runat="server" Width="320px" Height="460px" HorizontalAlign="Center" BorderWidth="2px" BorderStyle="Solid" CellPadding="0" CellSpacing="0" >
+        <asp:TableRow style="font-size:1px; height:24px"><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="28px">
+            <asp:TableCell ID="tcPageTitle" SkinID="PageTitle">
+                <asp:Table ID="tblPageTitle" runat="server" Width="100%" BorderStyle="None" BorderWidth="0px" CellPadding="0" CellSpacing="0"> 
+                    <asp:TableRow>
+                        <asp:TableCell VerticalAlign="Bottom">
+                            <asp:Image ID="imgApp" runat="server" ImageUrl="App_Themes/Argix/Images/app.gif" ImageAlign="Middle" />
+                            &nbsp;<asp:Label id="lblAppTitle" runat="server" Height="100%" Text="Argix Direct Issue Management" />
+                        </asp:TableCell>
+                        <asp:TableCell HorizontalAlign="Right" VerticalAlign="Bottom">
+                            &nbsp;
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow style="font-size:1px; height:3px"><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell VerticalAlign="Top">
+                <asp:contentplaceholder id="body" runat="server"></asp:contentplaceholder>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow style="font-size:1px; height:3px"><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="57px">
+            <asp:TableCell>
+                <table width="100%" border="1px" cellpadding="0px" cellspacing="0px">
+                    <tr>
+                        <td style="width:20%; text-align:center; border: none 1px black"><asp:ImageButton ID="imgIssues" runat="server" ImageUrl="~/App_Themes/Argix/Images/issues.gif" OnClick="OnViewIssues" /></td>
+                        <td style="width:20%; text-align:center; border: none 1px black">&nbsp;</td>
+                        <td style="width:20%; text-align:center; border: none 1px black">&nbsp;</td>
+                        <td style="width:20%; text-align:center; border: none 1px black">&nbsp;</td>
+                        <td style="width:20%; text-align:center; border: none 1px black">&nbsp;</td>
+                    </tr>
+                </table>
+            </asp:TableCell>
+        </asp:TableRow>
+    </asp:Table>                
+    </form>
+</body>
+</html>

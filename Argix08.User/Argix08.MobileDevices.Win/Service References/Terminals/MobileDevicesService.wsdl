@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix.Terminals" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix.Terminals" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix.Terminals/Imports">
+      <xsd:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd0" namespace="http://Argix.Terminals" />
+      <xsd:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Argix" />
+      <xsd:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Argix.Enterprise" />
+      <xsd:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/Argix.Terminals" />
+      <xsd:import schemaLocation="http://localhost:62775/Argix08.GlobalServices/MobileDevicesService.svc?xsd=xsd7" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMobileDevicesService_GetUserConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetUserConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetUserConfiguration_ConfigurationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Argix" name="detail" element="q1:ConfigurationFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_WriteLogEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteLogEntry" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetTerminalInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfo" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetTerminalInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetLocalTerminals_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocalTerminals" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetLocalTerminals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocalTerminalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetLocalTerminals_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q2:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDrivers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrivers" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDrivers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDriversResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDrivers_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q3:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDriver_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDriver" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDriver_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDriverResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDriver_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q4:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDeviceItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceItems" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDeviceItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDeviceItems_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q5:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDeviceItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceItem" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDeviceItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetDeviceItem_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q6:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetPriorDeviceItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriorDeviceItems" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetPriorDeviceItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPriorDeviceItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetPriorDeviceItems_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q7:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetInstallationTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstallationTypes" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetInstallationTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInstallationTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetInstallationTypes_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q8:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveDeviceItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDeviceItem" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveDeviceItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveDeviceItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveDeviceItem_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q9:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_AssignDeviceItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignDeviceItem" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_AssignDeviceItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignDeviceItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_AssignDeviceItem_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q10:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_UnassignDeviceItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignDeviceItem" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_UnassignDeviceItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignDeviceItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_UnassignDeviceItem_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q11:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatteryItems" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatteryItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItems_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q12:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatteryItem" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatteryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItem_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q13:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItemAssignments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatteryItemAssignments" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItemAssignments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatteryItemAssignmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetBatteryItemAssignments_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q14:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetUnassignedBatteryItems_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnassignedBatteryItems" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetUnassignedBatteryItems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnassignedBatteryItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetUnassignedBatteryItems_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q15:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveBatteryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBatteryItem" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveBatteryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveBatteryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveBatteryItem_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q16:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_StartBatteryItemChargeCycle_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartBatteryItemChargeCycle" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_StartBatteryItemChargeCycle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartBatteryItemChargeCycleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_StartBatteryItemChargeCycle_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q17:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_EndBatteryItemChargeCycle_InputMessage">
+    <wsdl:part name="parameters" element="tns:EndBatteryItemChargeCycle" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_EndBatteryItemChargeCycle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EndBatteryItemChargeCycleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_EndBatteryItemChargeCycle_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q18:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_AssignBatteryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AssignBatteryItem" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_AssignBatteryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AssignBatteryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_AssignBatteryItem_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q19:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_UnassignBatteryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignBatteryItem" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_UnassignBatteryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnassignBatteryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_UnassignBatteryItem_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q20="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q20:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentTypes" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypes_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q21="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q21:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentType" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentType_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q22="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q22:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentTypeList" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentTypeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypeList_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q23="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q23:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypeCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentTypeCategories" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypeCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetComponentTypeCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_GetComponentTypeCategories_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q24="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q24:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveComponentType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveComponentType" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveComponentType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveComponentTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobileDevicesService_SaveComponentType_MobileDevicesFaultFault_FaultMessage">
+    <wsdl:part xmlns:q25="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q25:MobileDevicesFault" />
+  </wsdl:message>
+  <wsdl:portType name="IMobileDevicesService">
+    <wsdl:operation name="GetUserConfiguration">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetUserConfiguration" message="tns:IMobileDevicesService_GetUserConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetUserConfigurationResponse" message="tns:IMobileDevicesService_GetUserConfiguration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.ConfigurationFault" name="ConfigurationFaultFault" message="tns:IMobileDevicesService_GetUserConfiguration_ConfigurationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteLogEntry">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/WriteLogEntry" message="tns:IMobileDevicesService_WriteLogEntry_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTerminalInfo">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetTerminalInfo" message="tns:IMobileDevicesService_GetTerminalInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetTerminalInfoResponse" message="tns:IMobileDevicesService_GetTerminalInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocalTerminals">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetLocalTerminals" message="tns:IMobileDevicesService_GetLocalTerminals_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetLocalTerminalsResponse" message="tns:IMobileDevicesService_GetLocalTerminals_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetLocalTerminals_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrivers">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetDrivers" message="tns:IMobileDevicesService_GetDrivers_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetDriversResponse" message="tns:IMobileDevicesService_GetDrivers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetDrivers_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDriver">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetDriver" message="tns:IMobileDevicesService_GetDriver_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetDriverResponse" message="tns:IMobileDevicesService_GetDriver_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetDriver_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceItems">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetDeviceItems" message="tns:IMobileDevicesService_GetDeviceItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetDeviceItemsResponse" message="tns:IMobileDevicesService_GetDeviceItems_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetDeviceItems_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceItem">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetDeviceItem" message="tns:IMobileDevicesService_GetDeviceItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetDeviceItemResponse" message="tns:IMobileDevicesService_GetDeviceItem_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetDeviceItem_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPriorDeviceItems">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetPriorDeviceItems" message="tns:IMobileDevicesService_GetPriorDeviceItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetPriorDeviceItemsResponse" message="tns:IMobileDevicesService_GetPriorDeviceItems_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetPriorDeviceItems_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstallationTypes">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetInstallationTypes" message="tns:IMobileDevicesService_GetInstallationTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetInstallationTypesResponse" message="tns:IMobileDevicesService_GetInstallationTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetInstallationTypes_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveDeviceItem">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/SaveDeviceItem" message="tns:IMobileDevicesService_SaveDeviceItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/SaveDeviceItemResponse" message="tns:IMobileDevicesService_SaveDeviceItem_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_SaveDeviceItem_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignDeviceItem">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/AssignDeviceItem" message="tns:IMobileDevicesService_AssignDeviceItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/AssignDeviceItemResponse" message="tns:IMobileDevicesService_AssignDeviceItem_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_AssignDeviceItem_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnassignDeviceItem">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/UnassignDeviceItem" message="tns:IMobileDevicesService_UnassignDeviceItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/UnassignDeviceItemResponse" message="tns:IMobileDevicesService_UnassignDeviceItem_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_UnassignDeviceItem_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatteryItems">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetBatteryItems" message="tns:IMobileDevicesService_GetBatteryItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetBatteryItemsResponse" message="tns:IMobileDevicesService_GetBatteryItems_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetBatteryItems_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatteryItem">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetBatteryItem" message="tns:IMobileDevicesService_GetBatteryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetBatteryItemResponse" message="tns:IMobileDevicesService_GetBatteryItem_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetBatteryItem_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatteryItemAssignments">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetBatteryItemAssignments" message="tns:IMobileDevicesService_GetBatteryItemAssignments_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetBatteryItemAssignmentsResponse" message="tns:IMobileDevicesService_GetBatteryItemAssignments_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetBatteryItemAssignments_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnassignedBatteryItems">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetUnassignedBatteryItems" message="tns:IMobileDevicesService_GetUnassignedBatteryItems_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetUnassignedBatteryItemsResponse" message="tns:IMobileDevicesService_GetUnassignedBatteryItems_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetUnassignedBatteryItems_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveBatteryItem">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/SaveBatteryItem" message="tns:IMobileDevicesService_SaveBatteryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/SaveBatteryItemResponse" message="tns:IMobileDevicesService_SaveBatteryItem_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_SaveBatteryItem_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartBatteryItemChargeCycle">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/StartBatteryItemChargeCycle" message="tns:IMobileDevicesService_StartBatteryItemChargeCycle_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/StartBatteryItemChargeCycleResponse" message="tns:IMobileDevicesService_StartBatteryItemChargeCycle_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_StartBatteryItemChargeCycle_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EndBatteryItemChargeCycle">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/EndBatteryItemChargeCycle" message="tns:IMobileDevicesService_EndBatteryItemChargeCycle_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/EndBatteryItemChargeCycleResponse" message="tns:IMobileDevicesService_EndBatteryItemChargeCycle_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_EndBatteryItemChargeCycle_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AssignBatteryItem">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/AssignBatteryItem" message="tns:IMobileDevicesService_AssignBatteryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/AssignBatteryItemResponse" message="tns:IMobileDevicesService_AssignBatteryItem_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_AssignBatteryItem_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnassignBatteryItem">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/UnassignBatteryItem" message="tns:IMobileDevicesService_UnassignBatteryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/UnassignBatteryItemResponse" message="tns:IMobileDevicesService_UnassignBatteryItem_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_UnassignBatteryItem_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComponentTypes">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetComponentTypes" message="tns:IMobileDevicesService_GetComponentTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetComponentTypesResponse" message="tns:IMobileDevicesService_GetComponentTypes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetComponentTypes_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComponentType">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetComponentType" message="tns:IMobileDevicesService_GetComponentType_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetComponentTypeResponse" message="tns:IMobileDevicesService_GetComponentType_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetComponentType_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComponentTypeList">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetComponentTypeList" message="tns:IMobileDevicesService_GetComponentTypeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetComponentTypeListResponse" message="tns:IMobileDevicesService_GetComponentTypeList_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetComponentTypeList_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetComponentTypeCategories">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetComponentTypeCategories" message="tns:IMobileDevicesService_GetComponentTypeCategories_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/GetComponentTypeCategoriesResponse" message="tns:IMobileDevicesService_GetComponentTypeCategories_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_GetComponentTypeCategories_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveComponentType">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IMobileDevicesService/SaveComponentType" message="tns:IMobileDevicesService_SaveComponentType_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IMobileDevicesService/SaveComponentTypeResponse" message="tns:IMobileDevicesService_SaveComponentType_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.MobileDevicesFault" name="MobileDevicesFaultFault" message="tns:IMobileDevicesService_SaveComponentType_MobileDevicesFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

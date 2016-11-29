@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Argix08.AppLogging">
+</Property><Property Name="Solution File" Value="C:\Data\Projects\Argix08\Argix08.Services\Argix08.AppLogging\Argix08.AppLogging.sln">
+</Property><Property Name="Date" Value="Wednesday, August 26, 2009">
+</Property><Property Name="Time" Value="16:10:19 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Argix08.AppLogging" Source="Argix08.AppLogging.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Argix08.AppLogging" Source="Argix08.AppLogging.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Argix08.AppLogging" Source="Argix08.AppLogging.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

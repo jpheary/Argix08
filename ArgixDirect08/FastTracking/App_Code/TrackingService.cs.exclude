@@ -1,0 +1,217 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Data.Common;
+using System.Reflection;
+using Microsoft.Practices.EnterpriseLibrary.Data;
+using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
+
+namespace Argix {
+    //
+    public class TrackingService:ITrackingService {
+        //Members
+        private const string USP_BYCARTON = "uspTrackingGetListForCartons2",TBL_BYCARTON = "TrackingTable";
+        
+        public const int SCANTYPE_NONE = 0;
+        public const int SCANTYPE_SORTED = 1;
+        public const int SCANTYPE_OSD = 2;
+        public const int SCANTYPE_POD = 3;
+       
+            //Interface
+        public TrackingService() { }
+        public TrackingDS TrackCartons(string[] itemNumbers,string companyID) {
+            //
+            TrackingDS items=null;
+
+            //Get tracking response for the specified requests
+            items = new TrackingDS();
+            string numbers = "";
+            for(int i = 0;i < itemNumbers.Length;i++) { if(i > 0) numbers += ","; numbers += itemNumbers[i]; }
+
+            //Get tracking data response
+            DataSet ds = fillDataset(USP_BYCARTON,TBL_BYCARTON,new object[] { numbers,companyID,null });
+            if(ds != null && ds.Tables[TBL_BYCARTON].Rows.Count > 0) {
+                TrackingDS cartons = new TrackingDS();
+                DataView view = ds.Tables[TBL_BYCARTON].DefaultView;
+                view.Sort = "CTN,BL DESC,SCNTP DESC,SCD DESC,SCT DESC";
+                DataTable dt = view.Table.Clone();
+                Hashtable ht = new Hashtable();
+                for(int i = 0;i < view.Count;i++) {
+                    string key = view[i]["CTN"].ToString().Trim() + view[i]["BL"].ToString().Trim();
+                    if(!ht.ContainsKey(key)) {
+                        ht.Add(key,null);
+                        dt.ImportRow(view[i].Row);
+                    }
+                }
+                cartons.TrackingTable.Merge(dt);
+                
+                //Return records for all found items
+                foreach(TrackingDS.TrackingTableRow carton in cartons.TrackingTable.Rows) {
+                    //Keep the response item if it matches a requested item
+                    for(int i = 0;i < itemNumbers.Length;i++) {
+                        if(carton.CTN.Trim() == itemNumbers[i]) {
+                            #region Keep it
+                            TrackingDS.ItemTableRow item = items.ItemTable.NewItemTableRow();
+                            item.ItemNumber = itemNumbers[i];
+                            item.Status = "Item Not Found";
+                            item.CartonNumber = carton.CTN.Trim();
+                            item.LabelNumber = carton.LBL.ToString();
+                            item.BOLNumber = !carton.IsBLNull() ? carton.BL.ToString() : "";
+                            item.TLNumber = !carton.IsTLNull() ? carton.TL.Trim() : "";
+                            item.PONumber = !carton.IsPONull() ? carton.PO.Trim() : "";
+                            item.VendorKey = !carton.IsVKNull() ? carton.VK.Trim() : "";
+                            item.ShipmentNumber = !carton.IsShipmentNumberNull() ? carton.ShipmentNumber.Trim() : "";
+                            item.CBOL = !carton.IsCBOLNull() ? carton.CBOL : "";
+                            item.Client = !carton.IsCLNull() ? carton.CL.Trim() : "";
+                            item.ClientName = !carton.IsCLNMNull() ? carton.CLNM.Trim() : "";
+
+                            item.Vendor = !carton.IsVNull() ? carton.V.Trim() : "";
+                            item.VendorName = !carton.IsVNMNull() ? carton.VNM.Trim() : "";
+                            item.VendorCity = !carton.IsVCTNull() ? carton.VCT.Trim() : "";
+                            item.VendorState = !carton.IsVSTNull() ? carton.VST.Trim() : "";
+                            item.VendorZip = !carton.IsVZNull() ? carton.VZ.ToString() : "";
+                            item.AgentName = !carton.IsAGNMNull() ? carton.AGNM.Trim() : "";
+                            item.AgentCity = !carton.IsAGCTNull() ? carton.AGCT.Trim() : "";
+                            item.AgentState = !carton.IsAGSTNull() ? carton.AGST.Trim() : "";
+                            item.AgentZip = !carton.IsAGZNull() ? carton.AGZ.ToString() : "";
+                            item.SubAgentName = !carton.IsSAGNMNull() ? carton.SAGNM.Trim() : "";
+                            item.SubAgentCity = !carton.IsSAGCTNull() ? carton.SAGCT.Trim() : "";
+                            item.SubAgentState = !carton.IsSAGSTNull() ? carton.SAGST.Trim() : "";
+                            item.SubAgentZip = !carton.IsSAGZNull() ? carton.SAGZ.ToString() : "";
+                            item.StoreNumber = !carton.IsSNull() ? carton.S.ToString() : "";
+                            item.StoreName = !carton.IsSNMNull() ? carton.SNM.Trim() : "";
+                            item.StoreAddress1 = !carton.IsSA1Null() ? carton.SA1.Trim() : "";
+                            item.StoreAddress2 = !carton.IsSA2Null() ? carton.SA2.Trim() : "";
+                            item.StoreCity = !carton.IsSCTNull() ? carton.SCT.Trim() : "";
+                            item.StoreState = !carton.IsSSTNull() ? carton.SST.Trim() : "";
+                            item.StoreZip = !carton.IsSZNull() ? carton.SZ.ToString() : "";
+                            if(!carton.IsPUDNull() && carton.PUD.Trim().Length > 0) item.PickupDate = carton.PUD.Trim();
+
+                            item.SortFacilityArrivalDate = item.SortFacilityArrivalStatus = item.SortFacilityLocation = "";
+                            if(!carton.IsASFDNull() && carton.ASFD.Trim().Length > 0) {
+                                item.DateTime = item.SortFacilityArrivalDate = carton.ASFD.Trim() +  " " + carton.ASFT.Trim();
+                                item.Status = item.SortFacilityArrivalStatus = "Arrived At Sort Facility";
+                                item.Location = item.SortFacilityLocation = !carton.IsSRTLOCNull() ? carton.SRTLOC.Trim() : "";
+                            }
+
+                            item.ActualDepartureDate = item.ActualDepartureStatus = item.ActualDepartureLocation = "";
+                            if(!carton.IsADPDNull() && carton.ADPD.Trim().Length > 0) {
+                                item.DateTime = item.ActualDepartureDate = carton.ADPD.Trim() + " " + carton.ADPT.Trim();
+                                item.Status = item.ActualDepartureStatus = "Left Sort Facility";
+                                item.Location = item.ActualDepartureLocation = !carton.IsSRTLOCNull() ? carton.SRTLOC.Trim() : "";
+                            }
+
+                            item.ActualArrivalDate = item.ActualArrivalStatus = item.ActualArrivalLocation = "";
+                            if(!carton.IsAARDNull() && carton.AARD.Trim().Length > 0) {
+                                item.DateTime = item.ActualArrivalDate = carton.AARD.Trim() + " " + carton.AART.Trim();
+                                item.Status = item.ActualArrivalStatus = "Arrived At Delivery Terminal";
+                                if(!carton.IsSAGCTNull() && carton.SAGCT.Trim().Length > 0)
+                                    item.Location = item.ActualArrivalLocation = carton.SAGCT.Trim() + "/" + carton.SAGST.Trim();
+                                else
+                                    item.Location = item.ActualArrivalLocation = !carton.IsAGCTNull() ? carton.AGCT.Trim() + "/" + carton.AGST.Trim() : "";
+                            }
+
+                            item.ActualStoreDeliveryDate = item.ActualStoreDeliveryStatus = item.ActualStoreDeliveryLocation = item.ScheduledDeliveryDate = "";
+                            if(!carton.IsACTSDDNull() && carton.ACTSDD.Trim().Length > 0) {
+                                item.DateTime = item.ActualStoreDeliveryDate = carton.ACTSDD.Trim();
+                                item.Status = item.ActualStoreDeliveryStatus = "Out For Delivery";
+                                item.Location = item.ActualStoreDeliveryLocation = !carton.IsSCTNull() ? carton.SCT.Trim() + "/" + carton.SST.Trim() : "";
+                                item.ScheduledDeliveryDate = carton.ACTSDD.Trim();
+                            }
+
+                            item.PODScanDate = item.PODScanStatus = item.PODScanLocation = "";
+                            if(Convert.ToInt32(carton.SCNTP.ToString()) == 3) {
+                                if(!carton.IsSCDNull() && carton.SCD.Trim().Length > 0) {
+                                    item.DateTime = item.PODScanDate = carton.SCD.Trim() + " " + carton.SCTM.Trim();
+                                    item.Status = item.PODScanStatus = "Delivered";
+                                    item.Location = item.PODScanLocation = carton.IsSCTNull() ? "" : carton.SCT.Trim() + "/" + carton.SST.Trim();
+                                }
+                            }
+
+                            item.TrackingNumber = !carton.IsTNull() ? carton.T : "";
+                            item.IsManualEntry = !carton.IsISMNNull() ? carton.ISMN : 0;
+                            item.Weight = carton.WT;
+                            item.ScanType = !carton.IsSCNTPNull() ? carton.SCNTP : 0m;
+                            item.PVNO = !carton.IsPVNONull() ? carton.PVNO : "";
+                            item.Shipper = !carton.IsTNull() ? carton.T : "";
+
+                            items.ItemTable.AddItemTableRow(item);
+                            #endregion
+                            break;
+                        }
+                    }
+                }
+
+                //Return a record for all unfound requests
+                for(int i = 0;i < itemNumbers.Length;i++) {
+                    if(items.ItemTable.Select("ItemNumber='" + itemNumbers[i] + "'").Length == 0) {
+                        //Add not found item
+                        TrackingDS.ItemTableRow item = items.ItemTable.NewItemTableRow();
+                        item.ItemNumber = itemNumbers[i];
+                        item.DateTime = "";
+                        item.Status = "Item Not Found";
+                        item.Location = "";
+                        item.CartonNumber = "";
+                        item.LabelNumber = "";
+                        items.ItemTable.AddItemTableRow(item);
+                    }
+                }
+                items.AcceptChanges();
+            }
+            return items;
+        }
+
+        private DataTable getUniqueRows(DataView view) {
+            //Clone the table
+            DataTable dt = view.Table.Clone();
+            Hashtable ht = new Hashtable();
+            for(int i = 0;i < view.Count;i++) {
+                string key = view[i]["CTN"].ToString().Trim() + view[i]["BL"].ToString().Trim();
+                if(!ht.ContainsKey(key)) {
+                    ht.Add(key,null);
+                    dt.ImportRow(view[i].Row);
+                }
+            }
+            return dt;
+        }
+
+        #region Data Services: fillDataset(), executeNonQuery(), executeNonQueryWithReturn()
+        private DataSet fillDataset(string spName,string table,object[] paramValues) {
+            //
+            DataSet ds = new DataSet();
+            Database db = DatabaseFactory.CreateDatabase("SQLConnection");
+            DbCommand cmd = db.GetStoredProcCommand(spName,paramValues);
+            cmd.CommandTimeout = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["CommandTimeout"]);
+            db.LoadDataSet(cmd,ds,table);
+            return ds;
+        }
+        private bool executeNonQuery(string spName,object[] paramValues) {
+            //
+            bool ret=false;
+            Database db = DatabaseFactory.CreateDatabase("SQLConnection");
+            int i = db.ExecuteNonQuery(spName,paramValues);
+            ret = i > 0;
+            return ret;
+        }
+        private object executeNonQueryWithReturn(string spName,object[] paramValues) {
+            //
+            object ret=null;
+            if((paramValues != null) && (paramValues.Length > 0)) {
+                Database db = DatabaseFactory.CreateDatabase("SQLConnection");
+                DbCommand cmd = db.GetStoredProcCommand(spName,paramValues);
+                ret = db.ExecuteNonQuery(cmd);
+
+                //Find the output parameter and return its value
+                foreach(DbParameter param in cmd.Parameters) {
+                    if((param.Direction == ParameterDirection.Output) || (param.Direction == ParameterDirection.InputOutput)) {
+                        ret = param.Value;
+                        break;
+                    }
+                }
+            }
+            return ret;
+        }
+        #endregion
+    }
+}

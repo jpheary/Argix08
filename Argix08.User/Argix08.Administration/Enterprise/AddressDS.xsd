@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="AddressDS" targetNamespace="http://www.tempuri.org/AddressDS.xsd" xmlns:mstns="http://www.tempuri.org/AddressDS.xsd" xmlns="http://www.tempuri.org/AddressDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="AddressDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="AddressDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AddressID" type="xs:int" minOccurs="0" />
+							<xs:element name="AddressType" type="xs:string" minOccurs="0"/>
+							<xs:element name="LocationID" type="xs:int" minOccurs="0" />
+							<xs:element name="AddressLine1" type="xs:string" minOccurs="0" />
+							<xs:element name="AddressLine2" type="xs:string" minOccurs="0" />
+							<xs:element name="City" type="xs:string" minOccurs="0" />
+							<xs:element name="StateOrProvince" type="xs:string" minOccurs="0" />
+							<xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+							<xs:element name="Region" type="xs:string" minOccurs="0" />
+							<xs:element name="CountryID" type="xs:int" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AddressViewTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AddressID" type="xs:int" minOccurs="0" />
+							<xs:element name="AddressType" type="xs:string" minOccurs="0" />
+							<xs:element name="LocationID" type="xs:int" minOccurs="0" />
+							<xs:element name="AddressLine1" type="xs:string" minOccurs="0" />
+							<xs:element name="AddressLine2" type="xs:string" minOccurs="0" />
+							<xs:element name="City" type="xs:string" minOccurs="0" />
+							<xs:element name="StateOrProvince" type="xs:string" minOccurs="0" />
+							<xs:element name="StateProvinceName" type="xs:string" minOccurs="0" />
+							<xs:element name="PostalCode" type="xs:string" minOccurs="0" />
+							<xs:element name="Region" type="xs:string" minOccurs="0" />
+							<xs:element name="CountryID" type="xs:int" minOccurs="0" />
+							<xs:element name="Country" type="xs:string" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

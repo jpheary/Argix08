@@ -1,0 +1,45 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Finance.master.cs" Inherits="FinanceMaster" %>
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.WebControls" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Finance Invoicing</title>
+    <script type="text/javascript">
+        function pageLoad() { }
+    </script>
+</head>
+<body id="idBody" runat="server" style=" position:relative; margin-top:0; " >
+<form id="idForm" runat="server" >
+    <asp:ScriptManager ID="smPage" runat="server" EnablePartialRendering="true" ScriptMode="Auto"></asp:ScriptManager>
+    <asp:Table id="idMaster" runat="server" Width="800px" Height="100%" HorizontalAlign="Center" BorderWidth="0px" CellPadding="0" CellSpacing="0" >
+        <asp:TableRow>
+            <asp:TableCell>
+                <asp:Table id="idHeader" runat="server" Width="100%" BorderWidth="0px" CellPadding="0" CellSpacing="0" >
+                    <asp:TableRow>
+                        <asp:TableCell ColumnSpan="2">
+                            <asp:Image ID="imgBanner" runat="server" Width="100%" ImageUrl="~/App_Themes/Argix/Images/topbanner.jpg" />
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow Height="6px" BackColor="Black" style="font-size:1px"><asp:TableCell>&nbsp;</asp:TableCell><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+                    <asp:TableRow><asp:TableCell ColumnSpan="2">&nbsp;</asp:TableCell></asp:TableRow>
+                </asp:Table>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow Height="18px">
+            <asp:TableCell VerticalAlign="Bottom">
+            	<asp:contentplaceholder id="cpHead" runat="server"></asp:contentplaceholder>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow Height="24px" style="font-size:1px"><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="100%">
+            <asp:TableCell  VerticalAlign="Top">
+                <asp:contentplaceholder id="cpBody" runat="server"></asp:contentplaceholder>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow Height="24px"><asp:TableCell><hr /></asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="24px"><asp:TableCell HorizontalAlign="Right"><asp:Label ID="lblCopyright" runat="server" Text="Copyright 2010 Argix Direct, Inc. v3.5.0.111110" SkinID="lblCopyright"></asp:Label></asp:TableCell></asp:TableRow>
+   </asp:Table>                
+    </form>
+</body>
+</html>

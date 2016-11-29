@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Kronos.master.cs" Inherits="Kronos" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>SharePoint Imaging Search</title>
+</head>
+<body id="idBody" runat="server" style=" position:relative; margin-top:0; " >
+<form id="idForm" runat="server" >
+    <asp:ScriptManager ID="smPage" runat="server" EnablePartialRendering="true" ScriptMode="Auto" />
+    <asp:Table id="idMaster" runat="server" Width="100%" Height="100%" HorizontalAlign="Center" BorderWidth="0px" CellPadding="0" CellSpacing="0" >
+        <asp:TableRow style="font-size:1px; height:24px"><asp:TableCell Width="24px">&nbsp;</asp:TableCell><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="28px">
+            <asp:TableCell>&nbsp;</asp:TableCell>
+            <asp:TableCell ID="tcPageTitle" SkinID="PageTitle">
+                <asp:Table ID="tblPageTitle" runat="server" Width="100%" BorderStyle="None" BorderWidth="0px" CellPadding="0" CellSpacing="0"> 
+                    <asp:TableRow>
+                        <asp:TableCell VerticalAlign="Bottom">
+                            <asp:Image ID="imgApp" runat="server" ImageUrl="App_Themes/Argix/Images/app.gif" ImageAlign="Middle" />
+                            &nbsp;<asp:Label id="lblAppTitle" runat="server" Height="100%" Text="Argix Direct Imaging Services" />
+                        </asp:TableCell>
+                        <asp:TableCell HorizontalAlign="Right" VerticalAlign="Bottom">
+                            &nbsp;
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow style="font-size:1px; height:24px"><asp:TableCell ColumnSpan="2">&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="100%">
+            <asp:TableCell>&nbsp;</asp:TableCell>
+            <asp:TableCell VerticalAlign="Top">
+                <div style="margin-left:0px">
+                    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder>
+                </div>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow Height="12px"><asp:TableCell ColumnSpan="2">&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="12px"><asp:TableCell>&nbsp;</asp:TableCell><asp:TableCell><hr /></asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="24px"><asp:TableCell>&nbsp;</asp:TableCell><asp:TableCell><asp:Label ID="lblCopyright" runat="server" Text="Copyright 2011 Argix Direct, Inc. v3.5.0.111511" SkinID="lblCopyright"></asp:Label></asp:TableCell></asp:TableRow>
+   </asp:Table>                
+</form>
+</body>
+</html>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<syncDesignerSurface dslVersion="1.0.0.0" Id="c07c07df-cf7c-4bad-9d5b-67760d29ac2d" parentDesignerName="ScannerCache" codeGenerationMode="Client and Server" synchronizeInOneTransaction="true" clientFileLocation="5a1c5691-c9d3-4473-af87-cdc7983ada90" serverFileLocation="974861d6-2df2-4bed-b600-e3498698b786" isRootSyncDesigner="true" rootSyncDesignerShouldGenerateCode="true" clientFileHintPath="..\..\Argix08.User\Argix08.IntermecCN50.CE\Argix08.IntermecCN50.WM\ScannerCache.Client.sync" rootSyncDesignerCodeGenerationMode="ServerOnly" isClientSyncDesigner="false" isServerSyncDesigner="false" changeTrackingType="SqlServerChangeTracking" xmlns="http://schemas.microsoft.com/dsltools/SyncDesigner">
+  <syncAdapters>
+    <syncAdapter Id="39f787bb-db5b-40ca-a0d5-78b92b97daaa" name="GPSDataSyncAdapter" tableName="GPSData">
+      <syncAdapterCommands>
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTableInsertCommand" />
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTableDeleteCommand" />
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTableUpdateCommand" />
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTableSelectConflictDeletedRowsCommand" />
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTableSelectConflictUpdatedRowsCommand" />
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTableSelectIncrementalInsertsCommand" />
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTableSelectIncrementalDeletesCommand" />
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTableSelectIncrementalUpdatesCommand" />
+      </syncAdapterCommands>
+    </syncAdapter>
+  </syncAdapters>
+  <syncTables>
+    <syncTable Id="3356b541-33c0-48f2-a544-96be23fbe260" name="GPSDataSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="GPSData" fullTableName="dbo.GPSData" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/ScannerCacheSyncGroup" />
+      </syncGroup>
+    </syncTable>
+  </syncTables>
+  <syncGroups>
+    <syncGroup Id="8a25c51e-8fdd-446f-9d69-1f4fd8b6b214" name="ScannerCacheSyncGroup" />
+  </syncGroups>
+  <clientSyncProvider>
+    <clientSyncProvider Id="25900e51-052d-43ba-bb30-f55b4f766e1b" name="ScannerCacheClientSyncProvider">
+      <syncConnection>
+        <syncConnectionMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/ClientConnection" />
+      </syncConnection>
+    </clientSyncProvider>
+  </clientSyncProvider>
+  <serverSyncProvider>
+    <serverSyncProvider Id="fc510efb-e188-4742-96b8-92cebf5bd6f8" name="ScannerCacheServerSyncProvider">
+      <syncAdapters>
+        <syncAdapterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncAdapter" />
+      </syncAdapters>
+      <syncConnection>
+        <syncConnectionMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/ServerConnection" />
+      </syncConnection>
+      <selectNewAnchorCommand>
+        <syncAdapterCommandMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/selectNewAnchorCmd" />
+      </selectNewAnchorCommand>
+    </serverSyncProvider>
+  </serverSyncProvider>
+  <syncAgent>
+    <syncAgent name="ScannerCacheSyncAgent">
+      <serverSyncProvider>
+        <serverSyncProviderMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/ScannerCacheServerSyncProvider" />
+      </serverSyncProvider>
+      <clientSyncProvider>
+        <clientSyncProviderMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/ScannerCacheClientSyncProvider" />
+      </clientSyncProvider>
+      <syncTables>
+        <syncTableMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/GPSDataSyncTable" />
+      </syncTables>
+    </syncAgent>
+  </syncAgent>
+  <syncAdapterCommands>
+    <syncAdapterCommand Id="1abdb496-e56a-4eeb-b2cc-6fef7d208cf8" commandText=" SET IDENTITY_INSERT dbo.GPSData ON ;WITH CHANGE_TRACKING_CONTEXT (@sync_client_id_binary) INSERT INTO dbo.GPSData ([Longitude], [Latitude], [Altitude], [LocationDateTime], [CreationDate], [ID]) VALUES (@Longitude, @Latitude, @Altitude, @LocationDateTime, @CreationDate, @ID) SET @sync_row_count = @@rowcount; IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.GPSData')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.GPSData')  SET IDENTITY_INSERT dbo.GPSData OFF " commandType="Text" name="GPSDataSyncTableInsertCommand" commandKind="InsertCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_client_id_binary" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@Longitude" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@Latitude" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@Altitude" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@LocationDateTime" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@CreationDate" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@ID" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_row_count" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_last_received_anchor" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="c8682331-d4b0-4899-b117-674c4fba9035" commandText=";WITH CHANGE_TRACKING_CONTEXT (@sync_client_id_binary) DELETE dbo.GPSData FROM dbo.GPSData JOIN CHANGETABLE(VERSION dbo.GPSData, ([ID]), (@ID)) CT  ON CT.[ID] = dbo.GPSData.[ID] WHERE (@sync_force_write = 1 OR CT.SYS_CHANGE_VERSION IS NULL OR CT.SYS_CHANGE_VERSION &lt;= @sync_last_received_anchor OR (CT.SYS_CHANGE_CONTEXT IS NOT NULL AND CT.SYS_CHANGE_CONTEXT = @sync_client_id_binary)) SET @sync_row_count = @@rowcount; IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.GPSData')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.GPSData') " commandType="Text" name="GPSDataSyncTableDeleteCommand" commandKind="DeleteCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_client_id_binary1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@ID1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_force_write" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_last_received_anchor1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_row_count1" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="8557e657-5294-4e4e-93dd-05aed91df4bd" commandText=";WITH CHANGE_TRACKING_CONTEXT (@sync_client_id_binary) UPDATE dbo.GPSData SET [Longitude] = @Longitude, [Latitude] = @Latitude, [Altitude] = @Altitude, [LocationDateTime] = @LocationDateTime, [CreationDate] = @CreationDate FROM dbo.GPSData  JOIN CHANGETABLE(VERSION dbo.GPSData, ([ID]), (@ID)) CT  ON CT.[ID] = dbo.GPSData.[ID] WHERE (@sync_force_write = 1 OR CT.SYS_CHANGE_VERSION IS NULL OR CT.SYS_CHANGE_VERSION &lt;= @sync_last_received_anchor OR (CT.SYS_CHANGE_CONTEXT IS NOT NULL AND CT.SYS_CHANGE_CONTEXT = @sync_client_id_binary)) SET @sync_row_count = @@rowcount; IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.GPSData')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.GPSData') " commandType="Text" name="GPSDataSyncTableUpdateCommand" commandKind="UpdateCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@Longitude1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@Latitude1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@Altitude1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@LocationDateTime1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@CreationDate1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@ID2" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_force_write1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_last_received_anchor2" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_client_id_binary2" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_row_count2" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="d6fcdae1-e971-456f-a27c-b459f4f18313" commandText="SELECT CT.[ID], CT.SYS_CHANGE_CONTEXT, CT.SYS_CHANGE_VERSION FROM CHANGETABLE(CHANGES dbo.GPSData, @sync_last_received_anchor) CT WHERE (CT.[ID] = @ID AND CT.SYS_CHANGE_OPERATION = 'D')" commandType="Text" name="GPSDataSyncTableSelectConflictDeletedRowsCommand" commandKind="SelectConflictDeletedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_last_received_anchor3" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@ID3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="0be6c6d8-2877-4f57-9698-450658c7b289" commandText="SELECT [Longitude], [Latitude], [Altitude], [LocationDateTime], [CreationDate], dbo.GPSData.[ID], CT.SYS_CHANGE_CONTEXT, CT.SYS_CHANGE_VERSION FROM dbo.GPSData JOIN CHANGETABLE(VERSION dbo.GPSData, ([ID]), (@ID)) CT  ON CT.[ID] = dbo.GPSData.[ID]" commandType="Text" name="GPSDataSyncTableSelectConflictUpdatedRowsCommand" commandKind="SelectConflictUpdatedRowsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@ID4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="8690320b-bc71-48f0-9ee6-76426e4e0bfb" commandText="IF @sync_initialized = 0 SELECT [Longitude], [Latitude], [Altitude], [LocationDateTime], [CreationDate], dbo.GPSData.[ID] FROM dbo.GPSData LEFT OUTER JOIN CHANGETABLE(CHANGES dbo.GPSData, @sync_last_received_anchor) CT ON CT.[ID] = dbo.GPSData.[ID] WHERE (CT.SYS_CHANGE_CONTEXT IS NULL OR CT.SYS_CHANGE_CONTEXT &lt;&gt; @sync_client_id_binary) ELSE  BEGIN SELECT [Longitude], [Latitude], [Altitude], [LocationDateTime], [CreationDate], dbo.GPSData.[ID] FROM dbo.GPSData JOIN CHANGETABLE(CHANGES dbo.GPSData, @sync_last_received_anchor) CT ON CT.[ID] = dbo.GPSData.[ID] WHERE (CT.SYS_CHANGE_OPERATION = 'I' AND CT.SYS_CHANGE_CREATION_VERSION  &lt;= @sync_new_received_anchor AND (CT.SYS_CHANGE_CONTEXT IS NULL OR CT.SYS_CHANGE_CONTEXT &lt;&gt; @sync_client_id_binary)); IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.GPSData')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.GPSData')  END " commandType="Text" name="GPSDataSyncTableSelectIncrementalInsertsCommand" commandKind="SelectIncrementalInsertsCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_initialized" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_last_received_anchor4" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_client_id_binary3" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_new_received_anchor" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="00845c31-8c04-4d77-b04a-7c55bc315bac" commandText="IF @sync_initialized &gt; 0  BEGIN SELECT CT.[ID] FROM CHANGETABLE(CHANGES dbo.GPSData, @sync_last_received_anchor) CT WHERE (CT.SYS_CHANGE_OPERATION = 'D' AND CT.SYS_CHANGE_VERSION &lt;= @sync_new_received_anchor AND (CT.SYS_CHANGE_CONTEXT IS NULL OR CT.SYS_CHANGE_CONTEXT &lt;&gt; @sync_client_id_binary)); IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.GPSData')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.GPSData')  END " commandType="Text" name="GPSDataSyncTableSelectIncrementalDeletesCommand" commandKind="SelectIncrementalDeletesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_initialized1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_last_received_anchor5" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_new_received_anchor1" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_client_id_binary4" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="ff6cf451-1f34-4322-b754-bf365f74f790" commandText="IF @sync_initialized &gt; 0  BEGIN SELECT [Longitude], [Latitude], [Altitude], [LocationDateTime], [CreationDate], dbo.GPSData.[ID] FROM dbo.GPSData JOIN CHANGETABLE(CHANGES dbo.GPSData, @sync_last_received_anchor) CT ON CT.[ID] = dbo.GPSData.[ID] WHERE (CT.SYS_CHANGE_OPERATION = 'U' AND CT.SYS_CHANGE_VERSION &lt;= @sync_new_received_anchor AND (CT.SYS_CHANGE_CONTEXT IS NULL OR CT.SYS_CHANGE_CONTEXT &lt;&gt; @sync_client_id_binary)); IF CHANGE_TRACKING_MIN_VALID_VERSION(object_id(N'dbo.GPSData')) &gt; @sync_last_received_anchor RAISERROR (N'SQL Server Change Tracking has cleaned up tracking information for table ''%s''. To recover from this error, the client must reinitialize its local database and try again',16,3,N'dbo.GPSData')  END " commandType="Text" name="GPSDataSyncTableSelectIncrementalUpdatesCommand" commandKind="SelectIncrementalUpdatesCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_initialized2" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_last_received_anchor6" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_new_received_anchor2" />
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_client_id_binary5" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+    <syncAdapterCommand Id="363cfe48-958b-45de-b638-c6bce18ca643" commandText="Select @sync_new_received_anchor = CHANGE_TRACKING_CURRENT_VERSION()" commandType="Text" name="selectNewAnchorCmd" commandKind="SelectNewAnchorCommand">
+      <syncAdapterCommandParameters>
+        <syncAdapterCommandParameterMoniker name="/c07c07df-cf7c-4bad-9d5b-67760d29ac2d/@sync_new_received_anchor3" />
+      </syncAdapterCommandParameters>
+    </syncAdapterCommand>
+  </syncAdapterCommands>
+  <syncAdapterCommandParameters>
+    <syncAdapterCommandParameter Id="3bbdca7c-bf1b-4e37-9e26-645a346b2fed" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="31f4d1e9-0139-4019-920e-5e78d8a1c01f" parameterType="Int" parameterName="@Longitude" name="@Longitude" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="23e29442-60ea-4392-ada4-31911b325ab2" parameterType="Int" parameterName="@Latitude" name="@Latitude" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a172f80a-6c3f-4d6c-8615-e97d9e6b4173" parameterType="Int" parameterName="@Altitude" name="@Altitude" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="27787c09-27e9-46ae-9336-116d413458e8" parameterType="DateTime" parameterName="@LocationDateTime" name="@LocationDateTime" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="cbd0b7f6-a508-4734-98f4-d8e8866ac93f" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="90895b58-68ef-4ca6-998e-8ce142810a2c" parameterType="Int" parameterName="@ID" name="@ID" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="b839e1b1-c3fd-4f9a-a0b2-e5d13d5d6b07" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="8abde02a-9f17-4722-b67b-e5fc5f764c7f" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9b16d1e7-723e-4c4b-be8c-7fdaaaafcbec" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="961f7e9e-02a2-4d61-a774-b8ade68426f3" parameterType="Int" parameterName="@ID" name="@ID1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="73d0aa63-ae95-4c18-b2d6-22ac295c1413" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="36864c6d-8f10-4199-847c-c5f3d60b7eea" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="81ee900e-bc4f-44c3-ac08-4f7c5d6e9a23" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count1" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="9d2e1830-f520-4d31-a700-ab10ba7a0f15" parameterType="Int" parameterName="@Longitude" name="@Longitude1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d5b4f1c9-10e3-49a5-9063-f2ef76b59b69" parameterType="Int" parameterName="@Latitude" name="@Latitude1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f70904f1-2a7c-48b8-b874-563709ef01ef" parameterType="Int" parameterName="@Altitude" name="@Altitude1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="f13d6729-cc49-4254-89bc-0daead0598c1" parameterType="DateTime" parameterName="@LocationDateTime" name="@LocationDateTime1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5937bde0-0b48-46f1-9ff9-f68bb6495470" parameterType="DateTime" parameterName="@CreationDate" name="@CreationDate1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="49548ade-2677-4dd7-a265-2601b2438f1c" parameterType="Int" parameterName="@ID" name="@ID2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a6edeb9e-b544-4450-90dd-55f73e6f8026" parameterType="Bit" parameterName="@sync_force_write" name="@sync_force_write1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="90bcb97f-68f0-405b-9cfc-d33042fd0cff" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="696d981f-6d3b-438e-aaf7-5fa306b3a81e" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="a9dada9e-f1a4-4242-9589-460feeee76b5" parameterType="Int" parameterName="@sync_row_count" name="@sync_row_count2" parameterDirection="Output" />
+    <syncAdapterCommandParameter Id="618d25c5-6f39-4966-b1d5-1019d06d6bc0" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="85a73d96-e006-4061-b76e-c55262eabce5" parameterType="Int" parameterName="@ID" name="@ID3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="2d1df699-5d98-4474-b208-fb72dfe2be2a" parameterType="Int" parameterName="@ID" name="@ID4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="394050c7-a789-4b5d-adf9-40781f351f2c" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d81a4987-0ef4-4f32-9c46-28a614934eb8" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="0e2815df-e9f5-45fb-bd02-82a20c7626f0" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary3" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="4c54a4de-2511-4a9b-a051-a8bc0a056b3f" parameterType="BigInt" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="6bf09c3a-2461-408f-a2e4-8802ed3d489c" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="794657ae-4b84-47f1-828e-6b9846d1544a" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="32c23b6e-7a2f-4b5f-8b94-7dfea1e38657" parameterType="BigInt" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor1" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="fe695dd7-94e6-47ed-bc96-052223620670" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary4" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="9a18a1b5-7579-49df-9ff1-e976f7d91a66" parameterType="Bit" parameterName="@sync_initialized" name="@sync_initialized2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="5ecd6a94-b5ef-4393-bc75-dacb246137e2" parameterType="BigInt" parameterName="@sync_last_received_anchor" name="@sync_last_received_anchor6" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="06a0118f-8257-47d6-8e64-c11e996705c1" parameterType="BigInt" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor2" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="603f9599-7976-44cd-a367-196ea29e00b9" parameterType="VarBinary" parameterName="@sync_client_id_binary" name="@sync_client_id_binary5" parameterDirection="Input" />
+    <syncAdapterCommandParameter Id="d70d1872-407e-4ba2-90ce-4cc55ae6bcf9" parameterType="BigInt" parameterName="@sync_new_received_anchor" name="@sync_new_received_anchor3" parameterDirection="Output" />
+  </syncAdapterCommandParameters>
+  <syncConnections>
+    <syncConnection Id="df170f19-01ee-4692-a493-aaed66914bb4" connectionString="Data Source=C:\Data\Projects\Argix08\Argix08.User\Argix08.IntermecCN50.CE\Argix08.IntermecCN50.WM\Scanner.sdf" providerInvariantName="Microsoft.SqlServerCe.Client.3.5" name="ClientConnection" connectionDisplayString="Scanner.sdf" isAppSettings="false" appSettingsObjectName="&lt;&lt;FSIM&gt;&gt;" appSettingsPropertyReference="" />
+    <syncConnection Id="3191a460-b3e5-4f37-8726-9631b3f12845" name="ServerConnection" connectionDisplayString="ServerTsortConnectionString (Settings)" isAppSettings="true" appSettingsObjectName="Settings" appSettingsPropertyName="ServerTsortConnectionString" appSettingsPropertyReference="" />
+  </syncConnections>
+</syncDesignerSurface>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="SpecialAgentDS" targetNamespace="http://tempuri.org/SpecialAgentDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/SpecialAgentDS.xsd" xmlns:mstns="http://tempuri.org/SpecialAgentDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="SpecialAgentDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SpecialAgentTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:string" />
+							<xs:element name="CLIENT_NUMBER" type="xs:string" />
+							<xs:element name="CLIENT_DIVISION" type="xs:string" />
+							<xs:element name="LOCATION" type="xs:string" />
+							<xs:element name="ACCOUNT_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="SAN_ID" type="xs:string" minOccurs="0" />
+							<xs:element name="ZONE_CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="IS_RECORD" type="xs:string" minOccurs="0" />
+							<xs:element name="TITLE" type="xs:string" minOccurs="0" />
+							<xs:element name="INSTRUCTIONS" type="xs:string" minOccurs="0" />
+							<xs:element name="INDICATOR" type="xs:string" minOccurs="0" />
+							<xs:element name="ICON" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0afb5872-4cf9-46d9-b495-d0c8cb578089" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CompanyDS.xsd" MetadataType="Schema" ID="dc0654e2-58ae-4429-ad1c-6c3059d67b2f" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EnterpriseService.disco" MetadataType="Disco" ID="bde517bf-291b-47dd-8771-fe593590e7ec" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?disco" />
+    <MetadataFile FileName="EnterpriseService4.xsd" MetadataType="Schema" ID="492f332a-3b00-4e13-b622-f51a2eb6b88f" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd9" />
+    <MetadataFile FileName="LocationDS.xsd" MetadataType="Schema" ID="bbef9423-28b7-4c12-b8c3-0716da1c3949" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd4" />
+    <MetadataFile FileName="AgentDS.xsd" MetadataType="Schema" ID="495f90fe-f460-4a22-888c-b3c3ee1b626f" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd5" />
+    <MetadataFile FileName="EnterpriseService.xsd" MetadataType="Schema" ID="b48c56e6-4a04-4c94-85d1-20259c64fcec" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd0" />
+    <MetadataFile FileName="StoreDS.xsd" MetadataType="Schema" ID="ed98bc7d-8a1c-4fb3-beca-0e7ab9db872c" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd6" />
+    <MetadataFile FileName="EnterpriseService.wsdl" MetadataType="Wsdl" ID="a902dbef-0717-4d4d-8eac-81847760bac8" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="EnterpriseService1.xsd" MetadataType="Schema" ID="2b03a85a-b52b-46b3-b3df-a18234516241" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EnterpriseService2.xsd" MetadataType="Schema" ID="8d52f4cf-b278-4ab4-bc18-7573884d1c29" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd8" />
+    <MetadataFile FileName="EnterpriseService1.wsdl" MetadataType="Wsdl" ID="309c1730-55ee-4b7c-b183-7cba0b4f1c12" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?wsdl" />
+    <MetadataFile FileName="ContactDS.xsd" MetadataType="Schema" ID="b9ab40e5-c421-4b67-b510-7d4ace3569fb" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd7" />
+    <MetadataFile FileName="EnterpriseService3.xsd" MetadataType="Schema" ID="f78529b1-a852-4fe6-902d-5f9e1cf4f9fc" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/EnterpriseService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="DeliveryLocationDS" targetNamespace="http://www.tempuri.org/DeliveryLocationDS.xsd" xmlns:mstns="http://www.tempuri.org/DeliveryLocationDS.xsd" xmlns="http://www.tempuri.org/DeliveryLocationDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="DeliveryLocationDS" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="DeliveryLocationMapTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MapID" type="xs:string" />
+                            <xs:element name="SortCenter" type="xs:string" />
+                            <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                            <xs:element name="Description" type="xs:string" />
+                            <xs:element name="IsActive" type="xs:boolean" />
+                            <xs:element name="CountryID" type="xs:int" />
+                            <xs:element name="Country" type="xs:string" />
+                            <xs:element name="PostalCode" type="xs:string" />
+                            <xs:element name="StateOrProvince" type="xs:string" minOccurs="0" />
+                            <xs:element name="PathID" type="xs:string" minOccurs="0" />
+                            <xs:element name="PathMnemonic" type="xs:string" minOccurs="0" />
+                            <xs:element name="PathLastStopMnemonic" type="xs:string" minOccurs="0" />
+                            <xs:element name="ServiceID" type="xs:int" minOccurs="0" />
+                            <xs:element name="ServiceMnemonic" type="xs:string" minOccurs="0" />
+                            <xs:element name="LastUpdated" type="xs:dateTime" />
+                            <xs:element name="UserID" type="xs:string" />
+                            <xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="DeliveryLocationOverrideViewTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="LocationID" type="xs:int" />
+                            <xs:element name="Number" type="xs:string" />
+                            <xs:element name="Description" type="xs:string" />
+                            <xs:element name="LocationType" type="xs:string" />
+                            <xs:element name="VendorName" type="xs:string" minOccurs="0" />
+                            <xs:element name="Address" type="xs:string" minOccurs="0" />
+                            <xs:element name="HasOverride" type="xs:int" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="DeliveryLocationOverrideDetailTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Selected" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="SortCenterID" type="xs:int" />
+                            <xs:element name="SortCenter" type="xs:string" minOccurs="0" />
+                            <xs:element name="ClientID" type="xs:int" />
+                            <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                            <xs:element name="LocationID" type="xs:int" />
+                            <xs:element name="Number" type="xs:string" minOccurs="0" />
+                            <xs:element name="Description" type="xs:string" minOccurs="0" />
+                            <xs:element name="Address" type="xs:string" minOccurs="0" />
+                            <xs:element name="OldPathMnemonic" type="xs:string" />
+                            <xs:element name="OldServiceMnemonic" type="xs:string" />
+                            <xs:element name="PathID" type="xs:string" />
+                            <xs:element name="PathMnemonic" type="xs:string" />
+                            <xs:element name="PathLastStopMnemonic" type="xs:string" />
+                            <xs:element name="ServiceID" type="xs:int" />
+                            <xs:element name="ServiceMnemonic" type="xs:string" />
+                            <xs:element name="LastUpdated" type="xs:dateTime" />
+                            <xs:element name="UserID" type="xs:string" />
+                            <xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+				</xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

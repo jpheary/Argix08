@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TerminalDS" targetNamespace="http://tempuri.org/TerminalDS.xsd" xmlns:mstns="http://tempuri.org/TerminalDS.xsd" xmlns="http://tempuri.org/TerminalDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TerminalDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TerminalDS" msprop:Generator_DataSetName="TerminalDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LocalTerminalTable" msprop:Generator_UserTableName="LocalTerminalTable" msprop:Generator_RowDeletedName="LocalTerminalTableRowDeleted" msprop:Generator_RowChangedName="LocalTerminalTableRowChanged" msprop:Generator_RowClassName="LocalTerminalTableRow" msprop:Generator_RowChangingName="LocalTerminalTableRowChanging" msprop:Generator_RowEvArgName="LocalTerminalTableRowChangeEvent" msprop:Generator_RowEvHandlerName="LocalTerminalTableRowChangeEventHandler" msprop:Generator_TableClassName="LocalTerminalTableDataTable" msprop:Generator_TableVarName="tableLocalTerminalTable" msprop:Generator_RowDeletingName="LocalTerminalTableRowDeleting" msprop:Generator_TablePropName="LocalTerminalTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TerminalID" msprop:Generator_UserColumnName="TerminalID" msprop:Generator_ColumnVarNameInTable="columnTerminalID" msprop:Generator_ColumnPropNameInRow="TerminalID" msprop:Generator_ColumnPropNameInTable="TerminalIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DBServerName" msprop:Generator_UserColumnName="DBServerName" msprop:Generator_ColumnVarNameInTable="columnDBServerName" msprop:Generator_ColumnPropNameInRow="DBServerName" msprop:Generator_ColumnPropNameInTable="DBServerNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LinkedServerName" msprop:Generator_UserColumnName="LinkedServerName" msprop:Generator_ColumnVarNameInTable="columnLinkedServerName" msprop:Generator_ColumnPropNameInRow="LinkedServerName" msprop:Generator_ColumnPropNameInTable="LinkedServerNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DBType" msprop:Generator_UserColumnName="DBType" msprop:Generator_ColumnVarNameInTable="columnDBType" msprop:Generator_ColumnPropNameInRow="DBType" msprop:Generator_ColumnPropNameInTable="DBTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="AgentID" msprop:Generator_UserColumnName="AgentID" msprop:Generator_ColumnVarNameInTable="columnAgentID" msprop:Generator_ColumnPropNameInRow="AgentID" msprop:Generator_ColumnPropNameInTable="AgentIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AgentNumber" msprop:Generator_UserColumnName="AgentNumber" msprop:Generator_ColumnVarNameInTable="columnAgentNumber" msprop:Generator_ColumnPropNameInRow="AgentNumber" msprop:Generator_ColumnPropNameInTable="AgentNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperID" msprop:Generator_UserColumnName="ShipperID" msprop:Generator_ColumnVarNameInTable="columnShipperID" msprop:Generator_ColumnPropNameInRow="ShipperID" msprop:Generator_ColumnPropNameInTable="ShipperIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="IsActive" msprop:Generator_UserColumnName="IsActive" msprop:Generator_ColumnVarNameInTable="columnIsActive" msprop:Generator_ColumnPropNameInRow="IsActive" msprop:Generator_ColumnPropNameInTable="IsActiveColumn" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

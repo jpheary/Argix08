@@ -1,0 +1,302 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Argix.Net</name>
+    </assembly>
+    <members>
+        <member name="T:Argix.Net.ArgixTcpClient">
+            <summary>Provides a client socket connection for TCP network services.</summary>
+        </member>
+        <member name="F:Argix.Net.ArgixTcpClient.DEFAULT_PORT">
+            <summary>Default port number = 10000</summary>
+        </member>
+        <member name="F:Argix.Net.ArgixTcpClient.READBUFFERSIZE">
+            <summary>Default read buffer size = 1024 bytes</summary>
+        </member>
+        <member name="F:Argix.Net.ArgixTcpClient.READTIMEOUT">
+            <summary>Default read timeout = 1000msec</summary>
+        </member>
+        <member name="F:Argix.Net.ArgixTcpClient.WRITEBUFFERSIZE">
+            <summary>Default write buffer size = 1024 bytes</summary>
+        </member>
+        <member name="F:Argix.Net.ArgixTcpClient.WRITETIMEOUT">
+            <summary>Default write timeout = 1000msec</summary>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpClient.#ctor">
+            <summary>Initializes a new instance of the Argix.Net.ArgixTcpClient class that listens for incoming connection attempts on the loopback IP address and default port number.</summary>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpClient.#ctor(System.Net.IPAddress,System.Int32)">
+            <summary>Initializes a new instance of the Argix.Net.ArgixTcpClient class that provides client connections for TCP network services on the specified local IP address and port number.</summary>
+            <param name="ipAddress">An System.Net.IPAddress that represents the local IP address.</param>
+            <param name="ipPort">The port on which to listen for incoming connection attempts.</param>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpClient.#ctor(System.Net.IPAddress,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>Initializes a new instance of the Argix.Net.ArgixTcpClient class that provides client connections for TCP network services on the specified local IP address and port number.</summary>
+            <param name="ipAddress">An System.Net.IPAddress that represents the local IP address.</param>
+            <param name="ipPort">The port on which to listen for incoming connection attempts.</param>
+            <param name="readBufferSize">The size of the receive buffer.</param>
+            <param name="readTimeout">Tthe amount of time a System.Net.Sockets.TcpClient will wait to receive data once a read operation is initiated.</param>
+            <param name="writeBufferSize">The size of the send buffer.</param>
+            <param name="writeTimeout">The amount of time a System.Net.Sockets.TcpClient will wait for a send operation to complete successfully.</param>
+            <param name="noDelay">Disables read/write delay when buffers not full.</param>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpClient.Finalize">
+            <summary>Destructor</summary>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpClient.Connect">
+            <summary>Esatblishes a connection to a remote host.</summary>
+            <exception cref="T:System.ApplicationException">Thrown if the connection is not valid.</exception>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpClient.Disconnect">
+            <summary>Closes the System.Net.Sockets.Socket connection and releases all associated resources</summary>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpClient.Write(System.Byte[])">
+            <summary>Writes data to the remote host via the underlyiong socket's nework stream and returns any response.</summary>
+            <exception cref="T:System.ApplicationException">Thrown if the network stream is null or not writeable.</exception>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpClient.IPAddress">
+            <summary>Gets the IP address</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpClient.IPPort">
+            <summary>Gets the IP port</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpClient.ReadBufferSize">
+            <summary>Gets or sets the client read buffer size.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpClient.ReadTimeout">
+            <summary>Gets or sets the client read timeout.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpClient.WriteBufferSize">
+            <summary>Gets or sets the client write buffer.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpClient.WriteTimeout">
+            <summary>Gets or sets the client write timeout.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpClient.DelayOff">
+            <summary>Gets or sets the disable read/write delay when buffers not full.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpClient.Connected">
+            <summary>Gets the connection status</summary>
+        </member>
+        <member name="T:Argix.Net.TcpClientProxy">
+            <summary>Proxy for the System.Net.Sockets.TcpClient object that is returned from the System.Net.Sockets.TcpListener.AcceptTcpClient() method.</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.READBUFFERSIZE">
+            <summary>Default read buffer size = 1024 bytes</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.READTIMEOUT">
+            <summary>Default read timeout = 1000msec</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.WRITEBUFFERSIZE">
+            <summary>Default write buffer size = 1024 bytes</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.WRITETIMEOUT">
+            <summary>Default write timeout = 1000msec</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.SESSIONTIMEOUT">
+            <summary>Default session timeout = 600sec</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.ReadBufferSize">
+            <summary>Client read buffer size for every Tsort.Net.TsortTcpClient instance</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.ReadTimeout">
+            <summary>Client read timeout for every Tsort.Net.TsortTcpClient instance</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.WriteBufferSize">
+            <summary>Client write buffer size for every Tsort.Net.TsortTcpClient instance</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.WriteTimeout">
+            <summary>Client write timeout for every Tsort.Net.TsortTcpClient instance</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.DelayOff">
+            <summary>Disables read/write delay when buffers not full for every Tsort.Net.TsortTcpClient instance</summary>
+        </member>
+        <member name="F:Argix.Net.TcpClientProxy.SessionTimeout">
+            <summary>Client session timeout (seconds)</summary>
+        </member>
+        <member name="M:Argix.Net.TcpClientProxy.#ctor(System.Net.Sockets.TcpClient)">
+            <summary>Initializes a new instance of the Tsort.Net.TcpClientProxy class that wraps a System.Net.Sockets.TcpClient object.</summary>
+            <param name="client">A System.Net.Sockets.TcpClient object.</param>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="M:Argix.Net.TcpClientProxy.#ctor(System.Net.Sockets.TcpClient,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>Initializes a new instance of the Tsort.Net.TcpClientProxy class that wraps a System.Net.Sockets.TcpClient object.</summary>
+            <param name="client">A System.Net.Sockets.TcpClient object.</param>
+            <param name="readBufferSize">The size of the receive buffer.</param>
+            <param name="readTimeout">Tthe amount of time a System.Net.Sockets.TcpClient will wait to receive data once a read operation is initiated.</param>
+            <param name="writeBufferSize">The size of the send buffer.</param>
+            <param name="writeTimeout">The amount of time a System.Net.Sockets.TcpClient will wait for a send operation to complete successfully.</param>
+            <param name="delayOff">A value that disables a delay when send or receive buffers are not full.</param>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="M:Argix.Net.TcpClientProxy.Finalize">
+            <summary>Destructor</summary>
+        </member>
+        <member name="M:Argix.Net.TcpClientProxy.Read">
+            <summary>Read data from the remote host via the socket's nework stream.</summary>
+            <exception cref="T:System.ApplicationException">Thrown if the network stream is null or not readable.</exception>
+        </member>
+        <member name="M:Argix.Net.TcpClientProxy.Write(System.Byte[])">
+            <summary>Writes data to the remote host via the socket's nework stream.</summary>
+            <exception cref="T:System.ApplicationException">Thrown if the network stream is null or not writeable.</exception>
+        </member>
+        <member name="M:Argix.Net.TcpClientProxy.Close">
+            <summary>Closes the TCP connection and releases all resources associated with the System.Net.Sockets.TcpClient object.</summary>
+            <exception cref="T:System.ApplicationException">Thrown if an error occurs when accessing the socket.</exception>
+        </member>
+        <member name="P:Argix.Net.TcpClientProxy.SessionID">
+            <summary>Gets the session identifier for the client.</summary>
+        </member>
+        <member name="P:Argix.Net.TcpClientProxy.ReceiveBufferSize">
+            <summary>Gets the size of the receive buffer.</summary>
+        </member>
+        <member name="P:Argix.Net.TcpClientProxy.ReceiveTimeout">
+            <summary>Gets the amount of time a System.Net.Sockets.TcpClient will wait to receive data once a read operation is initiated.</summary>
+        </member>
+        <member name="P:Argix.Net.TcpClientProxy.SendBufferSize">
+            <summary>Gets the size of the send buffer.</summary>
+        </member>
+        <member name="P:Argix.Net.TcpClientProxy.SendTimeout">
+            <summary>Gets the amount of time a System.Net.Sockets.TcpClient will wait for a send operation to complete successfully.</summary>
+        </member>
+        <member name="P:Argix.Net.TcpClientProxy.NoDelay">
+            <summary>Gets a value that disables a delay when send or receive buffers are not full.</summary>
+        </member>
+        <member name="P:Argix.Net.TcpClientProxy.SessionTimedOut">
+            <summary></summary>
+        </member>
+        <member name="T:Argix.Net.ClientEventHandler">
+            <summary>Defines an event type that returns a Tsort.Net.TcpClientProxy for communications with a remote socket client.</summary>
+        </member>
+        <member name="T:Argix.Net.ClientEventArgs">
+            <summary>Provides data for events of type Tsort.Net.ClientEventHandler.</summary>
+        </member>
+        <member name="M:Argix.Net.ClientEventArgs.#ctor(Argix.Net.TcpClientProxy)">
+            <summary></summary>
+            <param name="client"></param>
+        </member>
+        <member name="P:Argix.Net.ClientEventArgs.Client">
+            <summary></summary>
+        </member>
+        <member name="T:Argix.Net.ClientMessageEventHandler">
+            <summary>Defines an event type that returns a message received from a Tsort.Net.TcpClientProxy.</summary>
+        </member>
+        <member name="T:Argix.Net.ClientMessageEventArgs">
+            <summary>Provides data for events of type Tsort.Net.ClientMessageEventHandler.</summary>
+        </member>
+        <member name="M:Argix.Net.ClientMessageEventArgs.#ctor(Argix.Net.TcpClientProxy,System.Byte[])">
+            <summary></summary>
+            <param name="client"></param>
+            <param name="message"></param>
+        </member>
+        <member name="P:Argix.Net.ClientMessageEventArgs.Client">
+            <summary></summary>
+        </member>
+        <member name="P:Argix.Net.ClientMessageEventArgs.Message">
+            <summary></summary>
+        </member>
+        <member name="T:Argix.Net.ErrorEventHandler">
+            <summary>Defines an event type that returns a System.Exception for error reporting.</summary>
+        </member>
+        <member name="T:Argix.Net.ErrorEventArgs">
+            <summary>Provides data for events of type Tsort.Net.ErrorEventHandler.</summary>
+        </member>
+        <member name="M:Argix.Net.ErrorEventArgs.#ctor(System.Exception)">
+            <summary></summary>
+            <param name="ex"></param>
+        </member>
+        <member name="P:Argix.Net.ErrorEventArgs.Exception">
+            <summary></summary>
+        </member>
+        <member name="T:Argix.Net.ArgixTcpListener">
+            <summary>Listens for socket connections and socket messages from TCP network clients.</summary>
+        </member>
+        <member name="F:Argix.Net.ArgixTcpListener.DEFAULT_PORT">
+            <summary>Default port number = 10000</summary>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpListener.#ctor">
+            <summary>Initializes a new instance of the Argix.Net.ArgixTcpListener class that listens for incoming connection attempts on the loopback IP address and default port number.</summary>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpListener.#ctor(System.Net.IPAddress,System.Int32)">
+            <summary>Initializes a new instance of the Argix.Net.ArgixTcpListener class that listens for incoming connection attempts on the specified local IP address and port number.</summary>
+            <param name="ipAddress">An System.Net.IPAddress that represents the local IP address.</param>
+            <param name="ipPort">The port on which to listen for incoming connection attempts.</param>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpListener.Finalize">
+            <summary>Destructor</summary>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpListener.StartServer">
+            <summary>Starts listening for incoming client connection requests; starts listening for client messages.</summary>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpListener.PauseServer">
+            <summary>Pauses the connection and message listeners.</summary>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpListener.ContinueServer">
+            <summary>Resumes the connection and message listeners.</summary>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="M:Argix.Net.ArgixTcpListener.StopServer">
+            <summary>Stops the connection and message listeners.</summary>
+            <exception cref="T:System.ApplicationException">Thrown for any unexpected exception.</exception>
+        </member>
+        <member name="E:Argix.Net.ArgixTcpListener.ListeningStateChanged">
+            <summary>Occurs when the ArgixTcpListener is started, stopped, paused, or continued.</summary>
+        </member>
+        <member name="E:Argix.Net.ArgixTcpListener.ClientConnectionPending">
+            <summary>Occurs when a pending client connection is present.</summary>
+        </member>
+        <member name="E:Argix.Net.ArgixTcpListener.ClientConnected">
+            <summary>Occurs when a client connection is made.</summary>
+        </member>
+        <member name="E:Argix.Net.ArgixTcpListener.MessageReceived">
+            <summary>Occurs when a client message is received.</summary>
+        </member>
+        <member name="E:Argix.Net.ArgixTcpListener.ClientTimeout">
+            <summary>Occurs when a client has been inactive longer than the Argix.Net.TcpClientProxy.SessionTimeout value.</summary>
+        </member>
+        <member name="E:Argix.Net.ArgixTcpListener.Error">
+            <summary>Occurs for any exception that occurrs on the connection and message threads.</summary>
+        </member>
+        <member name="E:Argix.Net.ArgixTcpListener.ListenerHeartbeat">
+            <summary>Occurs when the listener thread beats.</summary>
+        </member>
+        <member name="E:Argix.Net.ArgixTcpListener.MessageHeartbeat">
+            <summary>Occurs when the message thread beats.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.Listening">
+            <summary>Gets a value that indicates whether ArgixTcpListener is actively listening for client connections.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.ConnectionPending">
+            <summary>Determines if there are pending connection requests. </summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.Connected">
+            <summary>Gets a value indicating whether a System.Net.Sockets.Socket is connected to a remote host.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.LocalEndPoint">
+            <summary>Gets the local endpoint. </summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.RemoteEndPoint">
+            <summary>Gets the remote endpoint.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.SocketType">
+            <summary> Gets the type of the underlying System.Net.Sockets.Socket. </summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.SocketAddressFamily">
+            <summary>Gets the address family of the underlying System.Net.Sockets.Socket.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.SocketProtocolType">
+            <summary> </summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.Blocking">
+            <summary>Gets a value that indicates whether the underlying System.Net.Sockets.Socket is in blocking mode.</summary>
+        </member>
+        <member name="P:Argix.Net.ArgixTcpListener.Available">
+            <summary>Gets the amount of data that has been received from the network and is available to be read.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,43 @@
+From: registration@shippingapis.com
+Sent: Wednesday, November 12, 2008 11:42 AM
+To: Heary, James
+Subject: Important USPS Web Tool Registration Notice
+
+***** Please DO NOT REPLY to this automated message.  Contact information is provided below. *****
+
+Thank you for registering for the U. S. Postal Service's Web Tools Application Program Interfaces (APIs).  We are providing you with a User ID that serves multiple purposes, as explained below.
+
+Your Username is 019ARGIX2902
+Your Password is 509VE96XZ272
+
+Your Web Tools User ID, shown above, is required to test and integrate USPS Web Tools APIs.  With this ID, you may begin sending calls to the test server.  Depending on the API, the address to the test server is either http://testing.shippingapis.com/ShippingAPITest.dll or https://secure.shippingapis.com/ShippingAPITest.dll.  Use this information in combination with your User ID and your XML string to send a request to the USPS servers.  For more details, refer to the programming guides (located at http://www.usps.com/webtools) for the specific API you are integrating.
+
+A sample test request would look like: "http://testing.shippingapis.com/ShippingAPITest.dll?API=[API_Name]&XML=[XML_String_containing_User_ID]"
+
+When you have completed your testing, email the USPS Internet Customer Care Center (ICCC).  They will switch your profile to allow you access to the production server and will provide you with the production URLs.
+
+The ICCC is staffed from 7:00AM to 11:00PM Eastern Time.
+
+            E-mail:  icustomercare@usps.com
+            Telephone:        1-800-344-7779
+
+The latest versions of the technical documentation, including the Development Guide, are available from USPS.com at http://www.usps.com/webtools.  This documentation provides the information you will need to utilize our APIs.  It is available in both PDF and HTML formats.  In order to open and view in PDF you must have Adobe Reader installed on your system.  You may download this software, at no cost, from http://www.adobe.com/reader.
+
+                      IMPORTANT NOTICE REGARDING USER ID
+
+
+The Web Tools User ID provided is for you and your company to use when requesting data via the Internet from the U.S. Postal Service API servers.  This unique User ID cannot be shared with others outside your organization, nor is it to be packaged and distributed or sold to other individuals, businesses or e-commerce web site entities.  As per the Terms and Conditions of Use Agreement you agreed to during the Web Tools registration process, you are responsible to maintain the confidentiality of your User ID as specified.  You may not package any APIs with your User ID for resale or distribution to others.  The U.S. Postal Service does not prohibit the reuse and/or distribution of the API documentation (User's Guide) with sample code in order to generate awareness, encourage use or provide ease-of-use to customers or affiliates. 
+
+Warning - If the U.S. Postal Service discovers use of the same User ID from more than one web site, all users will be subject to loss of access to the USPS production server and/or termination of the licenses granted under the Terms and Conditions of Use.  For more information regarding the USPS Web Tools User ID policy, or for questions regarding distribution of documentation, send email to icustomercare@usps.com.
+
+Thank you for helping the U.S. Postal Service provide new services to our shipping customers. 
+
+Sincerely,
+
+The Internet Shipping Solutions Team
+
+USPS Internet Customer Care Center
+icustomercare@usps.com
+7:00AM - 11:00PM EST
+
+

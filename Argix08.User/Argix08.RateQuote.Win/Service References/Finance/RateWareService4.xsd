@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Argix.Finance" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Argix.Finance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:complexType name="TerminalInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Connection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TerminalID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TerminalInfo" nillable="true" type="tns:TerminalInfo" />
+  <xs:complexType name="ClassCodes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClassCode" nillable="true" type="tns:ClassCode" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClassCodes" nillable="true" type="tns:ClassCodes" />
+  <xs:complexType name="ClassCode">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Class" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClassCode" nillable="true" type="tns:ClassCode" />
+  <xs:complexType name="RateWareFault">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Exception" nillable="true" type="q1:Exception" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RateWareFault" nillable="true" type="tns:RateWareFault" />
+  <xs:complexType name="Rates">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rate" nillable="true" type="tns:Rate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rates" nillable="true" type="tns:Rates" />
+  <xs:complexType name="Rate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DestZip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MinCharge" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrgZip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate10001" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate1001" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate20001" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate2001" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate5001" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rate501" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Rate" nillable="true" type="tns:Rate" />
+</xs:schema>

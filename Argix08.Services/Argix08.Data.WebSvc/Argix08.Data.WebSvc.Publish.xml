@@ -1,0 +1,9 @@
+<publishData>
+  <publishTarget publishUrl="C:\inetpub\wwwroot\Argix08\Argix08.Data.WebSvc\">
+    <file relUrl="bin/Microsoft.ApplicationBlocks.Data.dll" publishTime="12/21/2005 13:11:49" />
+    <file relUrl="DataAccess.asmx" publishTime="03/10/2009 13:23:13" />
+    <file relUrl="bin/Argix08.Data.WebSvc.dll" publishTime="11/02/2009 11:44:25" />
+    <file relUrl="bin/Argix08.Data.WebSvc.pdb" publishTime="11/02/2009 11:44:25" />
+    <file relUrl="web.config" publishTime="10/28/2009 10:28:38" />
+  </publishTarget>
+</publishData>

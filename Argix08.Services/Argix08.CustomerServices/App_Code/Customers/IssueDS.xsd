@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IssueDS" targetNamespace="http://tempuri.org/IssueDS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/IssueDS.xsd" xmlns:mstns="http://tempuri.org/IssueDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="IssueDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="IssueTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:long" minOccurs="0" />
+							<xs:element name="TypeID" type="xs:int" minOccurs="0" />
+							<xs:element name="Type" type="xs:string" minOccurs="0" />
+							<xs:element name="Subject" type="xs:string" minOccurs="0" />
+							<xs:element name="ContactID" type="xs:int" minOccurs="0" />
+							<xs:element name="ContactName" type="xs:string" minOccurs="0" />
+							<xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+							<xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+							<xs:element name="RegionNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="DistrictNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="AgentNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="StoreNumber" type="xs:int" minOccurs="0" />
+							<xs:element name="OFD1FromDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="OFD1ToDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PROID" type="xs:long" minOccurs="0" />
+							<xs:element name="FirstActionID" type="xs:long" minOccurs="0" />
+							<xs:element name="FirstActionDescription" type="xs:string" minOccurs="0" />
+							<xs:element name="FirstActionCreated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FirstActionUserID" type="xs:string" minOccurs="0" />
+							<xs:element name="LastActionID" type="xs:long" minOccurs="0" />
+							<xs:element name="LastActionDescription" type="xs:string" minOccurs="0" />
+							<xs:element name="LastActionCreated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LastActionUserID" type="xs:string" minOccurs="0" />
+							<xs:element name="Zone" type="xs:string" minOccurs="0" />
+							<xs:element name="Coordinator" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ActionTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:long" minOccurs="0" />
+							<xs:element name="TypeID" type="xs:unsignedByte" minOccurs="0" />
+                            <xs:element name="TypeName" type="xs:string" minOccurs="0" />
+                            <xs:element name="IssueID" type="xs:long" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Comment" type="xs:string" minOccurs="0" />
+							<xs:element name="Attachments" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AttachmentTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="FileName" type="xs:string" minOccurs="0" />
+							<xs:element name="File" type="xs:base64Binary" minOccurs="0" />
+							<xs:element name="ActionID" type="xs:long" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

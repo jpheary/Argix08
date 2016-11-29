@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="TerminalLaneDS" targetNamespace="http://www.tempuri.org/TerminalLaneDS.xsd" xmlns:mstns="http://www.tempuri.org/TerminalLaneDS.xsd" xmlns="http://www.tempuri.org/TerminalLaneDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="TerminalLaneDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TerminalLaneTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LaneID" type="xs:string" minOccurs="0" />
+							<xs:element name="LaneNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="LaneType" type="xs:string" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+							<xs:element name="Terminal" type="xs:string" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,63 @@
+              --------------------------------------------------------
+                    Delivery Points Application Readme File
+		                       	  August, 2012
+              --------------------------------------------------------
+                         (c) Copyright Argix Logistics, 2004-2012
+
+This document provides late-breaking or other information that supplements the Delivery Points documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+NOTES
+==============
+GENERAL
+The Delivery Points Application (DeliveryPoints.exe) is a Windows based application used update
+delivery point information (customer addresses) in Roadshow from recent additons and updates to 
+customer locations in the AS/400.
+
+
+DEPENDENCIES
+None
+
+
+OPERATION
+The Delivery Points Application (DeliveryPoints.exe) operates by launching from a web server deployment url 
+(i.e. http://localhost/Argix08/Apps/Terminals/DeliveryPoints/DeliveryPoints.application). After a brief splash 
+screen, a sizeable window appears and displays delivery points from a start date to today. Some delivery point 
+fields can be edited. The delivery points can be exported to a comma delimited file for import into Roadshow. 
+The taskbar displays the operating terminal and connection status. Additional operating steps can be found in 
+the on-line documentation provided by the Help/Contents menu item.
+
+
+VERSION HISTORY
+v3.5.0, 12/14/10, 01/17/12 -----------------------------------------------------------------
+Requirements/features
+- ported to Microsoft .NET Framework v3.5.
+Design
+- changed from event-driven object model to web services model using WCF.
+- added DeliveryPointsEndpointBehavior; increased maxReceivedMessageSize to accomodate large datasets
+
+
+v3.5.1, 08/27/12, --------------------------------------------------------------------------
+Requirements/features
+- added a new feature that compares the delivery point data from AS/400 with the current Roadshow data
+  and color codes and differences. A yellow row indicates a comparative record was not found in Roadshow;
+  a red cell indicates a difference between the fields.
+Design
+- none

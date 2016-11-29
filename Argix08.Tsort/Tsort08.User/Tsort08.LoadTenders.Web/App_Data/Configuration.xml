@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<reports>
+	<report name="default">
+		<DualDateTimePicker  datedaysback="90" datedaysforward="0" datedaysspread="7" />
+	</report>
+</reports>

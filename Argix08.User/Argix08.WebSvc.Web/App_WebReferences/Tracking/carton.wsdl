@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://www.argixdirect.com/Tracking/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://www.argixdirect.com/Tracking/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://www.argixdirect.com/Tracking/">
+      <s:import namespace="https://www.argixlogistics.com/Tracking/CartonWSDetail" />
+      <s:import schemaLocation="http://www.argixlogistics.com/tracking/carton.asmx?schema=CartonWSDetail" namespace="https://www.argixlogistics.com/Tracking/CartonWSDetail" />
+      <s:element name="TrackCarton">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cartonNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackCartonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackCartonResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="https://www.argixlogistics.com/Tracking/CartonWSDetail" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SoapCredential" type="tns:SoapCredential" />
+      <s:complexType name="SoapCredential">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TrackCartonSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackCarton" />
+  </wsdl:message>
+  <wsdl:message name="TrackCartonSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackCartonResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackCartonSoapCredential">
+    <wsdl:part name="SoapCredential" element="tns:SoapCredential" />
+  </wsdl:message>
+  <wsdl:portType name="CartonSoap">
+    <wsdl:operation name="TrackCarton">
+      <wsdl:input message="tns:TrackCartonSoapIn" />
+      <wsdl:output message="tns:TrackCartonSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CartonSoap" type="tns:CartonSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TrackCarton">
+      <soap:operation soapAction="https://www.argixdirect.com/Tracking/TrackCarton" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackCartonSoapCredential" part="SoapCredential" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CartonSoap12" type="tns:CartonSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TrackCarton">
+      <soap12:operation soapAction="https://www.argixdirect.com/Tracking/TrackCarton" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackCartonSoapCredential" part="SoapCredential" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Carton">
+    <wsdl:port name="CartonSoap" binding="tns:CartonSoap">
+      <soap:address location="http://www.argixlogistics.com/tracking/carton.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CartonSoap12" binding="tns:CartonSoap12">
+      <soap12:address location="http://www.argixlogistics.com/tracking/carton.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

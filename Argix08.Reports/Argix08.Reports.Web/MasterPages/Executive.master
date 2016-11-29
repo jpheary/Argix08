@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" AutoEventWireup="false" CodeFile="Executive.master.cs" Inherits="ExecutiveMaster" %>
+<%@ MasterType VirtualPath="~/MasterPages/Default.master" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Setup" Runat="Server">
+<asp:Panel ID="pnlSetup" runat="server" Width="100%" Height="100%" GroupingText="Setup">
+    <table width="100%" border="0px" cellpadding="0px" cellspacing="3px">
+        <tr><td width="72px">&nbsp;</td><td width="384px">&nbsp;</td><td>&nbsp;</td></tr>
+        <tr>
+            <td align="right" valign="top">Retail&nbsp;</td>
+            <td>
+                <asp:DropDownList id="cboDateParam" runat="server" Width="96px" AutoPostBack="True" OnSelectedIndexChanged="OnDateParamChanged">
+                    <asp:ListItem Text="Week" Value="Week" Selected="True" />
+                    <asp:ListItem Text="Month" Value="Month" />
+                    <asp:ListItem Text="Quarter" Value="Quarter" />
+                    <asp:ListItem Text="YTD" Value="YTD" />
+                </asp:DropDownList>
+                &nbsp;
+                <asp:DropDownList id="cboDateValue" runat="server" Width="240px" DataSourceID="odsDates" DataTextField="Value" DataValueField="Value" AutoPostBack="True"></asp:DropDownList>
+                <asp:ObjectDataSource ID="odsDates" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetRetailDates" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="600">
+                    <SelectParameters>
+                        <asp:ControlParameter Name="scope" ControlID="cboDateParam" PropertyName="SelectedValue" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+        <tr>
+            <td align="right">Client&nbsp;</td>
+            <td colspan="2" valign="middle">
+                <asp:DropDownList id="cboClient" runat="server" Width="288px" DataSourceID="odsClients" DataTextField="ClientName" DataValueField="ClientNumber" AutoPostBack="True" OnSelectedIndexChanged="OnClientChanged"></asp:DropDownList>
+                <asp:ObjectDataSource ID="odsClients" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetSecureClients" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="900">
+                    <SelectParameters>
+                        <asp:ControlParameter Name="activeOnly" ControlID="chkActiveOnly" PropertyName="Checked" Type="Boolean" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+                &nbsp;&nbsp;
+                <asp:CheckBox ID="chkActiveOnly" runat="server" AutoPostBack="true" Text="Active Only" Checked="true" OnCheckedChanged="OnActiveOnlyChecked" />
+            
+            </td>
+        </tr>
+        <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+        <tr>
+            <td align="right" valign="top">Scope&nbsp;</td>
+            <td colspan="2">
+                <asp:DropDownList id="cboParam" runat="server" Width="96px" AutoPostBack="True" OnSelectedIndexChanged="OnScopeParamChanged">
+                    <asp:ListItem Selected="True">Divisions</asp:ListItem>
+                    <asp:ListItem>Agents</asp:ListItem>
+                    <asp:ListItem>Regions</asp:ListItem>
+                    <asp:ListItem>Districts</asp:ListItem>
+                    <asp:ListItem>Stores</asp:ListItem>
+                </asp:DropDownList>
+                &nbsp;
+                <asp:DropDownList id="cboValue" runat="server" Width="288px" DataSourceID="odsValues" DataTextField="DistrictName" DataValueField="District" AutoPostBack="True" AppendDataBoundItems="true" OnSelectedIndexChanged="OnScopeValueChanged">
+                    <asp:ListItem Text="All" Value="" Selected="True" />
+                </asp:DropDownList>
+                <asp:TextBox ID="txtStore" runat="server" Width="120px" Visible="false" AutoPostBack="True" OnTextChanged="OnStoreChanged"></asp:TextBox>
+                <asp:ObjectDataSource ID="odsValues" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetClientDistricts" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="600" >
+                    <SelectParameters>
+                        <asp:ControlParameter Name="number" ControlID="cboClient" PropertyName="SelectedValue" DefaultValue="" ConvertEmptyStringToNull="true" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" valign="top">&nbsp;</td>
+            <td colspan="2">
+                <asp:DropDownList id="cboSubAgent" runat="server" Width="288px" Visible="false" AppendDataBoundItems="true" DataTextField="AgentSummary" DataValueField="AgentNumber" AutoPostBack="True" OnSelectedIndexChanged="OnSubAgentChanged">
+                    <asp:ListItem Text="All" Value="" Selected="True"></asp:ListItem>
+                </asp:DropDownList>
+                <asp:ObjectDataSource ID="odsSubAgents" runat="server" TypeName="Argix.EnterpriseGateway" SelectMethod="GetAgentLocations" EnableCaching="true" CacheExpirationPolicy="Sliding" CacheDuration="600" >
+                    <SelectParameters>
+                        <asp:ControlParameter Name="agent" ControlID="cboValue" PropertyName="SelectedValue" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
+            </td>
+        </tr>
+        <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+        <tr>
+            <td align="right" valign="top">Filters&nbsp;</td>
+            <td colspan="2">
+                <hr />
+                <table width="100%" border="0" cellpadding="0px" cellspacing="3px">
+                    <tr><td width="72px">&nbsp;</td><td width="192px">&nbsp;</td><td>&nbsp;</td></tr>
+                    <tr>
+                        <td align="right"><asp:ContentPlaceHolder id="FilterPrefix1" runat="server"></asp:ContentPlaceHolder>&nbsp;</td>
+                        <td><asp:ContentPlaceHolder id="FilterControl1" runat="server"></asp:ContentPlaceHolder></td>
+                        <td><asp:ContentPlaceHolder id="FilterSuffix1" runat="server"></asp:ContentPlaceHolder></td>
+                    </tr>
+                    <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+                    <tr>
+                        <td align="right"><asp:ContentPlaceHolder id="FilterPrefix2" runat="server"></asp:ContentPlaceHolder>&nbsp;</td>
+                        <td><asp:ContentPlaceHolder id="FilterControl2" runat="server"></asp:ContentPlaceHolder></td>
+                        <td><asp:ContentPlaceHolder id="FilterSuffix2" runat="server"></asp:ContentPlaceHolder></td>
+                    </tr>
+                    <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="font-size:1px; height:6px"><td colspan="3">&nbsp;</td></tr>
+    </table>
+</asp:Panel>
+</asp:Content>
+

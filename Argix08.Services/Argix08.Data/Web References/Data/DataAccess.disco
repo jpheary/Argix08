@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx?wsdl" docRef="http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx" xmlns:q1="http://www.argixdirect.com/webservices" binding="q1:DataAccessSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx" xmlns:q2="http://www.argixdirect.com/webservices" binding="q2:DataAccessSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

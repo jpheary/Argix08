@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="LayoutDS" targetNamespace="http://tempuri.org/LayoutDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/LayoutDS.xsd" xmlns:mstns="http://tempuri.org/LayoutDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="LayoutDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ViewTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ViewName" type="xs:string" />
+							<xs:element name="ScheduleName" type="xs:string" />
+							<xs:element name="Active" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="LayoutTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ViewName" type="xs:string" />
+							<xs:element name="ScheduleName" type="xs:string" />
+							<xs:element name="Key" type="xs:string" />
+							<xs:element name="VisiblePosition" type="xs:int" />
+							<xs:element name="Visible" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Caption" type="xs:string" minOccurs="0" />
+							<xs:element name="Width" type="xs:int" minOccurs="0" />
+							<xs:element name="Alignment" type="xs:string" minOccurs="0" />
+							<xs:element name="Format" type="xs:string" minOccurs="0" />
+							<xs:element name="NullText" type="xs:string" minOccurs="0" />
+							<xs:element name="Sort" type="xs:string" minOccurs="0" />
+							<xs:element name="SortOrder" type="xs:int" minOccurs="0" />
+							<xs:element name="GroupBy" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

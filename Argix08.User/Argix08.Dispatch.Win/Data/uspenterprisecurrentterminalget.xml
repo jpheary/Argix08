@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<TerminalDS xmlns="http://tempuri.org/TerminalDS.xsd">
+  <xs:schema id="TerminalDS" targetNamespace="http://tempuri.org/TerminalDS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/TerminalDS.xsd" xmlns:mstns="http://tempuri.org/TerminalDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TerminalDS" msdata:IsDataSet="true">
+		<xs:complexType>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="LocalTerminalTable">
+			<xs:complexType>
+				<xs:sequence>
+				<xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+				<xs:element name="Number" type="xs:string" minOccurs="0" />
+				<xs:element name="Description" type="xs:string" minOccurs="0" />
+				<xs:element name="DBServerName" type="xs:string" minOccurs="0" />
+				<xs:element name="LinkedServerName" type="xs:string" minOccurs="0" />
+				<xs:element name="DBType" type="xs:string" minOccurs="0" />
+				<xs:element name="AgentID" type="xs:int" minOccurs="0" />
+				<xs:element name="AgentNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="ShipperID" type="xs:string" minOccurs="0" />
+				<xs:element name="ClientDivision" type="xs:string" minOccurs="0" />
+				<xs:element name="IsActive" type="xs:unsignedByte" minOccurs="0" />
+				</xs:sequence>
+			</xs:complexType>
+			</xs:element>
+		</xs:choice>
+		</xs:complexType>
+	</xs:element>
+  </xs:schema>
+  <LocalTerminalTable>
+	<TerminalID>0</TerminalID>
+	<Number>00</Number>
+	<Description>FILE TEST</Description>
+	<DBServerName>RGXDEVDB</DBServerName>
+	<LinkedServerName />
+	<DBType>File Store</DBType>
+	<AgentID>0</AgentID>
+	<AgentNumber></AgentNumber>
+	<ShipperID></ShipperID>
+	<IsActive>1</IsActive>
+  </LocalTerminalTable>
+</TerminalDS>

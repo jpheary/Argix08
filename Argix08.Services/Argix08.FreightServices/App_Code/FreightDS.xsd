@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FreightDS" targetNamespace="http://tempuri.org/FreightDS.xsd" xmlns:mstns="http://tempuri.org/FreightDS.xsd" xmlns="http://tempuri.org/FreightDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="FreightDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" >
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="InboundFreightTable" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FreightID" type="xs:string" minOccurs="0" />
+              <xs:element name="FreightType" type="xs:string" minOccurs="0" />
+              <xs:element name="CurrentLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="TDSNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="StorageTrailerNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperName" type="xs:string" minOccurs="0" />
+              <xs:element name="Pickup" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="Cartons" type="xs:int" minOccurs="0" />
+              <xs:element name="Pallets" type="xs:int" minOccurs="0" />
+              <xs:element name="CarrierNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="DriverNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="FloorStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="SealNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="UnloadedStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="VendorKey" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiveDate" type="xs:string" minOccurs="0" />
+              <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+              <xs:element name="IsSortable" type="xs:unsignedByte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StationFreightAssignmentTable" >
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="WorkStationID" type="xs:string" />
+                    <xs:element name="StationNumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="FreightID" type="xs:string" />
+                    <xs:element name="FreightType" type="xs:string" minOccurs="0" />
+                    <xs:element name="SortTypeID" type="xs:int" />
+                    <xs:element name="SortType" type="xs:string" minOccurs="0" />
+                    <xs:element name="TDSNumber" type="xs:int" minOccurs="0" />
+                    <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="Client" type="xs:string" minOccurs="0" />
+                    <xs:element name="Shipper" type="xs:string" minOccurs="0" />
+                    <xs:element name="Pickup" type="xs:string" minOccurs="0" />
+                    <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

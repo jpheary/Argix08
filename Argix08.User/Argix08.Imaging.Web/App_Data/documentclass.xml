@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DocumentClass>
+  <DocumentClassTable>
+	  <Department>Tsort</Department>
+	  <ClassName>TBill</ClassName>
+  </DocumentClassTable>
+  <DocumentClassTable>
+	  <Department>Tsort</Department>
+	  <ClassName>ISA</ClassName>
+  </DocumentClassTable>
+  <DocumentClassTable>
+	  <Department>Tsort</Department>
+	  <ClassName>TDS</ClassName>
+  </DocumentClassTable>
+  <DocumentClassTable>
+	  <Department>Tsort</Department>
+	  <ClassName>BOL</ClassName>
+  </DocumentClassTable>
+  <DocumentClassTable>
+	  <Department>Finance</Department>
+	  <ClassName>APCheck</ClassName>
+  </DocumentClassTable>
+  <DocumentClassTable>
+	  <Department>HR</Department>
+	  <ClassName>EMPFile</ClassName>
+  </DocumentClassTable>
+</DocumentClass>

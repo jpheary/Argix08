@@ -1,0 +1,27 @@
+<CodeGroup class="System.Security.Policy.UnionCodeGroup, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+version="1"
+PermissionSetName="FullTrust"
+Name="Argix.ClientInvoice.Xlt"
+Description="">
+<IMembershipCondition class="System.Security.Policy.UrlMembershipCondition, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+version="1"
+Url="\\tpjheary2\ClientInvoice\Argix.ClientInvoice.Xlt"/>
+</CodeGroup>
+<CodeGroup class="System.Security.Policy.UnionCodeGroup, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+version="1"
+PermissionSetName="FullTrust"
+Name="Argix.ClientInvoice.Xlt.dll"
+Description="">
+<IMembershipCondition class="System.Security.Policy.UrlMembershipCondition, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+version="1"
+Url="\\tpjheary2\ClientInvoice\Argix.ClientInvoice.Xlt.dll"/>
+</CodeGroup>
+<CodeGroup class="System.Security.Policy.UnionCodeGroup, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+version="1"
+PermissionSetName="FullTrust"
+Name="Argix.ClientInvoice.Xlt.dll.config"
+Description="">
+<IMembershipCondition class="System.Security.Policy.UrlMembershipCondition, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+version="1"
+Url="\\tpjheary2\ClientInvoice\Argix.ClientInvoice.Xlt.dll.config"/>
+</CodeGroup>

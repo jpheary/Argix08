@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Argix.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Toolbar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="StatusBar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Location" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">192, 96</Value>
+    </Setting>
+    <Setting Name="Size" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">600, 432</Value>
+    </Setting>
+    <Setting Name="WindowState" Type="System.Windows.Forms.FormWindowState" Scope="User">
+      <Value Profile="(Default)">Normal</Value>
+    </Setting>
+    <Setting Name="CartonNumberLength" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="BookCountMax" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">999</Value>
+    </Setting>
+    <Setting Name="EANPrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">978</Value>
+    </Setting>
+    <Setting Name="EANScanSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">13</Value>
+    </Setting>
+    <Setting Name="ISBNScanSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="FTPRemotePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.</Value>
+    </Setting>
+    <Setting Name="FTPServername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ftp.argixdirect.com</Value>
+    </Setting>
+    <Setting Name="FTPUsername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">bnstat</Value>
+    </Setting>
+    <Setting Name="FTPPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">bn2009stat</Value>
+    </Setting>
+    <Setting Name="SQLConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">data source=TPJHEARY7;initial catalog=TSORT;persist security info=True;user id=sa;password=objects;packet size=4096</Value>
+    </Setting>
+    <Setting Name="UPCScanSize" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

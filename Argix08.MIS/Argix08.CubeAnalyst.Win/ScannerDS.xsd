@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ScannerDS" targetNamespace="http://tempuri.org/ScannerDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ScannerDS.xsd" xmlns:mstns="http://tempuri.org/ScannerDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ScannerDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ScannerTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TerminalName" type="xs:string" />
+							<xs:element name="SourceName" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ArgixLogTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:long" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" minOccurs="0" />
+							<xs:element name="Level" type="xs:int" minOccurs="0" />
+							<xs:element name="Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Source" type="xs:string" minOccurs="0" />
+							<xs:element name="Category" type="xs:string" minOccurs="0" />
+							<xs:element name="Event" type="xs:string" minOccurs="0" />
+							<xs:element name="User" type="xs:string" minOccurs="0" />
+							<xs:element name="Computer" type="xs:string" minOccurs="0" />
+							<xs:element name="Keyword1" type="xs:string" minOccurs="0" />
+							<xs:element name="Keyword2" type="xs:string" minOccurs="0" />
+							<xs:element name="Keyword3" type="xs:string" minOccurs="0" />
+							<xs:element name="Message" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CubeStatisticsTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="HOUR" type="xs:int" minOccurs="0" />
+							<xs:element name="SOURCE" type="xs:string" minOccurs="0" />
+							<xs:element name="GOOD" type="xs:int" minOccurs="0" />
+							<xs:element name="NOTFOUND" type="xs:int" minOccurs="0" />
+							<xs:element name="BADREAD" type="xs:int" minOccurs="0" />
+							<xs:element name="BADCUBE" type="xs:int" minOccurs="0" />
+							<xs:element name="OTHER" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CubeStatisticsSummaryTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="GOOD" type="xs:int" minOccurs="0" />
+							<xs:element name="NOTFOUND" type="xs:int" minOccurs="0" />
+							<xs:element name="BADREAD" type="xs:int" minOccurs="0" />
+							<xs:element name="BADCUBE" type="xs:int" minOccurs="0" />
+							<xs:element name="OTHER" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CubeDetailsTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:long" minOccurs="0" />
+							<xs:element name="CubeDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Source" type="xs:string" minOccurs="0" />
+							<xs:element name="Scan" type="xs:string" minOccurs="0" />
+							<xs:element name="LabelSeqNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="Cube" type="xs:int" minOccurs="0" />
+							<xs:element name="Result" type="xs:string" minOccurs="0" />
+							<xs:element name="Message" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

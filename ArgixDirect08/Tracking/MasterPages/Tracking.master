@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Default.master" AutoEventWireup="true" CodeFile="Tracking.master.cs" Inherits="TrackingMaster" %>
+<%@ MasterType VirtualPath="~/MasterPages/Default.master" %>
+
+<asp:Content ID="cHead" ContentPlaceHolderID="cpHead" Runat="Server">
+    <asp:LinkButton id="lnkHome" runat="server" CausesValidation="False" PostBackUrl="~/Members/Default.aspx" SkinID="lnkNav">Home...</asp:LinkButton>
+</asp:Content>
+<asp:Content ID="cBody" ContentPlaceHolderID="cpBody" Runat="Server">
+    <asp:Table id="tblPage" runat="server" Width="100%" Height="100%" HorizontalAlign="Center" BorderStyle="None" BorderWidth="0px" GridLines="None" CellPadding="0" CellSpacing="0" >
+        <asp:TableRow Height="3px" Font-Size="1px"><asp:TableCell Width="600px">&nbsp;</asp:TableCell><asp:TableCell Font-Size="1px" Width="1px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell Width="3px">&nbsp;</asp:TableCell><asp:TableCell Font-Size="1px" Width="1px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="1px" Font-Size="1px"><asp:TableCell Width="600px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell Font-Size="1px" Width="1px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell Width="3px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell Font-Size="1px" Width="1px" BackColor="LightGray">&nbsp;</asp:TableCell><asp:TableCell BackColor="LightGray">&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow>
+            <asp:TableCell VerticalAlign="Top">
+                <asp:Table id="tblForm" runat="server" Width="100%" Height="100%" BorderStyle="None" BorderWidth="0px" CellPadding="0" CellSpacing="0" >
+                    <asp:TableRow Height="32px">
+                        <asp:TableCell VerticalAlign="Top">
+                            <asp:contentplaceholder id="cpTitle" runat="server"></asp:contentplaceholder>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow Height="3px"><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:UpdatePanel ID="upnlForm" runat="server" UpdateMode="Conditional" >
+                            <ContentTemplate>
+                                <asp:contentplaceholder id="cpForm" runat="server"></asp:contentplaceholder>
+                            </ContentTemplate>
+                            </asp:UpdatePanel>
+                            <asp:UpdateProgress ID="upgForm" runat="server" AssociatedUpdatePanelID="upnlForm">
+                                <ProgressTemplate>Tracking...</ProgressTemplate>
+                            </asp:UpdateProgress>
+                        </asp:TableCell>
+                    </asp:TableRow>
+               </asp:Table>
+            </asp:TableCell>
+            <asp:TableCell Font-Size="1px" BackColor="LightGray">&nbsp;</asp:TableCell>
+            <asp:TableCell>&nbsp;</asp:TableCell>
+            <asp:TableCell Font-Size="1px" BackColor="LightGray">&nbsp;</asp:TableCell>
+            <asp:TableCell VerticalAlign="Top">
+               <asp:Table id="tblPanels" runat="server" Width="100%" Height="100%" BorderStyle="None" BorderWidth="0px" CellPadding="6" CellSpacing="3" >
+                    <asp:TableRow>
+                        <asp:TableCell Height="100%">
+                            <div class="PanelLine">&nbsp;</div>
+                            <div class="PanelTitle"><asp:Image ID="imgTitle" runat="server" Height="16px" ImageUrl="~/App_Themes/ArgixDirect/Images/tracking.gif" ImageAlign="AbsMiddle" />&nbsp;&nbsp;Shipment Tracking</div>
+                            <table width="100%" border="0px" cellpadding="0px" cellspacing="2px">
+                                <tr style="font-size:6px"><td style="width:24px">&nbsp;</td><td>&nbsp;</td></tr>
+                                <tr><td><asp:Image ID="imgTrackByCarton" runat="server" ImageUrl="~/App_Themes/ArgixDirect/Images/select.gif" /></td><td><asp:HyperLink ID="lnkTrackByCarton" runat="server" NavigateUrl="~/Members/TrackByCarton.aspx" SkinID="hlnkNav">Track By Carton</asp:HyperLink></td></tr>
+                                <tr><td><asp:Image ID="imgTrackByStore" runat="server" ImageUrl="~/App_Themes/ArgixDirect/Images/select.gif" /></td><td><asp:HyperLink ID="lnkTrackByStore" runat="server" NavigateUrl="~/Members/TrackByStore.aspx" SkinID="hlnkNav">Track By Store</asp:HyperLink></td></tr>
+                                <tr><td><asp:Image ID="imgTrackByPOPRO" runat="server" ImageUrl="~/App_Themes/ArgixDirect/Images/select.gif" /></td><td><asp:HyperLink ID="lnkTrackByPOPRO" runat="server" NavigateUrl="~/Members/TrackByPOPRO.aspx" SkinID="hlnkNav">Track By PRO\PO</asp:HyperLink></td></tr>
+                                <tr style="font-size:6px"><td colspan="2">&nbsp;</td></tr>
+                            </table>
+                            <br />
+                            <div class="PanelLine">&nbsp;</div>
+                            <div class="PanelTitle"><asp:Image ID="imgReports" runat="server" Height="16px" ImageUrl="~/App_Themes/ArgixDirect/Images/reports.gif" ImageAlign="AbsMiddle" />&nbsp;&nbsp;Reporting</div>
+                            <table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+                                <tr style="font-size:1px"><td>&nbsp;</td></tr>
+                                <tr valign="top">
+                                    <td>
+                                        <asp:TreeView ID="trvMain" runat="server" width="100%" ImageSet="XPFileExplorer" DataSourceID="xmlReports" Target="_blank" PopulateNodesFromClient="False">
+                                            <DataBindings>
+                                                <asp:TreeNodeBinding DataMember="reports" SelectAction="Expand" TextField="Text" />
+                                                <asp:TreeNodeBinding DataMember="department" SelectAction="Expand" TextField="Text" />
+                                                <asp:TreeNodeBinding DataMember="report" NavigateUrlField="NavigateUrl" TextField="Text" ValueField="Value" />
+                                            </DataBindings>
+                                        </asp:TreeView>
+                                        <asp:XmlDataSource ID="xmlReports" runat="server" DataFile="~/App_Data/blank.xml" EnableCaching="false" />
+                                    </td>
+                                </tr>
+                                <tr style="font-size:6px"><td>&nbsp;</td></tr>
+                            </table>
+                            <br />
+                            <div class="PanelLine">&nbsp;</div>
+                            <div class="PanelTitle"><asp:Image ID="imgAdmin" runat="server" Height="16px" ImageUrl="~/App_Themes/ArgixDirect/Images/admin.gif" ImageAlign="AbsMiddle" />&nbsp;&nbsp;Administration</div>
+                            <table width="100%" border="0px" cellpadding="0px" cellspacing="2px">
+                                <tr style="font-size:6px"><td style="width:24px">&nbsp;</td><td>&nbsp;</td></tr>
+                                <tr><td><asp:Image ID="imgChangePassword" runat="server" ImageUrl="~/App_Themes/ArgixDirect/Images/select.gif" /></td><td><asp:HyperLink ID="lnkChangePassword" runat="server" NavigateUrl="~/ChangePassword.aspx" SkinID="hlnkNav" >Change Password</asp:HyperLink></td></tr>
+                                <tr><td><asp:Image ID="imgManageGuests" runat="server" ImageUrl="~/App_Themes/ArgixDirect/Images/select.gif" /></td><td><asp:HyperLink ID="lnkManageGuests" runat="server" NavigateUrl="~/Administrators/ManageGuests.aspx" SkinID="hlnkNav" >Manage Guests</asp:HyperLink></td></tr>
+                                <tr><td><asp:Image ID="imgManageUsers" runat="server" ImageUrl="~/App_Themes/ArgixDirect/Images/select.gif" /></td><td><asp:HyperLink ID="lnkManageUsers" runat="server" NavigateUrl="~/Administrators/ManageUsers.aspx" SkinID="hlnkNav" >Manage Users</asp:HyperLink></td></tr>
+                                <tr><td><asp:Image ID="imgManageMembership" runat="server" ImageUrl="~/App_Themes/ArgixDirect/Images/select.gif" /></td><td><asp:HyperLink ID="lnkManageMembership" runat="server" NavigateUrl="~/Administrators/Memberships.aspx" SkinID="hlnkNav" >Manage Membership</asp:HyperLink></td></tr>
+                                <tr><td><asp:Image ID="imgSetup" runat="server" ImageUrl="~/App_Themes/ArgixDirect/Images/select.gif" /></td><td><asp:HyperLink ID="lnkSetup" runat="server" NavigateUrl="~/Administrators/MembershipSetup.aspx" SkinID="hlnkNav" >Membership Setup</asp:HyperLink></td></tr>
+                                <tr style="font-size:6px"><td>&nbsp;</td></tr>
+                            </table>
+                        </asp:TableCell>
+                    </asp:TableRow>
+               </asp:Table>
+            </asp:TableCell>
+        </asp:TableRow>
+    </asp:Table>
+</asp:Content>
+

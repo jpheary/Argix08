@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DeliveryPointDS" targetNamespace="http://tempuri.org/DeliveryPointDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/DeliveryPointDS.xsd" xmlns:mstns="http://tempuri.org/DeliveryPointDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DeliveryPointDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DeliveryPointTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Command" type="xs:string" minOccurs="0" />
+							<xs:element name="Account" type="xs:string" minOccurs="0" />
+							<xs:element name="NickName" type="xs:string" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" minOccurs="0" />
+							<xs:element name="Building" type="xs:string" minOccurs="0" />
+							<xs:element name="Route" type="xs:string" minOccurs="0" />
+							<xs:element name="Phone" type="xs:string" minOccurs="0" />
+							<xs:element name="OpenDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="OpenTime" type="xs:string" minOccurs="0" />
+							<xs:element name="CloseTime" type="xs:string" minOccurs="0" />
+							<xs:element name="ServiceTimeFactor" type="xs:decimal" minOccurs="0" />
+							<xs:element name="Unit" type="xs:string" minOccurs="0" />
+							<xs:element name="SetupTime" type="xs:int" minOccurs="0" />
+							<xs:element name="Appt" type="xs:string" minOccurs="0" />
+							<xs:element name="StopName" type="xs:string" minOccurs="0" />
+							<xs:element name="StopNickName" type="xs:string" minOccurs="0" />
+							<xs:element name="StopPhone" type="xs:string" minOccurs="0" />
+							<xs:element name="Address" type="xs:string" minOccurs="0" />
+							<xs:element name="City" type="xs:string" minOccurs="0" />
+							<xs:element name="State" type="xs:string" minOccurs="0" />
+							<xs:element name="Zip" type="xs:string" minOccurs="0" />
+							<xs:element name="StopOpen" type="xs:string" minOccurs="0" />
+							<xs:element name="StopClose" type="xs:string" minOccurs="0" />
+							<xs:element name="StopComment" type="xs:string" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,159 @@
+<?xml version="1.0" standalone="yes"?>
+<DispatchDS xmlns="http://tempuri.org/DispatchDS.xsd">
+  <xs:schema id="DispatchDS" targetNamespace="http://tempuri.org/DispatchDS.xsd" xmlns:mstns="http://tempuri.org/DispatchDS.xsd" xmlns="http://tempuri.org/DispatchDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="DispatchDS" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="ClientInboundTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="VendorName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ETATime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:int" minOccurs="0" />
+                <xs:element name="AmountType" type="xs:string" minOccurs="0" />
+                <xs:element name="FreightType" type="xs:string" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="In" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ScheduledInboundTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="FromLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="ToLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="ScheduledDeparture" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualDeparture" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ScheduledDelivery" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualDelivery" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="Confirmed" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PickupLogTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="CallerName" type="xs:string" minOccurs="0" />
+                <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShipperName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShipperAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="DeliveryWindow" type="xs:string" minOccurs="0" />
+                <xs:element name="Terminal" type="xs:string" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:int" minOccurs="0" />
+                <xs:element name="AmountType" type="xs:string" minOccurs="0" />
+                <xs:element name="FreightType" type="xs:string" minOccurs="0" />
+                <xs:element name="AutoNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="RequestDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="PickUpDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="Updated" type="xs:boolean" minOccurs="0" />
+                <xs:element name="MustBeReady" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PickedUp" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ScheduledOutboundTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="FromLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="ToLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="ScheduledDeparture" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualDeparture" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ScheduledDelivery" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualDelivery" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="Confirmed" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="TrailerLogTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="IncomingDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="IncomingCarrier" type="xs:string" minOccurs="0" />
+                <xs:element name="IncomingSeal" type="xs:string" minOccurs="0" />
+                <xs:element name="IncomingDriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="InitialYardLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="OutgoingDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="OutgoingCarrier" type="xs:string" minOccurs="0" />
+                <xs:element name="OutgoingSeal" type="xs:string" minOccurs="0" />
+                <xs:element name="OutgoingDriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="MovedOut" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerMoveTable" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ID" type="xs:int" minOccurs="0" />
+                      <xs:element name="Requested" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="RequestedBy" type="xs:string" minOccurs="0" />
+                      <xs:element name="MoveFrom" type="xs:string" minOccurs="0" />
+                      <xs:element name="MoveTo" type="xs:string" minOccurs="0" />
+                      <xs:element name="Switcher" type="xs:string" minOccurs="0" />
+                      <xs:element name="LoadedWith" type="xs:string" minOccurs="0" />
+                      <xs:element name="ScheduledTime" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="ActualTime" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="LoadSheetReady" type="xs:boolean" minOccurs="0" />
+                      <xs:element name="MoveInProgress" type="xs:boolean" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="LineHaulTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="Terminal" type="xs:string" minOccurs="0" />
+                <xs:element name="ScheduledArrival" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualArrival" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ClientInboundTable>
+    <ID>1</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <VendorName>Yankee Candle</VendorName>
+    <ETATime>2005-10-05T07:00:00.0000000-04:00</ETATime>
+    <DriverName>Priority</DriverName>
+    <TrailerNumber>35098</TrailerNumber>
+    <Amount>1</Amount>
+    <AmountType>Trailer</AmountType>
+    <FreightType>Tsort</FreightType>
+    <Comments>Appt#26105 Floor loaded/ Live   6:02AM</Comments>
+  </ClientInboundTable>
+</DispatchDS>

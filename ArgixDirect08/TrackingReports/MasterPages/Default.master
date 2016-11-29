@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs"  Inherits="DefaultMaster" %>
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.WebControls" TagPrefix="asp" %>
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Argix Direct Reports</title>
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body id="body1" onunload="javascript:document.body.style.cursor='wait';">
+<form id="form1" runat="server">
+<div>
+    <asp:ScriptManager ID="smPage" runat="server" EnablePartialRendering="true" ScriptMode="Auto"></asp:ScriptManager>
+    <asp:Table ID="tblMaster" runat="server" Width="100%" Height="100%" BorderStyle="None" BorderWidth="0px" CellPadding="0" CellSpacing="2">
+        <asp:TableRow style="font-size:1px"><asp:TableCell>&nbsp;</asp:TableCell><asp:TableCell>&nbsp;</asp:TableCell><asp:TableCell>&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow Height="28px">
+            <asp:TableCell>&nbsp;</asp:TableCell>
+            <asp:TableCell ID="tcPageTitle" ColumnSpan="2" SkinID="PageTitle">
+                <asp:Table runat="server" Width="100%" BorderStyle="None" BorderWidth="0px" CellPadding="0" CellSpacing="0"> 
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Image ID="imgReports" runat="server" ImageUrl="~/App_Themes/Reports/Images/drafts.gif" ImageAlign="Middle" />
+                            &nbsp;<asp:Label id="lblReportTitle" runat="server" Height="100%" Text="">&nbsp;</asp:Label>
+                        </asp:TableCell>
+                        <asp:TableCell HorizontalAlign="Right" VerticalAlign="Bottom">
+                           <asp:LinkButton ID="lnkTracking" runat="server" PostBackUrl="" OnClientClick="javascript:window.open('http://rgxvmweb/argix08/tracking/login.aspx'); return false;" ToolTip="Opens the Carton Tracking application" SkinID="GlobalLink">Carton Tracking</asp:LinkButton>
+                            &nbsp;
+                           <asp:LinkButton ID="lnkDDUTracking" runat="server" PostBackUrl="" OnClientClick="javascript:window.open('http://12.230.81.134/'); return false;" ToolTip="Opens the DDU Tracking application" SkinID="GlobalLink">DDU Tracking</asp:LinkButton>
+                            &nbsp;
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow Width="100%">
+            <asp:TableCell Width="24px" VerticalAlign="top">
+                <asp:UpdatePanel ID="upnlFlyout" runat="server" UpdateMode="Conditional" >
+                    <ContentTemplate>
+                        <asp:Table ID="tblFlyout" runat="server" Width="24px" BorderStyle="None" BorderWidth="0px" CellPadding="2" CellSpacing="0">
+                            <asp:TableRow Height="24px"><asp:TableCell Font-Size="1px" style="border-right:solid 1px">&nbsp;</asp:TableCell></asp:TableRow>
+                            <asp:TableRow Height="96px" ID="trExplore">
+                                <asp:TableCell ID="tcExplore" VerticalAlign="Top" BorderStyle="Solid" BorderWidth="1px" style="border-right-style:solid">
+                                    <asp:ImageButton ID="imgExplore" runat="server" ImageUrl="~/App_Themes/Reports/Images/explore_off.gif" ToolTip="Click to toggle open/close" OnClick="OnExploreTabClicked" />
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow Height="4px"><asp:TableCell Font-Size="1px" style="border-right:solid 1px">&nbsp;</asp:TableCell></asp:TableRow>
+                            <asp:TableRow Height="384px"><asp:TableCell VerticalAlign="Top" BorderStyle="None" BorderWidth="1px" style="border-right-style:solid">&nbsp;</asp:TableCell></asp:TableRow>                        
+                        </asp:Table>
+                    </ContentTemplate>
+               </asp:UpdatePanel>
+                <asp:UpdateProgress ID="uprgFlyout" runat="server" AssociatedUpdatePanelID="upnlFlyout"><ProgressTemplate>...</ProgressTemplate></asp:UpdateProgress>
+            </asp:TableCell>
+            <asp:TableCell ID="tcNav" VerticalAlign="Top" Visible="true">
+                <asp:UpdatePanel ID="upnlNav" runat="server" UpdateMode="Conditional" >
+                <ContentTemplate>
+                    <asp:Table ID="tblNav" runat="server" BorderStyle="Inset" BorderWidth="2px" CellPadding="1" CellSpacing="0">
+                        <asp:TableRow><asp:TableCell ID="tcNavTitle" ColumnSpan="2" SkinID="WindowTitle"><asp:Label ID="lblNavTitle" runat="server" Width="98%" Height="18px" Text="Reports Explorer"></asp:Label></asp:TableCell></asp:TableRow>
+                        <asp:TableRow>
+                            <asp:TableCell ColumnSpan="2">
+                                <asp:panel id="pnlNav" runat="server" Width="240px" Height="470px" BorderStyle="none" ScrollBars="Auto" BackColor="Window">
+                                    <asp:TreeView ID="trvMain" runat="server" Width="100%" Height="100%" DataSourceID="xmlDept" Target="_self" PopulateNodesFromClient="False" EnableTheming="True" ExpandDepth="1" OnTreeNodeDataBound="OnTreeNodeDataBound" >
+                                        <DataBindings>
+                                            <asp:TreeNodeBinding DataMember="reports" TextField="Text" SelectAction="Expand" />
+                                            <asp:TreeNodeBinding DataMember="department" TextField="Text" SelectAction="Expand" />
+                                            <asp:TreeNodeBinding DataMember="report" TextField="Text" ValueField="Value" NavigateUrlField="NavigateUrl" ToolTipField="ToolTip" />
+                                        </DataBindings>
+                                    </asp:TreeView>
+                                    <asp:XmlDataSource ID="xmlDept" runat="server" DataFile="~/App_Data/Dept.xml" EnableCaching="true" CacheExpirationPolicy="Absolute" CacheDuration="Infinite"></asp:XmlDataSource>
+                                    <asp:XmlDataSource ID="xmlAlpha" runat="server" DataFile="~/App_Data/Alpha.xml" EnableCaching="true" CacheExpirationPolicy="Absolute" CacheDuration="Infinite"></asp:XmlDataSource>
+                                </asp:panel>
+                            </asp:TableCell>
+                        </asp:TableRow>
+                        <asp:TableRow Height="20px">
+                            <asp:TableCell ID="tcDept" HorizontalAlign="Center" BorderStyle="Solid" BorderWidth="1px" style="border-top-style:none">
+                                <asp:Button ID="btnViewDept" runat="server" Width="100%" Height="100%" Text="Categorical" BorderStyle="None" BorderWidth="0px" CommandName="ViewDept" OnCommand="OnButtonCommand" />
+                            </asp:TableCell>
+                            <asp:TableCell ID="tcAlpha" HorizontalAlign="Center" BorderStyle="Solid" BorderWidth="1px" style="border-top-style:solid">
+                                <asp:Button ID="btnViewAlpha" runat="server" Width="100%" Height="100%" Text="Alphabetical" BorderStyle="None" BorderWidth="0px" CommandName="ViewAlpha"  OnCommand="OnButtonCommand" />
+                            </asp:TableCell>
+                        </asp:TableRow>
+                    </asp:Table>
+                </ContentTemplate>
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="imgExplore" EventName="Click" />
+                </Triggers>
+                </asp:UpdatePanel>
+                <asp:UpdateProgress ID="uprgNav" runat="server" AssociatedUpdatePanelID="upnlNav"><ProgressTemplate>Updating reports...</ProgressTemplate></asp:UpdateProgress>
+            </asp:TableCell>
+            <asp:TableCell Width="100%" VerticalAlign="Top" BorderStyle="None" BorderWidth="0">
+                <asp:UpdatePanel ID="upnlToolbar" runat="server" UpdateMode="Always" >
+                    <ContentTemplate>
+                        <asp:Table ID="tblToolbar" runat="server" Width="100%" Height="20px" BorderStyle="None" BorderWidth="0px" CellPadding="0" CellSpacing="3">
+                            <asp:TableRow >
+                                <asp:TableCell Width="72px"><asp:Button ID="btnSetup" runat="server" Height="100%" Width="100%" BorderStyle="Inset" BorderWidth="2px" Text="Setup" ToolTip="Setup the report parameters" CommandName="Setup" OnCommand="OnButtonCommand" /></asp:TableCell>
+                                <asp:TableCell Width="24px">&nbsp;</asp:TableCell>
+                                <asp:TableCell Width="72px"><asp:Button ID="btnRun" runat="server" Height="100%" Width="100%" BorderStyle="Outset" BorderWidth="2px" Text="Run" ToolTip="Run the report" CommandName="Run" OnCommand="OnButtonCommand" /></asp:TableCell>
+                                <asp:TableCell Width="72px"><asp:Button ID="btnData" runat="server" Height="100%" Width="100%" BorderStyle="Outset" BorderWidth="2px" Text="Data" ToolTip="Return the raw report data in a table" CommandName="Data" OnCommand="OnButtonCommand" /></asp:TableCell>
+                                <asp:TableCell Width="24px">&nbsp;</asp:TableCell>
+                                <asp:TableCell Width="72px"><asp:Button ID="btnExcel" runat="server" Height="100%" Width="100%" BorderStyle="Outset" BorderWidth="2px" Text="Excel" ToolTip="Return the raw report data in Excel" CommandName="Excel" OnCommand="OnButtonCommand" /></asp:TableCell>
+                                <asp:TableCell>&nbsp;</asp:TableCell>
+                                <asp:TableCell HorizontalAlign="Right"><asp:Label ID="lblStatus" runat="server" Text="" style="font-size:0.7em" ToolTip="Report runtime (seconds)"></asp:Label></asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </ContentTemplate>
+                    <Triggers>
+                        <asp:PostBackTrigger ControlID="btnSetup" />
+                        <asp:PostBackTrigger ControlID="btnRun" />
+                        <asp:PostBackTrigger ControlID="btnData" />
+                        <asp:PostBackTrigger ControlID="btnExcel" />
+                    </Triggers>
+                </asp:UpdatePanel>
+                <asp:MultiView ID="mvMain" runat="server" ActiveViewIndex="0">
+                    <asp:View ID="vwParams" runat="server">
+                        <hr />
+                        <asp:ContentPlaceHolder id="Setup" runat="server"></asp:ContentPlaceHolder>
+                    </asp:View>
+                    <asp:View ID="vwReport" runat="server">
+                        <rsweb:reportviewer id="rsViewer" runat="server" Height="464px" Width="98%" BorderStyle="None" BorderWidth="0px" ProcessingMode="Local" AsyncRendering="True" ExportContentDisposition="OnlyHtmlInline" ShowFindControls="false" ShowPrintButton="true" ZoomMode="Percent" ZoomPercent="100" OnReportError="OnViewerError"></rsweb:reportviewer>
+                    </asp:View>
+                </asp:MultiView>
+            </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow Height="3px" style="font-size:1px"><asp:TableCell ColumnSpan="3">&nbsp;</asp:TableCell></asp:TableRow>
+        <asp:TableRow><asp:TableCell ColumnSpan="3" HorizontalAlign="Left">Copyright Argix Direct, Inc. v3.5.1.010912</asp:TableCell></asp:TableRow>
+    </asp:Table>
+</div>
+<asp:XmlDataSource ID="xmlConfig" runat="server" DataFile="~/App_Data/Configuration.xml" EnableCaching="true" CacheExpirationPolicy="Absolute" CacheDuration="Infinite"></asp:XmlDataSource>
+</form>
+</body>
+</html>

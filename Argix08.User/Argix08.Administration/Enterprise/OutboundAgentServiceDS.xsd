@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="OutboundAgentServiceDS" targetNamespace="http://www.tempuri.org/OutboundAgentServiceDS.xsd"
+	xmlns:mstns="http://www.tempuri.org/OutboundAgentServiceDS.xsd" xmlns="http://www.tempuri.org/OutboundAgentServiceDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="OutboundAgentServiceDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="OutboundAgentServiceTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AgentServiceID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+							<xs:element name="AgentID" type="xs:int" />
+							<xs:element name="ServiceCode" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="Factor" type="xs:int" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

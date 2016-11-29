@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EnterpriseDS" targetNamespace="http://tempuri.org/EnterpriseDS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/EnterpriseDS.xsd" xmlns:mstns="http://tempuri.org/EnterpriseDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="TerminalTable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="TerminalID" type="xs:int" />
+                <xs:element name="Number" type="xs:string" />
+                <xs:element name="Description" type="xs:string" />
+                <xs:element name="AgentID" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+	<xs:element name="ScanTable">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:long" minOccurs="0" />
+				<xs:element name="LabelSequenceNumber" type="xs:long" minOccurs="0" />
+				<xs:element name="ScanStatus" type="xs:string" minOccurs="0" />
+				<xs:element name="CartonStatus" type="xs:string" minOccurs="0" />
+				<xs:element name="Damage" type="xs:string" minOccurs="0" />
+				<xs:element name="ScanDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="ScanTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="TrackingNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorName" type="xs:string" minOccurs="0" />
+				<xs:element name="Weight" type="xs:int" minOccurs="0" />
+				<xs:element name="ZoneCode" type="xs:string" minOccurs="0" />
+				<xs:element name="TLNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="BLNumber" type="xs:int" minOccurs="0" />
+				<xs:element name="PickupDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="PickupNumber" type="xs:int" minOccurs="0" />
+				<xs:element name="ItemNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="VendorKey" type="xs:string" minOccurs="0" />
+				<xs:element name="SortDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="SortTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="SortedLocation" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

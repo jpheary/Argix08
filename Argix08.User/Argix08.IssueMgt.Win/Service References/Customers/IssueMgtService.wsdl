@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix.Customers" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix.Customers" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix.Customers/Imports">
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd0" namespace="http://Argix.Customers" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd2" namespace="http://tempuri.org/ScanDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd4" namespace="http://tempuri.org/ContactDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Argix.Enterprise" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd6" namespace="http://tempuri.org/IssueTypeDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd7" namespace="http://tempuri.org/ActionTypeDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd8" namespace="http://tempuri.org/IssueDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/Argix.Customers" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd11" namespace="http://tempuri.org/CompanyDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd12" namespace="http://tempuri.org/LocationDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd13" namespace="http://tempuri.org/AgentDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd14" namespace="http://tempuri.org/StoreDS.xsd" />
+      <xsd:import schemaLocation="http://localhost:50054/Argix08.CustomerServices/IssueMgtService.svc?xsd=xsd15" namespace="http://tempuri.org/DeliveryDS.xsd" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IIssueMgtService_GetOSDScans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOSDScans" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetOSDScans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOSDScansResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetPODScans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPODScans" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetPODScans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPODScansResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetContacts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContacts" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetContacts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetContactsForLocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactsForLocation" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetContactsForLocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactsForLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetContact" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_CreateContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateContact" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_CreateContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_UpdateContact_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateContact" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_UpdateContact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateContactResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetTerminalInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfo" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetTerminalInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueCategorys_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueCategorys" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueCategorys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueCategorysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueTypes" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueType" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetActionTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionTypes" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetActionTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueActionTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueActionTypes" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueActionTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueActionTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetActionType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionType" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetActionType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssues_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssues" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssuesForDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuesForDate" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssuesForDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuesForDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssue" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueActions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueActions" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueActions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueActionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetActions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActions" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetActions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueAttachments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueAttachments" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetIssueAttachments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssueAttachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetAttachments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachments" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetAttachments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetAttachment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachment" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetAttachment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_CreateIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssue" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_CreateIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_CreateIssueAction_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueAction" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_CreateIssueAction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueActionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_CreateIssueAttachment_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueAttachment" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_CreateIssueAttachment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateIssueAttachmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_UpdateIssue_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIssue" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_UpdateIssue_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_SearchIssues_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssues" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_SearchIssues_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssuesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_SearchIssuesAdvanced_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssuesAdvanced" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_SearchIssuesAdvanced_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchIssuesAdvancedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetCompanies_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanies" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetCompanies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompaniesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetActiveCompanies_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveCompanies" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetActiveCompanies_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveCompaniesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompany" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetDistricts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistricts" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetDistricts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDistrictsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetRegions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegions" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetRegions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetAgents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgents" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetAgents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetAgentsForClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgentsForClient" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetAgentsForClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAgentsForClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetStoreDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoreDetail" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetStoreDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStoreDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetSubStoreDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubStoreDetail" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetSubStoreDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubStoreDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetDeliveries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveries" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetDeliveries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetDelivery_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDelivery" />
+  </wsdl:message>
+  <wsdl:message name="IIssueMgtService_GetDelivery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IIssueMgtService">
+    <wsdl:operation name="GetOSDScans">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetOSDScans" message="tns:IIssueMgtService_GetOSDScans_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetOSDScansResponse" message="tns:IIssueMgtService_GetOSDScans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPODScans">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetPODScans" message="tns:IIssueMgtService_GetPODScans_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetPODScansResponse" message="tns:IIssueMgtService_GetPODScans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContacts">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetContacts" message="tns:IIssueMgtService_GetContacts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetContactsResponse" message="tns:IIssueMgtService_GetContacts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContactsForLocation">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetContactsForLocation" message="tns:IIssueMgtService_GetContactsForLocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetContactsForLocationResponse" message="tns:IIssueMgtService_GetContactsForLocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContact">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetContact" message="tns:IIssueMgtService_GetContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetContactResponse" message="tns:IIssueMgtService_GetContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateContact">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/CreateContact" message="tns:IIssueMgtService_CreateContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/CreateContactResponse" message="tns:IIssueMgtService_CreateContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateContact">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/UpdateContact" message="tns:IIssueMgtService_UpdateContact_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/UpdateContactResponse" message="tns:IIssueMgtService_UpdateContact_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTerminalInfo">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetTerminalInfo" message="tns:IIssueMgtService_GetTerminalInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetTerminalInfoResponse" message="tns:IIssueMgtService_GetTerminalInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueCategorys">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueCategorys" message="tns:IIssueMgtService_GetIssueCategorys_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueCategorysResponse" message="tns:IIssueMgtService_GetIssueCategorys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueTypes">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueTypes" message="tns:IIssueMgtService_GetIssueTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueTypesResponse" message="tns:IIssueMgtService_GetIssueTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueType">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueType" message="tns:IIssueMgtService_GetIssueType_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueTypeResponse" message="tns:IIssueMgtService_GetIssueType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActionTypes">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetActionTypes" message="tns:IIssueMgtService_GetActionTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetActionTypesResponse" message="tns:IIssueMgtService_GetActionTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueActionTypes">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueActionTypes" message="tns:IIssueMgtService_GetIssueActionTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueActionTypesResponse" message="tns:IIssueMgtService_GetIssueActionTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActionType">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetActionType" message="tns:IIssueMgtService_GetActionType_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetActionTypeResponse" message="tns:IIssueMgtService_GetActionType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssues">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssues" message="tns:IIssueMgtService_GetIssues_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssuesResponse" message="tns:IIssueMgtService_GetIssues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuesForDate">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssuesForDate" message="tns:IIssueMgtService_GetIssuesForDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssuesForDateResponse" message="tns:IIssueMgtService_GetIssuesForDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssue">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssue" message="tns:IIssueMgtService_GetIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueResponse" message="tns:IIssueMgtService_GetIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueActions">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueActions" message="tns:IIssueMgtService_GetIssueActions_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueActionsResponse" message="tns:IIssueMgtService_GetIssueActions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActions">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetActions" message="tns:IIssueMgtService_GetActions_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetActionsResponse" message="tns:IIssueMgtService_GetActions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssueAttachments">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueAttachments" message="tns:IIssueMgtService_GetIssueAttachments_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetIssueAttachmentsResponse" message="tns:IIssueMgtService_GetIssueAttachments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachments">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetAttachments" message="tns:IIssueMgtService_GetAttachments_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetAttachmentsResponse" message="tns:IIssueMgtService_GetAttachments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttachment">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetAttachment" message="tns:IIssueMgtService_GetAttachment_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetAttachmentResponse" message="tns:IIssueMgtService_GetAttachment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIssue">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/CreateIssue" message="tns:IIssueMgtService_CreateIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/CreateIssueResponse" message="tns:IIssueMgtService_CreateIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIssueAction">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/CreateIssueAction" message="tns:IIssueMgtService_CreateIssueAction_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/CreateIssueActionResponse" message="tns:IIssueMgtService_CreateIssueAction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateIssueAttachment">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/CreateIssueAttachment" message="tns:IIssueMgtService_CreateIssueAttachment_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/CreateIssueAttachmentResponse" message="tns:IIssueMgtService_CreateIssueAttachment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIssue">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/UpdateIssue" message="tns:IIssueMgtService_UpdateIssue_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/UpdateIssueResponse" message="tns:IIssueMgtService_UpdateIssue_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchIssues">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/SearchIssues" message="tns:IIssueMgtService_SearchIssues_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/SearchIssuesResponse" message="tns:IIssueMgtService_SearchIssues_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchIssuesAdvanced">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/SearchIssuesAdvanced" message="tns:IIssueMgtService_SearchIssuesAdvanced_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/SearchIssuesAdvancedResponse" message="tns:IIssueMgtService_SearchIssuesAdvanced_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanies">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetCompanies" message="tns:IIssueMgtService_GetCompanies_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetCompaniesResponse" message="tns:IIssueMgtService_GetCompanies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveCompanies">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetActiveCompanies" message="tns:IIssueMgtService_GetActiveCompanies_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetActiveCompaniesResponse" message="tns:IIssueMgtService_GetActiveCompanies_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompany">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetCompany" message="tns:IIssueMgtService_GetCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetCompanyResponse" message="tns:IIssueMgtService_GetCompany_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistricts">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetDistricts" message="tns:IIssueMgtService_GetDistricts_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetDistrictsResponse" message="tns:IIssueMgtService_GetDistricts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegions">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetRegions" message="tns:IIssueMgtService_GetRegions_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetRegionsResponse" message="tns:IIssueMgtService_GetRegions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgents">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetAgents" message="tns:IIssueMgtService_GetAgents_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetAgentsResponse" message="tns:IIssueMgtService_GetAgents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAgentsForClient">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetAgentsForClient" message="tns:IIssueMgtService_GetAgentsForClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetAgentsForClientResponse" message="tns:IIssueMgtService_GetAgentsForClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreDetail">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetStoreDetail" message="tns:IIssueMgtService_GetStoreDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetStoreDetailResponse" message="tns:IIssueMgtService_GetStoreDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubStoreDetail">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetSubStoreDetail" message="tns:IIssueMgtService_GetSubStoreDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetSubStoreDetailResponse" message="tns:IIssueMgtService_GetSubStoreDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveries">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetDeliveries" message="tns:IIssueMgtService_GetDeliveries_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetDeliveriesResponse" message="tns:IIssueMgtService_GetDeliveries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDelivery">
+      <wsdl:input wsaw:Action="http://Argix.Customers/IIssueMgtService/GetDelivery" message="tns:IIssueMgtService_GetDelivery_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Customers/IIssueMgtService/GetDeliveryResponse" message="tns:IIssueMgtService_GetDelivery_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

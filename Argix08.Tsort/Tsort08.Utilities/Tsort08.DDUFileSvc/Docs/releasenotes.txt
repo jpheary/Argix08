@@ -1,0 +1,117 @@
+              --------------------------------------------------------
+                    		DDU File Utitlity Readme File
+		                       		November, 2008
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2008
+
+This document provides late-breaking or other information that supplements the Sort documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+The DDU File Utility is installed into any folder on a server or workstation:
+1.	Copy the following files into this folder-
+		DDUFileSvc.exe
+		DDUFileSvc.exe.config
+2.	Add a shortcut to the utitlity in the Windows startup folder, or add a string value
+	to the Run registry key as follows:
+		[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+		"DDUFileSvc"="D:\\Projects\\Tsort\\Release\\DDUFileSvc\\DDUFileSvc.exe"
+
+
+
+CONFIGURATION
+Open the application configuration file (i.e. DDUFileSvc.exe.config), go to the <configuration> section, 
+and add/edit the values below:
+<configuration>
+	<!-- Utility Configuration -->
+	<configSections>
+		<!-- Required declarations; definitions below -->
+		<section name="dirs" type="System.Configuration.SingleTagSectionHandler"/>
+		<section name="dir1" type="System.Configuration.SingleTagSectionHandler"/>
+		<section name="dir2" type="System.Configuration.SingleTagSectionHandler"/>
+	</configSections>
+	
+	<!-- dir=enumeration directory; src=move from folder within enumerated folders ("" allowed); -->
+	<!-- pattern=file pattern for moved files; dest=move to folder -->
+	<dirs count="2" />
+	<dir1 dir="C:\DDUFileSvc\CE1\Drivers\" src="FromDevice" pattern="BOLData*.dat" dest="\\rgxdev\t2teamstore\DDUFileSvc\" />
+	<dir2 dir="C:\DDUFileSvc\CE1\Drivers\" src="FromDevice\From" pattern="BOLData*.dat" dest="\\rgxdev\t2teamstore\DDUFileSvc\" />
+	
+	<appSettings>
+		<add key="TimerOn" value="true" />
+		<add key="TimerInterval" value="600000" />
+		<add key="LogOn" value="true" />
+		<add key="LogPath" value="C:\DDUFileSvc\Logs\" />
+		<add key="LogFilesMax" value="7" />
+	</appSettings>
+</configuration>
+
+
+NOTES
+==============
+GENERAL
+The DDU File Move Utitlity (DDUFileSvc.exe) is a Windows based application used to move DDU driver 
+files from a source folder to a destination folder on a configurable schedule (i.e. every 10 minutes).
+The source and destination folders can be on a local drive, a mapped drive, or a drive described
+by a UNC path. The schedule can be driven by the applications internal timer, or by another Windows
+service like the Windows task Scheduler.
+
+
+OPERATION
+Normal:
+The DDU File Move Utitlity (DDUFileSvc.exe) operates in two modes:
+Untimed- Untimed operation allows the utility to operate manually by a user or
+with a Windows Task Scheduler task. Set the configuration parameter TimerOn=false. When
+run in this mode, the utility operates only once and then shuts down. The task tray icon
+is not visible in this mode.
+Timed- Timed operation allows the utility to operate with an internal timer. Set 
+the configuration parameter TimerOn=true. When run in this mode, the utility operates 
+periodically at the interval specified by the configuration parameter TimerInterval=
+<interval>msec. A task tray icon is visible; it displays operational status, and provides
+a single menu item, View Log, for quick access to the applications daily event log.
+
+
+Diagnostics Mode:
+N/A.
+
+
+VERSION HISTORY
+v2.0.0, 04/21/05 ---------------------------------------------------------------------------
+Requirements/features
+- initial version.
+
+Design/deployment
+- none.
+
+
+v2.1.0, 05/05/05 ---------------------------------------------------------------------------
+Requirements/features
+- Changed destination file naming convention from <ddHHmmss>.* to <enumerated folder>.xyz where
+  xyz = 000-999.
+
+Design/deployment
+- modified configuration and code to support multiple internal utility instances; each instance 
+  has independent, configurable parameters (as described in the configuration file).

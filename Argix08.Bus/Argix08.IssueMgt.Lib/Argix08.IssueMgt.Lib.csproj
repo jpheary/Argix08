@@ -1,0 +1,331 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3596F3CC-249C-4830-AEC4-FE6C6ED002D3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Argix</RootNamespace>
+    <AssemblyName>Argix08.IssueMgt.Lib</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Argix08.Data, Version=3.0.0.17554, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Build\Argix08.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Argix08.Export, Version=3.0.0.15164, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Build\Argix08.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="Argix08.Windows, Version=3.0.0.18945, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Build\Argix08.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v8.1, Version=8.1.20081.1000, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomerSvc\CRGFactory.cs" />
+    <Compile Include="CustomerSvc\dlgAction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerSvc\dlgAction.Designer.cs">
+      <DependentUpon>dlgAction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSvc\dlgIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerSvc\dlgIssue.Designer.cs">
+      <DependentUpon>dlgIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSvc\Issue.cs" />
+    <Compile Include="CustomerSvc\IssueDS.Designer.cs">
+      <DependentUpon>IssueDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CustomerSvc\IssueExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerSvc\IssueExplorer.Designer.cs">
+      <DependentUpon>IssueExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSvc\IssueInspector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerSvc\IssueInspector.Designer.cs">
+      <DependentUpon>IssueInspector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ultragridsvcs.cs" />
+    <Compile Include="Enterprise\CompanyLocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enterprise\CompanyLocation.Designer.cs">
+      <DependentUpon>CompanyLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\Contact.cs" />
+    <Compile Include="Enterprise\ContactComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enterprise\ContactComboBox.Designer.cs">
+      <DependentUpon>ContactComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\ContactDS.Designer.cs">
+      <DependentUpon>ContactDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Enterprise\dlgContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enterprise\dlgContact.Designer.cs">
+      <DependentUpon>dlgContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\dlgDeliveries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enterprise\dlgDeliveries.Designer.cs">
+      <DependentUpon>dlgDeliveries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise\EnterpriseDS.Designer.cs">
+      <DependentUpon>EnterpriseDS.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Enterprise\EnterpriseFactory.cs" />
+    <Compile Include="Enterprise\winContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enterprise\winContacts.Designer.cs">
+      <DependentUpon>winContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="globals.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WinPrinter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomerSvc\IssueDS.xsc">
+      <DependentUpon>IssueDS.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerSvc\IssueDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IssueDS.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Argix.CustomerSvc</CustomToolNamespace>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="CustomerSvc\IssueDS.xsx">
+      <DependentUpon>IssueDS.xsd</DependentUpon>
+    </None>
+    <None Include="Docs\models.vsd" />
+    <None Include="Enterprise\ContactDS.xsc">
+      <DependentUpon>ContactDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\ContactDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ContactDS.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Argix.Enterprise</CustomToolNamespace>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="Enterprise\ContactDS.xsx">
+      <DependentUpon>ContactDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\EnterpriseDS.xsc">
+      <DependentUpon>EnterpriseDS.xsd</DependentUpon>
+    </None>
+    <None Include="Enterprise\EnterpriseDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EnterpriseDS.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Argix.Enterprise</CustomToolNamespace>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="Enterprise\EnterpriseDS.xsx">
+      <DependentUpon>EnterpriseDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomerSvc\dlgAction.resx">
+      <DependentUpon>dlgAction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerSvc\dlgIssue.resx">
+      <DependentUpon>dlgIssue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerSvc\IssueExplorer.resx">
+      <DependentUpon>IssueExplorer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerSvc\IssueInspector.resx">
+      <DependentUpon>IssueInspector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enterprise\CompanyLocation.resx">
+      <DependentUpon>CompanyLocation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enterprise\ContactComboBox.resx">
+      <DependentUpon>ContactComboBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enterprise\dlgContact.resx">
+      <DependentUpon>dlgContact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enterprise\dlgDeliveries.resx">
+      <DependentUpon>dlgDeliveries.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\lightoff.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Enterprise\winContacts.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>winContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\lighton.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

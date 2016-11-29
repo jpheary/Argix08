@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<reports Text="Argix Direct Reports">
+	<department Text="PacSun">
+		<report Text="PacSun Summary" Value="PacSunSummary" NavigateUrl="/TrackingReports/Reports/PacSunSummary.aspx" />
+		<report Text="PacSun Delivery" Value="PacSunDelivery" NavigateUrl="/TrackingReports/Reports/PacSunDelivery.aspx" />
+	</department>
+</reports>

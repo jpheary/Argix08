@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="ClientDS" targetNamespace="http://www.tempuri.org/ClientDS.xsd" xmlns:mstns="http://www.tempuri.org/ClientDS.xsd"
+	xmlns="http://www.tempuri.org/ClientDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="ClientDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ClientDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ClientID" type="xs:int" minOccurs="0" />
+							<xs:element name="ClientNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="DIVISION" type="xs:string" minOccurs="0" />
+							<xs:element name="NAME" type="xs:string" minOccurs="0" />
+							<xs:element name="STATUS" type="xs:string" minOccurs="0" />
+							<xs:element name="UPS_SHIPPER_NBR" type="xs:string" minOccurs="0" />
+							<xs:element name="ABBREVIATION" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDRESS_LINE1" type="xs:string" minOccurs="0" />
+							<xs:element name="ADDRESS_LINE2" type="xs:string" minOccurs="0" />
+							<xs:element name="CITY" type="xs:string" minOccurs="0" />
+							<xs:element name="STATE" type="xs:string" minOccurs="0" />
+							<xs:element name="ZIP" type="xs:string" minOccurs="0" />
+							<xs:element name="ZIP4" type="xs:string" minOccurs="0" />
+							<xs:element name="DELIVERY_BILL_TYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="CARTON_COMMODITY" type="xs:string" minOccurs="0" />
+							<xs:element name="DELIVERY_BILL" type="xs:string" minOccurs="0" />
+							<xs:element name="DBILL_COPIES" type="xs:short" minOccurs="0" />
+							<xs:element name="IsSan" type="xs:string" minOccurs="0" />
+							<xs:element name="InvoiceProgram" type="xs:string" minOccurs="0" />
+							<xs:element name="ContactName" type="xs:string" minOccurs="0" />
+							<xs:element name="Phone" type="xs:string" minOccurs="0" />
+							<xs:element name="Fax" type="xs:string" minOccurs="0" />
+							<xs:element name="Mnemonic" type="xs:string" minOccurs="0" />
+							<xs:element name="BLNumberOnInvoice" type="xs:string" minOccurs="0" />
+							<xs:element name="ARNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="PickupZip" type="xs:string" minOccurs="0" />
+							<xs:element name="ManifestPerTrailer" type="xs:string" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

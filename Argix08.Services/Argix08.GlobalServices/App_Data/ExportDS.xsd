@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExportDS" targetNamespace="http://www.tempuri.org/ExportDS.xsd" xmlns:mstns="http://www.tempuri.org/ExportDS.xsd" xmlns="http://www.tempuri.org/ExportDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="ExportDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TemplateTable">
+          <xs:complexType>
+            <xs:sequence>
+				<xs:element name="TemplateID" type="xs:string" minOccurs="0" />
+				<xs:element name="SortCenterID" type="xs:long" minOccurs="0" />
+				<xs:element name="SortCenter" type="xs:string" />
+				<xs:element name="CarrierServiceID" type="xs:long" />
+				<xs:element name="Carrier" type="xs:string" />
+				<xs:element name="ScheduledCloseDateOffset" type="xs:unsignedByte" />
+				<xs:element name="ScheduledCloseTime" type="xs:dateTime" />
+				<xs:element name="ScheduledDepartureDateOffset" type="xs:unsignedByte" />
+				<xs:element name="ScheduledDepartureTime" type="xs:dateTime" />
+				<xs:element name="DayOfTheWeek" type="xs:unsignedByte" />
+				<xs:element name="IsMandatory" type="xs:unsignedByte" />
+				<xs:element name="IsActive" type="xs:unsignedByte" />
+				<xs:element name="StopID" type="xs:string" minOccurs="0" />
+				<xs:element name="StopNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="MainZone" type="xs:string" />
+				<xs:element name="Tag" type="xs:string" />
+				<xs:element name="AgentTerminalID" type="xs:long" />
+				<xs:element name="AgentNumber" type="xs:string" />
+				<xs:element name="ScheduledArrivalDateOffset" type="xs:unsignedByte" />
+				<xs:element name="ScheduledArrivalTime" type="xs:dateTime" />
+				<xs:element name="ScheduledOFD1Offset" type="xs:unsignedByte" />
+				<xs:element name="Notes" type="xs:string" minOccurs="0" />
+				<xs:element name="S2StopID" type="xs:string" minOccurs="0" />
+				<xs:element name="S2StopNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="S2MainZone" type="xs:string" minOccurs="0" />
+				<xs:element name="S2Tag" type="xs:string" minOccurs="0" />
+				<xs:element name="S2AgentTerminalID" type="xs:long" minOccurs="0" />
+				<xs:element name="S2AgentNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="S2ScheduledArrivalDateOffset" type="xs:unsignedByte" minOccurs="0" />
+				<xs:element name="S2ScheduledArrivalTime" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="S2ScheduledOFD1Offset" type="xs:unsignedByte" minOccurs="0" />
+				<xs:element name="S2Notes" type="xs:string" minOccurs="0" />
+				<xs:element name="TemplateLastUpdated" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="TemplateUser" type="xs:string" minOccurs="0" />
+				<xs:element name="TemplateRowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+				<xs:element name="Stop1LastUpdated" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="Stop1User" type="xs:string" minOccurs="0" />
+				<xs:element name="Stop1RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+				<xs:element name="Stop2LastUpdated" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="Stop2User" type="xs:string" minOccurs="0" />
+				<xs:element name="Stop2RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,50 @@
+				--------------------------------------------------------
+                    		Mobile Devices Application Readme File
+		                       			December, 2010
+				--------------------------------------------------------
+                         (c) Copyright Argix Direct, 2004-2010
+
+This document provides late-breaking or other information that supplements the Mobile Devices documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+NOTES
+   GENERAL
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+
+NOTES
+==============
+GENERAL
+The Mobile Devices Application (MobileDevices.exe) is a Windows based application used in managing 
+inventory of mobile devices including devices and batteries.
+
+
+OPERATION
+Normal:
+The Mobile Devices Application (Mobile Devices.exe) operates by launching from a web server deployment 
+url (i.e. http://localhost/Argix08/Apps/MobileDevices/MobileDevices.application). After a brief splash screen, 
+a sizeable window appears and displays a grid containing Mobile Devices from which devices can be created, 
+updated, assigned, and unassigned from drivers. Two other main views can be selected: Batteries for create, 
+update, assign, and unassign; and Component Types to create and update device component types. The taskbar 
+displays the operating terminal and sort station.Additional operating steps can be found in the on-line 
+documentation provided by the Help/Contents menu item.
+
+
+VERSION HISTORY
+v3.5.0, 12/14/10 ---------------------------------------------------------------------------
+Requirements/features
+- ported to Microsoft .NET Framework v3.5.
+Design
+- changed from event-driven object model to web services model using WCF.

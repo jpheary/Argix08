@@ -1,0 +1,164 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="ShipScheduleDS" targetNamespace="http://www.tempuri.org/ShipScheduleDS.xsd"
+	xmlns:mstns="http://www.tempuri.org/ShipScheduleDS.xsd" xmlns="http://www.tempuri.org/ShipScheduleDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="ShipScheduleDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ShipScheduleTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ScheduleID" type="xs:string" minOccurs="0" />
+							<xs:element name="SortCenterID" type="xs:long" />
+							<xs:element name="SortCenter" type="xs:string" />
+							<xs:element name="ScheduleDate" type="xs:dateTime" />
+							<xs:element name="TripID" type="xs:string" />
+							<xs:element name="TemplateID" type="xs:string" />
+							<xs:element name="BolNumber" type="xs:int" />
+							<xs:element name="CarrierID" type="xs:int" />
+							<xs:element name="CarrierServiceID" type="xs:long" />
+							<xs:element name="Carrier" type="xs:string" minOccurs="0" />
+							<xs:element name="NextCarrier" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="LoadNumber" type="xs:string" />
+							<xs:element name="TrailerID" type="xs:int" minOccurs="0" />
+							<xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="TractorNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="DriverName" type="xs:string" minOccurs="0" />
+							<xs:element name="ScheduledClose" type="xs:dateTime" />
+							<xs:element name="ScheduledDeparture" type="xs:dateTime" />
+							<xs:element name="IsMandatory" type="xs:unsignedByte" />
+							<xs:element name="FreightAssigned" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TrailerComplete" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PaperworkComplete" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TrailerDispatched" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Canceled" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="SCDEUserID" type="xs:string" />
+							<xs:element name="SCDELastUpdated" type="xs:dateTime" />
+							<xs:element name="SCDERowVersion" type="xs:string" minOccurs="0" />
+							<xs:element name="StopID" type="xs:string" />
+							<xs:element name="StopNumber" type="xs:string" />
+							<xs:element name="AgentTerminalID" type="xs:long" />
+							<xs:element name="AgentNumber" type="xs:string" />
+							<xs:element name="MainZone" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Tag" msdata:ReadOnly="true" type="xs:string" />
+							<xs:element name="Notes" type="xs:string" />
+							<xs:element name="ScheduledArrival" type="xs:dateTime" />
+							<xs:element name="ScheduledOFD1" type="xs:dateTime" />
+							<xs:element name="S1UserID" type="xs:string" />
+							<xs:element name="S1LastUpdated" type="xs:dateTime" />
+							<xs:element name="S1RowVersion" type="xs:string" minOccurs="0" />
+							<xs:element name="S2StopID" type="xs:string" minOccurs="0" />
+							<xs:element name="S2StopNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="S2AgentTerminalID" type="xs:long" minOccurs="0" />
+							<xs:element name="S2AgentNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="S2MainZone" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="S2Tag" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="S2Notes" type="xs:string" minOccurs="0" />
+							<xs:element name="S2ScheduledArrival" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="S2ScheduledOFD1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="S2UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="S2LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="S2RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ShipScheduleViewTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ScheduleID" type="xs:string" minOccurs="0" />
+							<xs:element name="SortCenterID" type="xs:long" minOccurs="0" />
+							<xs:element name="SortCenter" type="xs:string" minOccurs="0" />
+							<xs:element name="ScheduleDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ShipScheduleTripTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TripID" type="xs:string" minOccurs="0" />
+							<xs:element name="CarrierServiceID" type="xs:long" minOccurs="0" />
+							<xs:element name="LoadNumber" type="xs:string" />
+							<xs:element name="TrailerNumber" type="xs:string" />
+							<xs:element name="TractorNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="DriverName" type="xs:string" minOccurs="0" />
+							<xs:element name="ScheduledClose" type="xs:dateTime" />
+							<xs:element name="ScheduledDeparture" type="xs:dateTime" />
+							<xs:element name="FreightAssigned" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TrailerComplete" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="PaperworkComplete" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TrailerDispatched" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Canceled" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="ShipScheduleStopTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="StopID" type="xs:string" minOccurs="0" />
+							<xs:element name="Notes" type="xs:string" minOccurs="0" />
+							<xs:element name="ScheduledArrival" type="xs:dateTime" />
+							<xs:element name="ScheduledOFD1" type="xs:dateTime" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TemplateViewTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TemplateID" type="xs:string" minOccurs="0" />
+							<xs:element name="SortCenter" type="xs:string" />
+							<xs:element name="SortCenterID" type="xs:long" minOccurs="0" />
+							<xs:element name="DayOfTheWeek" type="xs:unsignedByte" />
+							<xs:element name="MainZone" type="xs:string" />
+							<xs:element name="Tag" type="xs:string" minOccurs="0" />
+							<xs:element name="AgentNumber" type="xs:string" />
+							<xs:element name="AgentTerminalID" type="xs:long" />
+							<xs:element name="CarrierServiceID" type="xs:long" />
+							<xs:element name="Carrier" type="xs:string" />
+							<xs:element name="ScheduledClose" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ScheduledDeparture" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="StopID" type="xs:string" minOccurs="0" />
+							<xs:element name="StopNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="ScheduledArrival" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ScheduledOFD1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Notes" type="xs:string" minOccurs="0" />
+							<xs:element name="IsMandatory" type="xs:unsignedByte" />
+							<xs:element name="IsActive" type="xs:unsignedByte" />
+							<xs:element name="S2MainZone" type="xs:string" minOccurs="0" />
+							<xs:element name="S2Tag" type="xs:string" minOccurs="0" />
+							<xs:element name="S2AgentNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="S2AgentTerminalID" type="xs:long" minOccurs="0" />
+							<xs:element name="S2StopID" type="xs:string" minOccurs="0" />
+							<xs:element name="S2StopNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="S2ScheduledArrival" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="S2ScheduledOFD1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="S2Notes" type="xs:string" minOccurs="0" />
+							<xs:element name="TemplateLastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="TemplateUser" type="xs:string" minOccurs="0" />
+							<xs:element name="TemplateRowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Stop1LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Stop1User" type="xs:string" minOccurs="0" />
+							<xs:element name="Stop1RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Stop2LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Stop2User" type="xs:string" minOccurs="0" />
+							<xs:element name="Stop2RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+							<xs:element name="Selected" type="xs:boolean" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="ShipScheduleDSKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ShipScheduleTable" />
+			<xs:field xpath="mstns:TripID" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

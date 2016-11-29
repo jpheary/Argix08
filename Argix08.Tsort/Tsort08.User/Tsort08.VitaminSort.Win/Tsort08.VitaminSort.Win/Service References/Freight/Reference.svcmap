@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f94b3160-af2f-4a8c-a4fd-99931f51eccb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60128/Argix08.TsortService/TsortService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TsortService.wsdl" MetadataType="Wsdl" ID="c30af5b3-e6ca-4daa-8f0c-ccfad99c55d8" SourceId="1" SourceUrl="http://localhost:60128/Argix08.TsortService/TsortService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="TsortService1.xsd" MetadataType="Schema" ID="8fd89454-6f31-4684-97f9-486bccc9a353" SourceId="1" SourceUrl="http://localhost:60128/Argix08.TsortService/TsortService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TsortService2.xsd" MetadataType="Schema" ID="976f7dcd-ffd5-4704-92ac-ed617fd16dd1" SourceId="1" SourceUrl="http://localhost:60128/Argix08.TsortService/TsortService.svc?xsd=xsd3" />
+    <MetadataFile FileName="TsortService3.xsd" MetadataType="Schema" ID="8ba834fa-2442-4f55-b3cf-6fa08f107802" SourceId="1" SourceUrl="http://localhost:60128/Argix08.TsortService/TsortService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TsortService.xsd" MetadataType="Schema" ID="a071a924-79c0-4080-9aab-aeaccce690cc" SourceId="1" SourceUrl="http://localhost:60128/Argix08.TsortService/TsortService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TsortService.disco" MetadataType="Disco" ID="2785c541-a817-4651-9fea-8e87785e66b3" SourceId="1" SourceUrl="http://localhost:60128/Argix08.TsortService/TsortService.svc?disco" />
+    <MetadataFile FileName="TsortService4.xsd" MetadataType="Schema" ID="9ac05f56-a024-4a8a-8c0b-13ede724e3bf" SourceId="1" SourceUrl="http://localhost:60128/Argix08.TsortService/TsortService.svc?xsd=xsd4" />
+    <MetadataFile FileName="TsortService1.wsdl" MetadataType="Wsdl" ID="21ceeec5-0b1f-41b0-8433-36a52cf4130a" SourceId="1" SourceUrl="http://localhost:60128/Argix08.TsortService/TsortService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

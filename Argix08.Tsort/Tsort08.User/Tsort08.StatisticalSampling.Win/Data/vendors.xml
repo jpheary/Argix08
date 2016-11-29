@@ -1,0 +1,280 @@
+<?xml version="1.0" standalone="yes"?>
+<ShipperDS xmlns="http://tempuri.org/ShipperDS.xsd">
+  <xs:schema id="ShipperDS" targetNamespace="http://tempuri.org/ShipperDS.xsd" xmlns:mstns="http://tempuri.org/ShipperDS.xsd" xmlns="http://tempuri.org/ShipperDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="ShipperDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VendorTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="NUMBER" type="xs:string" />
+                <xs:element name="NAME" type="xs:string" minOccurs="0" />
+                <xs:element name="DESCRIPTION" type="xs:string" minOccurs="0" />
+                <xs:element name="ADDRESS" type="xs:string" minOccurs="0" />
+                <xs:element name="CITY" type="xs:string" minOccurs="0" />
+                <xs:element name="STATE" type="xs:string" minOccurs="0" />
+                <xs:element name="ZIP" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="DocumentKey1">
+        <xs:selector xpath=".//mstns:VendorTable" />
+        <xs:field xpath="mstns:NUMBER" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <VendorTable>
+    <NUMBER>00303</NUMBER>
+    <NAME>BARNES &amp; NOBLE DIST.#100 (SAN)</NAME>
+    <DESCRIPTION>00303 BARNES &amp; NOBLE DIST.#100 (SAN)</DESCRIPTION>
+    <ADDRESS>100 MIDDLESEX CENTER BLVD     </ADDRESS>
+    <CITY>JAMESBURG                     </CITY>
+    <STATE>NJ</STATE>
+    <ZIP>08831</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>00304</NUMBER>
+    <NAME>B&amp;N E-SHOP 2 DAY (SAN)        </NAME>
+    <DESCRIPTION>00304 B&amp;N E-SHOP 2 DAY (SAN)        </DESCRIPTION>
+    <ADDRESS>100 MIDDLESEX CTR BLVD        </ADDRESS>
+    <CITY>JAMESBURG                     </CITY>
+    <STATE>NJ</STATE>
+    <ZIP>08831</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>01151</NUMBER>
+    <NAME>BARNES AND NOBLE C635         </NAME>
+    <DESCRIPTION>01151 BARNES AND NOBLE C635         </DESCRIPTION>
+    <ADDRESS>300 THE FENWAY                </ADDRESS>
+    <CITY>BOSTON                        </CITY>
+    <STATE>MA</STATE>
+    <ZIP>02115</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>01338</NUMBER>
+    <NAME>BARNES AND NOBLE C300         </NAME>
+    <DESCRIPTION>01338 BARNES AND NOBLE C300         </DESCRIPTION>
+    <ADDRESS>1400 MASSACHUSETTS AVE        </ADDRESS>
+    <CITY>CAMBRIDGE                     </CITY>
+    <STATE>MA</STATE>
+    <ZIP>02238</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>01487</NUMBER>
+    <NAME>NATIONAL REFUND FOCUS MAILING </NAME>
+    <DESCRIPTION>01487 NATIONAL REFUND FOCUS MAILING </DESCRIPTION>
+    <ADDRESS>2 GREAT PASTURE ROAD          </ADDRESS>
+    <CITY>DANBURY                       </CITY>
+    <STATE>CT</STATE>
+    <ZIP>06810</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>01488</NUMBER>
+    <NAME>EDISON LITHO                  </NAME>
+    <DESCRIPTION>01488 EDISON LITHO                  </DESCRIPTION>
+    <ADDRESS>3725 TONNELLE AVENUE          </ADDRESS>
+    <CITY>NORTH BERGEN                  </CITY>
+    <STATE>NJ</STATE>
+    <ZIP>07047</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>01818</NUMBER>
+    <NAME>PARTNERS WEST                 </NAME>
+    <DESCRIPTION>01818 PARTNERS WEST                 </DESCRIPTION>
+    <ADDRESS>1901 RAYMOND AVENUE SW STE C  </ADDRESS>
+    <CITY>RENTON                        </CITY>
+    <STATE>WA</STATE>
+    <ZIP>98055</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>02027</NUMBER>
+    <NAME>DIAMOND LIBRARY PUBLISHER     </NAME>
+    <DESCRIPTION>02027 DIAMOND LIBRARY PUBLISHER     </DESCRIPTION>
+    <ADDRESS>DIAMOND LIBRARY WAREHOUSE     </ADDRESS>
+    <CITY>WILTON                        </CITY>
+    <STATE>CT</STATE>
+    <ZIP>06897</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>02028</NUMBER>
+    <NAME>MERCER UNIVERSITY PRESS       </NAME>
+    <DESCRIPTION>02028 MERCER UNIVERSITY PRESS       </DESCRIPTION>
+    <ADDRESS>1400 COLEMAN AVENUE           </ADDRESS>
+    <CITY>MACON                         </CITY>
+    <STATE>GA</STATE>
+    <ZIP>31207</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>02029</NUMBER>
+    <NAME>OCEANO DE MEXICO              </NAME>
+    <DESCRIPTION>02029 OCEANO DE MEXICO              </DESCRIPTION>
+    <ADDRESS>BUILDING 3 DOOR 13            </ADDRESS>
+    <CITY>BROOKLYN                      </CITY>
+    <STATE>NY</STATE>
+    <ZIP>11205</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>02030</NUMBER>
+    <NAME>WALTER DE GRUYTER INC         </NAME>
+    <DESCRIPTION>02030 WALTER DE GRUYTER INC         </DESCRIPTION>
+    <ADDRESS>22883 QUICKSILVER DRIVE       </ADDRESS>
+    <CITY>STERLING                      </CITY>
+    <STATE>VA</STATE>
+    <ZIP>20166</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>02138</NUMBER>
+    <NAME>GALLO MANUFACTORING           </NAME>
+    <DESCRIPTION>02138 GALLO MANUFACTORING           </DESCRIPTION>
+    <ADDRESS>C/O QUAYSIDE PUB GROUP        </ADDRESS>
+    <CITY>RACINE                        </CITY>
+    <STATE>WI</STATE>
+    <ZIP>53402</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>02725</NUMBER>
+    <NAME>AOL TIME WARNER BOOK GROUP    </NAME>
+    <DESCRIPTION>02725 AOL TIME WARNER BOOK GROUP    </DESCRIPTION>
+    <ADDRESS>121 NORTH ENTERPRISE BLVD     </ADDRESS>
+    <CITY>LEBANON                       </CITY>
+    <STATE>IN</STATE>
+    <ZIP>46052</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>03064</NUMBER>
+    <NAME>PENTON OVERSEAS               </NAME>
+    <DESCRIPTION>03064 PENTON OVERSEAS               </DESCRIPTION>
+    <ADDRESS>2470 CLIMPALA DR.             </ADDRESS>
+    <CITY>CARLSBAD                      </CITY>
+    <STATE>CA</STATE>
+    <ZIP>92008</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>10036</NUMBER>
+    <NAME>BLOOMBERG PRESS               </NAME>
+    <DESCRIPTION>10036 BLOOMBERG PRESS               </DESCRIPTION>
+    <ADDRESS>1210 INGRAM DRIVE             </ADDRESS>
+    <CITY>CHAMBERSBURG                  </CITY>
+    <STATE>PA</STATE>
+    <ZIP>17201</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>10037</NUMBER>
+    <NAME>INTEGRITY PUBLISHING          </NAME>
+    <DESCRIPTION>10037 INTEGRITY PUBLISHING          </DESCRIPTION>
+    <ADDRESS>1210 INGRAM DRIVE             </ADDRESS>
+    <CITY>CHAMBERSBURG                  </CITY>
+    <STATE>PA</STATE>
+    <ZIP>17201</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>11400</NUMBER>
+    <NAME>B&amp;N DISTRIBUTION (MONROE)(SAN)</NAME>
+    <DESCRIPTION>11400 B&amp;N DISTRIBUTION (MONROE)(SAN)</DESCRIPTION>
+    <ADDRESS>1 BARNES &amp; NOBLE WAY          </ADDRESS>
+    <CITY>MONROE                        </CITY>
+    <STATE>NJ</STATE>
+    <ZIP>08831</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>12001</NUMBER>
+    <NAME>LOUISIANA STATE UNIV PRESS    </NAME>
+    <DESCRIPTION>12001 LOUISIANA STATE UNIV PRESS    </DESCRIPTION>
+    <ADDRESS>3555 RIVER ROAD               </ADDRESS>
+    <CITY>BATON ROUGE                   </CITY>
+    <STATE>LA</STATE>
+    <ZIP>70803</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>12002</NUMBER>
+    <NAME>BLUE MOUNTAIN ARTS INC        </NAME>
+    <DESCRIPTION>12002 BLUE MOUNTAIN ARTS INC        </DESCRIPTION>
+    <ADDRESS>6455 SPINE ROAD               </ADDRESS>
+    <CITY>BOULDER                       </CITY>
+    <STATE>CO</STATE>
+    <ZIP>80301</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>12003</NUMBER>
+    <NAME>CLEARWATER PUBLISHING CO      </NAME>
+    <DESCRIPTION>12003 CLEARWATER PUBLISHING CO      </DESCRIPTION>
+    <ADDRESS>165 COMMERCE STREET           </ADDRESS>
+    <CITY>BROOMFIELD                    </CITY>
+    <STATE>CO</STATE>
+    <ZIP>80020</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>12004</NUMBER>
+    <NAME>FONDO DE CULTURA ECONO        </NAME>
+    <DESCRIPTION>12004 FONDO DE CULTURA ECONO        </DESCRIPTION>
+    <ADDRESS>2293 VERUS STREET             </ADDRESS>
+    <CITY>SAN DIEGO                     </CITY>
+    <STATE>CA</STATE>
+    <ZIP>92154</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>12005</NUMBER>
+    <NAME>HENDRICKSON PUBLISHERS        </NAME>
+    <DESCRIPTION>12005 HENDRICKSON PUBLISHERS        </DESCRIPTION>
+    <ADDRESS>140 SUMMIT STREET             </ADDRESS>
+    <CITY>PEABODY                       </CITY>
+    <STATE>MA</STATE>
+    <ZIP>01961</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>12006</NUMBER>
+    <NAME>D.A.P.                        </NAME>
+    <DESCRIPTION>12006 D.A.P.                        </DESCRIPTION>
+    <ADDRESS>193 EDWARDS DRIVE             </ADDRESS>
+    <CITY>JACKSON                       </CITY>
+    <STATE>TN</STATE>
+    <ZIP>38301</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>12007</NUMBER>
+    <NAME>HADDON CRAFTSMEN              </NAME>
+    <DESCRIPTION>12007 HADDON CRAFTSMEN              </DESCRIPTION>
+    <ADDRESS>4410 COLUMBIA BLVD            </ADDRESS>
+    <CITY>BLOOMSBURG                    </CITY>
+    <STATE>PA</STATE>
+    <ZIP>17815</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>12660</NUMBER>
+    <NAME>B&amp;N DISTRIBUTION #12660 (SAN) </NAME>
+    <DESCRIPTION>12660 B&amp;N DISTRIBUTION #12660 (SAN) </DESCRIPTION>
+    <ADDRESS>12660 OLD VIRGINIA ROAD       </ADDRESS>
+    <CITY>RENO                          </CITY>
+    <STATE>NV</STATE>
+    <ZIP>89511</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>14500</NUMBER>
+    <NAME>SAINT JOSEPH PACKAGING        </NAME>
+    <DESCRIPTION>14500 SAINT JOSEPH PACKAGING        </DESCRIPTION>
+    <ADDRESS>4515 EASTON ROAD              </ADDRESS>
+    <CITY>SAINT JOSEPH                  </CITY>
+    <STATE>MO</STATE>
+    <ZIP>64505</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>16012</NUMBER>
+    <NAME>HARVEST HOUSE PUBLISHERS      </NAME>
+    <DESCRIPTION>16012 HARVEST HOUSE PUBLISHERS      </DESCRIPTION>
+    <ADDRESS>990 OWEN LOOP N               </ADDRESS>
+    <CITY>EUGENE                        </CITY>
+    <STATE>OR</STATE>
+    <ZIP>97402</ZIP>
+  </VendorTable>
+  <VendorTable>
+    <NUMBER>16147</NUMBER>
+    <NAME>APPLE TREE PUBLISHING         </NAME>
+    <DESCRIPTION>16147 APPLE TREE PUBLISHING         </DESCRIPTION>
+    <ADDRESS>7056 PORTAL WAY UNIT A2       </ADDRESS>
+    <CITY>FERNDALE                      </CITY>
+    <STATE>WA</STATE>
+    <ZIP>98248</ZIP>
+  </VendorTable>
+</ShipperDS>

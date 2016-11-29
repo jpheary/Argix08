@@ -1,0 +1,1277 @@
+<?xml version="1.0" standalone="yes"?>
+<DispatchDS xmlns="http://tempuri.org/DispatchDS.xsd">
+  <xs:schema id="DispatchDS" targetNamespace="http://tempuri.org/DispatchDS.xsd" xmlns:mstns="http://tempuri.org/DispatchDS.xsd" xmlns="http://tempuri.org/DispatchDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="DispatchDS" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="ClientInboundTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="VendorName" type="xs:string" minOccurs="0" />
+                <xs:element name="ConsigneeName" type="xs:string" minOccurs="0" />
+                <xs:element name="ETATime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:int" minOccurs="0" />
+                <xs:element name="AmountType" type="xs:string" minOccurs="0" />
+                <xs:element name="FreightType" type="xs:string" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="In" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ScheduledInboundTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="FromLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="ToLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="ScheduledDeparture" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualDeparture" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ScheduledDelivery" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualDelivery" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="Confirmed" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PickupLogTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="CallerName" type="xs:string" minOccurs="0" />
+                <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShipperName" type="xs:string" minOccurs="0" />
+                <xs:element name="ShipperAddress" type="xs:string" minOccurs="0" />
+                <xs:element name="DeliveryWindow" type="xs:string" minOccurs="0" />
+                <xs:element name="Terminal" type="xs:string" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="Amount" type="xs:int" minOccurs="0" />
+                <xs:element name="AmountType" type="xs:string" minOccurs="0" />
+                <xs:element name="FreightType" type="xs:string" minOccurs="0" />
+                <xs:element name="AutoNumber" type="xs:int" minOccurs="0" />
+                <xs:element name="RequestDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="PickUpDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="Updated" type="xs:boolean" minOccurs="0" />
+                <xs:element name="MustBeReady" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PickedUp" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ScheduledOutboundTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="DriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="FromLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="ToLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="ScheduledDeparture" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualDeparture" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ScheduledDelivery" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualDelivery" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="Confirmed" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="TrailerLogTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="IncomingDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="IncomingCarrier" type="xs:string" minOccurs="0" />
+                <xs:element name="IncomingSeal" type="xs:string" minOccurs="0" />
+                <xs:element name="IncomingDriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="InitialYardLocation" type="xs:string" minOccurs="0" />
+                <xs:element name="OutgoingDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="OutgoingCarrier" type="xs:string" minOccurs="0" />
+                <xs:element name="OutgoingSeal" type="xs:string" minOccurs="0" />
+                <xs:element name="OutgoingDriverName" type="xs:string" minOccurs="0" />
+                <xs:element name="MovedOut" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerMoveTable" minOccurs="0" maxOccurs="unbounded">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="ID" type="xs:int" minOccurs="0" />
+                      <xs:element name="Requested" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="RequestedBy" type="xs:string" minOccurs="0" />
+                      <xs:element name="MoveFrom" type="xs:string" minOccurs="0" />
+                      <xs:element name="MoveTo" type="xs:string" minOccurs="0" />
+                      <xs:element name="Switcher" type="xs:string" minOccurs="0" />
+                      <xs:element name="LoadedWith" type="xs:string" minOccurs="0" />
+                      <xs:element name="ScheduledTime" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="ActualTime" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="LoadSheetReady" type="xs:boolean" minOccurs="0" />
+                      <xs:element name="MoveInProgress" type="xs:boolean" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="LineHaulTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="Created" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="TrailerNumber" type="xs:string" minOccurs="0" />
+                <xs:element name="Terminal" type="xs:string" minOccurs="0" />
+                <xs:element name="ScheduledArrival" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ActualArrival" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Comments" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <ScheduledInboundTable>
+    <ID>1</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Edgar Sanchez</DriverName>
+    <TrailerNumber>53013</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T11:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T11:45:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T11:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T12:03:00.0000000-04:00</ActualDelivery>
+    <Comments>1335 ctns/dr#16 p/u#5705/drpd mt 53240/Seal#249294</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>2</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Carver Locke</DriverName>
+    <TrailerNumber>53626</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T11:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T23:31:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T11:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T12:03:00.0000000-04:00</ActualDelivery>
+    <Comments>1394 ctns/dr#22 p/u#5706/drpd mt53045/Seal#249295</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>3</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jorge Duque</DriverName>
+    <TrailerNumber>48115</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T14:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T14:14:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T14:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>1203 ctns/dr#21 p/u#5707/drpd mt 53602/Seal#249296</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>4</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Eddie Cranford</DriverName>
+    <TrailerNumber>48174</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T14:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T13:37:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T14:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T14:04:00.0000000-04:00</ActualDelivery>
+    <Comments>1331 ctns/dr#15  p/u#5708/drpd mt 48121/Seal#249297</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>5</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Alex Buitrago</DriverName>
+    <TrailerNumber>53240</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T15:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T15:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr#16  p/u#5709/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>6</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Angel Gonzales</DriverName>
+    <TrailerNumber>53045</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T15:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T15:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr#22  p/u#5710/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>7</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Ricky Cassanova</DriverName>
+    <TrailerNumber>48121</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2004-02-08T23:00:00.0000000-05:00</ScheduledDeparture>
+    <ScheduledDelivery>2004-02-10T23:00:00.0000000-05:00</ScheduledDelivery>
+    <Comments>dr#15 p/u#5711/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>8</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Eddie Cranford</DriverName>
+    <TrailerNumber>53642</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2004-02-08T23:00:00.0000000-05:00</ScheduledDeparture>
+    <ScheduledDelivery>2004-02-10T23:00:00.0000000-05:00</ScheduledDelivery>
+    <Comments>dr#21 p/u#5712/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>9</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jorge Duque</DriverName>
+    <TrailerNumber>48232</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2004-02-08T23:00:00.0000000-05:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T18:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr#14 p/u#5713/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>10</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Edgar Sanchez</DriverName>
+    <TrailerNumber>48183</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <ScheduledDeparture>2005-10-05T16:30:00.0000000-04:00</ScheduledDeparture>
+    <Comments>dr18# p/u#5714/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>11</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>dr# p/u#5715/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>12</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>dr# p/u#5716/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>13</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>dr# p/u#5717/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>14</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Juan Morales</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T19:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T19:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5718/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>15</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jose Velez</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T19:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T19:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5719/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>16</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Juan Morales</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T21:30:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T22:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5720/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>17</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jose Velez</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T21:30:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T13:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5721/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>18</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Juan Morales</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T23:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T23:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5722/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>19</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jose Velez</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T23:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T23:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5723/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>20</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Juan Morales</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T01:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T01:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5724/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>21</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jose Velez</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T01:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T01:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5725/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>22</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jim Creager</DriverName>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <ScheduledDeparture>2005-10-05T01:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T02:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>dr# p/u#5726/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>23</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>dr# p/u#5727/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>24</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>ADI (South River)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>dr# p/u#5728/drpd mt/Seal#</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>25</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>George Ganuza</DriverName>
+    <TrailerNumber>53021</TrailerNumber>
+    <FromLocation>Argix Ridgefield</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T06:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T05:50:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T07:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T06:43:00.0000000-04:00</ActualDelivery>
+    <Comments>5P</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>26</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Miguel Gonzalez</DriverName>
+    <TrailerNumber>53231</TrailerNumber>
+    <FromLocation>Argix Ridgefield</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T09:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T08:56:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T10:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>RBA</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>27</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Argix Ridgefield</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>28</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Argix Ridgefield</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>29</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Argix Ridgefield</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>30</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Argix Ridgefield</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>31</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Argix Ridgefield</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>32</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Tony Badree</DriverName>
+    <FromLocation>Argix Ridgefield</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>33</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Auriello Sorto</DriverName>
+    <FromLocation>Argix S Windsor</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <Comments>MT to RBA</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>34</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Ignacio Ordonez</DriverName>
+    <TrailerNumber>53211</TrailerNumber>
+    <FromLocation>Argix S Windsor</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <Comments>RBA</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>35</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Tony Badree</DriverName>
+    <TrailerNumber>53206</TrailerNumber>
+    <FromLocation>Argix S Windsor</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <Comments>RBA</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>36</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>George Ganuza</DriverName>
+    <FromLocation>Argix Wilmington</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <Comments>MT to Brooks</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>37</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Carlos Calderon</DriverName>
+    <FromLocation>Argix Wilmington</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <Comments>MT to RF</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>38</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Rigo Plasencia</DriverName>
+    <FromLocation>Argix Wilmington</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>39</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>John Westbrook</DriverName>
+    <FromLocation>Argix Wilmington</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>/Mailbag</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>40</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Oscar Montero</DriverName>
+    <FromLocation>Argix Wilmington</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>41</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Argix Wilmington</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>42</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Bob McCoy</DriverName>
+    <FromLocation>Argix Wilmington</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>Layover for RBA</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>43</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Edgar Sanchez/Cancelled</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Barrons/South Bay Apparel</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <ScheduledDeparture>2001-07-11T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2002-06-06T00:00:00.0000000-04:00</ScheduledDelivery>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>44</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jim Creager</DriverName>
+    <FromLocation>Bookazine</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2000-04-05T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2000-04-05T00:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>45</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>George Ganuza</DriverName>
+    <FromLocation>Brooks Bros.</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <ScheduledDeparture>2002-10-24T00:00:00.0000000-04:00</ScheduledDeparture>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>46</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Juan Rodriquez</DriverName>
+    <FromLocation>Brooks Bros.</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <ScheduledDeparture>2002-10-24T00:00:00.0000000-04:00</ScheduledDeparture>
+    <Comments>/drpd ld 53640</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>47</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Carver Locke</DriverName>
+    <TrailerNumber>53438</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T09:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T09:31:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T09:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T09:38:00.0000000-04:00</ActualDelivery>
+    <Comments>1936 ctns/Sort/drpd mt 9818</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>48</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Tony Ramraj</DriverName>
+    <TrailerNumber>53222</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T09:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T09:42:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T10:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T09:53:00.0000000-04:00</ActualDelivery>
+    <Comments>1722 ctns/Sort/drpd mt 53151</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>49</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Daniel Moore</DriverName>
+    <TrailerNumber>53263</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T10:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T09:43:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T10:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T09:55:00.0000000-04:00</ActualDelivery>
+    <Comments>1645 ctns/Sort/drpd mt 53036</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>50</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>James Kellam</DriverName>
+    <TrailerNumber>53134</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T10:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T10:15:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T11:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T10:17:00.0000000-04:00</ActualDelivery>
+    <Comments>1491 ctns/Sort/drpd mt 53236</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>51</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Roy Gray</DriverName>
+    <TrailerNumber>53156</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T11:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T10:05:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T23:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T10:17:00.0000000-04:00</ActualDelivery>
+    <Comments>1682 ctns/P&amp;H 10/13 Do not Sort/drpd mt 48166</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>52</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Angel Gonzales</DriverName>
+    <TrailerNumber>9740</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T11:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T12:26:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T12:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T12:34:00.0000000-04:00</ActualDelivery>
+    <Comments>1662 ctns/P&amp;H 10/13 do not sort/drpd mt 9710</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>53</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Alex Buitrago</DriverName>
+    <TrailerNumber>53624</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T12:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T12:28:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T12:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T12:34:00.0000000-04:00</ActualDelivery>
+    <Comments>1480 ctns/Sort/drpd mt 48158</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>54</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>David Zavaleta</DriverName>
+    <TrailerNumber>53249</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T12:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T12:26:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T13:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T12:40:00.0000000-04:00</ActualDelivery>
+    <Comments>1570ctns/Sort/drpd mt 48175</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>55</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Children's Place</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>56</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jesus Garcia</DriverName>
+    <TrailerNumber>48185</TrailerNumber>
+    <FromLocation>Children's Place (Dayton)</FromLocation>
+    <ToLocation>Children's Place (Jersey City)</ToLocation>
+    <ScheduledDeparture>2005-10-05T08:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T19:33:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T09:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T08:45:00.0000000-04:00</ActualDelivery>
+    <Comments>1205 ctns/drpd mt 22321</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>57</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jesus Garcia</DriverName>
+    <TrailerNumber>53411</TrailerNumber>
+    <FromLocation>Children's Place (Dayton)</FromLocation>
+    <ToLocation>Children's Place (Jersey City)</ToLocation>
+    <ScheduledDeparture>2005-02-28T23:00:00.0000000-05:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T10:26:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-03-15T23:00:00.0000000-05:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T11:53:00.0000000-04:00</ActualDelivery>
+    <Comments>1423 ctns/drpd mt 53189</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>58</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Miguel Gonzalez</DriverName>
+    <TrailerNumber>53250</TrailerNumber>
+    <FromLocation>Children's Place (Dayton)</FromLocation>
+    <ToLocation>Children's Place (Jersey City)</ToLocation>
+    <ScheduledDeparture>2005-02-28T23:00:00.0000000-05:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T12:49:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-03-15T23:00:00.0000000-05:00</ScheduledDelivery>
+    <Comments>1279 ctns/drpd mt 53639</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>59</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jesus Garcia</DriverName>
+    <TrailerNumber>53189</TrailerNumber>
+    <FromLocation>Children's Place (Jersey City)</FromLocation>
+    <ToLocation>Children's Place (Dayton)</ToLocation>
+    <ScheduledDeparture>2005-10-05T09:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T09:11:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T10:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T10:05:00.0000000-04:00</ActualDelivery>
+    <Comments>MT</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>60</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jesus Garcia</DriverName>
+    <TrailerNumber>48185</TrailerNumber>
+    <FromLocation>Children's Place (Jersey City)</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <ScheduledDeparture>2005-03-15T23:00:00.0000000-05:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T12:14:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-03-15T23:00:00.0000000-05:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T13:17:00.0000000-04:00</ActualDelivery>
+    <Comments>MT</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>61</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Miguel Gonzalez</DriverName>
+    <FromLocation>Children's Place (Jersey City)</FromLocation>
+    <ToLocation>Argix Ridgefield</ToLocation>
+    <ScheduledDeparture>2005-03-15T23:00:00.0000000-05:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-03-15T23:00:00.0000000-05:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>62</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Carver Locke</DriverName>
+    <FromLocation>Liz Claiborne (Dayton Accessories)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T15:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T15:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>63</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Liz Claiborne (Dayton Cosmetics)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2000-04-05T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2000-04-05T00:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>64</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Nibrado Acosta</DriverName>
+    <FromLocation>Liz Claiborne (Mt. Pocono1)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2000-04-05T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2000-04-05T00:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>65</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Gin Singh</DriverName>
+    <TrailerNumber>53008</TrailerNumber>
+    <FromLocation>Liz Claiborne (Mt. Pocono2)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2000-04-05T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T11:45:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2000-04-05T00:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T14:03:00.0000000-04:00</ActualDelivery>
+    <Comments>757 ctns./drpd mt 53153</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>66</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Liz Claiborne (North Bergen)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2002-06-06T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2002-06-06T00:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>67</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Manny Cordero</DriverName>
+    <FromLocation>Nordol</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-03-15T23:00:00.0000000-05:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-03-15T23:00:00.0000000-05:00</ScheduledDelivery>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>68</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>James Kellam</DriverName>
+    <FromLocation>NS yard Langhorne,PA</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>MT</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>69</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Adel Gerguis</DriverName>
+    <FromLocation>NS yard Langhorne,PA</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>MT</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>70</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Mike Westbrook</DriverName>
+    <FromLocation>NS yard Langhorne,PA</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>MT</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>71</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Adel Gerguis</DriverName>
+    <FromLocation>NS yard Langhorne,PA</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>MT</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>72</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>NS yard Langhorne,PA</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>73</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>NS yard Langhorne,PA</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>74</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jim Creager</DriverName>
+    <FromLocation>Pearson Education</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2003-06-06T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2003-06-06T00:00:00.0000000-04:00</ScheduledDelivery>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>75</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Mike Jones</DriverName>
+    <TrailerNumber>53258</TrailerNumber>
+    <FromLocation>Putnam (Kirkwood)</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T08:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T08:44:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T16:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>23 plts</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>76</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Vernon Green</DriverName>
+    <TrailerNumber>53639</TrailerNumber>
+    <FromLocation>Random House</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2004-09-23T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T06:06:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2004-09-23T00:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T09:31:00.0000000-04:00</ActualDelivery>
+    <Comments>BS/drpd mt 53072</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>77</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Harry Hayes</DriverName>
+    <TrailerNumber>53143</TrailerNumber>
+    <FromLocation>Random House</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2004-09-23T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T09:19:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2004-09-23T00:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T13:40:00.0000000-04:00</ActualDelivery>
+    <Comments>BS/drpd mt 53152</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>78</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Stanley Egerson</DriverName>
+    <TrailerNumber>53060</TrailerNumber>
+    <FromLocation>Random House</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T13:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T11:05:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T17:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>BS/drpd mt 53215</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>79</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Brian Walker</DriverName>
+    <TrailerNumber>53052</TrailerNumber>
+    <FromLocation>Random House</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2004-09-23T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2004-09-23T00:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>HR/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>80</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Ed Mead</DriverName>
+    <TrailerNumber>53628</TrailerNumber>
+    <FromLocation>Random House</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T00:30:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T04:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>BS/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>81</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Random House</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>82</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>Random House</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>83</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Bob McCoy</DriverName>
+    <TrailerNumber>27169</TrailerNumber>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T10:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T10:35:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T14:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>1432 ctns/drpd mt 53206</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>84</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Ramon Mosquera</DriverName>
+    <TrailerNumber>53211</TrailerNumber>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T11:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T10:52:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T11:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T11:15:00.0000000-04:00</ActualDelivery>
+    <Comments>to SW/1178 ctns/drpd mt 53230</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>85</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Ramon Mosquera</DriverName>
+    <TrailerNumber>53419</TrailerNumber>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T13:00:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T12:51:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T17:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>1723 ctns/drpd mt 53271</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>86</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Auriello Sorto</DriverName>
+    <TrailerNumber>53206</TrailerNumber>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T13:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T13:25:00.0000000-04:00</ActualDeparture>
+    <Comments>to SW/1437ctns/drpd mt 53165</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>87</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Auriello Sorto</DriverName>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>88</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jorge Leon</DriverName>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T14:30:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T18:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt 53135</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>89</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Gustavo Vega</DriverName>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T14:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T18:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt 53117</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>90</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Segundo Zabalu</DriverName>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T16:30:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T20:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>91</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Gustavo Vega</DriverName>
+    <TrailerNumber>53219</TrailerNumber>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix S Windsor</ToLocation>
+    <ScheduledDeparture>2005-10-05T13:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T13:22:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T14:00:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T13:58:00.0000000-04:00</ActualDelivery>
+    <Comments>157 ctns/drpd mt 53635</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>92</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>xxxxxxxxxx</DriverName>
+    <TrailerNumber>xxxxx</TrailerNumber>
+    <FromLocation>RBA Enfield, CT</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>93</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Mike Westbrook</DriverName>
+    <FromLocation>Service Express</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2003-06-09T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2003-06-09T00:00:00.0000000-04:00</ScheduledDelivery>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>94</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Ricky Cassanova</DriverName>
+    <FromLocation>Tommy Hilfiger</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T18:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T18:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>95</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Ricky Cassanova</DriverName>
+    <FromLocation>Tommy Hilfiger</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T21:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T21:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>96</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Jorge Leon</DriverName>
+    <TrailerNumber>9743</TrailerNumber>
+    <FromLocation>Triangle Transport</FromLocation>
+    <ToLocation>Argix S Windsor</ToLocation>
+    <ScheduledDeparture>2005-10-05T09:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T11:06:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T12:30:00.0000000-04:00</ScheduledDelivery>
+    <ActualDelivery>2005-10-05T14:00:00.0000000-04:00</ActualDelivery>
+    <Comments>419 ctns</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>97</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Carlos Calderon</DriverName>
+    <TrailerNumber>53620</TrailerNumber>
+    <FromLocation>Triangle Transport</FromLocation>
+    <ToLocation>Argix Wilmington</ToLocation>
+    <ScheduledDeparture>2005-10-05T09:30:00.0000000-04:00</ScheduledDeparture>
+    <ActualDeparture>2005-10-05T11:07:00.0000000-04:00</ActualDeparture>
+    <ScheduledDelivery>2005-10-05T14:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>1273 ctns/drpd mt 53611</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>98</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>David Zavaleta</DriverName>
+    <FromLocation>Villeroy &amp; Boch</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2000-04-05T00:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2000-04-05T00:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt/Drivers must chock and pinlock trailer!!!</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>99</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Hector Bido</DriverName>
+    <FromLocation>Weathervane</FromLocation>
+    <ToLocation>Argix Jamesburg</ToLocation>
+    <ScheduledDeparture>2005-10-05T16:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T20:00:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+  <ScheduledInboundTable>
+    <ID>100</ID>
+    <Created>2005-10-05T00:00:00.0000000-04:00</Created>
+    <CreatedBy>JHeary</CreatedBy>
+    <DriverName>Rigo Plasencia</DriverName>
+    <FromLocation>Weathervane</FromLocation>
+    <ToLocation>Argix Wilmington</ToLocation>
+    <ScheduledDeparture>2005-10-05T16:00:00.0000000-04:00</ScheduledDeparture>
+    <ScheduledDelivery>2005-10-05T18:30:00.0000000-04:00</ScheduledDelivery>
+    <Comments>/drpd mt</Comments>
+  </ScheduledInboundTable>
+</DispatchDS>

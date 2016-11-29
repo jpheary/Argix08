@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4d6f182e-ec59-40fc-b968-e833b4d97dfe" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://rgxvmweb/Argix08/Argix08.RateWareService/RateWareService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RateWareService.xsd" MetadataType="Schema" ID="5514d6ac-6954-4602-930d-e00bffe19972" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd2" />
+    <MetadataFile FileName="RateWareService1.xsd" MetadataType="Schema" ID="00f35c64-51fd-4e63-93cb-1de66ff69997" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd1" />
+    <MetadataFile FileName="RateWareService.disco" MetadataType="Disco" ID="9e6317fd-aa4e-44d5-b831-917c9ee8e28d" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?disco" />
+    <MetadataFile FileName="RateWareService.wsdl" MetadataType="Wsdl" ID="566d96dc-ed27-4356-9380-c345e09d503c" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="RateWareService2.xsd" MetadataType="Schema" ID="ac9de22b-b3d7-43c6-807d-5154b213c298" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd4" />
+    <MetadataFile FileName="RateWareService3.xsd" MetadataType="Schema" ID="ecbccdec-99ea-4123-8c03-799f4dd1b9a7" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd3" />
+    <MetadataFile FileName="RateWareService1.wsdl" MetadataType="Wsdl" ID="03d6c382-b8ee-4a3b-b034-23939925d146" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?wsdl" />
+    <MetadataFile FileName="RateWareService4.xsd" MetadataType="Schema" ID="9009674f-cbae-4b1a-8f07-1a99b4330012" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd5" />
+    <MetadataFile FileName="RateWareService5.xsd" MetadataType="Schema" ID="34c62c73-a5d5-4901-a65b-f96b58d07134" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

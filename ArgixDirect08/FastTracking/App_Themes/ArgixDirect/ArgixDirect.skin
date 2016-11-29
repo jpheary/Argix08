@@ -1,0 +1,40 @@
+<asp:Button Runat="server" Font-Size="1.0em" />
+<asp:Calendar runat="server" Font-Size="1.0em" BorderWidth="1px" Style="position: relative" CellPadding="1" DayNameFormat="FirstLetter" NextMonthText="&gt;" PrevMonthText="&lt;" ShowGridLines="True"></asp:Calendar>
+<asp:CheckBox runat="server" Font-Size="1.0em" ForeColor="buttontext" />
+<asp:CheckBoxList runat="server" Font-Size="1.0em" ForeColor="buttontext" />
+<asp:CustomValidator Runat="server" Font-Bold="true" ForeColor="#CC3333" BackColor="#ffe0f3" />
+<asp:DropDownList Runat="server" Font-Size="1.0em" />
+<asp:GridView Runat="server" Font-Size="1.0em" BorderStyle="Inset" BorderWidth="1px" CellPadding="2" CellSpacing="0" GridLines="Both" BackColor="White" >
+    <EditRowStyle />
+    <EmptyDataRowStyle BackColor="White" ForeColor="Black" Wrap="false"  />
+    <FooterStyle BackColor="White" ForeColor="Black" Wrap="false" />
+    <HeaderStyle BorderStyle="None" BorderWidth="0px" BorderColor="Window" BackColor="Control" ForeColor="ControlText" Wrap="True" />
+    <PagerStyle BackColor="Control" ForeColor="ControlText" HorizontalAlign="Left" />
+    <RowStyle BorderStyle="None" BorderWidth="0px" />
+    <SelectedRowStyle BorderStyle="None" BorderWidth="0px" BackColor="Highlight" ForeColor="HighlightText" />
+</asp:GridView>
+<asp:HyperLink Runat="server" />
+<asp:Label Runat="server" Font-Size="1.0em" />
+<asp:LinkButton Runat="server" />
+<asp:Panel runat="server" Font-Size="1.0em" Wrap="False" Width="100%" BorderStyle="Solid" BorderWidth="0px" BorderColor="#e7000d" />
+<asp:RadioButtonList Runat="server" Font-Size="1.0em" />
+<asp:RegularExpressionValidator Runat="server" Font-Size="0.9em" forecolor="#e7000d" />
+<asp:RequiredFieldValidator Runat="server" Font-Size="0.9em" forecolor="#e7000d" />
+<asp:TextBox Runat="server" Font-Size="1.0em" BackColor="white" />
+<asp:ValidationSummary Runat="server" Font-Bold="true" ForeColor="#CC3333" />
+
+
+<asp:GridView  runat="server" AutoGenerateColumns="False" CellPadding="2"  ForeColor="#333333"  CaptionAlign="Left" SkinID="GridSkin"> 
+    <FooterStyle BackColor="#999999" Font-Bold="True" ForeColor="White" />
+    <RowStyle BackColor="White" ForeColor="#333333" />
+    <EditRowStyle BackColor="#999999" />
+    <SelectedRowStyle BackColor="#CCCCCC" Font-Bold="True" ForeColor="#333333" />
+    <PagerStyle BackColor="#CCCCCC" ForeColor="White" HorizontalAlign="Center" />
+    <HeaderStyle BackColor="#999999" Font-Bold="True" ForeColor="Black" />
+    <AlternatingRowStyle BackColor="#CCCCCC" ForeColor="#333333" />
+</asp:GridView>
+<asp:Label Runat="server" Font-Names="Arial" Font-Size="10pt" ForeColor="black" skinid="lblText" />
+<asp:Label Runat="server" Font-Names="Arial" Font-Size="14pt" ForeColor="black"  skinid="lblTextDetail" Padding="5px"/>
+<asp:Label Runat="server" Font-Names="Arial" Font-Size="14pt" Font-Bold="True" Style="text-transform: uppercase;" ForeColor="#D21241" skinid="lblStatusDetail" Padding="2px"/>
+<asp:Label Runat="server" Font-Names="Arial" Font-Size="10pt" ForeColor="black"  skinid="lblDetailSum" Padding="2px"/>
+<asp:LinkButton Runat="server" Font-Names="Verdana" Font-Size="8pt" Font-Bold="true" VerticalAlign="Center"  ForeColor="#D21241" SkinID="linkBtn" />

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Tsort.Devices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Tsort.Devices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.IO.Ports" />
+  <xs:import schemaLocation="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+  <xs:complexType name="PortSettings">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsValueType xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsValueType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BaudRate" type="xs:int" />
+      <xs:element minOccurs="0" name="DataBits" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.IO.Ports" minOccurs="0" name="Handshake" type="q1:Handshake" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System.IO.Ports" minOccurs="0" name="Parity" type="q2:Parity" />
+      <xs:element minOccurs="0" name="PortName" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System.IO.Ports" minOccurs="0" name="StopBits" type="q3:StopBits" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PortSettings" nillable="true" type="tns:PortSettings" />
+  <xs:complexType name="ScaleFault">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System" minOccurs="0" name="Exception" nillable="true" type="q4:Exception" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ScaleFault" nillable="true" type="tns:ScaleFault" />
+  <xs:simpleType name="ScaleError">
+    <xs:list>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="None">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="RS232">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="ScaleStatus">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+          <xs:enumeration value="ScaleUnstable">
+            <xs:annotation>
+              <xs:appinfo>
+                <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:enumeration>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:list>
+  </xs:simpleType>
+  <xs:element name="ScaleError" nillable="true" type="tns:ScaleError" />
+</xs:schema>

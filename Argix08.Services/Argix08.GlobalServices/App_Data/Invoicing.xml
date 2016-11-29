@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<invoicing>
+	<client name="Amscan" number="048">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDate.xltx" />
+	</client>
+	<client name="Benetton" number="006">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.BenettonInvoice.xltx" />
+	</client>
+	<client name="Bourassa" number="003">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.BourassaInvoice.xltx" />
+	</client>
+	<client name="Bourassa" number="007">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.BourassaInvoice.xltx" />
+	</client>
+	<client name="Bourassa" number="021">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.BourassaInvoice.xltx" />
+	</client>
+	<client name="CMT/Urban Behavior " number="059">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDate.xltx" />
+	</client>
+	<client name="Coach" number="010">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.CoachInvoice.xltx" />
+	</client>
+	<client name="Famous Footwear" number="062">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoice.xltx" />
+	</client>
+	<client name="PacSun" number="011">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDateByPro.xltx" />
+	</client>
+	<client name="Party City" number="096">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDate.xltx" />
+	</client>
+	<client name="Party City" number="097">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDate.xltx" />
+	</client>
+	<client name="Pratt" number="023">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoice.xltx" />
+	</client>
+	<client name="Pratt" number="025">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoice.xltx" />
+	</client>
+	<client name="Pratt" number="050">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoice.xltx" />
+	</client>
+	<client name="Pollock" number="032">
+		<invoices types="IC, IV" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.PollockInvoice.xltx" IV="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.PollockInvoice.xltx" />
+	</client>
+	<client name="Streamlite" number="066">
+		<invoices types="IC,IV" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoice.xltx" IV="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.VendorInvoice.xltx" />
+	</client>
+	<client name="Tommy Hilfiger" number="037">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoice.xltx" />
+	</client>
+	<client name="Toys R Us" number="057">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDate.xltx" />
+	</client>
+	<client name="The Vitamin Shoppe" number="017">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDateByPro.xltx" />
+	</client>
+	<client name="Yankee Candle" number="061">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDateByPro.xltx" />
+	</client>
+	<client name="Ann Taylor Display Pallets" number="133">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoiceByReleaseDate.xltx" />
+	</client>
+		<client name="Ann Taylor" number="033">
+		<invoices types="IC" IC="http://rgxvmweb/Argix08/Apps/Finance/Invoicing/Argix.ClientInvoice.xltx" />
+	</client>
+</invoicing>

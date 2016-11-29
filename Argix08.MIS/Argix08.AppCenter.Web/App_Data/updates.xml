@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Updates>
+	<Update>
+		<Date>08/18/09</Date>
+		<Description>Deployed Charlotte applications</Description>
+	</Update>
+	<Update>
+		<Date>07/30/09</Date>
+		<Description>Ship Schedule v2.8.3 deployed to JA</Description>
+	</Update>
+	<Update>
+		<Date>07/29/09</Date>
+		<Description>Driver Compensation v2.8.7 deployed to Global</Description>
+	</Update>
+	<Update>
+		<Date>07/20/09</Date>
+		<Description>Driver Compensation v2.8.6 deployed to Global</Description>
+	</Update>
+	<Update>
+		<Date>07/13/09</Date>
+		<Description>Carton Tracking v2.8.0 deployed to Extranet</Description>
+	</Update>
+	<Update>
+		<Date>07/13/09</Date>
+		<Description>SharePoint Imaging Search v2.8.0 deployed to Global</Description>
+	</Update>
+	<Update>
+		<Date>07/08/09</Date>
+		<Description>Tsort.TLViewer.Web v2.8.0 deployed to Global</Description>
+	</Update>
+</Updates>

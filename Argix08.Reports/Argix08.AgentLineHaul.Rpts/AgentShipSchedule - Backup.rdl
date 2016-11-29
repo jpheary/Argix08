@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="RGXSQLR.TSORT">
+      <DataSourceReference>RGXSQLR.TSORT</DataSourceReference>
+      <rd:DataSourceID>327edd73-ef35-4e6c-889e-0ed08cfbaaed</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>0.5in</BottomMargin>
+  <RightMargin>0.5in</RightMargin>
+  <PageWidth>11in</PageWidth>
+  <ReportParameters>
+    <ReportParameter Name="SortCenterID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>100000532000000053</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Sort Center ID: </Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ScheduleDate">
+      <DataType>DateTime</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>= Today</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Schedule Date: </Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AgentNumber">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <Prompt>Agent#: </Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>false</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:GridSpacing>0.0625in</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ReportItems>
+      <Table Name="tblSchedule">
+        <Left>0.0625in</Left>
+        <DataSetName>ShipScheduleDS</DataSetName>
+        <Top>0.3125in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>9.875in</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="MainZone_1">
+                      <rd:DefaultName>MainZone_1</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!MainZone.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Tag">
+                      <rd:DefaultName>Tag</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Tag.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="S2MainZone">
+                      <rd:DefaultName>S2MainZone</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!S2MainZone.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="TrailerNumber">
+                      <rd:DefaultName>TrailerNumber</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!TrailerNumber.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="ScheduledDeparture">
+                      <rd:DefaultName>ScheduledDeparture</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Format(Fields!ScheduledDeparture.Value,"ddd MM-dd HH:mm")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="ScheduledArrival">
+                      <rd:DefaultName>ScheduledArrival</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Format(Fields!ScheduledArrival.Value,"ddd MM-dd HH:mm")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="S2ScheduledArrival">
+                      <rd:DefaultName>S2ScheduledArrival</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Format(Fields!S2ScheduledArrival.Value,"ddd MM-dd HH:mm")</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="LoadNumber">
+                      <rd:DefaultName>LoadNumber</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!LoadNumber.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Carrier">
+                      <rd:DefaultName>Carrier</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Carrier.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.1875in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <FontFamily>Verdana</FontFamily>
+          <FontSize>8pt</FontSize>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="MainZone">
+                      <rd:DefaultName>MainZone</rd:DefaultName>
+                      <ZIndex>17</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Zone</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <ZIndex>16</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Tag</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <ZIndex>15</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>S2 Zone</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <ZIndex>14</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Trailer#</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <ZIndex>13</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Sched. Depart</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <ZIndex>12</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Sched. Arrival</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox16">
+                      <rd:DefaultName>textbox16</rd:DefaultName>
+                      <ZIndex>11</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>S2 Sched. Arrival</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox18">
+                      <rd:DefaultName>textbox18</rd:DefaultName>
+                      <ZIndex>10</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Load#</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox22">
+                      <rd:DefaultName>textbox22</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Carrier</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.1875in</Height>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>0.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.6875in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.25in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.25in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.25in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.875in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.0625in</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>0.375in</Height>
+      </Table>
+      <Textbox Name="txtTerminal">
+        <Left>0.0625in</Left>
+        <Top>0.0625in</Top>
+        <Width>4.4625in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Verdana</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>8pt</FontSize>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.1875in</Height>
+        <Value>="Argix Terminal: " + First(Fields!SortCenter.Value, "ShipScheduleDS")</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>1.0625in</Height>
+  </Body>
+  <PageHeader>
+    <ReportItems>
+      <Textbox Name="txtTitle">
+        <Left>0.0625in</Left>
+        <Top>0.0625in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>4.875in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Verdana</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>12pt</FontSize>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>Argix Direct: Agent Shipping Schedule</Value>
+      </Textbox>
+      <Textbox Name="txtDate">
+        <Left>6.9375in</Left>
+        <Top>0.125in</Top>
+        <Width>2.975in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Verdana</FontFamily>
+          <FontSize>8pt</FontSize>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.1875in</Height>
+        <Value>="Schedule Date: " + Format(Parameters!ScheduleDate.Value, "MM-dd-yyyy")</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.375in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageHeader>
+  <rd:ReportID>892d9376-16fc-432d-9c21-099375dac932</rd:ReportID>
+  <LeftMargin>0.5in</LeftMargin>
+  <DataSets>
+    <DataSet Name="ShipScheduleDS">
+      <Query>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspShipScdeScheduleGetListAll</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@SortCenterID">
+            <Value>=Parameters!SortCenterID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ScheduleDate">
+            <Value>=Parameters!ScheduleDate.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <DataSourceName>RGXSQLR.TSORT</DataSourceName>
+      </Query>
+      <Filters>
+        <Filter>
+          <Operator>In</Operator>
+          <FilterValues>
+            <FilterValue>= Fields!AgentNumber.Value</FilterValue>
+            <FilterValue>= Fields!S2AgentNumber.Value</FilterValue>
+          </FilterValues>
+          <FilterExpression>= Parameters!AgentNumber.Value</FilterExpression>
+        </Filter>
+        <Filter>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue>=Nothing</FilterValue>
+          </FilterValues>
+          <FilterExpression>=Fields!Canceled.Value</FilterExpression>
+        </Filter>
+      </Filters>
+      <Fields>
+        <Field Name="ScheduleID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ScheduleID</DataField>
+        </Field>
+        <Field Name="SortCenterID">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>SortCenterID</DataField>
+        </Field>
+        <Field Name="SortCenter">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SortCenter</DataField>
+        </Field>
+        <Field Name="ScheduleDate">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>ScheduleDate</DataField>
+        </Field>
+        <Field Name="TripID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TripID</DataField>
+        </Field>
+        <Field Name="TemplateID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TemplateID</DataField>
+        </Field>
+        <Field Name="BolNumber">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>BolNumber</DataField>
+        </Field>
+        <Field Name="CarrierServiceID">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>CarrierServiceID</DataField>
+        </Field>
+        <Field Name="Carrier">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Carrier</DataField>
+        </Field>
+        <Field Name="LoadNumber">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LoadNumber</DataField>
+        </Field>
+        <Field Name="TrailerID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>TrailerID</DataField>
+        </Field>
+        <Field Name="TrailerNumber">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TrailerNumber</DataField>
+        </Field>
+        <Field Name="TractorNumber">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TractorNumber</DataField>
+        </Field>
+        <Field Name="ScheduledClose">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>ScheduledClose</DataField>
+        </Field>
+        <Field Name="ScheduledDeparture">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>ScheduledDeparture</DataField>
+        </Field>
+        <Field Name="IsMandatory">
+          <rd:TypeName>System.Byte</rd:TypeName>
+          <DataField>IsMandatory</DataField>
+        </Field>
+        <Field Name="FreightAssigned">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>FreightAssigned</DataField>
+        </Field>
+        <Field Name="TrailerComplete">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>TrailerComplete</DataField>
+        </Field>
+        <Field Name="PaperworkComplete">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>PaperworkComplete</DataField>
+        </Field>
+        <Field Name="TrailerDispatched">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>TrailerDispatched</DataField>
+        </Field>
+        <Field Name="Canceled">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>Canceled</DataField>
+        </Field>
+        <Field Name="SCDEUserID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SCDEUserID</DataField>
+        </Field>
+        <Field Name="SCDELastUpdated">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>SCDELastUpdated</DataField>
+        </Field>
+        <Field Name="SCDERowVersion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SCDERowVersion</DataField>
+        </Field>
+        <Field Name="StopID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>StopID</DataField>
+        </Field>
+        <Field Name="StopNumber">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>StopNumber</DataField>
+        </Field>
+        <Field Name="AgentTerminalID">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>AgentTerminalID</DataField>
+        </Field>
+        <Field Name="AgentNumber">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>AgentNumber</DataField>
+        </Field>
+        <Field Name="MainZone">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MainZone</DataField>
+        </Field>
+        <Field Name="Tag">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Tag</DataField>
+        </Field>
+        <Field Name="Notes">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Notes</DataField>
+        </Field>
+        <Field Name="ScheduledArrival">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>ScheduledArrival</DataField>
+        </Field>
+        <Field Name="ScheduledOFD1">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>ScheduledOFD1</DataField>
+        </Field>
+        <Field Name="S1UserID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S1UserID</DataField>
+        </Field>
+        <Field Name="S1LastUpdated">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>S1LastUpdated</DataField>
+        </Field>
+        <Field Name="S1RowVersion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S1RowVersion</DataField>
+        </Field>
+        <Field Name="S2StopID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S2StopID</DataField>
+        </Field>
+        <Field Name="S2StopNumber">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S2StopNumber</DataField>
+        </Field>
+        <Field Name="S2AgentTerminalID">
+          <rd:TypeName>System.Int64</rd:TypeName>
+          <DataField>S2AgentTerminalID</DataField>
+        </Field>
+        <Field Name="S2AgentNumber">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S2AgentNumber</DataField>
+        </Field>
+        <Field Name="S2MainZone">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S2MainZone</DataField>
+        </Field>
+        <Field Name="S2Tag">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S2Tag</DataField>
+        </Field>
+        <Field Name="S2Notes">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S2Notes</DataField>
+        </Field>
+        <Field Name="S2ScheduledArrival">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>S2ScheduledArrival</DataField>
+        </Field>
+        <Field Name="S2ScheduledOFD1">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>S2ScheduledOFD1</DataField>
+        </Field>
+        <Field Name="S2UserID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S2UserID</DataField>
+        </Field>
+        <Field Name="S2LastUpdated">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>S2LastUpdated</DataField>
+        </Field>
+        <Field Name="S2RowVersion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>S2RowVersion</DataField>
+        </Field>
+        <Field Name="NextCarrier">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>NextCarrier</DataField>
+        </Field>
+        <Field Name="CarrierID">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CarrierID</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Author>jheary</Author>
+  <Code />
+  <Width>10in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Description>Agent shipping schedule</Description>
+  <Language>en-US</Language>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="txtPage">
+        <Left>4.5in</Left>
+        <Top>0.0625in</Top>
+        <Width>1.05in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Verdana</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>8pt</FontSize>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.1875in</Height>
+        <Value>=Globals!PageNumber</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.3125in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>0.5in</TopMargin>
+  <PageHeight>8.5in</PageHeight>
+</Report>

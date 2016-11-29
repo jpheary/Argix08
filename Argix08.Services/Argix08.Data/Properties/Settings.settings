@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Argix.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SQLConnection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">data source=RGXDEVDB;initial catalog=TSORTLOCAL;persist security info=False;user id=sa;password=objects;packet size=4096;Connect Timeout=30</Value>
+    </Setting>
+    <Setting Name="FileStore" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\rgxdevdb\c$\inetpub\wwwroot\global\</Value>
+    </Setting>
+    <Setting Name="DataAccessWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/Argix08/Argix08.Data.WebSvc/DataAccess.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

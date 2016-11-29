@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="DestinationRoutingDS" targetNamespace="http://tempuri.org/DestinationRoutingDS.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/DestinationRoutingDS.xsd"
+	xmlns:mstns="http://tempuri.org/DestinationRoutingDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="DestinationRoutingDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="DestinationRoutingTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="clientNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationName" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationNumber" type="xs:int" minOccurs="0" />
+							<xs:element name="destinationPhone" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationAddressLine1" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationAddressLine2" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationAddressCity" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationAddressState" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationAddressZip" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationAltRoute" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationRoute" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationUserLabelData" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationStatus" type="xs:string" minOccurs="0" />
+							<xs:element name="destinationOpenDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="localLane" type="xs:string" minOccurs="0" />
+							<xs:element name="osURSACode" type="xs:string" minOccurs="0" />
+							<xs:element name="OSSequence" type="xs:int" minOccurs="0" />
+							<xs:element name="zoneCode" type="xs:string" minOccurs="0" />
+							<xs:element name="ZoneType" type="xs:string" minOccurs="0" />
+							<xs:element name="outboundLabelType" type="xs:string" minOccurs="0" />
+							<xs:element name="zoneLane" type="xs:string" />
+							<xs:element name="zoneLaneSmallSort" type="xs:string" />
+							<xs:element name="zoneTL" type="xs:string" minOccurs="0" />
+							<xs:element name="ShiftDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ShiftNumber" type="xs:string" />
+							<xs:element name="TLDate" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="CloseNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="ManifestCartonNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="ManifestTrackingNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="ManifestPONumber" type="xs:string" minOccurs="0" />
+							<xs:element name="ManifestWeight" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

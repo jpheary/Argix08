@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InvoiceDS" targetNamespace="http://tempuri.org/InvoiceDS.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/InvoiceDS.xsd" xmlns:mstns="http://tempuri.org/InvoiceDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="InvoiceTable">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CarrierName" type="xs:string" minOccurs="0" />
+				<xs:element name="PRONumber" type="xs:long" minOccurs="0" />
+				<xs:element name="InvoiceDate" type="xs:dateTime" minOccurs="0" />
+				<xs:element name="Weight" type="xs:int" minOccurs="0" />
+				<xs:element name="ActualCharge" type="xs:decimal" minOccurs="0" />
+				<xs:element name="BLNumber" type="xs:int" minOccurs="0" />
+				<xs:element name="ConsigneeName" type="xs:string" minOccurs="0" />
+				<xs:element name="StoreNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="StreetAddress1" type="xs:string" minOccurs="0" />
+				<xs:element name="City" type="xs:string" minOccurs="0" />
+				<xs:element name="State" type="xs:string" minOccurs="0" />
+				<xs:element name="ZIP" type="xs:string" minOccurs="0" />
+				<xs:element name="Expense1" type="xs:decimal" minOccurs="0" />
+				<xs:element name="FSCAmount" type="xs:decimal" minOccurs="0" />
+				<xs:element name="TotalPalletCount" type="xs:int" minOccurs="0" />
+				<xs:element name="DeliveryNumber" type="xs:string" minOccurs="0" />
+				<xs:element name="InvoiceNumber" type="xs:string" minOccurs="0" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

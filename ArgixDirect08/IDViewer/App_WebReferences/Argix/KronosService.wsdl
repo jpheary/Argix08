@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix/Imports">
+      <xsd:import schemaLocation="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd0" namespace="http://Argix" />
+      <xsd:import schemaLocation="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Argix" />
+      <xsd:import schemaLocation="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:59181/Argix08.KronosService/KronosService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IKronos_GetUserConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetUserConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetUserConfiguration_ConfigurationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Argix" name="detail" element="q1:ConfigurationFault" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_WriteLogEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteLogEntry" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetTerminalInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfo" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetTerminalInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTerminalInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetIDTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDTypes" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetIDTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIDTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetEmployeeList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeList" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetEmployeeList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetEmployees_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployees" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetEmployees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_GetEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_AddEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_AddEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_SearchEmployees_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchEmployees" />
+  </wsdl:message>
+  <wsdl:message name="IKronos_SearchEmployees_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchEmployeesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IKronos">
+    <wsdl:operation name="GetUserConfiguration">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/GetUserConfiguration" message="tns:IKronos_GetUserConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IKronos/GetUserConfigurationResponse" message="tns:IKronos_GetUserConfiguration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.ConfigurationFault" name="ConfigurationFaultFault" message="tns:IKronos_GetUserConfiguration_ConfigurationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteLogEntry">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/WriteLogEntry" message="tns:IKronos_WriteLogEntry_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTerminalInfo">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/GetTerminalInfo" message="tns:IKronos_GetTerminalInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IKronos/GetTerminalInfoResponse" message="tns:IKronos_GetTerminalInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIDTypes">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/GetIDTypes" message="tns:IKronos_GetIDTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IKronos/GetIDTypesResponse" message="tns:IKronos_GetIDTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeList">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/GetEmployeeList" message="tns:IKronos_GetEmployeeList_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IKronos/GetEmployeeListResponse" message="tns:IKronos_GetEmployeeList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployees">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/GetEmployees" message="tns:IKronos_GetEmployees_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IKronos/GetEmployeesResponse" message="tns:IKronos_GetEmployees_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployee">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/GetEmployee" message="tns:IKronos_GetEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IKronos/GetEmployeeResponse" message="tns:IKronos_GetEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEmployee">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/AddEmployee" message="tns:IKronos_AddEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IKronos/AddEmployeeResponse" message="tns:IKronos_AddEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchEmployees">
+      <wsdl:input wsaw:Action="http://Argix/IKronos/SearchEmployees" message="tns:IKronos_SearchEmployees_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix/IKronos/SearchEmployeesResponse" message="tns:IKronos_SearchEmployees_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

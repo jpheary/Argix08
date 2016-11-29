@@ -1,0 +1,114 @@
+              --------------------------------------------------------
+                    Ship Schedule Templates Application Readme File
+		                       	  October, 2011
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2005-2011
+
+This document provides late-breaking or other information that supplements the Ship Schedule 
+Templates documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+Ship Schedule Templates is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\ShipSchedule on a web server using Windows explorer.
+2.	Copy the following files into this folder-
+		Argix08.Export.dll
+		Argix08.Windows.dll
+		Infragistics2.Shared.v10.1.dll
+		Infragistics2.Win.UltraWinGrid.v10.1.dll
+		Infragistics2.Win.v10.1.dll
+		Templates.exe
+		Templates.exe.config
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the local sort database, goto the Configuration table, and add/edit the values below:
+	Application              PCName          Key                       Value                     Security 
+	------------------------ --------------- ------------------------- ------------------------- -------- 
+	Ship Schedule Templates   jheary          Role                      LineHaulAdministrator     1        
+	Ship Schedule Templates   jheary2         Role                      LineHaulCoordinator       1        
+
+
+NOTES
+==============
+GENERAL
+The Ship Schedule Templates Application (ShipSchedule.exe) is a Windows based application used to manage
+outbound ship schedule templates. These templates are used by the Ship Schedule application to add loads to 
+the ship schedule.
+
+LineHaulOperator (default)
+- view any ship schedule
+- print and export any ship schedule
+LineHaulCoordinator
+- all features of LineHaulOperator
+LineHaulAdministrator
+- all features of LineHaulCoordinator
+
+OPERATION
+Normal:
+The Ship Schedule Templates Application (ShipSchedule.exe) operates by launching from a web server deployment url 
+(i.e. http://localhost/Argix08/Apps/ShipScheduleTemplates/ShipScheduleTemplates.application). After a brief splash screen, 
+a sizeable window appears and displays a grid loaded with ship schedule templates for all Argix terminals. The taskbar 
+displays the operating terminal and connection status. Additional operating steps can be found in the on-line documentation 
+provided by the Help/Contents menu item.
+
+
+VERSION HISTORY
+v2.7.0, 08/28/07 ---------------------------------------------------------------------------
+Requirements/features
+- Initial release.
+Design/deployment
+- Initial release.
+
+v2.8.0, 01/05/08 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Application ported to .NET Framework 2.0 using Visual Studio 2005.
+
+v2.8.1, 04/22/09 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Bug fixes.
+
+v3.0.0, 09/16/09 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Application ported to .NET Framework 3.5 using Visual Studio 2008.
+
+v3.5.0, 09/21/11, 10/11/11 -----------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Moved businesss logic/data access into Argix08.GlobalServices WCF service
+- Upgraded to Infragistics NetAdvantage 2010 third party control suite (required: Infragistics2.Win.v10.1.dll, Infragistics2.Shared.v10.1.dll, Infragistics2.Win.UltraWinGrid.v10.1.dll)
+- Other minor design changes
+- restored grid updates on RowChangedOrLostFocus
+

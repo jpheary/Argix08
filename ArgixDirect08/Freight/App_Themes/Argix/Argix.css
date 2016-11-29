@@ -1,0 +1,71 @@
+body
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 0.7em;
+	color: ButtonText;
+	background-color: ButtonFace;
+}
+.WindowTitle
+{
+	font-size: 1.1em; 
+	vertical-align: middle;
+	padding-left: 6px; 
+	background-image: url(Images/windowtitle.gif); 
+	background-repeat: repeat-x;
+}
+.GridTitle
+{
+	font-size: 1.0em; 
+	vertical-align: middle;
+	padding-left: 6px; 
+	background-image: url(Images/gridtitle.gif); 
+	background-repeat: repeat-x;
+}
+.Header
+{
+	font-weight: bold;
+	text-align: left;
+}
+.Label
+{	
+	font-weight: normal;
+	text-align: right;
+}
+.Data
+{
+	text-align: right;
+	border-bottom: thin inset;
+	border-left: thin inset;
+	border-top: thin inset;
+	border-right: thin inset;
+}
+.InputData
+{
+	background-color: Window;
+	text-align: right;
+	border-bottom: thin inset;
+	border-left: thin inset;
+	border-top: thin inset;
+	border-right: thin inset;
+}
+.GrandData
+{
+	color: White;
+	background-color: Highlight;
+	text-align: right;
+	border-bottom: thin inset;
+	border-left: thin inset;
+	border-top: thin inset;
+	border-right: thin inset;
+}
+.NormalRow
+{
+	color: WindowText;
+	background-color: Window;
+}
+.SelectedRow
+{
+	color: White;
+	background-color: Highlight;
+}
+

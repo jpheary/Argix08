@@ -1,0 +1,2 @@
+<%@ Page Language="C#" MasterPageFile="~/MasterPages/OnTime.master" AutoEventWireup="true" CodeFile="OnTimeByWindow.aspx.cs" Inherits="OnTimeByWindow" %>
+<%@ MasterType VirtualPath="~/MasterPages/OnTime.master" %>

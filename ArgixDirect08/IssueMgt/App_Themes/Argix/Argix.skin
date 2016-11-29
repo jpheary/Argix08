@@ -1,0 +1,38 @@
+<%@ Register Assembly="Infragistics35.WebUI.UltraWebGrid.v10.1, Version=10.1.20101.1011, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" Namespace="Infragistics.WebUI.UltraWebGrid" TagPrefix="igtbl" %>
+<asp:Button Runat="server" Font-Size="1.0em" />
+<asp:Calendar runat="server" DayNameFormat="FirstLetter" NextPrevFormat="CustomText" ShowGridLines="True" BorderColor="#E7000D" BorderStyle="Solid" BorderWidth="1px">
+    <TodayDayStyle BackColor="#FFE0F3" ForeColor="Black" />
+    <DayStyle Font-Size="7pt" ForeColor="Black" />
+    <WeekendDayStyle BackColor="#C0C0FF" ForeColor="Black" />
+    <NextPrevStyle ForeColor="White" />
+    <DayHeaderStyle BackColor="#FFE0F3" Font-Bold="True" ForeColor="Black" />
+    <TitleStyle BackColor="#E7000D" Font-Bold="False" Font-Size="1.1em" ForeColor="White" />
+</asp:Calendar>
+<asp:CheckBox runat="server" Font-Size="1.0em" ForeColor="buttontext" />
+<asp:CheckBoxList runat="server" Font-Size="1.0em" ForeColor="buttontext" />
+<asp:CustomValidator Runat="server" Font-Bold="true" ForeColor="#CC3333" BackColor="#ffe0f3" />
+<asp:DropDownList Runat="server" Font-Size="1.0em" BackColor="Window" />
+<asp:FileUpload Runat="server" Font-Size="1.0em" />
+<asp:GridView Runat="server" Font-Size="0.9em" BorderStyle="Inset" BorderWidth="1px" CellPadding="2" CellSpacing="0" GridLines="Both" BackColor="White" >
+    <HeaderStyle BorderStyle="None" Font-Size="0.9em" BorderWidth="0px" BorderColor="Window" BackColor="Control" ForeColor="ControlText" Wrap="True" />
+    <RowStyle Height="16px" BorderStyle="None" BorderWidth="0px" />
+    <SelectedRowStyle Height="16px" BorderStyle="None" BorderWidth="0px" BackColor="Highlight" ForeColor="HighlightText" />
+    <PagerStyle BackColor="Control" ForeColor="ControlText" HorizontalAlign="Left" />
+</asp:GridView>
+<asp:HyperLink Runat="server" />
+<asp:Label Runat="server" Font-Size="1.0em" />
+<asp:LinkButton Runat="server" />
+<asp:LoginName runat="server" Font-Size="1.0em" ForeColor="black" Font-Bold="True" />
+<asp:LoginStatus runat="server" Font-Size="1.0em" Font-Underline="true" ForeColor="#e7000d" Font-Bold="True" />
+<asp:Panel runat="server" Font-Size="1.0em" Wrap="False" Width="100%" BorderStyle="Solid" BorderWidth="0px" BorderColor="#e7000d" />
+<asp:RadioButtonList Runat="server" Font-Size="1.0em" />
+<asp:RegularExpressionValidator Runat="server" Font-Size="0.9em" forecolor="#e7000d" />
+<asp:RequiredFieldValidator Runat="server" Font-Size="0.9em" forecolor="#e7000d" />
+<asp:TextBox Runat="server" Font-Size="1.0em" BackColor="white" />
+<asp:ValidationSummary Runat="server" Font-Bold="true" ForeColor="#CC3333" BackColor="#ffe0f3" />
+
+<asp:LinkButton runat="server" Font-Size="0.6em" Font-Underline="false" Font-Bold="true" ForeColor="#CC3333" skinid="GlobalLink" />
+<asp:TableCell Runat="server" Font-Size="1.4em" ForeColor="Black" style="vertical-align:middle; padding-left:6px; background-image:url(App_Themes/Argix/Images/pagetitle.gif); background-repeat:repeat-x;" skinid="PageTitle" />
+<asp:TableCell Runat="server" Font-Size="1.1em" ForeColor="Black" style="vertical-align:middle; padding-left:6px; background-image:url(App_Themes/Argix/Images/windowtitle.gif); background-repeat:repeat-x;" skinid="WindowTitle" />
+<asp:TableCell Runat="server" Font-Size="1.0em" ForeColor="Black" style="vertical-align:middle; padding-left:6px; background-image:url(App_Themes/Argix/Images/gridtitle.gif); background-repeat:repeat-x;" skinid="GridTitle" />
+

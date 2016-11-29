@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="yes"?>
+<SelectionsDS xmlns="http://tempuri.org/SelectionsDS.xsd">
+  <xs:schema id="SelectionsDS" targetNamespace="http://tempuri.org/SelectionsDS.xsd" xmlns:mstns="http://tempuri.org/SelectionsDS.xsd" xmlns="http://tempuri.org/SelectionsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="SelectionsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="SelectionTable">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ScheduleName" type="xs:string" minOccurs="0" />
+                <xs:element name="ControlName" type="xs:string" minOccurs="0" />
+                <xs:element name="Selection" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <SelectionTable>
+    <ScheduleName>Client Inbound Freight</ScheduleName>
+    <ControlName>cboAmountType</ControlName>
+    <Selection>Cartons</Selection>
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Client Inbound Freight</ScheduleName>
+    <ControlName>cboAmountType</ControlName>
+    <Selection>Pallets</Selection>
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Client Inbound Freight</ScheduleName>
+    <ControlName>cboAmountType</ControlName>
+    <Selection>Trailer</Selection>
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Client Inbound Freight</ScheduleName>
+    <ControlName>cboFreightType</ControlName>
+    <Selection>Tsort</Selection>
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Pickup</ScheduleName>
+    <ControlName>cboTerminal</ControlName>
+    <Selection>Jamesburg</Selection>
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Pickup</ScheduleName>
+    <ControlName>cboAmountType</ControlName>
+    <Selection />
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Inbound Freight</ScheduleName>
+    <ControlName>cboFreightFrom</ControlName>
+    <Selection>ADI (South River)</Selection>
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Inbound Freight</ScheduleName>
+    <ControlName>cboFreightTo</ControlName>
+    <Selection>Argix Jamesburg</Selection>
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Inbound Freight</ScheduleName>
+    <ControlName>cboFreightFrom</ControlName>
+    <Selection />
+  </SelectionTable>
+  <SelectionTable>
+    <ScheduleName>Inbound Freight</ScheduleName>
+    <ControlName>cboFreightTo</ControlName>
+    <Selection />
+  </SelectionTable>
+</SelectionsDS>

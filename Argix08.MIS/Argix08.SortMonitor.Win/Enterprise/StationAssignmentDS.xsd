@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StationAssignmentDS" targetNamespace="http://tempuri.org/StationAssignmentDS.xsd" xmlns:mstns="http://tempuri.org/StationAssignmentDS.xsd" xmlns="http://tempuri.org/StationAssignmentDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StationAssignmentDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StationAssignmentDS" msprop:Generator_DataSetName="StationAssignmentDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IndirectAssignmentTable" msprop:Generator_UserTableName="IndirectAssignmentTable" msprop:Generator_RowDeletedName="IndirectAssignmentTableRowDeleted" msprop:Generator_RowChangedName="IndirectAssignmentTableRowChanged" msprop:Generator_RowClassName="IndirectAssignmentTableRow" msprop:Generator_RowChangingName="IndirectAssignmentTableRowChanging" msprop:Generator_RowEvArgName="IndirectAssignmentTableRowChangeEvent" msprop:Generator_RowEvHandlerName="IndirectAssignmentTableRowChangeEventHandler" msprop:Generator_TableClassName="IndirectAssignmentTableDataTable" msprop:Generator_TableVarName="tableIndirectAssignmentTable" msprop:Generator_RowDeletingName="IndirectAssignmentTableRowDeleting" msprop:Generator_TablePropName="IndirectAssignmentTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StationNumber" msprop:Generator_UserColumnName="StationNumber" msprop:Generator_ColumnVarNameInTable="columnStationNumber" msprop:Generator_ColumnPropNameInRow="StationNumber" msprop:Generator_ColumnPropNameInTable="StationNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TripNumber" msprop:Generator_UserColumnName="TripNumber" msprop:Generator_ColumnVarNameInTable="columnTripNumber" msprop:Generator_ColumnPropNameInRow="TripNumber" msprop:Generator_ColumnPropNameInTable="TripNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CartonCount" msprop:Generator_UserColumnName="CartonCount" msprop:Generator_ColumnVarNameInTable="columnCartonCount" msprop:Generator_ColumnPropNameInRow="CartonCount" msprop:Generator_ColumnPropNameInTable="CartonCountColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Carrier" msprop:Generator_UserColumnName="Carrier" msprop:Generator_ColumnVarNameInTable="columnCarrier" msprop:Generator_ColumnPropNameInRow="Carrier" msprop:Generator_ColumnPropNameInTable="CarrierColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TrailerNumber" msprop:Generator_UserColumnName="TrailerNumber" msprop:Generator_ColumnVarNameInTable="columnTrailerNumber" msprop:Generator_ColumnPropNameInRow="TrailerNumber" msprop:Generator_ColumnPropNameInTable="TrailerNumberColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DirectAssignmentTable" msprop:Generator_UserTableName="DirectAssignmentTable" msprop:Generator_RowDeletedName="DirectAssignmentTableRowDeleted" msprop:Generator_RowChangedName="DirectAssignmentTableRowChanged" msprop:Generator_RowClassName="DirectAssignmentTableRow" msprop:Generator_RowChangingName="DirectAssignmentTableRowChanging" msprop:Generator_RowEvArgName="DirectAssignmentTableRowChangeEvent" msprop:Generator_RowEvHandlerName="DirectAssignmentTableRowChangeEventHandler" msprop:Generator_TableClassName="DirectAssignmentTableDataTable" msprop:Generator_TableVarName="tableDirectAssignmentTable" msprop:Generator_RowDeletingName="DirectAssignmentTableRowDeleting" msprop:Generator_TablePropName="DirectAssignmentTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssignmentID" msprop:Generator_UserColumnName="AssignmentID" msprop:Generator_ColumnVarNameInTable="columnAssignmentID" msprop:Generator_ColumnPropNameInRow="AssignmentID" msprop:Generator_ColumnPropNameInTable="AssignmentIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TerminalID" msprop:Generator_UserColumnName="TerminalID" msprop:Generator_ColumnVarNameInTable="columnTerminalID" msprop:Generator_ColumnPropNameInRow="TerminalID" msprop:Generator_ColumnPropNameInTable="TerminalIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StationID" msprop:Generator_UserColumnName="StationID" msprop:Generator_ColumnVarNameInTable="columnStationID" msprop:Generator_ColumnPropNameInRow="StationID" msprop:Generator_ColumnPropNameInTable="StationIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StationNumber" msprop:Generator_UserColumnName="StationNumber" msprop:Generator_ColumnVarNameInTable="columnStationNumber" msprop:Generator_ColumnPropNameInRow="StationNumber" msprop:Generator_ColumnPropNameInTable="StationNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SortTypeID" msprop:Generator_UserColumnName="SortTypeID" msprop:Generator_ColumnVarNameInTable="columnSortTypeID" msprop:Generator_ColumnPropNameInRow="SortTypeID" msprop:Generator_ColumnPropNameInTable="SortTypeIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SortType" msprop:Generator_UserColumnName="SortType" msprop:Generator_ColumnVarNameInTable="columnSortType" msprop:Generator_ColumnPropNameInRow="SortType" msprop:Generator_ColumnPropNameInTable="SortTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FreightID" msprop:Generator_UserColumnName="FreightID" msprop:Generator_ColumnVarNameInTable="columnFreightID" msprop:Generator_ColumnPropNameInRow="FreightID" msprop:Generator_ColumnPropNameInTable="FreightIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FreightType" msprop:Generator_UserColumnName="FreightType" msprop:Generator_ColumnVarNameInTable="columnFreightType" msprop:Generator_ColumnPropNameInRow="FreightType" msprop:Generator_ColumnPropNameInTable="FreightTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDSNumber" msprop:Generator_UserColumnName="TDSNumber" msprop:Generator_ColumnVarNameInTable="columnTDSNumber" msprop:Generator_ColumnPropNameInRow="TDSNumber" msprop:Generator_ColumnPropNameInTable="TDSNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TrailerNumber" msprop:Generator_UserColumnName="TrailerNumber" msprop:Generator_ColumnVarNameInTable="columnTrailerNumber" msprop:Generator_ColumnPropNameInRow="TrailerNumber" msprop:Generator_ColumnPropNameInTable="TrailerNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientNumber" msprop:Generator_UserColumnName="ClientNumber" msprop:Generator_ColumnVarNameInTable="columnClientNumber" msprop:Generator_ColumnPropNameInRow="ClientNumber" msprop:Generator_ColumnPropNameInTable="ClientNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientDivision" msprop:Generator_UserColumnName="ClientDivision" msprop:Generator_ColumnVarNameInTable="columnClientDivision" msprop:Generator_ColumnPropNameInRow="ClientDivision" msprop:Generator_ColumnPropNameInTable="ClientDivisionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Client" msprop:Generator_UserColumnName="Client" msprop:Generator_ColumnVarNameInTable="columnClient" msprop:Generator_ColumnPropNameInRow="Client" msprop:Generator_ColumnPropNameInTable="ClientColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperNumber" msprop:Generator_UserColumnName="ShipperNumber" msprop:Generator_ColumnVarNameInTable="columnShipperNumber" msprop:Generator_ColumnPropNameInRow="ShipperNumber" msprop:Generator_ColumnPropNameInTable="ShipperNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Shipper" msprop:Generator_UserColumnName="Shipper" msprop:Generator_ColumnVarNameInTable="columnShipper" msprop:Generator_ColumnPropNameInRow="Shipper" msprop:Generator_ColumnPropNameInTable="ShipperColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Pickup" msprop:Generator_UserColumnName="Pickup" msprop:Generator_ColumnVarNameInTable="columnPickup" msprop:Generator_ColumnPropNameInRow="Pickup" msprop:Generator_ColumnPropNameInTable="PickupColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

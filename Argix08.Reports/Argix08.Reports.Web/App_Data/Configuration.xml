@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<reports>
+	<report name="AmscanImperialDelivery">
+		<DualDateTimePicker  datedaysback="7" datedaysforward="7" datedaysspread="0" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="ASNTracking">
+		<DualDateTimePicker  datedaysback="180" datedaysforward="0" datedaysspread="14" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="BNConsumerDirectCartonDetail">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="0" datedaysspread="92" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="BNConsumerDirectDDUPerformanceDetail">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="0" datedaysspread="92" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="BNConsumerDirectNDCPerformanceDetail">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="0" datedaysspread="92" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="BNConsumerDirectWeeklyDiscrepancySummary">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="0" datedaysspread="92" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="BNConsumerDirectWeeklyPerformanceSummary">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="0" datedaysspread="92" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="BNNookTracking">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="7" datedaysspread="365" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="CartonInfoForPickup">
+		<DualDateTimePicker  datedaysback="180" datedaysforward="0" datedaysspread="92" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="CartonNumberDiscrepancy">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+    <report name="CartonNumberDiscrepancyByPickupDate">
+        <DualDateTimePicker  datedaysback="180" datedaysforward="0" datedaysspread="0" />
+        <Services run="true" data="true" excel="false" pdfonly="false" />
+    </report>
+    <report name="CartonNumberDiscrepancyFromText">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="CartonsCap">
+		<DualDateTimePicker  datedaysback="31" datedaysforward="14" datedaysspread="0" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="CBOLInvoiceSummary">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="ClientCube">
+		<DualDateTimePicker  datedaysback="7" datedaysforward="0" datedaysspread="1" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="ClientCubeAndWeight">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="0" datedaysspread="396" />
+		<Services run="false" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="ClientPickup">
+		<DualDateTimePicker  datedaysback="180" datedaysforward="0" datedaysspread="48" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="ConsumerDirectDDUWeeklySummaryByAgent">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="0" datedaysspread="92" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+    <report name="Daily Route Detail">
+        <DualDateTimePicker  datedaysback="31" datedaysforward="0" datedaysspread="1" />
+        <Services run="true" data="false" excel="true" pdfonly="false" />
+    </report>
+    <report name="Daily Store Shipments">
+        <DualDateTimePicker  datedaysback="31" datedaysforward="0" datedaysspread="7" />
+        <Services run="true" data="true" excel="false" pdfonly="false" />
+    </report>
+    <report name="DamagedCartons">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="14" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="DeletedItems">
+		<DualDateTimePicker  datedaysback="180" datedaysforward="0" datedaysspread="0" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="DeliveryInfoByPickup">
+		<DualDateTimePicker  datedaysback="180" datedaysforward="0" datedaysspread="48" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="Discrepancy">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="185" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="DuplicateCartons">
+		<DualDateTimePicker  datedaysback="93" datedaysforward="0" datedaysspread="61" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="InboundManifest">
+		<DualDateTimePicker  datedaysback="31" datedaysforward="0" datedaysspread="0" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="InboundShipmentTracking">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="LOccitaneDelivery">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+    <report name="LorealPROsWithoutBOL">
+        <DualDateTimePicker  datedaysback="366" datedaysforward="0" datedaysspread="366" />
+        <Services run="true" data="false" excel="false" pdfonly="false" />
+    </report>
+    <report name="MultiCartonPOD">
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="MultiPickupDiscrepancy">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="30" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="MultiPickupSortInfo">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="OnTime">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="90" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="OnTimeByDay">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="90" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="OnTimeByWindow">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="90" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="OnTimeCartonByDeliveryDate">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="OnTimeCartonByDeliverySummary">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="OnTimeExc">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="90" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="OutboundTrailerWeightAndCube">
+		<DualDateTimePicker  datedaysback="420" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="PacSunDelivery">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="PacSunSummary">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="ProjectedDeliverySchedule">
+		<DualDateTimePicker  datedaysback="90" datedaysforward="90" datedaysspread="21" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="ReturnTrailerWeightComparison">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="90" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="RequestedDeliveryDate">
+		<DualDateTimePicker  datedaysback="90" datedaysforward="30" datedaysspread="0" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="Shift">
+		<DualDateTimePicker  datedaysback="90" datedaysforward="0" datedaysspread="0" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="SortedBMC">
+		<DualDateTimePicker  datedaysback="0" datedaysforward="0" datedaysspread="0" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="StationTotals">
+		<DualDateTimePicker  datedaysback="14" datedaysforward="0" datedaysspread="2" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="StatSample">
+		<DualDateTimePicker  datedaysback="90" datedaysforward="0" datedaysspread="7" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="TimePeriodCartonCompare">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="0" datedaysspread="185" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="TransitByDay">
+		<DualDateTimePicker datedaysback="365" datedaysforward="7" datedaysspread="31" />
+		<Services run="false" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="TLHistory">
+		<DualDateTimePicker datedaysback="90" datedaysforward="0" datedaysspread="30" />
+v	</report>
+	<report name="USPSConsigneeAddress">
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="VirtualvsOptimizedTrailerLoad">
+		<DualDateTimePicker  datedaysback="396" datedaysforward="0" datedaysspread="92" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="VitaminShoppeDelivery">
+		<DualDateTimePicker  datedaysback="365" datedaysforward="7" datedaysspread="31" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+	<report name="ZoneClosingHistory">
+		<DualDateTimePicker  datedaysback="90" datedaysforward="0" datedaysspread="3" />
+		<Services run="true" data="true" excel="false" pdfonly="false" />
+	</report>
+</reports>

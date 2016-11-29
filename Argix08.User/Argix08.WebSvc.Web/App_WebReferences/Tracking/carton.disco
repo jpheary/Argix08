@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://www.argixlogistics.com/tracking/carton.asmx?wsdl" docRef="http://www.argixlogistics.com/tracking/carton.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://www.argixlogistics.com/tracking/carton.asmx" xmlns:q1="https://www.argixdirect.com/Tracking/" binding="q1:CartonSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://www.argixlogistics.com/tracking/carton.asmx" xmlns:q2="https://www.argixdirect.com/Tracking/" binding="q2:CartonSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

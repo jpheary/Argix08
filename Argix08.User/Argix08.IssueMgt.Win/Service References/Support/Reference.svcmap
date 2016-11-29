@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7cf8886c-e7d7-4ce6-b258-cc3574ac1376" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://rgxvmweb/Argix08/Argix08.AppServices/AppService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AppService.xsd" MetadataType="Schema" ID="7786fff4-9846-40b4-b12a-98bd2aaeed3f" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd4" />
+    <MetadataFile FileName="AppService1.xsd" MetadataType="Schema" ID="8366e669-e75d-489e-a0b7-eae4fea4d7e2" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AppService2.xsd" MetadataType="Schema" ID="f03d2a84-0b4c-45ba-b9de-a3a18311e46e" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AppService3.xsd" MetadataType="Schema" ID="21998308-3255-429e-8d1a-3380f6537f0d" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AppService4.xsd" MetadataType="Schema" ID="b4161815-497b-4974-ac20-fceceda86bd1" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?xsd=xsd3" />
+    <MetadataFile FileName="AppService.disco" MetadataType="Disco" ID="1e321263-c8b5-4496-88f8-e8f3da1f1e23" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?disco" />
+    <MetadataFile FileName="AppService.wsdl" MetadataType="Wsdl" ID="15ed6bf1-82ae-4f98-ac9f-a2b3f68ce4bf" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="AppService1.wsdl" MetadataType="Wsdl" ID="d96db62c-0563-4c6e-acca-1b57d402c2b4" SourceId="1" SourceUrl="http://rgxvmweb.argix.com/Argix08/Argix08.AppServices/AppService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

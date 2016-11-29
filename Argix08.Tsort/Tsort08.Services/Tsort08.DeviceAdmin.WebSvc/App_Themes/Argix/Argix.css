@@ -1,0 +1,63 @@
+body
+{
+	font-family: Verdana, Arial, Sans-Serif;
+	font-size: 0.7em;
+	color: WindowText;
+	background-color: Window;
+}
+.tableHeader
+{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e7000d;
+}
+.tableHeaderBold
+{
+	background-color: #CC3333;
+	text-align: left;
+	height: 18px;
+}
+.altRow
+{
+	background-color: #ffe2e7;
+	text-align: left;
+	height: 16px;
+}
+.row
+{
+	text-align: left;
+	height: 16px;
+}
+.NormalRow
+{
+	color: WindowText;
+	background-color: Window;
+}
+.SelectedRow
+{
+	color: White;
+	background-color: Highlight;
+}
+.normalText
+{
+   Font-Size:1.0em;
+   
+}
+.ClientTitle
+{
+	font-size: 1.5em;
+	font-style: italic;
+	font-weight: bold;
+	vertical-align: middle;
+	color: #CC3333;
+	text-align: left;
+}
+.Label
+{
+	color: buttontext;
+}
+.LabelRequired
+{
+	font-weight:bold;
+	color: buttontext;
+}

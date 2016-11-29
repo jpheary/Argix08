@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="YardDS" targetNamespace="http://www.tempuri.org/YardDS.xsd" xmlns:mstns="http://www.tempuri.org/YardDS.xsd" xmlns="http://www.tempuri.org/YardDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="YardDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="YardDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="YardID" type="xs:int" minOccurs="0" />
+							<xs:element name="TerminalID" type="xs:int" />
+							<xs:element name="Terminal" type="xs:string" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" minOccurs="0" />
+							<xs:element name="Description" type="xs:string" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="YardListTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Yard" type="xs:string" minOccurs="0" />
+							<xs:element name="SectionNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="YardLocationID" type="xs:int" minOccurs="0" />
+							<xs:element name="LocationNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="Type" type="xs:string" minOccurs="0" />
+							<xs:element name="LocationState" type="xs:string" minOccurs="0" />
+							<xs:element name="VehicleType" type="xs:string" minOccurs="0" />
+							<xs:element name="AssetID" type="xs:int" minOccurs="0" />
+							<xs:element name="VehicleNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="FreightDesignation" type="xs:string" minOccurs="0" />
+							<xs:element name="Storage" type="xs:string" minOccurs="0" />
+							<xs:element name="SealNumber" type="xs:string" minOccurs="0" />
+							<xs:element name="Carrier" type="xs:string" minOccurs="0" />
+							<xs:element name="VehicleState" type="xs:string" minOccurs="0" />
+							<xs:element name="AssetMoveID" type="xs:string" minOccurs="0" />
+							<xs:element name="IsActive" type="xs:boolean" minOccurs="0" />
+							<xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UserID" type="xs:string" minOccurs="0" />
+							<xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

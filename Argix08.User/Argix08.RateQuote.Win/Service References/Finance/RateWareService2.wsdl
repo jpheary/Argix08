@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix.Finance" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix.Finance" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix.Finance/Imports">
+      <xsd:import schemaLocation="http://tpjheary7.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd0" namespace="http://Argix.Finance" />
+      <xsd:import schemaLocation="http://tpjheary7.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Argix" />
+      <xsd:import schemaLocation="http://tpjheary7.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://tpjheary7.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://tpjheary7.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://tpjheary7.argix.com/Argix08/Argix08.RateWareService/RateWareService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Argix.Finance" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRateWareService_GetUserConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_GetUserConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_GetUserConfiguration_ConfigurationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Argix" name="detail" element="q1:ConfigurationFault" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_WriteLogEntry_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteLogEntry" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_GetClassCodes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassCodes" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_GetClassCodes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_GetTariffs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTariffs" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_GetTariffs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTariffsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_GetTariffs_RateWareFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Argix.Finance" name="detail" element="q2:RateWareFault" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_CalculateRates_InputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateRates" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_CalculateRates_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CalculateRatesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRateWareService_CalculateRates_RateWareFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Argix.Finance" name="detail" element="q3:RateWareFault" />
+  </wsdl:message>
+  <wsdl:portType name="IRateWareService">
+    <wsdl:operation name="GetUserConfiguration">
+      <wsdl:input wsaw:Action="http://Argix.Finance/IRateWareService/GetUserConfiguration" message="tns:IRateWareService_GetUserConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Finance/IRateWareService/GetUserConfigurationResponse" message="tns:IRateWareService_GetUserConfiguration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.ConfigurationFault" name="ConfigurationFaultFault" message="tns:IRateWareService_GetUserConfiguration_ConfigurationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteLogEntry">
+      <wsdl:input wsaw:Action="http://Argix.Finance/IRateWareService/WriteLogEntry" message="tns:IRateWareService_WriteLogEntry_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassCodes">
+      <wsdl:input wsaw:Action="http://Argix.Finance/IRateWareService/GetClassCodes" message="tns:IRateWareService_GetClassCodes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Finance/IRateWareService/GetClassCodesResponse" message="tns:IRateWareService_GetClassCodes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffs">
+      <wsdl:input wsaw:Action="http://Argix.Finance/IRateWareService/GetTariffs" message="tns:IRateWareService_GetTariffs_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Finance/IRateWareService/GetTariffsResponse" message="tns:IRateWareService_GetTariffs_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Finance.RateWareFault" name="RateWareFaultFault" message="tns:IRateWareService_GetTariffs_RateWareFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateRates">
+      <wsdl:input wsaw:Action="http://Argix.Finance/IRateWareService/CalculateRates" message="tns:IRateWareService_CalculateRates_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Finance/IRateWareService/CalculateRatesResponse" message="tns:IRateWareService_CalculateRates_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Finance.RateWareFault" name="RateWareFaultFault" message="tns:IRateWareService_CalculateRates_RateWareFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LabelStationDS" targetNamespace="http://tempuri.org/LabelStationDS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/LabelStationDS.xsd" xmlns:mstns="http://tempuri.org/LabelStationDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="LabelStationDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LabelStationTable">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="LabelSeqNumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="CartonNumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="Zone" type="xs:string" minOccurs="0" />
+                    <xs:element name="TLNumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="ShipFromID" type="xs:string" minOccurs="0" />
+                    <xs:element name="ShipFromName" type="xs:string" minOccurs="0" />
+                    <xs:element name="ClientID" type="xs:string" minOccurs="0" />
+                    <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+                    <xs:element name="PickupDate" type="xs:dateTime" minOccurs="0" />
+                    <xs:element name="PickupNumber" type="xs:int" minOccurs="0" />
+                    <xs:element name="ManifestNumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="ShipFromLocationID" type="xs:string" minOccurs="0" />
+                    <xs:element name="ShipFromLocationName" type="xs:string" minOccurs="0" />
+                    <xs:element name="ShipToLocationID" type="xs:string" minOccurs="0" />
+                    <xs:element name="ShipToLocationName" type="xs:string" minOccurs="0" />
+                    <xs:element name="Weight" type="xs:int" minOccurs="0" />
+                    <xs:element name="FreightType" type="xs:string" minOccurs="0" />
+                    <xs:element name="SortCenterNumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="SortCenterName" type="xs:string" minOccurs="0" />
+                    <xs:element name="DamageCode" type="xs:string" minOccurs="0" />
+                    <xs:element name="DamageDescription" type="xs:string" minOccurs="0" />
+                    <xs:element name="SortDate" type="xs:dateTime" minOccurs="0" />
+                    <xs:element name="SortTime" type="xs:dateTime" minOccurs="0" />
+                    <xs:element name="StationNumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="ShiftNumber" type="xs:short" minOccurs="0" />
+                    <xs:element name="ShiftDate" type="xs:dateTime" minOccurs="0" />
+                    <xs:element name="DownTime" type="xs:int" minOccurs="0" />
+                    <xs:element name="ElapsedTime" type="xs:int" minOccurs="0" />
+                    <xs:element name="PONumber" type="xs:string" minOccurs="0" />
+                    <xs:element name="TrackingNumber" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

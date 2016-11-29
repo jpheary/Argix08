@@ -1,0 +1,64 @@
+<?xml version="1.0" standalone="yes" ?>
+<xs:schema id="FreightPathDS" targetNamespace="http://www.tempuri.org/FreightPathDS.xsd"
+	xmlns:mstns="http://www.tempuri.org/FreightPathDS.xsd" xmlns="http://www.tempuri.org/FreightPathDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+	attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="FreightPathDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="FreightPathViewTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PathID" type="xs:string" />
+							<xs:element name="SortCenterID" type="xs:int" />
+							<xs:element name="SortCenter" type="xs:string" />
+							<xs:element name="PathType" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="Mnemonic" type="xs:string" />
+							<xs:element name="SecondaryMnemonic" type="xs:string" minOccurs="0" />
+							<xs:element name="FinalStop" type="xs:string" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FreightPathDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PathID" type="xs:string" />
+							<xs:element name="SortCenterID" type="xs:int" />
+							<xs:element name="PathType" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="IsActive" type="xs:boolean" />
+							<xs:element name="LastUpdated" type="xs:dateTime" />
+							<xs:element name="UserID" type="xs:string" />
+							<xs:element name="RowVersion" msdata:ReadOnly="true" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FreightPathStopDetailTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PathStopID" type="xs:string" />
+							<xs:element name="PathID" type="xs:string" />
+							<xs:element name="StopNumber" type="xs:short" />
+							<xs:element name="LocationID" type="xs:int" />
+							<xs:element name="Number" type="xs:string" />
+							<xs:element name="Description" type="xs:string" />
+							<xs:element name="LocationType" type="xs:string" />
+							<xs:element name="Mnemonic" type="xs:string" minOccurs="0" />
+							<xs:element name="Address" type="xs:string" minOccurs="0" />
+							<xs:element name="CompanyID" type="xs:int" minOccurs="0" />
+							<xs:element name="CompanyName" type="xs:string" />
+							<xs:element name="IsFinal" type="xs:boolean" />
+							<xs:element name="UseMnemonic" type="xs:boolean" />
+							<xs:element name="UseMnemonic2" type="xs:boolean" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

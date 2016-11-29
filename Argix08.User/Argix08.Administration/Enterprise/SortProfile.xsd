@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="SortProfileDS" targetNamespace="http://www.tempuri.org/SortProfileDS.xsd" xmlns:mstns="http://www.tempuri.org/SortProfileDS.xsd" xmlns="http://www.tempuri.org/SortProfileDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="SortProfileDS" msdata:IsDataSet="true">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="SortProfileTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Selected" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="ProfileID" type="xs:long" minOccurs="0" />
+                            <xs:element name="LinkID" type="xs:int" minOccurs="0" />
+                            <xs:element name="LabelID" type="xs:int" minOccurs="0" />
+                            <xs:element name="SortTypeID" type="xs:int" minOccurs="0" />
+                            <xs:element name="SortType" type="xs:string" minOccurs="0" />
+                            <xs:element name="IsElectronic" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="ManifestPerTrailer" type="xs:string" minOccurs="0" />
+                            <xs:element name="IsActive" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="LastUpdated" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="UserID" type="xs:string" minOccurs="0" />
+                            <xs:element name="RowVersion" type="xs:string" minOccurs="0" />
+                            <xs:element name="SortProfileTerminalTable">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Selected" type="xs:boolean" minOccurs="0" />
+                                        <xs:element name="ProfileID" type="xs:long" minOccurs="0" />
+                                        <xs:element name="TerminalID" type="xs:int" minOccurs="0" />
+                                        <xs:element name="Terminal" type="xs:string" minOccurs="0" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

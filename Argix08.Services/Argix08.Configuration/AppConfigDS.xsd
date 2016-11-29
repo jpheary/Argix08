@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="AppConfigDS" targetNamespace="http://tempuri.org/AppConfigDS.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/AppConfigDS.xsd"
+	xmlns:mstns="http://tempuri.org/AppConfigDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="AppConfigDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ConfigTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Application" type="xs:string" minOccurs="0" />
+							<xs:element name="PCName" type="xs:string" minOccurs="0" />
+							<xs:element name="Key" type="xs:string" minOccurs="0" />
+							<xs:element name="Value" type="xs:string" minOccurs="0" />
+							<xs:element name="Security" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

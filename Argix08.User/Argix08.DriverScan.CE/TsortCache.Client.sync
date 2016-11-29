@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<syncDesignerSurface dslVersion="1.0.0.0" Id="9a03708c-7fde-495f-b853-94d5c7cebb66" parentDesignerName="TsortCache" codeGenerationMode="ClientOnly" synchronizeInOneTransaction="false" clientFileLocation="89589bdb-0ce5-44c0-9691-ef10911bd727" serverFileLocation="d177d00a-81b2-4837-a20a-cd033aba09a5" isRootSyncDesigner="false" rootSyncDesignerHintPath="..\Argix08.ScanServerSyncProvider.Lib\TsortCache.sync" rootSyncDesignerShouldGenerateCode="true" isClientSyncDesigner="true" isServerSyncDesigner="false" changeTrackingType="CoupledChangeTracking" xmlns="http://schemas.microsoft.com/dsltools/SyncDesigner">
+  <syncTables>
+    <syncTable Id="dafab7c2-5fa6-4b77-b3c5-d1c952177a59" name="ClientSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="Client" deletedItemsTableName="Client_Tombstone" createdDateColumnName="CreationDate" lastEditDateColumnName="LastEditDate" fullTableName="dbo.Client" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/9a03708c-7fde-495f-b853-94d5c7cebb66/ClientSyncGroup" />
+      </syncGroup>
+    </syncTable>
+    <syncTable Id="e3eb4a07-f76d-43d3-95e2-659501f64e9d" name="ScanDataSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="ScanData" deletedItemsTableName="&amp;qt(none)&amp;qt" createdDateColumnName="CreationDate" lastEditDateColumnName="&amp;qt(none)&amp;qt" fullTableName="dbo.ScanData" deletedDateColumnName="&amp;qt(none)&amp;qt" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/9a03708c-7fde-495f-b853-94d5c7cebb66/ScanDataSyncGroup" />
+      </syncGroup>
+    </syncTable>
+    <syncTable Id="49d4edb2-3ff7-42e0-94c0-9eb8cb47ff06" name="StoreSyncTable" syncDirection="DownloadOnly" creationOptions="DropExistingOrCreateNewTable" tableName="Store" deletedItemsTableName="Store_Tombstone" createdDateColumnName="CreationDate" lastEditDateColumnName="LastEditDate" fullTableName="dbo.Store" deletedDateColumnName="DeletionDate" transactionIndex="0">
+      <syncGroup>
+        <syncGroupMoniker name="/9a03708c-7fde-495f-b853-94d5c7cebb66/StoreSyncGroup" />
+      </syncGroup>
+    </syncTable>
+  </syncTables>
+  <syncGroups>
+    <syncGroup Id="e0980c6a-fa14-40a5-adf0-d80ac4c431c0" name="ClientSyncGroup" />
+    <syncGroup Id="8d52a7b4-ebfb-4c3b-9406-3016c38e0768" name="ScanDataSyncGroup" />
+    <syncGroup Id="e2c2da48-2bf9-4b8b-814a-c756040b132a" name="StoreSyncGroup" />
+  </syncGroups>
+  <clientSyncProvider>
+    <clientSyncProvider Id="6e2bcd8a-a25a-4b7f-83de-bba1b6edceb4" name="TsortCacheClientSyncProvider">
+      <syncConnection>
+        <syncConnectionMoniker name="/9a03708c-7fde-495f-b853-94d5c7cebb66/ClientConnection" />
+      </syncConnection>
+    </clientSyncProvider>
+  </clientSyncProvider>
+  <syncAgent>
+    <syncAgent name="TsortCacheSyncAgent" synchronizeInOneTransaction="false">
+      <clientSyncProvider>
+        <clientSyncProviderMoniker name="/9a03708c-7fde-495f-b853-94d5c7cebb66/TsortCacheClientSyncProvider" />
+      </clientSyncProvider>
+      <syncTables>
+        <syncTableMoniker name="/9a03708c-7fde-495f-b853-94d5c7cebb66/ClientSyncTable" />
+        <syncTableMoniker name="/9a03708c-7fde-495f-b853-94d5c7cebb66/ScanDataSyncTable" />
+        <syncTableMoniker name="/9a03708c-7fde-495f-b853-94d5c7cebb66/StoreSyncTable" />
+      </syncTables>
+    </syncAgent>
+  </syncAgent>
+  <syncConnections>
+    <syncConnection Id="a0670172-5c9a-40b9-8015-55c7b24e6e6d" connectionString="Data Source=C:\Data\Projects\Samples\SyncServicesForDevicesSample\GBADesktopClient\Tsort.sdf;Max Database Size=2047" providerInvariantName="Microsoft.SqlServerCe.Client.3.5" name="ClientConnection" connectionDisplayString="Tsort.sdf" isAppSettings="false" appSettingsObjectName="&lt;&lt;FSIM&gt;&gt;" appSettingsPropertyReference="" />
+  </syncConnections>
+</syncDesignerSurface>

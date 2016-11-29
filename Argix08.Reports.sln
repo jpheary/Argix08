@@ -1,0 +1,180 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Argix08.Reports.Web", "Argix08.Reports\Argix08.Reports.Web", "{6314B70C-13CA-4507-B7FF-43B23130F846}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/Argix08/Argix08.Reports/Argix08.Reports.Web", MRDBAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Argix08.Reports.Web"
+		Debug.AspNetCompiler.PhysicalPath = "Argix08.Reports\Argix08.Reports.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Argix08.Reports.Web\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Argix08.Reports.Web"
+		Release.AspNetCompiler.PhysicalPath = "Argix08.Reports\Argix08.Reports.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Argix08.Reports.Web\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51486"
+	EndProjectSection
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Argix08.AgentLineHaul.Rpts", "Argix08.Reports\Argix08.AgentLineHaul.Rpts\Argix08.AgentLineHaul.Rpts.rptproj", "{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Argix08.Customers.Rpts", "Argix08.Reports\Argix08.Customers.Rpts\Argix08.Customers.Rpts.rptproj", "{E71E7E21-837C-4109-BF7C-842229086266}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Argix08.Executive.Rpts", "Argix08.Reports\Argix08.Executive.Rpts\Argix08.Executive.Rpts.rptproj", "{3D713FB1-EF10-4815-9B18-CA88E41B111D}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Argix08.Finance.Rpts", "Argix08.Reports\Argix08.Finance.Rpts\Argix08.Finance.Rpts.rptproj", "{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Argix08.Terminals.Rpts", "Argix08.Reports\Argix08.Terminals.Rpts\Argix08.Terminals.Rpts.rptproj", "{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Argix08.Tracking.Rpts", "Argix08.Reports\Argix08.Tracking.Rpts\Argix08.Tracking.Rpts.rptproj", "{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Argix08.Freight.Rpts", "Argix08.Reports\Argix08.Freight.Rpts\Argix08.Freight.Rpts.rptproj", "{DA1EACCE-563B-495E-B752-7756EC72C4B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argix08.Barcodes.Lib", "Argix08.Services\Argix08.Barcodes.Lib\Argix08.Barcodes.Lib.csproj", "{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Argix08.IT.Rpts", "Argix08.Reports\Argix08.IT.Rpts\Argix08.IT.Rpts.rptproj", "{2680C46C-6BFD-43B1-BE7A-F10471233E78}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 9
+		SccProjectUniqueName0 = Argix08.Reports\\Argix08.AgentLineHaul.Rpts\\Argix08.AgentLineHaul.Rpts.rptproj
+		SccProjectName0 = \u0022$/Argix08/Argix08.Reports/Argix08.AgentLineHaul.Rpts\u0022,\u0020AXFBAAAA
+		SccLocalPath0 = Argix08.Reports\\Argix08.AgentLineHaul.Rpts
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = Argix08.Reports\\Argix08.Customers.Rpts\\Argix08.Customers.Rpts.rptproj
+		SccProjectName1 = \u0022$/Argix08/Argix08.Reports/Argix08.Customers.Rpts\u0022,\u0020JXFBAAAA
+		SccLocalPath1 = Argix08.Reports\\Argix08.Customers.Rpts
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName2 = Argix08.Reports\\Argix08.Executive.Rpts\\Argix08.Executive.Rpts.rptproj
+		SccProjectName2 = \u0022$/Argix08/Argix08.Reports/Argix08.Executive.Rpts\u0022,\u0020VBGBAAAA
+		SccLocalPath2 = Argix08.Reports\\Argix08.Executive.Rpts
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName3 = Argix08.Reports\\Argix08.Finance.Rpts\\Argix08.Finance.Rpts.rptproj
+		SccProjectName3 = \u0022$/Argix08/Argix08.Reports/Argix08.Finance.Rpts\u0022,\u0020LDGBAAAA
+		SccLocalPath3 = Argix08.Reports\\Argix08.Finance.Rpts
+		SccProvider3 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName4 = Argix08.Reports\\Argix08.Terminals.Rpts\\Argix08.Terminals.Rpts.rptproj
+		SccProjectName4 = \u0022$/Argix08/Argix08.Reports/Argix08.Terminals.Rpts\u0022,\u0020IEGBAAAA
+		SccLocalPath4 = Argix08.Reports\\Argix08.Terminals.Rpts
+		SccProvider4 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccWebProject5 = true
+		SccProjectUniqueName5 = Argix08.Reports\\Argix08.Reports.Web
+		SccProjectName5 = \u0022$/Argix08/Argix08.Reports/Argix08.Reports.Web\u0022,\u0020MRDBAAAA
+		SccLocalPath5 = C:\\Data\\Projects\\Argix08\\Argix08.Reports\\Argix08.Reports.Web
+		SccProvider5 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice5 = 2
+		SccProjectUniqueName6 = Argix08.Reports\\Argix08.Tracking.Rpts\\Argix08.Tracking.Rpts.rptproj
+		SccProjectName6 = \u0022$/Argix08/Argix08.Reports/Argix08.Tracking.Rpts\u0022,\u0020CDJBAAAA
+		SccLocalPath6 = Argix08.Reports\\Argix08.Tracking.Rpts
+		SccProvider6 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName7 = Argix08.Reports\\Argix08.Freight.Rpts\\Argix08.Freight.Rpts.rptproj
+		SccProjectName7 = \u0022$/Argix08/Argix08.Reports/Argix08.Freight.Rpts\u0022,\u0020SEJBAAAA
+		SccLocalPath7 = Argix08.Reports\\Argix08.Freight.Rpts
+		SccProvider7 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName8 = Argix08.Services\\Argix08.Barcodes.Lib\\Argix08.Barcodes.Lib.csproj
+		SccProjectName8 = \u0022$/Argix08/Argix08.Services/Argix08.Barcodes.Lib\u0022,\u0020ANJBAAAA
+		SccLocalPath8 = Argix08.Services\\Argix08.Barcodes.Lib
+		SccProvider8 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugLocal|Any CPU = DebugLocal|Any CPU
+		Production|Any CPU = Production|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6314B70C-13CA-4507-B7FF-43B23130F846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6314B70C-13CA-4507-B7FF-43B23130F846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6314B70C-13CA-4507-B7FF-43B23130F846}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{6314B70C-13CA-4507-B7FF-43B23130F846}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{6314B70C-13CA-4507-B7FF-43B23130F846}.Production|Any CPU.ActiveCfg = Debug|Any CPU
+		{6314B70C-13CA-4507-B7FF-43B23130F846}.Production|Any CPU.Build.0 = Debug|Any CPU
+		{6314B70C-13CA-4507-B7FF-43B23130F846}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6314B70C-13CA-4507-B7FF-43B23130F846}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}.Production|Any CPU.ActiveCfg = Production
+		{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}.Production|Any CPU.Build.0 = Production
+		{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}.Production|Any CPU.Deploy.0 = Production
+		{4FF9D024-4C5F-4559-BB8C-E0AE506F36C9}.Release|Any CPU.ActiveCfg = Production
+		{E71E7E21-837C-4109-BF7C-842229086266}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{E71E7E21-837C-4109-BF7C-842229086266}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{E71E7E21-837C-4109-BF7C-842229086266}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{E71E7E21-837C-4109-BF7C-842229086266}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{E71E7E21-837C-4109-BF7C-842229086266}.Production|Any CPU.ActiveCfg = Production
+		{E71E7E21-837C-4109-BF7C-842229086266}.Production|Any CPU.Build.0 = Production
+		{E71E7E21-837C-4109-BF7C-842229086266}.Production|Any CPU.Deploy.0 = Production
+		{E71E7E21-837C-4109-BF7C-842229086266}.Release|Any CPU.ActiveCfg = Production
+		{3D713FB1-EF10-4815-9B18-CA88E41B111D}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{3D713FB1-EF10-4815-9B18-CA88E41B111D}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{3D713FB1-EF10-4815-9B18-CA88E41B111D}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{3D713FB1-EF10-4815-9B18-CA88E41B111D}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{3D713FB1-EF10-4815-9B18-CA88E41B111D}.Production|Any CPU.ActiveCfg = Production
+		{3D713FB1-EF10-4815-9B18-CA88E41B111D}.Production|Any CPU.Build.0 = Production
+		{3D713FB1-EF10-4815-9B18-CA88E41B111D}.Production|Any CPU.Deploy.0 = Production
+		{3D713FB1-EF10-4815-9B18-CA88E41B111D}.Release|Any CPU.ActiveCfg = Production
+		{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}.Production|Any CPU.ActiveCfg = Production
+		{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}.Production|Any CPU.Build.0 = Production
+		{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}.Production|Any CPU.Deploy.0 = Production
+		{8CB5AA72-52F7-4FC5-BEF1-F1A9460C87BB}.Release|Any CPU.ActiveCfg = Production
+		{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}.Production|Any CPU.ActiveCfg = Production
+		{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}.Production|Any CPU.Build.0 = Production
+		{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}.Production|Any CPU.Deploy.0 = Production
+		{9D60DA28-4080-4092-8DEB-7BCE3D1163A0}.Release|Any CPU.ActiveCfg = Production
+		{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}.Production|Any CPU.ActiveCfg = Release
+		{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}.Production|Any CPU.Build.0 = Release
+		{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}.Production|Any CPU.Deploy.0 = Release
+		{A4013CB5-8F96-48D2-BBFF-6910441F8BCA}.Release|Any CPU.ActiveCfg = Release
+		{DA1EACCE-563B-495E-B752-7756EC72C4B9}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{DA1EACCE-563B-495E-B752-7756EC72C4B9}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{DA1EACCE-563B-495E-B752-7756EC72C4B9}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{DA1EACCE-563B-495E-B752-7756EC72C4B9}.Production|Any CPU.ActiveCfg = Release
+		{DA1EACCE-563B-495E-B752-7756EC72C4B9}.Production|Any CPU.Build.0 = Release
+		{DA1EACCE-563B-495E-B752-7756EC72C4B9}.Production|Any CPU.Deploy.0 = Release
+		{DA1EACCE-563B-495E-B752-7756EC72C4B9}.Release|Any CPU.ActiveCfg = Release
+		{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}.Production|Any CPU.Build.0 = Release|Any CPU
+		{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1689B38-B7BD-4B8C-80A7-1F6B9B89BE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.Debug|Any CPU.ActiveCfg = DebugLocal
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.DebugLocal|Any CPU.Deploy.0 = DebugLocal
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.Production|Any CPU.ActiveCfg = Release
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.Production|Any CPU.Build.0 = Release
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.Production|Any CPU.Deploy.0 = Release
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.Release|Any CPU.ActiveCfg = Release
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.Release|Any CPU.Build.0 = Release
+		{2680C46C-6BFD-43B1-BE7A-F10471233E78}.Release|Any CPU.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

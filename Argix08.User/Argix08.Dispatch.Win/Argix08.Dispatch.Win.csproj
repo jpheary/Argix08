@@ -1,0 +1,434 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13ED0892-F91F-4046-8812-23B5D26989CA}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Dispatch</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Argix</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Argix.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\Release\Dispatch\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Argix08.AppLogging, Version=3.0.1.24412, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Build\Argix08.AppLogging.dll</HintPath>
+    </Reference>
+    <Reference Include="Argix08.Configuration, Version=3.0.0.17711, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Build\Argix08.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Argix08.Data, Version=3.0.1.28626, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Build\Argix08.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Argix08.Windows, Version=3.0.0.18945, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Build\Argix08.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics2.Win.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
+      <Name>System.Runtime.Serialization.Formatters.Soap</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Data\_clientinbound.xml" />
+    <None Include="Data\_clientinboundadvance.xml" />
+    <None Include="Data\_clientinboundarchive.xml" />
+    <None Include="Data\_inbound.xml" />
+    <None Include="Data\_inboundadvance.xml" />
+    <None Include="Data\_inboundarchive.xml" />
+    <None Include="Data\_linehaul.xml" />
+    <None Include="Data\_linehauladvance.xml" />
+    <None Include="Data\_linehaularchive.xml" />
+    <None Include="Data\_outbound.xml" />
+    <None Include="Data\_outboundadvance.xml" />
+    <None Include="Data\_outboundarchive.xml" />
+    <None Include="Data\_pickup.xml" />
+    <None Include="Data\_pickuparchive.xml" />
+    <None Include="Data\_trailerentry.xml" />
+    <None Include="Data\_trailerentryarchive.xml" />
+    <None Include="Dispatch\DispatchDS.xsx">
+      <DependentUpon>DispatchDS.xsd</DependentUpon>
+    </None>
+    <None Include="Dispatch\LayoutDS.xsx">
+      <DependentUpon>LayoutDS.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SelectionsDS.xsx">
+      <DependentUpon>SelectionsDS.xsd</DependentUpon>
+    </None>
+    <Content Include="Data\uspToolsConfigurationGetList.xml" />
+    <Content Include="Data\uspenterprisecurrentterminalget.xml" />
+    <Content Include="Resources\app.ico" />
+    <Content Include="Data\_schedulelayouts.xml" />
+    <Content Include="Data\_selections.xml" />
+    <Content Include="Dispatch\DispatchDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DispatchDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Dispatch\LayoutDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LayoutDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SelectionsDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SelectionsDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Compile Include="dlgmovenode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\assemblyinfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dispatchnode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\arrival.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\clientinboundadvance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\clientinboundarchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\clientinboundfreight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\clientinboundschedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\DispatchDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DispatchDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch\inboundadvance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\inboundarchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\inboundfreight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\inboundschedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\LayoutDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LayoutDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch\linehauladvance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\linehaularchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\linehaulschedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\outboundadvance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\outboundarchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\outboundfreight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\outboundschedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\pickup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\pickuparchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\pickuplog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\schedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\scheduleentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\trailerentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\trailerlog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dispatch\trailerlogarchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dlgarrival.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgclientinboundfreight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlginboundfreight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlglayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgmoveentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgoutboundfreight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgpickup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgschedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgtrailerentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dlgviews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inputbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="layoutentry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="layoutview.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="layoutviews.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="schedulenode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SelectionsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SelectionsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UltraGridSvcs.cs" />
+    <Compile Include="winschedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="dlgarrival.resx">
+      <DependentUpon>dlgarrival.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgclientinboundfreight.resx">
+      <DependentUpon>dlgclientinboundfreight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlginboundfreight.resx">
+      <DependentUpon>dlginboundfreight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlglayout.resx">
+      <DependentUpon>dlglayout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgmoveentry.resx">
+      <DependentUpon>dlgmoveentry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgmovenode.resx">
+      <DependentUpon>dlgmovenode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgoutboundfreight.resx">
+      <DependentUpon>dlgoutboundfreight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgpickup.resx">
+      <DependentUpon>dlgpickup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgschedule.resx">
+      <DependentUpon>dlgschedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgtrailerentry.resx">
+      <DependentUpon>dlgtrailerentry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dlgviews.resx">
+      <DependentUpon>dlgviews.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputbox.resx">
+      <DependentUpon>inputbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winschedule.resx">
+      <DependentUpon>winschedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Enterprise\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

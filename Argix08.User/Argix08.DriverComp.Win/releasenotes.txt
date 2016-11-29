@@ -1,0 +1,146 @@
+              --------------------------------------------------------
+                    Driver Compensation Application Readme File
+		                       	  May, 2011
+              --------------------------------------------------------
+                         (c) Copyright Argix Direct, 2011
+
+This document provides late-breaking or other information that supplements the Driver Compensation documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+Driver Compensation is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\DriverComp on a web server like RGXDEVDB using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+		Argix.AppLogging.dll
+		Argix.Configuration.dll
+		Argix.Data.dll
+		Argix.Enterprise.dll
+		Argix.Finance.dll
+		Argix.Windows.dll
+		DriverComp.exe
+		DriverComp.exe.config
+		Infragistics2.Shared.v10.1.dll
+		Infragistics2.Win.UltraWinGrid.v10.1.dll
+		Infragistics2.Win.v10.1.dll
+		Microsoft.ReportViewer.Common.dll
+		Microsoft.ReportViewer.ProcessingObjectModel.dll
+		Microsoft.ReportViewer.WinForms.dll
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION	
+Open the local sort database (i.e. TSORTLOCAL on RGXDEVDB), goto the Configuration table, and add/edit the 
+values below:
+	Application     PCName          Key                       Value                     Security 
+	--------------- --------------- ------------------------- ------------------------- -------- 
+	Driver Compensation	  Default	      Administrator	            false	                  1 
+	Driver Compensation   Default         MISPassword               ********                  1        
+	Driver Compensation   Default         ReadOnly                  True                      1        
+	Driver Compensation   Default         TraceLevel                3                         1        
+
+
+
+NOTES
+==============
+GENERAL
+The Driver Compensation Application (DriverComp.exe) is a Windows based application used create
+driver compensation sheets (paystubs).
+
+OPERATION
+Normal:
+The Driver Compensation Application (DriverComp.exe) operates by launching from a web server deployment url 
+(i.e. http://rgxvmweb/argix08/finance/drivercomp/drivercomp.application). After a brief splash screen, a sizeable window 
+appears. The taskbar displays the operating terminal and connection status. Additional operating steps can 
+be found in the on-line documentation provided by the Help/Contents menu item.
+
+Diagnostics Mode:
+CTL ENTER at the Splash screen displays a dialog that examines configuration and database requirements.
+
+
+VERSION HISTORY
+v2.8.0, 10/13/08 ---------------------------------------------------------------------------
+Requirements/features
+- Initial beta release.
+Design/deployment
+- Initial beta release.
+
+v2.8.1, 12/17/08 ---------------------------------------------------------------------------
+Requirements/features
+- Production release.
+Design/deployment
+- Production release.
+
+v2.8.4, 02/26/09 ---------------------------------------------------------------------------
+Requirements/features
+- Added support for Wilmington Tractor routes that have mileage rating based upon # of cartons delivered.
+Design/deployment
+- Centralized Mediator in static App class.
+- Revised Argix.Finance library to support new requirement.
+- Added cartons delivered line item to the driver compensation report for Wilmington.
+
+v2.8.5, 05/19/09 ---------------------------------------------------------------------------
+Requirements/features
+- Added support for carton compensation for Ridgefield Tractor routes based upon # of cartons delivered ($0.15 for 700+ cartons).
+Design/deployment
+- None.
+
+v2.8.6, 07/20/09 ---------------------------------------------------------------------------
+Requirements/features
+- Added support for 3-digit decimal values (#.000).
+Design/deployment
+- None.
+
+v2.8.7, 07/28/09 ---------------------------------------------------------------------------
+Requirements/features
+- Added support route type (ArgixRtType).
+Design/deployment
+- Updated datasets to reflect new route type field (ArgixRtType).
+
+v3.0.0, 09/02/09 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Ported to .NET Framework 3.5.
+
+v3.0.1, 01/25/10 ---------------------------------------------------------------------------
+Requirements/features
+- Added 'All' to list of Fleet Owners.
+Design/deployment
+- None.
+
+v3.0.1, 01/27/10 ---------------------------------------------------------------------------
+Requirements/features
+- Removed support for carton compensation for Ridgefield Tractor routes ($0.15 for 700+ cartons).
+Design/deployment
+- none.
+
+v3.5.0, 05/12/11 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- upgraded to Infragistics NetAdvantage 2010 third party control suite (required: Infragistics2.Win.v10.1.dll, Infragistics2.Shared.v10.1.dll, Infragistics2.Win.UltraWinGrid.v10.1.dll)

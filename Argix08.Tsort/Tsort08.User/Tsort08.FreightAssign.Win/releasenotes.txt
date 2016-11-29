@@ -1,0 +1,178 @@
+                         --------------------------------------------------
+                    	     Freight Assignment Application Readme File
+											December, 2014
+                         --------------------------------------------------
+                         		(c) Copyright Argix Logistics, 2004-2014
+
+This document provides late-breaking or other information that supplements the Freight Assignment 
+documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+Freight Assignment is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\FreightAssign on a web server like RGXWEB using 
+	Windows explorer.
+2.	Copy the following files into this folder-
+		Argix08.AppLogging.dll
+		Argix08.Configuration.dll
+		Argix08.Data.dll
+		Argix08.Windows.dll
+		FreightAssignment.exe
+		FreightAssignment.exe.config
+		Infragistics2.Shared.v10.1.dll
+		Infragistics2.Win.UltraWinGrid.v10.1.dll
+		Infragistics2.Win.v10.1.dll
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the local sort database (i.e. TSORTLOCAL on RGXDEVDB), goto the Configuration table, and add/edit the 
+values below:
+	Application               PCName          Key                       Value                     Security 
+	------------------------- --------------- ------------------------- ------------------------- -------- 
+    Freight Assignment        Default         FreightSyncDaysMax        7                         1        
+    Freight Assignment        Default         MISPassword               ********                  1        
+    Freight Assignment        Default         ReadOnly                  false                     1        
+    Freight Assignment        Default         SortedDaysMax             9                         1        
+    Freight Assignment        Default         SortedDaysPwd             ********                  1        
+    Freight Assignment        Default         TraceLevel                2                         1        
+
+
+NOTES
+==============
+GENERAL
+The Freight Assignment Application (FreightAssign.exe) is a Windows based application used to 
+manage station assignments for sorting direct freight.
+
+
+OPERATION
+Normal:
+The Freight Assignment Application (FreightAssign.exe) operates by launching from a web server deployment 
+url (i.e. http://rgxdev/FreightAssign/FreightAssign.exe). After a brief splash screen, a sizeable window 
+appears and displays inbound freight in an upper grid and station sort assignments in a lower grid. The 
+user can assign and unassign these shipments from sort stations in the operating terminal. The taskbar 
+displays the operating terminal and sort station. Additional operating steps can be found in the on-line 
+documentation provided by the Help/Contents menu item.
+
+
+VERSION HISTORY
+v1.1.1, 05/18/04 ---------------------------------------------------------------------------
+Requirements/features
+- no new requirements or features
+Design/deployment
+- ported to C#
+- added support for SQL Server data sources
+
+v2.0.0, ??/??/04 ---------------------------------------------------------------------------
+Requirements/features
+- ?
+Design/deployment
+- ?
+
+v2.1.0, 02/??/05 ---------------------------------------------------------------------------
+Requirements/features
+- added new Assigment History view
+- added new status bar to display operating terminal and database connection source/status
+- added new menu item Tools/Use Web Services... that allows runtime switching between backend data source access (IT USE ONLY)
+Design/deployment
+- added support for application log tracing to Windows event log
+- removed support for DB2 data sources (no longer required: Tsort.DataAccess.OLEDBase.dll, Tsort.FreightAssign.Bus.dll)
+- added support for application log tracing to database ArgixLog table
+- added app.config key (UseWebSvc) for configuration switching between backend data source access (web service or ado.net)
+- removed business layer components (no longer required: Tsort.Enterprise.Bus.dll, Tsort.Enterprise.Data.dll, Tsort.Sort.Bus.dll, Tsort.Sort.Data.dll)
+- added data access through generic web service Tsort.Data.WebSvc (i.e. JARGXTS.TSORT.WebSvc)
+- application configuration parameters moved from app.config to database (AS400Lib)
+- added additional configuration parameters to database (MISPassword, TraceLevel= 0:None; 1:Debug; 2:Information; 3:Warning; 4:Error)
+- upgraded to Infragistics NetAdvantage 2004 third party control suite (required: Infragistics.Win.v3.2.dll, Infragistics.Shared.v3.2.dll, Infragistics.Win.UltraWinGrid.v3.2.dll)
+
+
+v2.3.0, 04/20/05 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- added MessageManager for statusbar message management.
+- upgraded to Infragistics NetAdvantage 2005 third party control suite (required: Infragistics.Win.v5.1.dll, Infragistics.Shared.v5.1.dll, Infragistics.Win.UltraWinGrid.v5.1.dll)
+
+v2.3.1, 07/11/05 ---------------------------------------------------------------------------
+Requirements/features
+- added new requirement constraint: can assign shipment if shipment is marked as sortable.
+Design/deployment
+- added support for new field IsSortable.
+
+v2.4.0, 12/21/05 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- updated Microsoft.ApplicationsBlock.Data component; added configurable command timeout.
+
+v2.7.0, 05/08/08 ---------------------------------------------------------------------------
+Requirements/features
+- none.
+Design/deployment
+- upgraded to Infragistics NetAdvantage 2006 third party control suite (required: Infragistics.Win.v6.3.dll, Infragistics.Shared.v6.3.dll, Infragistics.Win.UltraWinGrid.v6.3.dll)
+
+v3.0.0, 09/16/09 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- Application ported to .NET Framework 3.5 using Visual Studio 2008.
+
+v3.0.1, 04/15/10 ---------------------------------------------------------------------------
+Requirements/features
+- Removed terminal selection feature; can only access from from local terminal.
+Design/deployment
+- Removed terminal selection combobox.
+- Removed usage of FreightSync component; AS/400 synchronization to local LAN managed by database.
+
+v3.5.0, 08/25/10 ---------------------------------------------------------------------------
+Requirements/features
+- removed web service data access feature.
+Design/deployment
+- upgraded to Infragistics NetAdvantage 2008 third party control suite (required: Infragistics2.Win.v8.1.dll, Infragistics2.Shared.v8.1.dll, Infragistics2.Win.UltraWinGrid.v8.1.dll)
+
+v3.5.1, 03/21/11, 08/11/11, 09/28/11, 10/11/11, 10/24/11, 11/28/11, 02/09/12, 03/26/12, 04/18/12, 08/03/12, 06/11/14, 11/05/14, 11/11/14, 11/17/14, 12/02/14, 12/10/14, 12/16/14
+Requirements/features
+- none.
+Design/deployment
+- upgraded to Infragistics NetAdvantage 2010 third party control suite (required: Infragistics2.Win.v10.1.dll, Infragistics2.Shared.v10.1.dll, Infragistics2.Win.UltraWinGrid.v10.1.dll)
+- Rebuild for change in config database connection (JARGXTS to JARGXVMTS)
+- rebuild for change in config database connection (LLRGXAD2 to LLRGXAD1)
+- rebuild for change in config database connection (MMRGXAD2 to MMRGXAD1)
+- rebuild for change in config database connection (ATRGXAD2 to ATRGXAD1)
+- rebuild for change in config database connection (CHRGXAD2 to CHRGXAD1)
+- rebuild for change in config database connection (MARGXAD2 to MARGXAD1)
+- rebuild for change in config database connection (CTRGXAD1 to CTRGXAD2)
+- rebuild for new config database connection (AGNFIRGXTS)
+- rebuild for new config database connections (AGNFIRGXTS, AGSFSRGXTS)
+- rebuild for new config database connection (RFRGXVMTS)
+- rebuild for change in config database connection (ATRGXAD1 to ATRGXVMSQL)
+- rebuild for change in config database connection (CHRGXAD1 to chrgxvmsql)
+- rebuild for change in config database connection (MARGXAD1 to margxvmsql)
+- rebuild for change in config database connection (rfrgxvmts to rfrgxvmsql1)
+- rebuild for change in config database connection (llrgxad1 to llrgxvmsql)
+- rebuild for change in config database connection (ctrgxad2 to ctrgxvmsql)
+- rebuild for change in config database connection (mmrgxad1 to mmrgxvmsql)

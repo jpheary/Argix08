@@ -1,0 +1,197 @@
+.container {
+	width: 900px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#EEDBDF;		
+	height:960px;
+} 
+
+.content  {
+	float:left;
+	width:800px;
+	padding-left: 6%;
+}
+
+#detailHeadContainer  {
+	float:left;
+	width:785px;
+	height:100px;
+	margin-top:5px;
+	margin-bottom: 10px;
+	padding-left:5px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#B5AAA8;
+	background-color:white;
+}
+
+.detailGridContainer  {
+	float:left;
+	width:785px;
+	padding-left:5px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#B5AAA8;
+	margin-bottom: 10px;
+	background-color:#EEE;		
+}
+
+.detailShipmentContainer  {
+	float:left;
+	width:790px;
+ 	/*	    border-style:solid;		
+	border-width:2px;			    
+	border-color:#B5AAA8;		*/
+}
+
+.detailShipmentTable
+{
+	background-color:White;
+ /*	    border-style: solid;
+    border-width: 2px;
+    border-color: #B5AAA8;		*/
+    width: 790px;
+}
+	
+#buttonContainer  {
+	float:right;
+	width:160px;
+	height:25px;
+	margin-top:15px;
+	padding-right: 10px;
+}
+
+#buttonContainerLeft  {
+	float:left;
+	width:160px;
+	height:25px;
+	margin-top:15px;
+	padding-left:15px;
+}
+
+#labelContainer  {
+	float:left;
+	clear:both;
+	width:780px;
+	height:45px;
+	margin-top:15px;
+}
+
+#linkContainer  {
+	float:left;
+	clear:both;
+	width:300px;
+	height:25px;
+}
+
+td.detailCell {
+	height: 97px; 
+	padding-left:5px; 
+	background-color:White;
+}
+
+td.detailHeader 
+{
+	font-weight:bold;
+	width: 210px;
+	padding-left:5px; 
+}
+	
+#copyrightDiv {
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	margin-top:5px;
+	width: 900px;
+	height:22px;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #000000;
+}
+
+#topBannerDiv {
+	float:none;
+	width:900px;
+	height:125px;
+	background-color:#000000;
+	margin-bottom:10px;
+}
+
+BODY
+{
+    FONT-SIZE: 11px;
+    COLOR: #000;
+    FONT-FAMILY: Arial;
+}
+
+TD
+{
+    FONT-SIZE: 11px;
+    COLOR: #000;
+    FONT-FAMILY: Arial
+}
+
+Table.detail
+{
+	border-style:solid;
+	border-width: 1px;
+}
+	
+Table.default
+{
+	background-color:White;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #B5AAA8;
+    padding-left:10px;
+}
+
+td.headerBlock
+{
+    FONT-SIZE: 18px;
+    FONT-FAMILY: Verdana;
+    height:25px;
+    background-color:#eeeeee;
+}
+
+tr.rowHeader
+{
+    background-color:#999999;   /* vs: #CCCCCC  */
+}
+
+.label
+{
+    PADDING-LEFT: 0px; 
+    FONT-SIZE: 14px;
+    font-weight: normal;
+    COLOR: #000;
+    FONT-FAMILY: Arial;
+    HEIGHT: 25px;
+}
+
+.lineBreak
+{
+  white-space:pre;
+}
+
+.bold
+{
+	font-weight:bold;
+}
+
+.linkButton
+{
+	   text-decoration:none;
+	   Font-Size:12px;
+	   Font-Weight:bold;
+	   color:Red;
+}
+
+.tableHeaderBold
+{
+	/*background-color: #e7000d;*/
+	background-color: #D21241;
+	text-align: left;
+	height: 18px;
+}

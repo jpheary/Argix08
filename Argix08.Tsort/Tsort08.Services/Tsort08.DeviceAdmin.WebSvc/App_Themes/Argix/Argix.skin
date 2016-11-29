@@ -1,0 +1,30 @@
+<asp:Button Runat="server" Font-Size="1.0em" />
+<asp:Calendar runat="server" DayNameFormat="FirstLetter" NextPrevFormat="CustomText" ShowGridLines="True" BorderColor="#E7000D" BorderStyle="Solid" BorderWidth="1px">
+    <TodayDayStyle BackColor="#FFE0F3" ForeColor="Black" />
+    <DayStyle Font-Size="7pt" ForeColor="Black" />
+    <WeekendDayStyle BackColor="#C0C0FF" ForeColor="Black" />
+    <NextPrevStyle ForeColor="White" />
+    <DayHeaderStyle BackColor="#FFE0F3" Font-Bold="True" ForeColor="Black" />
+    <TitleStyle BackColor="#E7000D" Font-Bold="False" Font-Size="1.1em" ForeColor="White" />
+</asp:Calendar>
+<asp:CheckBox runat="server" Font-Size="1.0em" ForeColor="buttontext" />
+<asp:CheckBoxList runat="server" Font-Size="1.0em" ForeColor="buttontext" />
+<asp:CustomValidator Runat="server" Font-Bold="true" ForeColor="#CC3333" BackColor="#ffe0f3" />
+<asp:DropDownList Runat="server" Font-Size="1.0em" />
+<asp:GridView Runat="server" BorderStyle="Solid" CellPadding="1" CellSpacing="2" BackColor="White" >
+    <HeaderStyle BackColor="Control" ForeColor="ControlText" Wrap="True" />
+    <PagerStyle BackColor="Control" ForeColor="ControlText" HorizontalAlign="Left" />
+</asp:GridView>
+<asp:HyperLink Runat="server" />
+<asp:Label Runat="server" Font-Size="1.0em" />
+<asp:LinkButton Runat="server" />
+<asp:LoginName runat="server" Font-Size="1.0em" ForeColor="black" Font-Bold="True" />
+<asp:LoginStatus runat="server" Font-Size="1.0em" Font-Underline="true" ForeColor="#e7000d" Font-Bold="True" />
+<asp:Panel runat="server" Font-Size="1.0em" Wrap="False" Width="100%" BorderStyle="Solid" BorderWidth="0px" BorderColor="#e7000d" />
+<asp:RadioButtonList Runat="server" Font-Size="1.0em" />
+<asp:RegularExpressionValidator Runat="server" Font-Size="0.9em" forecolor="#e7000d" />
+<asp:RequiredFieldValidator Runat="server" Font-Size="0.9em" forecolor="#e7000d" />
+<asp:TextBox Runat="server" Font-Size="1.0em" BackColor="white" />
+<asp:ValidationSummary Runat="server" Font-Bold="true" ForeColor="#CC3333" BackColor="#ffe0f3" />
+
+<asp:Label Runat="server" Font-Size="36pt" ForeColor="HighlightText" BackColor="Highlight" skinid="ScaleSkin" />

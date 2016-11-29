@@ -1,0 +1,45 @@
+<asp:Button  Runat="server" Font-Size="1.0em" />
+<asp:CheckBox Runat="server" />
+<asp:DropDownList Runat="server" Font-Size="1.0em" />
+<asp:HyperLink Runat="server" Font-Underline="false"  />
+<asp:ImageButton runat="server" />
+<asp:Label Runat="server" ForeColor="Black" />
+<asp:LinkButton runat="server" Font-Underline="true" Font-Bold="true"  />
+<asp:Panel runat="server"></asp:Panel>
+<asp:RadioButton Runat="server" />
+<asp:RadioButtonList Runat="server" />
+<asp:TextBox Runat="server" Font-Size="1.0em" />
+
+<asp:Table runat="server" ></asp:Table>
+<asp:TableRow runat="server" ></asp:TableRow>
+<asp:TableCell runat="server" ></asp:TableCell>
+
+<asp:TreeView runat="server" BackColor="Window" ImageSet="XPFileExplorer" NodeIndent="6" ShowLines="True">
+    <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+    <LeafNodeStyle />
+    <LevelStyles><asp:TreeNodeStyle /></LevelStyles>
+    <NodeStyle Font-Size="1.0em" ForeColor="WindowText" NodeSpacing="0px" HorizontalPadding="2px" VerticalPadding="2px" />
+    <ParentNodeStyle Font-Bold="False" />
+    <SelectedNodeStyle BackColor="Highlight" ForeColor="HighlightText" Font-Underline="False" HorizontalPadding="0px" VerticalPadding="0px" />
+</asp:TreeView>
+<asp:Calendar runat="server" BorderWidth="1px" Style="position: relative" CellPadding="1" DayNameFormat="FirstLetter" NextMonthText="&gt;" PrevMonthText="&lt;" ShowGridLines="True"></asp:Calendar>
+<asp:GridView Runat="server" Font-Size="0.9em" BorderStyle="Inset" BorderWidth="1px" CellPadding="2" CellSpacing="0" GridLines="Both" BackColor="White" >
+    <AlternatingRowStyle BackColor="White" ForeColor="Black" Wrap="false" />
+    <EditRowStyle />
+    <EmptyDataRowStyle BackColor="White" ForeColor="Black" Wrap="false"  />
+    <FooterStyle BackColor="White" ForeColor="Black" Wrap="false" />
+    <HeaderStyle BorderStyle="None" BorderWidth="0px" BorderColor="Window" BackColor="Control" ForeColor="ControlText" Wrap="True" />
+    <PagerStyle BackColor="Control" ForeColor="ControlText" HorizontalAlign="Left" />
+    <RowStyle BorderStyle="None" BorderWidth="0px" />
+    <SelectedRowStyle BackColor="Highlight" ForeColor="HighlightText" BorderStyle="None" BorderWidth="0px" />
+</asp:GridView>
+
+<asp:CustomValidator Runat="server" ForeColor="Red" BackColor="#ffe0f3" Font-Bold="true" Font-Weight="bold" />
+<asp:RegularExpressionValidator Runat="server" Font-Style="normal" forecolor="#e7000d" />
+<asp:RequiredFieldValidator Runat="server" forecolor="#e7000d" />
+<asp:ValidationSummary Runat="server" Font-Weight="bold" ForeColor="Red" BackColor="#ffe0f3"  />
+
+<asp:LinkButton runat="server" Font-Size="0.6em" Font-Underline="false" Font-Bold="true" ForeColor="#CC3333" skinid="GlobalLink" />
+<asp:TableCell Runat="server" Font-Size="1.4em" ForeColor="Black" style="vertical-align:middle; padding-left:6px; background-image:url(../App_Themes/Reports/Images/pagetitle.gif); background-repeat:repeat-x;" skinid="PageTitle" />
+<asp:TableCell Runat="server" Font-Size="1.1em" ForeColor="Black" style="vertical-align:middle; padding-left:6px; background-image:url(../App_Themes/Reports/Images/windowtitle.gif); background-repeat:repeat-x;" skinid="WindowTitle" />
+<asp:TableCell Runat="server" Font-Size="1.0em" ForeColor="Black" style="vertical-align:middle; padding-left:6px; background-image:url(../App_Themes/Reports/Images/gridtitle.gif); background-repeat:repeat-x;" skinid="GridTitle" />

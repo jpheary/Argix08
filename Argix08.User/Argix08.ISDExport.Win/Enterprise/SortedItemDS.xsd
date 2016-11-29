@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="SortedItemDS" targetNamespace="http://tempuri.org/SortedItemDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/SortedItemDS.xsd" xmlns:mstns="http://tempuri.org/SortedItemDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="SortedItemDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="SortedItemTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LABEL_SEQ_NUMBER" type="xs:string" />
+							<xs:element name="CLIENT_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="CLIENT_DIV_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="AGENT_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="VENDOR_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="SORTED_LOCATION" type="xs:string" minOccurs="0" />
+							<xs:element name="DAMAGE_CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="PICKUP_DATE" type="xs:dateTime" />
+							<xs:element name="PICKUP_NUMBER" type="xs:int" />
+							<xs:element name="STORE" type="xs:int" minOccurs="0" />
+							<xs:element name="ZONE_CODE" type="xs:string" minOccurs="0" />
+							<xs:element name="TRAILER_LOAD_NUM" type="xs:string" minOccurs="0" />
+							<xs:element name="ITEM_TYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="ITEM_WEIGHT" type="xs:int" minOccurs="0" />
+							<xs:element name="VENDOR_KEY" type="xs:string" minOccurs="0" />
+							<xs:element name="VENDOR_ITEM_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="RETURN_FLAG" type="xs:string" minOccurs="0" />
+							<xs:element name="RETURN_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="SHIFT_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="SHIFT_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="END_TIME" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ARC_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="STATION" type="xs:string" minOccurs="0" />
+							<xs:element name="ITEM_CUBE" type="xs:int" minOccurs="0" />
+							<xs:element name="SORT_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="SAN_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="ELAPSED_SECONDS" type="xs:int" minOccurs="0" />
+							<xs:element name="DOWN_SECONDS" type="xs:int" minOccurs="0" />
+							<xs:element name="PO_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="OS_TRACKING_NUMBER" type="xs:string" minOccurs="0" />
+							<xs:element name="SHIPPING_METHOD" type="xs:string" minOccurs="0" />
+							<xs:element name="SAMPLE_DATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ScanString" type="xs:string" minOccurs="0" />
+							<xs:element name="InboundLabelID" type="xs:int" minOccurs="0" />
+							<xs:element name="FreightType" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="SortedItemDSKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:SORTED_ITEMS" />
+			<xs:field xpath="mstns:LABEL_SEQ_NUMBER" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

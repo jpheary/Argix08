@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Argix.Terminals" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Argix.Terminals" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Argix.Terminals/Imports">
+      <xsd:import schemaLocation="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd0" namespace="http://Argix.Terminals" />
+      <xsd:import schemaLocation="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Argix.Terminals" />
+      <xsd:import schemaLocation="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd2" />
+      <xsd:import schemaLocation="http://localhost:1821/Argix08.RoadshowServices/Roadshow.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRoadshowService_GetCustomers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomers" />
+  </wsdl:message>
+  <wsdl:message name="IRoadshowService_GetCustomers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCustomersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRoadshowService_GetCustomers_RoadshowFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Argix.Terminals" name="detail" element="q1:RoadshowFault" />
+  </wsdl:message>
+  <wsdl:portType name="IRoadshowService">
+    <wsdl:operation name="GetCustomers">
+      <wsdl:input wsaw:Action="http://Argix.Terminals/IRoadshowService/GetCustomers" message="tns:IRoadshowService_GetCustomers_InputMessage" />
+      <wsdl:output wsaw:Action="http://Argix.Terminals/IRoadshowService/GetCustomersResponse" message="tns:IRoadshowService_GetCustomers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Argix.Terminals.RoadshowFault" name="RoadshowFaultFault" message="tns:IRoadshowService_GetCustomers_RoadshowFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

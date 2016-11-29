@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://Tsort.Devices" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://Tsort.Devices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Tsort.Devices/Imports">
+      <xsd:import schemaLocation="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd0" namespace="http://Tsort.Devices" />
+      <xsd:import schemaLocation="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Tsort.Devices" />
+      <xsd:import schemaLocation="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.IO.Ports" />
+      <xsd:import schemaLocation="http://localhost:8000/Tsort08.ScaleService/Service?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IScale_BornOn_InputMessage">
+    <wsdl:part name="parameters" element="tns:BornOn" />
+  </wsdl:message>
+  <wsdl:message name="IScale_BornOn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BornOnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScale_GetScaleType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScaleType" />
+  </wsdl:message>
+  <wsdl:message name="IScale_GetScaleType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScaleTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScale_GetSettings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettings" />
+  </wsdl:message>
+  <wsdl:message name="IScale_GetSettings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScale_GetSettings_ScaleFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Tsort.Devices" name="detail" element="q1:ScaleFault" />
+  </wsdl:message>
+  <wsdl:message name="IScale_IsOn_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsOn" />
+  </wsdl:message>
+  <wsdl:message name="IScale_IsOn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsOnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScale_TurnOn_InputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOn" />
+  </wsdl:message>
+  <wsdl:message name="IScale_TurnOn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScale_TurnOn_ScaleFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Tsort.Devices" name="detail" element="q2:ScaleFault" />
+  </wsdl:message>
+  <wsdl:message name="IScale_TurnOff_InputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOff" />
+  </wsdl:message>
+  <wsdl:message name="IScale_TurnOff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TurnOffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScale_TurnOff_ScaleFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Tsort.Devices" name="detail" element="q3:ScaleFault" />
+  </wsdl:message>
+  <wsdl:message name="IScale_GetWeight_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeight" />
+  </wsdl:message>
+  <wsdl:message name="IScale_GetWeight_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeightResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScale_GetWeight_ScaleFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Tsort.Devices" name="detail" element="q4:ScaleFault" />
+  </wsdl:message>
+  <wsdl:message name="IScale_Zero_InputMessage">
+    <wsdl:part name="parameters" element="tns:Zero" />
+  </wsdl:message>
+  <wsdl:message name="IScale_Zero_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ZeroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IScale_Zero_ScaleFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Tsort.Devices" name="detail" element="q5:ScaleFault" />
+  </wsdl:message>
+  <wsdl:message name="IScale_WeightReading_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:WeightReading" />
+  </wsdl:message>
+  <wsdl:portType name="IScale">
+    <wsdl:operation name="BornOn">
+      <wsdl:input wsaw:Action="http://Tsort.Devices/IScale/BornOn" message="tns:IScale_BornOn_InputMessage" />
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/BornOnResponse" message="tns:IScale_BornOn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScaleType">
+      <wsdl:input wsaw:Action="http://Tsort.Devices/IScale/GetScaleType" message="tns:IScale_GetScaleType_InputMessage" />
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/GetScaleTypeResponse" message="tns:IScale_GetScaleType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSettings">
+      <wsdl:input wsaw:Action="http://Tsort.Devices/IScale/GetSettings" message="tns:IScale_GetSettings_InputMessage" />
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/GetSettingsResponse" message="tns:IScale_GetSettings_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Tsort.Devices/ScaleFault" name="ScaleFaultFault" message="tns:IScale_GetSettings_ScaleFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsOn">
+      <wsdl:input wsaw:Action="http://Tsort.Devices/IScale/IsOn" message="tns:IScale_IsOn_InputMessage" />
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/IsOnResponse" message="tns:IScale_IsOn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TurnOn">
+      <wsdl:input wsaw:Action="http://Tsort.Devices/IScale/TurnOn" message="tns:IScale_TurnOn_InputMessage" />
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/TurnOnResponse" message="tns:IScale_TurnOn_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Tsort.Devices/ScaleFault" name="ScaleFaultFault" message="tns:IScale_TurnOn_ScaleFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TurnOff">
+      <wsdl:input wsaw:Action="http://Tsort.Devices/IScale/TurnOff" message="tns:IScale_TurnOff_InputMessage" />
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/TurnOffResponse" message="tns:IScale_TurnOff_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Tsort.Devices/ScaleFault" name="ScaleFaultFault" message="tns:IScale_TurnOff_ScaleFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWeight">
+      <wsdl:input wsaw:Action="http://Tsort.Devices/IScale/GetWeight" message="tns:IScale_GetWeight_InputMessage" />
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/GetWeightResponse" message="tns:IScale_GetWeight_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Tsort.Devices/ScaleFault" name="ScaleFaultFault" message="tns:IScale_GetWeight_ScaleFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Zero">
+      <wsdl:input wsaw:Action="http://Tsort.Devices/IScale/Zero" message="tns:IScale_Zero_InputMessage" />
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/ZeroResponse" message="tns:IScale_Zero_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://Tsort.Devices/ScaleFault" name="ScaleFaultFault" message="tns:IScale_Zero_ScaleFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WeightReading">
+      <wsdl:output wsaw:Action="http://Tsort.Devices/IScale/WeightReading" message="tns:IScale_WeightReading_OutputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

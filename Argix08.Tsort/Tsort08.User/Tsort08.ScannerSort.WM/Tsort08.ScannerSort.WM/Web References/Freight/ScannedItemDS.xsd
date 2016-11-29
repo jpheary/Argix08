@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/ScannedItemDS.xsd" xmlns="http://tempuri.org/ScannedItemDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/ScannedItemDS.xsd" id="ScannedItemDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="ScannedItemDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ScannedItemTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="ItemNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="TerminalID" type="xs:int" />
+              <xs:element minOccurs="0" name="ScannerID" type="xs:string" />
+              <xs:element minOccurs="0" name="FreightID" type="xs:string" />
+              <xs:element minOccurs="0" name="SortDate" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ScanString" type="xs:string" />
+              <xs:element minOccurs="0" name="UserID" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

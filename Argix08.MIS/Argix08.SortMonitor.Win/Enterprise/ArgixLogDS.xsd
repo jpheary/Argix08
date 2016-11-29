@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ArgixLogDS" targetNamespace="http://tempuri.org/ArgixLogDS.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/ArgixLogDS.xsd" xmlns:mstns="http://tempuri.org/ArgixLogDS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="ArgixLogDS" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="ArgixLogTable">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:long" minOccurs="0" />
+							<xs:element name="Name" type="xs:string" minOccurs="0" />
+							<xs:element name="Level" type="xs:int" minOccurs="0" />
+							<xs:element name="Date" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Source" type="xs:string" minOccurs="0" />
+							<xs:element name="Category" type="xs:string" minOccurs="0" />
+							<xs:element name="Event" type="xs:string" minOccurs="0" />
+							<xs:element name="User" type="xs:string" minOccurs="0" />
+							<xs:element name="Computer" type="xs:string" minOccurs="0" />
+							<xs:element name="Keyword1" type="xs:string" minOccurs="0" />
+							<xs:element name="Keyword2" type="xs:string" minOccurs="0" />
+							<xs:element name="Keyword3" type="xs:string" minOccurs="0" />
+							<xs:element name="Message" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="ArgixLogDSKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:ArgixLog" />
+			<xs:field xpath="mstns:ID" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,18 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad">
+	<ribbon>
+		<tabs>
+			<tab id="idIssueMgt" label="Issue Mgt" >
+				<group id="grpFile" label="File" visible ="1">
+					<toggleButton id="btnNav" label="Explore Issues" imageMso="MacroShowAllActions" screentip="Show/hide the Issue Mgt Explorer" onAction="OnNavClicked" getPressed="OnNavGetPressed" getEnabled="OnSetServices" />
+					<separator id="btnFileSep1" />
+					<button id="btnNew" label="New Issue" imageMso="GetExternalDataFromText" screentip="Create a new issue" onAction="OnFileAction" getEnabled="OnSetServices" />
+					<button id="btnAdd" label="Add Action" imageMso="TextBoxInsert" screentip="Add a new action to an existing issue" onAction="OnFileAction" getEnabled="OnSetServices" />
+				</group>
+				<group id="grpView" label="View" visible ="1">
+					<button id="btnRef" label="Refresh" imageMso="Refresh" screentip="Refresh the list of issues in Issue Mgt Explorer" onAction="OnViewAction" getEnabled="OnSetServices" />
+					<button id="btnRefC" label="Refresh Cache" imageMso="RefreshAll" screentip="Refresh companies, agents, contacts, issue types, and action types." onAction="OnViewAction" getEnabled="OnSetServices" />
+				</group>
+			</tab>
+		</tabs>
+	</ribbon>
+</customUI>

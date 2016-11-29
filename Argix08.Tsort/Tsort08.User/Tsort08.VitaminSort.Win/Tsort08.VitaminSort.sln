@@ -1,0 +1,137 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsort08.VitaminSort.Win", "Tsort08.VitaminSort.Win\Tsort08.VitaminSort.Win.csproj", "{D5D2BA23-62AC-48A5-9F5A-868E687182C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637} = {6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Argix08.TsortService", "..\..\..\Argix08.Services\Argix08.TsortService", "{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/Argix08/Tsort08/Tsort08.VitaminSort.root/Tsort08.VitaminSort", ODCBAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "..\.."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Argix08.TsortService"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Argix08.Services\Argix08.TsortService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Argix08.TsortService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Argix08.TsortService"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Argix08.Services\Argix08.TsortService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Argix08.TsortService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60128"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsort08.DeviceService", "..\..\Tsort08.Services\Tsort08.DeviceService\Tsort08.DeviceService.csproj", "{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Tsort08.DeviceAdmin.WebSvc", "..\..\Tsort08.Services\Tsort08.DeviceAdmin.WebSvc", "{9798A428-B747-4237-AF15-368BE68BD300}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/Argix08/Tsort08/Tsort08.VitaminSort.root/Tsort08.VitaminSort", ODCBAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "..\..\.."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Tsort08.DeviceAdmin.WebSvc"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Tsort08.Services\Tsort08.DeviceAdmin.WebSvc\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Tsort08.DeviceAdmin.WebSvc\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Tsort08.DeviceAdmin.WebSvc"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Tsort08.Services\Tsort08.DeviceAdmin.WebSvc\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Tsort08.DeviceAdmin.WebSvc\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49873"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectName0 = \u0022$/Argix08/Tsort08/Tsort08.VitaminSort.root/Tsort08.VitaminSort\u0022,\u0020ODCBAAAA
+		SccLocalPath0 = ..\\..\\..
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectFilePathRelativizedFromConnection0 = Tsort08\\Tsort08.User\\Tsort08.VitaminSort.Win\\
+		SccWebProject1 = true
+		SccProjectUniqueName1 = ..\\..\\..\\Argix08.Services\\Argix08.TsortService
+		SccLocalPath1 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection1 = Argix08.Services\\Argix08.TsortService\\
+		SccProjectEnlistmentChoice1 = 2
+		SccWebProject2 = true
+		SccProjectUniqueName2 = ..\\..\\Tsort08.Services\\Tsort08.DeviceAdmin.WebSvc
+		SccLocalPath2 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection2 = Tsort08\\Tsort08.Services\\Tsort08.DeviceAdmin.WebSvc\\
+		SccProjectEnlistmentChoice2 = 2
+		SccProjectUniqueName3 = ..\\..\\Tsort08.Services\\Tsort08.DeviceService\\Tsort08.DeviceService.csproj
+		SccLocalPath3 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection3 = Tsort08\\Tsort08.Services\\Tsort08.DeviceService\\
+		SccProjectUniqueName4 = Tsort08.VitaminSort.Win\\Tsort08.VitaminSort.Win.csproj
+		SccLocalPath4 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection4 = Tsort08\\Tsort08.User\\Tsort08.VitaminSort.Win\\Tsort08.VitaminSort.Win\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Release|.NET.ActiveCfg = Release|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D5D2BA23-62AC-48A5-9F5A-868E687182C2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Debug|.NET.ActiveCfg = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Debug|.NET.Build.0 = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Release|.NET.ActiveCfg = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Release|.NET.Build.0 = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{6749EBCD-78F5-4EF9-BBEB-9D123DF6A637}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Release|.NET.ActiveCfg = Release|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A8EA8F76-AE8C-4F67-A3F7-4A8FC9795261}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9798A428-B747-4237-AF15-368BE68BD300}.Debug|.NET.ActiveCfg = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Debug|.NET.Build.0 = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Release|.NET.ActiveCfg = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Release|.NET.Build.0 = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{9798A428-B747-4237-AF15-368BE68BD300}.Release|Mixed Platforms.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

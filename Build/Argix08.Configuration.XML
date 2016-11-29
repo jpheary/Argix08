@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Argix08.Configuration</name>
+    </assembly>
+    <members>
+        <member name="M:Argix.Configuration.dlgLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Argix.Configuration.AppConfigFactory">
+            <summary>Abstract base class for an application configuration factory.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfigFactory.USP_CONFIG_GETLIST">
+            <summary>Stored procedure for configuration entries.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfigFactory.TBL_CONFIGURATION">
+            <summary>Stored procedure for configuration entries.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfigFactory.USP_CONFIG_CREATE">
+            <summary>Stored procedure to create a configuration entry.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfigFactory.USP_CONFIG_UPDATE">
+            <summary>Stored procedure to update a configuration entry.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfigFactory.USER_DEFAULT">
+            <summary>Name of the user for the default configuration entries.</summary>
+        </member>
+        <member name="M:Argix.Configuration.AppConfigFactory.#ctor(System.String)">
+            <summary>Constructor.</summary>
+            <param name="productName">Application fieldname in the database Configuration table.</param>
+        </member>
+        <member name="M:Argix.Configuration.AppConfigFactory.Refresh">
+            <summary>Refresh configuration entry and user lists.</summary>
+        </member>
+        <member name="M:Argix.Configuration.AppConfigFactory.Add(System.String)">
+            <summary>Add a new user to the Configuration database.</summary>
+            <param name="name">>PCName fieldname in the database Configuration table.</param>
+            <returns>Argix.Configuration.AppConfig object for the new user.</returns>
+        </member>
+        <member name="M:Argix.Configuration.AppConfigFactory.Item(System.String)">
+            <summary>Get a configuration for the speciified user.</summary>
+            <param name="name">PCName fieldname in the database Configuration table.</param>
+            <returns>Argix.Configuration.AppConfig object for the specified user.</returns>
+        </member>
+        <member name="M:Argix.Configuration.AppConfigFactory.Item(System.String[])">
+            <summary>Get a configuration for the speciified users.</summary>
+            <param name="names">PCName fieldname in the database Configuration table.</param>
+            <returns>Argix.Configuration.AppConfig object for the specified user.</returns>
+        </member>
+        <member name="M:Argix.Configuration.AppConfigFactory.ShowDialog(System.String)">
+            <summary>Shows the configuration dialog.</summary>
+            <param name="password">Password that user must specify to access the dialog.</param>
+        </member>
+        <member name="M:Argix.Configuration.AppConfigFactory.NewAppConfig(System.String,System.Data.DataSet)">
+            <summary>Create a new instance of the Argix.Configuration.AppConfig sub-class.</summary>
+            <param name="PCName">PCName fieldname in the database Configuration table.</param>
+            <param name="ds">Configuration data.</param>
+            <returns>Argix.Configuration.AppConfig object for the specified user.</returns>
+        </member>
+        <member name="P:Argix.Configuration.AppConfigFactory.Count">
+            <summary>Count of configuration entries.</summary>
+        </member>
+        <member name="P:Argix.Configuration.AppConfigFactory.Users">
+            <summary>A hashtable of all users in the database Configuration table for the specified application.</summary>
+        </member>
+        <member name="P:Argix.Configuration.AppConfigFactory.ConfigMediator">
+            <summary>An Argix.Data.Mediator for access to the configuration database.</summary>
+        </member>
+        <member name="T:Argix.Configuration.AppConfig">
+            <summary>Abstract base class for an application configuration.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfig.KEY_MISPASSWORD">
+            <summary>Name of the MIS Password configuration key.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfig.KEY_READONLY">
+            <summary>Name of the Read Only configuration key.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfig.KEY_TRACELEVEL">
+            <summary>Name of the Trace Level configuration key.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfig.mConfigDS">
+            <summary>Configuration data cache.</summary>
+        </member>
+        <member name="F:Argix.Configuration.AppConfig.mMediator">
+            <summary>An Argix.Data.Mediator instance for access to the configuration database.</summary>
+        </member>
+        <member name="M:Argix.Configuration.AppConfig.#ctor(System.String,System.Data.DataSet,Argix.Data.Mediator)">
+            <summary>Constructor</summary>
+            <param name="PCName">A configuration user- can be username or machine name.</param>
+            <param name="ds">Configuration data associated with PCName.</param>
+            <param name="mediator">An Argix.Data.Mediator instance for access to the configuration database.</param>
+        </member>
+        <member name="M:Argix.Configuration.AppConfig.GetValue(System.String)">
+            <summary>Get a configuration value by key and return as a string.</summary>
+        </member>
+        <member name="M:Argix.Configuration.AppConfig.GetValueAsInteger(System.String)">
+            <summary>Get a configuration value by key and return as an integer.</summary>
+        </member>
+        <member name="M:Argix.Configuration.AppConfig.GetValueAsTimeSpan(System.String)">
+            <summary>Get a configuration value by key and return as a TimeSpan.</summary>
+        </member>
+        <member name="M:Argix.Configuration.AppConfig.GetValueAsBoolean(System.String)">
+            <summary>Get a configuration value by key and return as a boolean.</summary>
+        </member>
+        <member name="M:Argix.Configuration.AppConfig.SetValue(System.String,System.String)">
+            <summary>Set a configuration value by key.</summary>
+        </member>
+        <member name="M:Argix.Configuration.AppConfig.OnConfigsChanged(System.Object,Argix.Configuration.ConfigEventArgs)">
+            <summary>Configuration changed event.</summary>
+        </member>
+        <member name="E:Argix.Configuration.AppConfig.Changed">
+            <summary></summary>
+        </member>
+        <member name="P:Argix.Configuration.AppConfig.MISPassword">
+            <summary>Password to MIS-related services.</summary>
+        </member>
+        <member name="P:Argix.Configuration.AppConfig.ReadOnly">
+            <summary>Read only rights.</summary>
+        </member>
+        <member name="P:Argix.Configuration.AppConfig.TraceLevel">
+            <summary>Application trace logging level.</summary>
+        </member>
+        <member name="T:Argix.Configuration.ConfigEventHandler">
+            <summary>Configuration event handler.</summary>
+            <param name="source">Configuration source.</param>
+            <param name="e">Configuration data for the event.</param>
+        </member>
+        <member name="T:Argix.Configuration.ConfigEventArgs">
+            <summary>Configuration event args for ConfigEventHandler.</summary>
+        </member>
+        <member name="M:Argix.Configuration.ConfigEventArgs.#ctor(System.Data.DataSet)">
+            <summary>Constructor</summary>
+        </member>
+        <member name="P:Argix.Configuration.ConfigEventArgs.Data">
+            <summary>Gets and sets configuration data.</summary>
+        </member>
+        <member name="T:Argix.Configuration.AppConfigDS">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Argix.Configuration.AppConfigDS.ConfigTableDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Argix.Configuration.AppConfigDS.ConfigTableRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Argix.Configuration.AppConfigDS.ConfigTableRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Argix.Configuration.dlgConfig">
+            <summary>Provides management of application configuration settings.</summary>
+        </member>
+        <member name="M:Argix.Configuration.dlgConfig.#ctor(Argix.Configuration.AppConfigFactory)">
+            <summary>Constructor</summary>
+            <param name="appConfigs">Sets a Argix.Configuration.AppConfigFactory object in the dialogs Argix.Configuration.ConfigGrid::Configuration control member.</param>
+        </member>
+        <member name="M:Argix.Configuration.dlgConfig.Dispose(System.Boolean)">
+            <summary>Disposes of the resources (other than memory) used by the System.Windows.Forms.Form.</summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Argix.Configuration.dlgConfig.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Argix.Configuration.ConfigGrid">
+            <summary>Configuration grid control</summary>
+        </member>
+        <member name="F:Argix.Configuration.ConfigGrid.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Argix.Configuration.ConfigGrid.#ctor">
+            <summary>Constructor</summary>
+        </member>
+        <member name="M:Argix.Configuration.ConfigGrid.Dispose(System.Boolean)">
+            <summary></summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Argix.Configuration.ConfigGrid.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Argix.Configuration.ConfigGrid.Configuration">
+            <summary>Gets or sets the underlying Argix.Configuration.AppConfigFactory; refreshes configuration on set</summary>
+        </member>
+        <member name="F:Argix.Configuration.dlgInputBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Argix.Configuration.dlgInputBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ddu.argixdirect.com" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://ddu.argixdirect.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ddu.argixdirect.com">
+      <s:import namespace="http://tempuri.org/TrackDS.xsd" />
+      <s:import schemaLocation="http://localhost/argix08/ddutracking/tracker.asmx?schema=TrackDS" namespace="http://tempuri.org/TrackDS.xsd" />
+      <s:element name="TrackCarton">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cartonNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackCartonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackCartonResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/TrackDS.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SoapCredential" type="tns:SoapCredential" />
+      <s:complexType name="SoapCredential">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TrackCartonSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackCarton" />
+  </wsdl:message>
+  <wsdl:message name="TrackCartonSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackCartonResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackCartonSoapCredential">
+    <wsdl:part name="SoapCredential" element="tns:SoapCredential" />
+  </wsdl:message>
+  <wsdl:portType name="TrackerSoap">
+    <wsdl:operation name="TrackCarton">
+      <wsdl:input message="tns:TrackCartonSoapIn" />
+      <wsdl:output message="tns:TrackCartonSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TrackerSoap" type="tns:TrackerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TrackCarton">
+      <soap:operation soapAction="http://ddu.argixdirect.com/TrackCarton" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TrackCartonSoapCredential" part="SoapCredential" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TrackerSoap12" type="tns:TrackerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TrackCarton">
+      <soap12:operation soapAction="http://ddu.argixdirect.com/TrackCarton" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TrackCartonSoapCredential" part="SoapCredential" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Tracker">
+    <wsdl:port name="TrackerSoap" binding="tns:TrackerSoap">
+      <soap:address location="http://localhost/argix08/ddutracking/tracker.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TrackerSoap12" binding="tns:TrackerSoap12">
+      <soap12:address location="http://localhost/argix08/ddutracking/tracker.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,129 @@
+              --------------------------------------------------------
+						ISD Export Application Readme File
+		                       	  July, 2015
+              --------------------------------------------------------
+                         (c) Copyright Argix Logistics, 2004-2015
+
+This document provides late-breaking or other information that supplements the ISD Export documentation.
+
+------------------------
+How to Use This Document
+------------------------
+To view the Readme file on-screen in Windows Notepad, maximize the Notepad window and click Word 
+Wrap on the Edit menu. To print the Readme file, open it in Notepad or another word processor, 
+and then use the Print command on the File menu.
+
+==============
+CONTENTS
+==============
+INSTALLATION
+   DEPLOYMENT
+   CONFIGURATION
+
+NOTES
+   GENERAL
+   DEPENDENCIES
+   OPERATION
+   VERSION HISTORY
+==============
+
+
+INSTALLATION
+==============
+DEPLOYMENT
+ISD Export is installed into a deployment folder visible from an IIS web service as follows:
+1.	Create a virtual folder c:\inetpub\wwwroot\ISDExport on a web server using Windows explorer.
+2.	Copy the following files into this folder:
+		Argix08.AppLogging.dll
+		Argix08.Configuration.dll
+		Argix08.Data.dll
+		Argix08.Windows.dll
+		Infragistics2.Shared.v10.1.dll
+		Infragistics2.Win.UltraWinGrid.v10.1.dll
+		Infragistics2.Win.v10.1.dll
+		ISDExport.exe
+		ISDExport.exe.config
+3.	Launch the Internet Information Services snap-in and validate that the virtual folder allows
+	anonymous access. A web application does not need to be created for deployment.
+
+
+CONFIGURATION
+Open the local TSort database, goto the Configuration table, and add/edit the values below:
+	Application     PCName          Key                       Value                     Security 
+	--------------- --------------- ------------------------- ------------------------- -------- 
+	ISD Export      Default         CanEditExport             false                     1        
+	ISD Export      Default         DateDaysBack              60                        1        
+	ISD Export      Default         MISPassword               ********                  1        
+	ISD Export      Default         ReadOnly                  false                     1        
+	ISD Export      Default         TraceLevel                3                         1        
+
+
+
+NOTES
+==============
+GENERAL
+The ISD Export Application (ISDExport.exe) is a Windows based application used to export sorted item 
+records into a text file suitable for import into the Bearware RDS system.
+
+
+OPERATION
+Normal:
+The ISD Export Application (ISDExport.exe) operates by launching from a web server deployment url 
+(i.e. http://localhost/Argix08/Apps/ISDExport/ISDExport.application). After a brief splash screen, a 
+sizeable window appears and displays a split window with a Pickups grid on top and a Sorted Items grid 
+on bottom. The Pickups grid shows pickups for the selected day for ISD clients. Select a pickup to 
+display the cartons sorted for that pickup in the Sorted Items grid. If there are sorted cartons for 
+the selected pickup, use the File/Export menu item to export the sorted items to a text file. The 
+taskbar displays the operating terminal and connection status. Additional operating steps can be found 
+in the on-line documentation provided by the Help/Contents menu item.
+
+
+VERSION HISTORY
+ v3.0.0, 09/10/09 ---------------------------------------------------------------------------
+Requirements/features
+- ported to Visual Studio 2008.
+Design/deployment
+- requires .NET Framework 3.5
+
+ v3.0.1, 05/19/10 ---------------------------------------------------------------------------
+Requirements/features
+- None.
+Design/deployment
+- corrected bug in export format: changed time format from hhmmss to HHmmss.
+
+ v3.0.2, 07/20/10 ---------------------------------------------------------------------------
+Requirements/features
+- Modified exporter for RDS4 to remove non-alpha-numeric characters from TrailerNumber, SealNumber, and BOLNumber.
+- Added create, update, delete of client entries (now password protected)
+Design/deployment
+- None.
+
+v3.5.0, 03/08/11, 08/11/11, 09/26/11, 10/11/11, 10/24/11, 11/28/11, 02/09/12, 03/26/12, 08/03/12, 08/13/13, 06/11/14, 11/05/14, 11/11/14, 11/17/14, 12/02/14, 12/10/14, 12/16/14
+Requirements/features
+- None.
+Design/deployment
+- Upgraded to Infragistics NetAdvantage 2010 third party control suite (required: Infragistics2.Win.v10.1.dll, Infragistics2.Shared.v10.1.dll, Infragistics2.Win.UltraWinGrid.v10.1.dll)
+- Minor design changes.
+- Rebuild for change in config database connection (JARGXTS to JARGXVMTS)
+- Rebuild for change in config database connection (LLRGXAD2 to LLRGXAD1)
+- Rebuild for change in config database connection (MMRGXAD2 to MMRGXAD1)
+- Rebuild for change in config database connection (ATRGXAD2 to ATRGXAD1)
+- Rebuild for change in config database connection (CHRGXAD2 to chrgxvmsql)
+- Rebuild for change in config database connection (MARGXAD2 to MARGXAD1)
+- Rebuild for change in config database connection (CTRGXAD1 to CTRGXAD2)
+- rebuild for new config database connections (AGNFIRGXTS, AGSFSRGXTS)
+- rebuild for new config database connections (rfrgxvmts)
+- rebuild for change in config database connection (ATRGXAD1 to ATRGXVMSQL)
+- rebuild for change in config database connection (CHRGXAD1 to CHRGXVMSQL)
+- rebuild for change in config database connection (CHRGXAD1 to margxvmsql)
+- rebuild for change in config database connection (rfrgxvmts to rfrgxvmsql1)
+- rebuild for change in config database connection (llrgxad1 to llrgxvmsql)
+- rebuild for change in config database connection (ctrgxad2 to ctrgxvmsql)
+- rebuild for change in config database connection (mmrgxad1 to mmrgxvmsql)
+
+
+v3.5.2, 07/01/15 ---------------------------------------------------------------------------
+Requirements/features
+- add weight to RDS4 export file.
+Design/deployment
+- modified RDS4Exporter::formatSortedItemRecord() to add weight.

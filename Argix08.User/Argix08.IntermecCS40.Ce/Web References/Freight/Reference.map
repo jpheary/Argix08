@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?xsd=xsd2" filename="CameraService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?wsdl" filename="CameraService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?wsdl=wsdl0" filename="CameraService0.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?xsd=xsd3" filename="CameraService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?xsd=xsd1" filename="CameraService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?xsd=xsd0" filename="CameraService2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://rgxvmweb.argix.com/Argix08/Argix08.TsortService/CameraService.svc?disco" filename="CameraService.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

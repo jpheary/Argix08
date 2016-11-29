@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="352b978f-e8c4-43cb-959f-8d6a054e5824" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:58733/Argix08.CRGService/CRGService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CRGService.disco" MetadataType="Disco" ID="1ae24684-e4ef-4d52-b237-e9a14084e2b5" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?disco" />
+    <MetadataFile FileName="ActionTypeDS.xsd" MetadataType="Schema" ID="9e978e6e-0749-4c90-8e96-962ac730e7ba" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd4" />
+    <MetadataFile FileName="CRGService.wsdl" MetadataType="Wsdl" ID="7d37bab0-364a-4587-a0b2-02d13234d366" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?wsdl" />
+    <MetadataFile FileName="IssueDS.xsd" MetadataType="Schema" ID="5f3aba87-e81c-4f3e-a99f-a42249da0401" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd5" />
+    <MetadataFile FileName="CRGService1.wsdl" MetadataType="Wsdl" ID="c615a764-793d-4087-8337-d998805d3d9a" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="CRGService.xsd" MetadataType="Schema" ID="dd56c4ee-6564-4151-80e0-c61dc764fafa" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd6" />
+    <MetadataFile FileName="CRGService1.xsd" MetadataType="Schema" ID="89eb3ea0-c57c-4008-a5b3-1aa167f7343d" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CRGService2.xsd" MetadataType="Schema" ID="083105cc-ab8e-46df-8edc-b4dd0137fd2a" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CRGService3.xsd" MetadataType="Schema" ID="be6f8c5a-d885-416b-92fc-c546feabe268" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd3" />
+    <MetadataFile FileName="IssueTypeDS.xsd" MetadataType="Schema" ID="0c08fc92-4869-4dc4-ae34-d10a0522d033" SourceId="1" SourceUrl="http://localhost:58733/Argix08.CRGService/CRGService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

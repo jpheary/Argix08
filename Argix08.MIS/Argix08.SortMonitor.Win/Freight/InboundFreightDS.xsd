@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InboundFreightDS" targetNamespace="http://tempuri.org/InboundFreightDS.xsd" xmlns:mstns="http://tempuri.org/InboundFreightDS.xsd" xmlns="http://tempuri.org/InboundFreightDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TsortLocalConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="TsortLocalConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Tsort.Properties.Settings.GlobalReference.Default.TsortLocalConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InboundFreightDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="InboundFreightDS" msprop:Generator_DataSetName="InboundFreightDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DirectInboundFreightTable" msprop:Generator_UserTableName="DirectInboundFreightTable" msprop:Generator_RowDeletedName="DirectInboundFreightTableRowDeleted" msprop:Generator_RowChangedName="DirectInboundFreightTableRowChanged" msprop:Generator_RowClassName="DirectInboundFreightTableRow" msprop:Generator_RowChangingName="DirectInboundFreightTableRowChanging" msprop:Generator_RowEvArgName="DirectInboundFreightTableRowChangeEvent" msprop:Generator_RowEvHandlerName="DirectInboundFreightTableRowChangeEventHandler" msprop:Generator_TableClassName="DirectInboundFreightTableDataTable" msprop:Generator_TableVarName="tableDirectInboundFreightTable" msprop:Generator_RowDeletingName="DirectInboundFreightTableRowDeleting" msprop:Generator_TablePropName="DirectInboundFreightTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FreightID" msprop:Generator_UserColumnName="FreightID" msprop:Generator_ColumnPropNameInRow="FreightID" msprop:Generator_ColumnVarNameInTable="columnFreightID" msprop:Generator_ColumnPropNameInTable="FreightIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FreightType" msprop:Generator_UserColumnName="FreightType" msprop:Generator_ColumnPropNameInRow="FreightType" msprop:Generator_ColumnVarNameInTable="columnFreightType" msprop:Generator_ColumnPropNameInTable="FreightTypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CurrentLocation" msprop:Generator_UserColumnName="CurrentLocation" msprop:Generator_ColumnPropNameInRow="CurrentLocation" msprop:Generator_ColumnVarNameInTable="columnCurrentLocation" msprop:Generator_ColumnPropNameInTable="CurrentLocationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TDSNumber" msprop:Generator_UserColumnName="TDSNumber" msprop:Generator_ColumnPropNameInRow="TDSNumber" msprop:Generator_ColumnVarNameInTable="columnTDSNumber" msprop:Generator_ColumnPropNameInTable="TDSNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TrailerNumber" msprop:Generator_UserColumnName="TrailerNumber" msprop:Generator_ColumnPropNameInRow="TrailerNumber" msprop:Generator_ColumnVarNameInTable="columnTrailerNumber" msprop:Generator_ColumnPropNameInTable="TrailerNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StorageTrailerNumber" msprop:Generator_UserColumnName="StorageTrailerNumber" msprop:Generator_ColumnPropNameInRow="StorageTrailerNumber" msprop:Generator_ColumnVarNameInTable="columnStorageTrailerNumber" msprop:Generator_ColumnPropNameInTable="StorageTrailerNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientNumber" msprop:Generator_UserColumnName="ClientNumber" msprop:Generator_ColumnPropNameInRow="ClientNumber" msprop:Generator_ColumnVarNameInTable="columnClientNumber" msprop:Generator_ColumnPropNameInTable="ClientNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientName" msprop:Generator_UserColumnName="ClientName" msprop:Generator_ColumnPropNameInRow="ClientName" msprop:Generator_ColumnVarNameInTable="columnClientName" msprop:Generator_ColumnPropNameInTable="ClientNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperNumber" msprop:Generator_UserColumnName="ShipperNumber" msprop:Generator_ColumnPropNameInRow="ShipperNumber" msprop:Generator_ColumnVarNameInTable="columnShipperNumber" msprop:Generator_ColumnPropNameInTable="ShipperNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipperName" msprop:Generator_UserColumnName="ShipperName" msprop:Generator_ColumnPropNameInRow="ShipperName" msprop:Generator_ColumnVarNameInTable="columnShipperName" msprop:Generator_ColumnPropNameInTable="ShipperNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PickupID" msprop:Generator_UserColumnName="PickupID" msprop:Generator_ColumnPropNameInRow="PickupID" msprop:Generator_ColumnVarNameInTable="columnPickupID" msprop:Generator_ColumnPropNameInTable="PickupIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PickupDate" msprop:Generator_UserColumnName="PickupDate" msprop:Generator_ColumnPropNameInRow="PickupDate" msprop:Generator_ColumnVarNameInTable="columnPickupDate" msprop:Generator_ColumnPropNameInTable="PickupDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PickupNumber" msprop:Generator_UserColumnName="PickupNumber" msprop:Generator_ColumnPropNameInRow="PickupNumber" msprop:Generator_ColumnVarNameInTable="columnPickupNumber" msprop:Generator_ColumnPropNameInTable="PickupNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Cartons" msprop:Generator_UserColumnName="Cartons" msprop:Generator_ColumnPropNameInRow="Cartons" msprop:Generator_ColumnVarNameInTable="columnCartons" msprop:Generator_ColumnPropNameInTable="CartonsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Pallets" msprop:Generator_UserColumnName="Pallets" msprop:Generator_ColumnPropNameInRow="Pallets" msprop:Generator_ColumnVarNameInTable="columnPallets" msprop:Generator_ColumnPropNameInTable="PalletsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CarrierNumber" msprop:Generator_UserColumnName="CarrierNumber" msprop:Generator_ColumnPropNameInRow="CarrierNumber" msprop:Generator_ColumnVarNameInTable="columnCarrierNumber" msprop:Generator_ColumnPropNameInTable="CarrierNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DriverNumber" msprop:Generator_UserColumnName="DriverNumber" msprop:Generator_ColumnPropNameInRow="DriverNumber" msprop:Generator_ColumnVarNameInTable="columnDriverNumber" msprop:Generator_ColumnPropNameInTable="DriverNumberColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FloorStatus" msprop:Generator_UserColumnName="FloorStatus" msprop:Generator_ColumnPropNameInRow="FloorStatus" msprop:Generator_ColumnVarNameInTable="columnFloorStatus" msprop:Generator_ColumnPropNameInTable="FloorStatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SealNumber" msprop:Generator_UserColumnName="SealNumber" msprop:Generator_ColumnPropNameInRow="SealNumber" msprop:Generator_ColumnVarNameInTable="columnSealNumber" msprop:Generator_ColumnPropNameInTable="SealNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UnloadedStatus" msprop:Generator_UserColumnName="UnloadedStatus" msprop:Generator_ColumnPropNameInRow="UnloadedStatus" msprop:Generator_ColumnVarNameInTable="columnUnloadedStatus" msprop:Generator_ColumnPropNameInTable="UnloadedStatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VendorKey" msprop:Generator_UserColumnName="VendorKey" msprop:Generator_ColumnPropNameInRow="VendorKey" msprop:Generator_ColumnVarNameInTable="columnVendorKey" msprop:Generator_ColumnPropNameInTable="VendorKeyColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiveDate" msprop:Generator_UserColumnName="ReceiveDate" msprop:Generator_ColumnPropNameInRow="ReceiveDate" msprop:Generator_ColumnVarNameInTable="columnReceiveDate" msprop:Generator_ColumnPropNameInTable="ReceiveDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TerminalID" msprop:Generator_UserColumnName="TerminalID" msprop:Generator_ColumnPropNameInRow="TerminalID" msprop:Generator_ColumnVarNameInTable="columnTerminalID" msprop:Generator_ColumnPropNameInTable="TerminalIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CubeRatio" msprop:Generator_UserColumnName="CubeRatio" msprop:Generator_ColumnPropNameInRow="CubeRatio" msprop:Generator_ColumnVarNameInTable="columnCubeRatio" msprop:Generator_ColumnPropNameInTable="CubeRatioColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IndirectInboundFreightTable" msprop:Generator_UserTableName="IndirectInboundFreightTable" msprop:Generator_RowDeletedName="IndirectInboundFreightTableRowDeleted" msprop:Generator_RowChangedName="IndirectInboundFreightTableRowChanged" msprop:Generator_RowClassName="IndirectInboundFreightTableRow" msprop:Generator_RowChangingName="IndirectInboundFreightTableRowChanging" msprop:Generator_RowEvArgName="IndirectInboundFreightTableRowChangeEvent" msprop:Generator_RowEvHandlerName="IndirectInboundFreightTableRowChangeEventHandler" msprop:Generator_TableClassName="IndirectInboundFreightTableDataTable" msprop:Generator_TableVarName="tableIndirectInboundFreightTable" msprop:Generator_RowDeletingName="IndirectInboundFreightTableRowDeleting" msprop:Generator_TablePropName="IndirectInboundFreightTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CartonCount" msprop:Generator_UserColumnName="CartonCount" msprop:Generator_ColumnPropNameInRow="CartonCount" msprop:Generator_ColumnVarNameInTable="columnCartonCount" msprop:Generator_ColumnPropNameInTable="CartonCountColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Carrier" msprop:Generator_UserColumnName="Carrier" msprop:Generator_ColumnPropNameInRow="Carrier" msprop:Generator_ColumnVarNameInTable="columnCarrier" msprop:Generator_ColumnPropNameInTable="CarrierColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TrailerNumber" msprop:Generator_UserColumnName="TrailerNumber" msprop:Generator_ColumnPropNameInRow="TrailerNumber" msprop:Generator_ColumnVarNameInTable="columnTrailerNumber" msprop:Generator_ColumnPropNameInTable="TrailerNumberColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Started" msprop:Generator_UserColumnName="Started" msprop:Generator_ColumnPropNameInRow="Started" msprop:Generator_ColumnVarNameInTable="columnStarted" msprop:Generator_ColumnPropNameInTable="StartedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Stopped" msprop:Generator_UserColumnName="Stopped" msprop:Generator_ColumnPropNameInRow="Stopped" msprop:Generator_ColumnVarNameInTable="columnStopped" msprop:Generator_ColumnPropNameInTable="StoppedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Exported" msprop:Generator_UserColumnName="Exported" msprop:Generator_ColumnPropNameInRow="Exported" msprop:Generator_ColumnVarNameInTable="columnExported" msprop:Generator_ColumnPropNameInTable="ExportedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Imported" msprop:Generator_UserColumnName="Imported" msprop:Generator_ColumnPropNameInRow="Imported" msprop:Generator_ColumnVarNameInTable="columnImported" msprop:Generator_ColumnPropNameInTable="ImportedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Scanned" msprop:Generator_UserColumnName="Scanned" msprop:Generator_ColumnPropNameInRow="Scanned" msprop:Generator_ColumnVarNameInTable="columnScanned" msprop:Generator_ColumnPropNameInTable="ScannedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OSDSend" msprop:Generator_UserColumnName="OSDSend" msprop:Generator_ColumnPropNameInRow="OSDSend" msprop:Generator_ColumnVarNameInTable="columnOSDSend" msprop:Generator_ColumnPropNameInTable="OSDSendColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Received" msprop:Generator_UserColumnName="Received" msprop:Generator_ColumnPropNameInRow="Received" msprop:Generator_ColumnVarNameInTable="columnReceived" msprop:Generator_ColumnPropNameInTable="ReceivedColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CartonsExported" msprop:Generator_UserColumnName="CartonsExported" msprop:Generator_ColumnPropNameInRow="CartonsExported" msprop:Generator_ColumnVarNameInTable="columnCartonsExported" msprop:Generator_ColumnPropNameInTable="CartonsExportedColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

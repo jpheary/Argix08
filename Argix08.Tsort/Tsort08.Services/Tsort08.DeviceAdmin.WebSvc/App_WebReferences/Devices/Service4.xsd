@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/System.IO.Ports" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/System.IO.Ports" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Handshake">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="XOnXOff" />
+      <xs:enumeration value="RequestToSend" />
+      <xs:enumeration value="RequestToSendXOnXOff" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Handshake" nillable="true" type="tns:Handshake" />
+  <xs:simpleType name="Parity">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Odd" />
+      <xs:enumeration value="Even" />
+      <xs:enumeration value="Mark" />
+      <xs:enumeration value="Space" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Parity" nillable="true" type="tns:Parity" />
+  <xs:simpleType name="StopBits">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="One" />
+      <xs:enumeration value="Two" />
+      <xs:enumeration value="OnePointFive" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="StopBits" nillable="true" type="tns:StopBits" />
+</xs:schema>

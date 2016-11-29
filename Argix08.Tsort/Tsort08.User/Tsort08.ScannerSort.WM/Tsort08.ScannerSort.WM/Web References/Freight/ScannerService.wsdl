@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://tempuri.org/ScannerAssignmentDS.xsd" />
+      <s:import namespace="http://tempuri.org/ScannedItemDS.xsd" />
+      <s:import schemaLocation="http://rgxvmweb/SortServices/ScannerService.asmx?schema=ScannerAssignmentDS" namespace="http://tempuri.org/ScannerAssignmentDS.xsd" />
+      <s:import schemaLocation="http://rgxvmweb/SortServices/ScannerService.asmx?schema=ScannedItemDS" namespace="http://tempuri.org/ScannedItemDS.xsd" />
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScannerAssignment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="scannerNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetScannerAssignmentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetScannerAssignmentResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/ScannerAssignmentDS.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSortedItem">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="items">
+              <s:complexType>
+                <s:sequence>
+                  <s:any namespace="http://tempuri.org/ScannedItemDS.xsd" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateSortedItemResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CreateSortedItemResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetScannerAssignmentSoapIn">
+    <wsdl:part name="parameters" element="tns:GetScannerAssignment" />
+  </wsdl:message>
+  <wsdl:message name="GetScannerAssignmentSoapOut">
+    <wsdl:part name="parameters" element="tns:GetScannerAssignmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateSortedItemSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateSortedItem" />
+  </wsdl:message>
+  <wsdl:message name="CreateSortedItemSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateSortedItemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ScannerServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScannerAssignment">
+      <wsdl:input message="tns:GetScannerAssignmentSoapIn" />
+      <wsdl:output message="tns:GetScannerAssignmentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSortedItem">
+      <wsdl:input message="tns:CreateSortedItemSoapIn" />
+      <wsdl:output message="tns:CreateSortedItemSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ScannerServiceSoap" type="tns:ScannerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScannerAssignment">
+      <soap:operation soapAction="http://tempuri.org/GetScannerAssignment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSortedItem">
+      <soap:operation soapAction="http://tempuri.org/CreateSortedItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ScannerServiceSoap12" type="tns:ScannerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScannerAssignment">
+      <soap12:operation soapAction="http://tempuri.org/GetScannerAssignment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateSortedItem">
+      <soap12:operation soapAction="http://tempuri.org/CreateSortedItem" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ScannerService">
+    <wsdl:port name="ScannerServiceSoap" binding="tns:ScannerServiceSoap">
+      <soap:address location="http://rgxvmweb/SortServices/ScannerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ScannerServiceSoap12" binding="tns:ScannerServiceSoap12">
+      <soap12:address location="http://rgxvmweb/SortServices/ScannerService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

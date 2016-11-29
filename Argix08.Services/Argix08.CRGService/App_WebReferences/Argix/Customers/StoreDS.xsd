@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/StoreDS.xsd" xmlns="http://tempuri.org/StoreDS.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/StoreDS.xsd" id="StoreDS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="StoreDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StoreTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="CompanyID" type="xs:int" />
+              <xs:element minOccurs="0" name="ClientNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="ClientName" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreNumber" type="xs:int" />
+              <xs:element minOccurs="0" name="SubStoreNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="SanNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreName" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreAddressline1" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreAddressline2" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreCity" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreState" type="xs:string" />
+              <xs:element minOccurs="0" name="StoreZip" type="xs:string" />
+              <xs:element minOccurs="0" name="ContactName" type="xs:string" />
+              <xs:element minOccurs="0" name="PhoneNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="WindowTimeStart" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="WindowTimeEnd" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="Zone" type="xs:string" />
+              <xs:element minOccurs="0" name="AgentNumber" type="xs:string" />
+              <xs:element minOccurs="0" name="AgentName" type="xs:string" />
+              <xs:element minOccurs="0" name="SpecialInstructions" type="xs:string" />
+              <xs:element minOccurs="0" name="Division" type="xs:string" />
+              <xs:element minOccurs="0" name="DeliveryScanStatus" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="ScanStatusDescrption" type="xs:string" />
+              <xs:element minOccurs="0" name="IsDeliveryDayMonday" type="xs:string" />
+              <xs:element minOccurs="0" name="IsDeliveryDayTuesday" type="xs:string" />
+              <xs:element minOccurs="0" name="IsDeliveryDayWednesday" type="xs:string" />
+              <xs:element minOccurs="0" name="IsDeliveryDayThursday" type="xs:string" />
+              <xs:element minOccurs="0" name="IsDeliveryDayFriday" type="xs:string" />
+              <xs:element minOccurs="0" name="IsOutforDeliveryDay1" type="xs:string" />
+              <xs:element minOccurs="0" name="IsOutforDeliveryDay2" type="xs:string" />
+              <xs:element minOccurs="0" name="StandardTransit" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="District" type="xs:string" />
+              <xs:element minOccurs="0" name="DistrictName" type="xs:string" />
+              <xs:element minOccurs="0" name="Region" type="xs:string" />
+              <xs:element minOccurs="0" name="RegionDescription" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
